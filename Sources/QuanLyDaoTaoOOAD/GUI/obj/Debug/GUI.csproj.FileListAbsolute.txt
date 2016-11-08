@@ -1,0 +1,2 @@
+c:\users\thien\documents\visual studio 2015\Projects\QuanLyDaoTaoOOAD\GUI\bin\Debug\GUI.exe.config
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\GUI.exe.config
