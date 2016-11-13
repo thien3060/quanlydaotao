@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class DTO_HocVi
+    public class DTO_HocVi
     {
         public string MaHV { get; set; }
         public string TenHV { get; set; }

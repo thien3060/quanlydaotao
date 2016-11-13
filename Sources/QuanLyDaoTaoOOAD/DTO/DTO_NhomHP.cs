@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class DTO_NhomHP
+    public class DTO_NhomHP
     {
         public string MaNHP { get; set; }
         public string TenNHP { get; set; }

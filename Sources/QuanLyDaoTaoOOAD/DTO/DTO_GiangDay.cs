@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class DTO_GiangDay
+    public class DTO_GiangDay
     {
         public string MaGD { get; set; }
         public string MaGV { get; set; }

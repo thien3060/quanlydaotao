@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAO
+namespace BUS
 {
-    public class Class1
+    public class Login
     {
     }
 }

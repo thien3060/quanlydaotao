@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class DTO_PhongHoc
+    public class DTO_PhongHoc
     {
         public string MaPhong { get; set; }
         public string ChucNang { get; set; }

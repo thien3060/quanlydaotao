@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class DTO_HocKy
+    public class DTO_HocKy
     {
         public string MaHK { get; set; }
         public string TenHK { get; set; }

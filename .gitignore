@@ -1,4 +1,4 @@
-Debug
-obj
-vendor
-bin
+Debug/
+obj/
+vendor/
+bin/

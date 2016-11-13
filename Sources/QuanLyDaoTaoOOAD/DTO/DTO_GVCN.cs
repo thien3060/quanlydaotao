@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class DTO_GVCN
+    public class DTO_GVCN
     {
         public string MaGV { get; set; }
         public string MaNL { get; set; }

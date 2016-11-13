@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class DTO_BuoiHoc
+    public class DTO_BuoiHoc
     {
         public string MaBH { get; set; }
         public DateTime Ngay { get; set; }

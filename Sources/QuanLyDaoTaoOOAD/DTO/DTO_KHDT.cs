@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class DTO_KHDT
+    public class DTO_KHDT
     {
         public string MaKHDT { get; set; }
         public string TenKHDT { get; set; }
