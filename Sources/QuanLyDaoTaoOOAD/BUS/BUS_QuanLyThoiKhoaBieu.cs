@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BUS
 {
-    public class QuanLyThoiKhoaBieu
+    public class BUS_QuanLyThoiKhoaBieu
     {
     }
 }

@@ -15,6 +15,8 @@ namespace DTO
         public string Quyen { get; set; }
         public string MoTaQuyen { get; set; }
 
+        public DTO_NguoiDung() { }
+
         public DTO_NguoiDung(string maNd, string tenDn, string matKhau, string tenNd, string quyen, string moTaQuyen)
         {
             MaND = maNd;

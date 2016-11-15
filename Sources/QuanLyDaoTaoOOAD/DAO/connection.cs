@@ -15,9 +15,7 @@ namespace DAO
 
         public void OpenConnection()
         {
-            var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-
-            Connect = new SqlConnection(ConfigurationManager.ConnectionStrings["DAL.Properties.Settings.QL_VLXDConnectionString"].ConnectionString);
+            Connect = new SqlConnection("Data Source=.;Initial Catalog=QuanLyDaoTao;Integrated Security=True");
             try
             {
                 Connect.Open();

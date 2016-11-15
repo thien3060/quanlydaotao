@@ -14,32 +14,32 @@ namespace DAO
 
         private Dictionary<string, object> parameters = new Dictionary<string, object>();
 
-        private void AddParameter(DTO_GiaoVien buoiHoc)
+        private void AddParameter(DTO_GiaoVien giaovien)
         {
             parameters.Clear();
-            parameters.Add("@MaGV", buoiHoc.MaGV);
-            parameters.Add("@HoTenGV", buoiHoc.HoTenGV);
-            parameters.Add("@NgaySinh", buoiHoc.NgaySinh);
-            parameters.Add("@DiaChi", buoiHoc.DiaChi);
-            parameters.Add("@GioiTinh", buoiHoc.GioiTinh);
-            parameters.Add("@CMND", buoiHoc.CMND);
-            parameters.Add("@MaKhoa", buoiHoc.MaKhoa);
-            parameters.Add("@MaHV", buoiHoc.MaHV);
+            parameters.Add("@MaGV", giaovien.MaGV);
+            parameters.Add("@HoTenGV", giaovien.HoTenGV);
+            parameters.Add("@NgaySinh", giaovien.NgaySinh);
+            parameters.Add("@DiaChi", giaovien.DiaChi);
+            parameters.Add("@GioiTinh", giaovien.GioiTinh);
+            parameters.Add("@CMND", giaovien.CMND);
+            parameters.Add("@MaKhoa", giaovien.MaKhoa);
+            parameters.Add("@MaHV", giaovien.MaHV);
         }
 
-        public void ThemGiaoVien(DTO_GiaoVien buoiHoc)
+        public void ThemGiaoVien(DTO_GiaoVien giaovien)
         {
-            AddParameter(buoiHoc);
+            AddParameter(giaovien);
             Connection.ExecuteSqlWithParameter("INSERT INTO giaovien VALUES (N@MaGV, N@HoTenGV, N@NgaySinh, N@DiaChi, N@GioiTinh, N@CMND, N@MaKhoa, N@MaHV)", parameters);
         }
-        public void CapNhatGiaoVien(DTO_GiaoVien buoiHoc)
+        public void CapNhatGiaoVien(DTO_GiaoVien giaovien)
         {
-            AddParameter(buoiHoc);
+            AddParameter(giaovien);
             Connection.ExecuteSqlWithParameter("UPDATE giaovien SET HoTenGV=N@HoTenGV,NgaySinh=N@NgaySinh,DiaChi=N@DiaChi,GioiTinh=N@GioiTinh,CMND=N@CMND,MaKhoa=N@MaKhoa,MaHV=N@MaHV WHERE MaGV=N@MaGV", parameters);
         }
-        public void XoaGiaoVien(DTO_GiaoVien buoiHoc)
+        public void XoaGiaoVien(DTO_GiaoVien giaovien)
         {
-            AddParameter(buoiHoc);
+            AddParameter(giaovien);
             Connection.ExecuteSqlWithParameter("DELETE FROM giaovien WHERE MaGV=N@MaGV", parameters);
         }
         public DataTable TaobangGiaoVien(string dieukien)
