@@ -50,3 +50,4 @@ D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DTO.pdb
 D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmMain.resources
 D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DAO.dll
 D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DAO.pdb
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmGiaoVien.resources

@@ -51,5 +51,16 @@ namespace QuanLyDaoTao
         {
             MessageBox.Show("Bạn chắc chắn muốn thoát ? ", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
         }
-    }
+
+        private void bt_QLGV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form frm in this.MdiChildren)
+            {
+                frm.Close();
+            }
+            FrmGiaoVien gv = new FrmGiaoVien();
+            gv.Dock = DockStyle.Fill;
+            gv.MdiParent = this;
+            gv.Show();
+        }}
 }

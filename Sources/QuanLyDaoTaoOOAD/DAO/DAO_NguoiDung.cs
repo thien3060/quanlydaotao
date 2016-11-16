@@ -28,17 +28,17 @@ namespace DAO
         public void ThemNguoiDung(DTO_NguoiDung nguoiDung)
         {
             AddParameter(nguoiDung);
-            Connection.ExecuteSqlWithParameter("INSERT INTO nguoidung VALUES (N@MaND, N@TenDN, N@MatKhau, N@TenND, N@Quyen, N@MoTaQuyen)", parameters);
+            Connection.ExecuteSqlWithParameter("INSERT INTO nguoidung VALUES (@MaND, @TenDN, @MatKhau, @TenND, @Quyen, @MoTaQuyen)", parameters);
         }
         public void CapNhatNguoiDung(DTO_NguoiDung nguoiDung)
         {
             AddParameter(nguoiDung);
-            Connection.ExecuteSqlWithParameter("UPDATE nguoidung SET TenDN=N@TenDN,MatKhau=N@MatKhau,TenND=N@TenND,Quyen=N@Quyen,MoTaQuyen=N@MoTaQuyen WHERE MaND=N@MaND", parameters);
+            Connection.ExecuteSqlWithParameter("UPDATE nguoidung SET TenDN=@TenDN,MatKhau=@MatKhau,TenND=@TenND,Quyen=@Quyen,MoTaQuyen=@MoTaQuyen WHERE MaND=@MaND", parameters);
         }
         public void XoaNguoiDung(DTO_NguoiDung nguoiDung)
         {
             AddParameter(nguoiDung);
-            Connection.ExecuteSqlWithParameter("DELETE FROM nguoidung WHERE MaND=N@MaND", parameters);
+            Connection.ExecuteSqlWithParameter("DELETE FROM nguoidung WHERE MaND=@MaND", parameters);
         }
         public DataTable TaobangNguoiDung(string dieukien)
         {

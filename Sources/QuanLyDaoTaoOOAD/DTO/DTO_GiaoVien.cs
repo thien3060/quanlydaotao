@@ -17,6 +17,8 @@ namespace DTO
         public string MaKhoa { get; set; }
         public string MaHV { get; set; }
 
+        public DTO_GiaoVien() { }
+
         public DTO_GiaoVien(string maGv, string hoTenGv, DateTime ngaySinh, string diaChi, string gioiTinh, string cmnd, string maKhoa, string maHv)
         {
             MaGV = maGv;

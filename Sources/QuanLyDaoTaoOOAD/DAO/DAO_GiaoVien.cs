@@ -30,21 +30,21 @@ namespace DAO
         public void ThemGiaoVien(DTO_GiaoVien giaovien)
         {
             AddParameter(giaovien);
-            Connection.ExecuteSqlWithParameter("INSERT INTO giaovien VALUES (N@MaGV, N@HoTenGV, N@NgaySinh, N@DiaChi, N@GioiTinh, N@CMND, N@MaKhoa, N@MaHV)", parameters);
+            Connection.ExecuteSqlWithParameter("INSERT INTO giaovien VALUES (@MaGV, @HoTenGV, @NgaySinh, @DiaChi, @GioiTinh, @CMND, @MaKhoa, @MaHV)", parameters);
         }
         public void CapNhatGiaoVien(DTO_GiaoVien giaovien)
         {
             AddParameter(giaovien);
-            Connection.ExecuteSqlWithParameter("UPDATE giaovien SET HoTenGV=N@HoTenGV,NgaySinh=N@NgaySinh,DiaChi=N@DiaChi,GioiTinh=N@GioiTinh,CMND=N@CMND,MaKhoa=N@MaKhoa,MaHV=N@MaHV WHERE MaGV=N@MaGV", parameters);
+            Connection.ExecuteSqlWithParameter("UPDATE giaovien SET HoTenGV=@HoTenGV,NgaySinh=@NgaySinh,DiaChi=@DiaChi,GioiTinh=@GioiTinh,CMND=@CMND,MaKhoa=@MaKhoa,MaHV=@MaHV WHERE MaGV=@MaGV", parameters);
         }
         public void XoaGiaoVien(DTO_GiaoVien giaovien)
         {
             AddParameter(giaovien);
-            Connection.ExecuteSqlWithParameter("DELETE FROM giaovien WHERE MaGV=N@MaGV", parameters);
+            Connection.ExecuteSql("DELETE FROM giaovien WHERE MaGV='"+giaovien.MaGV+"'");
         }
         public DataTable TaobangGiaoVien(string dieukien)
         {
-            return Connection.GetDataTable("SECLECT * FROM giaovien " + dieukien);
+            return Connection.GetDataTable("SELECT * FROM giaovien " + dieukien);
         }
         public int LayKichThuocBang()
         {
