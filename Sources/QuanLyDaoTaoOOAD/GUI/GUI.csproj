@@ -52,6 +52,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmNganh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNganh.Designer.cs">
+      <DependentUpon>FrmNganh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPhongHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPhongHoc.Designer.cs">
+      <DependentUpon>FrmPhongHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKhoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKhoa.Designer.cs">
+      <DependentUpon>FrmKhoa.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmGiaoVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +84,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmNganh.resx">
+      <DependentUpon>FrmNganh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPhongHoc.resx">
+      <DependentUpon>FrmPhongHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKhoa.resx">
+      <DependentUpon>FrmKhoa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmGiaoVien.resx">
       <DependentUpon>FrmGiaoVien.cs</DependentUpon>
     </EmbeddedResource>

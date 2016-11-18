@@ -11,6 +11,8 @@ namespace DTO
         public string MaKhoa { get; set; }
         public string TenKhoa { get; set; }
 
+        public DTO_Khoa() { }
+
         public DTO_Khoa(string maKhoa, string tenKhoa)
         {
             MaKhoa = maKhoa;

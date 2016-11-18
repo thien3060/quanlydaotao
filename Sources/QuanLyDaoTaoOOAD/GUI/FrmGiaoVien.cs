@@ -17,6 +17,8 @@ namespace QuanLyDaoTao
         private bool Them;
         DTO_GiaoVien dto_gv = new DTO_GiaoVien();
         BUS_GiaoVien bus_gv = new BUS_GiaoVien();
+        BUS_Khoa bus_khoa = new BUS_Khoa();
+        BUS_HocVi bus_hocvi = new BUS_HocVi();
 
         private void khoaInput()
         {
@@ -65,18 +67,29 @@ namespace QuanLyDaoTao
             bus_gv = new BUS_GiaoVien();
             dg_DanhSachGV.DataSource = bus_gv.TaobangGiaoVien("");
             khoaInput();
+
+            foreach (DataRow khoa in bus_khoa.TaobangKhoa("").Rows)
+            {
+                cb_Ma_Khoa.Properties.Items.Add(khoa[0]);
+            }
+
+            foreach (DataRow hocvi in bus_hocvi.TaobangHocVi("").Rows)
+            {
+                cb_MaHV.Properties.Items.Add(hocvi[0]);
+            }
+
             bt_Luu.Enabled = false;
 
-            tb_MaGV.Text = dg_DanhSachGV.Rows[0].Cells[0].Value.ToString();
-            tb_HoTen.Text = dg_DanhSachGV.Rows[0].Cells[1].Value.ToString();
-            dt_NgaySinh.Text = dg_DanhSachGV.Rows[0].Cells[2].Value.ToString();
-            tb_DiaChi.Text = dg_DanhSachGV.Rows[0].Cells[3].Value.ToString(); 
-            tb_CMND.Text = dg_DanhSachGV.Rows[0].Cells[5].Value.ToString(); 
+            //tb_MaGV.Text = dg_DanhSachGV.Rows[0].Cells[0].Value.ToString();
+            //tb_HoTen.Text = dg_DanhSachGV.Rows[0].Cells[1].Value.ToString();
+            //dt_NgaySinh.Text = dg_DanhSachGV.Rows[0].Cells[2].Value.ToString();
+            //tb_DiaChi.Text = dg_DanhSachGV.Rows[0].Cells[3].Value.ToString(); 
+            //tb_CMND.Text = dg_DanhSachGV.Rows[0].Cells[5].Value.ToString(); 
 
-            if (Int32.Parse(dg_DanhSachGV.Rows[0].Cells[4].Value.ToString()) == 1)
-                rb_GTNam.Checked = true;
-            else
-                rb_GTNu.Checked = true;
+            //if (Int32.Parse(dg_DanhSachGV.Rows[0].Cells[4].Value.ToString()) == 1)
+            //    rb_GTNam.Checked = true;
+            //else
+            //    rb_GTNu.Checked = true;
         }
 
         private void bt_Them_Click(object sender, EventArgs e)

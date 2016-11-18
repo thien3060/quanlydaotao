@@ -30,15 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
-            DevExpress.Utils.SuperToolTip superToolTip9 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem9 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip10 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem10 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip11 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem3 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem11 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip12 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem12 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem2 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem3 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip4 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem4 = new DevExpress.Utils.ToolTipItem();
             this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
             this.backstageViewControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
             this.backstageViewControl3 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
@@ -126,6 +126,10 @@
             this.barButtonItem34 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem35 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem36 = new DevExpress.XtraBars.BarButtonItem();
+            this.bt_QLPhongHoc = new DevExpress.XtraBars.BarButtonItem();
+            this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
+            this.barButtonItem37 = new DevExpress.XtraBars.BarButtonItem();
+            this.bt_QLNganh = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -151,9 +155,13 @@
             this.ribbonPage8 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup18 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup20 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup21 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup22 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage9 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup13 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
@@ -195,6 +203,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl7)).BeginInit();
             this.backstageViewClientControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
@@ -392,10 +401,15 @@
             this.barButtonItem33,
             this.barButtonItem34,
             this.barButtonItem35,
-            this.barButtonItem36});
+            this.barButtonItem36,
+            this.bt_QLPhongHoc,
+            this.barStaticItem1,
+            this.barButtonItem37,
+            this.bt_QLNganh});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 1;
+            this.ribbonControl1.MaxItemId = 8;
             this.ribbonControl1.Name = "ribbonControl1";
+            this.ribbonControl1.PageHeaderItemLinks.Add(this.barStaticItem1);
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
             this.ribbonPage2,
@@ -406,6 +420,8 @@
             this.ribbonPage7,
             this.ribbonPage8,
             this.ribbonPage9});
+            this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemTextEdit1});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.ribbonControl1.Size = new System.Drawing.Size(1285, 146);
             // 
@@ -717,9 +733,9 @@
             this.barButtonItem1.Id = 1;
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            toolTipItem9.Text = "Tìm kiếm nhanh một sinh viên, giảng viên";
-            superToolTip9.Items.Add(toolTipItem9);
-            this.barButtonItem1.SuperTip = superToolTip9;
+            toolTipItem1.Text = "Tìm kiếm nhanh một sinh viên, giảng viên";
+            superToolTip1.Items.Add(toolTipItem1);
+            this.barButtonItem1.SuperTip = superToolTip1;
             // 
             // barButtonItem2
             // 
@@ -743,9 +759,9 @@
             this.barButtonItem4.Id = 4;
             this.barButtonItem4.Name = "barButtonItem4";
             this.barButtonItem4.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            toolTipItem10.Text = "Tra cứu kết quả học tập, lịch học,..";
-            superToolTip10.Items.Add(toolTipItem10);
-            this.barButtonItem4.SuperTip = superToolTip10;
+            toolTipItem2.Text = "Tra cứu kết quả học tập, lịch học,..";
+            superToolTip2.Items.Add(toolTipItem2);
+            this.barButtonItem4.SuperTip = superToolTip2;
             // 
             // barButtonItem5
             // 
@@ -754,18 +770,14 @@
             this.barButtonItem5.Id = 5;
             this.barButtonItem5.Name = "barButtonItem5";
             this.barButtonItem5.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            toolTipTitleItem3.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            toolTipTitleItem3.Appearance.Options.UseImage = true;
-            toolTipTitleItem3.Image = ((System.Drawing.Image)(resources.GetObject("toolTipTitleItem3.Image")));
-            toolTipTitleItem3.Text = "Lập báo cáo mơi";
-            toolTipItem11.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            toolTipItem11.Appearance.Options.UseImage = true;
-            toolTipItem11.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem11.Image")));
-            toolTipItem11.LeftIndent = 6;
-            toolTipItem11.Text = "Chỉnh sử báo cáo";
-            superToolTip11.Items.Add(toolTipTitleItem3);
-            superToolTip11.Items.Add(toolTipItem11);
-            this.barButtonItem5.SuperTip = superToolTip11;
+            toolTipTitleItem1.Appearance.Options.UseImage = true;
+            toolTipTitleItem1.Text = "Lập báo cáo mơi";
+            toolTipItem3.Appearance.Options.UseImage = true;
+            toolTipItem3.LeftIndent = 6;
+            toolTipItem3.Text = "Chỉnh sử báo cáo";
+            superToolTip3.Items.Add(toolTipTitleItem1);
+            superToolTip3.Items.Add(toolTipItem3);
+            this.barButtonItem5.SuperTip = superToolTip3;
             // 
             // barButtonItem6
             // 
@@ -792,9 +804,9 @@
             this.barButtonItem8.Id = 8;
             this.barButtonItem8.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.LargeGlyph")));
             this.barButtonItem8.Name = "barButtonItem8";
-            toolTipItem12.Text = "Cho phép lập các báo cáo cần thiết";
-            superToolTip12.Items.Add(toolTipItem12);
-            this.barButtonItem8.SuperTip = superToolTip12;
+            toolTipItem4.Text = "Cho phép lập các báo cáo cần thiết";
+            superToolTip4.Items.Add(toolTipItem4);
+            this.barButtonItem8.SuperTip = superToolTip4;
             // 
             // barButtonItem9
             // 
@@ -933,13 +945,13 @@
             // 
             // barButtonItem30
             // 
-            this.barButtonItem30.Caption = "barButtonItem30";
+            this.barButtonItem30.Caption = "Quản lý sinh viên";
             this.barButtonItem30.Id = 29;
             this.barButtonItem30.Name = "barButtonItem30";
             // 
             // barButtonItem31
             // 
-            this.barButtonItem31.Caption = "barButtonItem31";
+            this.barButtonItem31.Caption = "Quản lý giảng viên";
             this.barButtonItem31.Id = 30;
             this.barButtonItem31.Name = "barButtonItem31";
             // 
@@ -976,6 +988,34 @@
             this.barButtonItem36.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem36.Glyph")));
             this.barButtonItem36.Id = 35;
             this.barButtonItem36.Name = "barButtonItem36";
+            // 
+            // bt_QLPhongHoc
+            // 
+            this.bt_QLPhongHoc.Caption = "Quản lý phòng học";
+            this.bt_QLPhongHoc.Id = 1;
+            this.bt_QLPhongHoc.Name = "bt_QLPhongHoc";
+            this.bt_QLPhongHoc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bt_QLPhongHoc_ItemClick);
+            // 
+            // barStaticItem1
+            // 
+            this.barStaticItem1.Caption = "Username";
+            this.barStaticItem1.Id = 5;
+            this.barStaticItem1.Name = "barStaticItem1";
+            this.barStaticItem1.TextAlignment = System.Drawing.StringAlignment.Near;
+            // 
+            // barButtonItem37
+            // 
+            this.barButtonItem37.Caption = "Quản lý khoa";
+            this.barButtonItem37.Id = 6;
+            this.barButtonItem37.Name = "barButtonItem37";
+            this.barButtonItem37.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bt_QLKhoa_ItemClick);
+            // 
+            // bt_QLNganh
+            // 
+            this.bt_QLNganh.Caption = "Quản lý ngành";
+            this.bt_QLNganh.Id = 7;
+            this.bt_QLNganh.Name = "bt_QLNganh";
+            this.bt_QLNganh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bt_QLNganh_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -1164,7 +1204,10 @@
             // 
             this.ribbonPage8.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup11,
-            this.ribbonPageGroup18});
+            this.ribbonPageGroup18,
+            this.ribbonPageGroup20,
+            this.ribbonPageGroup21,
+            this.ribbonPageGroup22});
             this.ribbonPage8.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage8.Image")));
             this.ribbonPage8.Name = "ribbonPage8";
             this.ribbonPage8.Text = "Danh mục";
@@ -1173,13 +1216,26 @@
             // 
             this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem30);
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
-            this.ribbonPageGroup11.Text = "ribbonPageGroup11";
             // 
             // ribbonPageGroup18
             // 
             this.ribbonPageGroup18.ItemLinks.Add(this.barButtonItem31);
             this.ribbonPageGroup18.Name = "ribbonPageGroup18";
-            this.ribbonPageGroup18.Text = "ribbonPageGroup18";
+            // 
+            // ribbonPageGroup20
+            // 
+            this.ribbonPageGroup20.ItemLinks.Add(this.bt_QLPhongHoc);
+            this.ribbonPageGroup20.Name = "ribbonPageGroup20";
+            // 
+            // ribbonPageGroup21
+            // 
+            this.ribbonPageGroup21.ItemLinks.Add(this.barButtonItem37);
+            this.ribbonPageGroup21.Name = "ribbonPageGroup21";
+            // 
+            // ribbonPageGroup22
+            // 
+            this.ribbonPageGroup22.ItemLinks.Add(this.bt_QLNganh);
+            this.ribbonPageGroup22.Name = "ribbonPageGroup22";
             // 
             // ribbonPage9
             // 
@@ -1201,6 +1257,11 @@
             this.ribbonPageGroup13.ItemLinks.Add(this.barButtonItem33);
             this.ribbonPageGroup13.Name = "ribbonPageGroup13";
             this.ribbonPageGroup13.Text = "ribbonPageGroup13";
+            // 
+            // repositoryItemTextEdit1
+            // 
+            this.repositoryItemTextEdit1.AutoHeight = false;
+            this.repositoryItemTextEdit1.Name = "repositoryItemTextEdit1";
             // 
             // labelControl2
             // 
@@ -1356,6 +1417,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl7)).EndInit();
             this.backstageViewClientControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
@@ -1498,6 +1560,14 @@
         private DevExpress.XtraBars.Ribbon.BackstageViewControl backstageViewControl6;
         private DevExpress.XtraBars.Ribbon.BackstageViewControl backstageViewControl7;
         private DevExpress.XtraBars.Ribbon.BackstageViewControl backstageViewControl9;
+        private DevExpress.XtraBars.BarButtonItem bt_QLPhongHoc;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup20;
+        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup21;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem37;
+        private DevExpress.XtraBars.BarButtonItem bt_QLNganh;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup22;
     }
 }
 

@@ -31,21 +31,16 @@ namespace BUS
 
         public string TuTinhMa()
         {
-            int i = gv.LayKichThuocBang() + 1;
-            string s;
-            if (i < 10)
+            string s = gv.LayMaKhoaLonNhat();
+            string maMoi;
+            if (s == null)
             {
-                s = "GV00" + i.ToString();
+                maMoi = "GV001";
+                return maMoi;
             }
-            else if (i >= 10 && i < 100)
-            {
-                s = "GV0" + i.ToString();
-            }
-            else
-            {
-                s = "GV" + i.ToString();
-            }
-            return s;
+            int last = Int32.Parse(s.Substring(2).ToString()) + 1;
+            maMoi = "GV" + last.ToString("000");
+            return maMoi;
         }
     }
 }

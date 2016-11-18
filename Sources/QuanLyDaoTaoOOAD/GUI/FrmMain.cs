@@ -52,6 +52,7 @@ namespace QuanLyDaoTao
             MessageBox.Show("Bạn chắc chắn muốn thoát ? ", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
         }
 
+        #region Trang chủ
         private void bt_QLGV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             foreach (Form frm in this.MdiChildren)
@@ -62,5 +63,70 @@ namespace QuanLyDaoTao
             gv.Dock = DockStyle.Fill;
             gv.MdiParent = this;
             gv.Show();
-        }}
+        }
+        #endregion
+
+        #region Kế hoạch
+        #endregion
+
+        #region Mở lớp
+        #endregion
+
+        #region SV đăng ký
+        #endregion
+
+        #region Phân công giảng dạy
+        #endregion
+
+        #region Thời khóa biểu
+        #endregion
+
+        #region Kết quả học tập
+        #endregion
+
+        #region Quản lý danh mục
+
+        private void bt_QLPhongHoc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form frm in this.MdiChildren)
+            {
+                frm.Close();
+            }
+            FrmPhongHoc phonghoc = new FrmPhongHoc();
+            phonghoc.Dock = DockStyle.Fill;
+            phonghoc.MdiParent = this;
+            phonghoc.Show();
+        }
+
+        private void bt_QLKhoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form frm in this.MdiChildren)
+            {
+                frm.Close();
+            }
+            FrmKhoa khoa = new FrmKhoa();
+            khoa.Dock = DockStyle.Fill;
+            khoa.MdiParent = this;
+            khoa.Show();
+        }
+
+
+        private void bt_QLNganh_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form frm in this.MdiChildren)
+            {
+                frm.Close();
+            }
+            FrmNganh nganh = new FrmNganh();
+            nganh.Dock = DockStyle.Fill;
+            nganh.MdiParent = this;
+            nganh.Show();
+        }
+
+        #endregion
+
+        #region Hệ thống
+        #endregion
+
+    }
 }

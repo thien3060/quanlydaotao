@@ -13,6 +13,8 @@ namespace DTO
         public string SucChua { get; set; }
         public string DiaChi { get; set; }
 
+        public DTO_PhongHoc() { }
+
         public DTO_PhongHoc(string maPhong, string chucNang, string sucChua, string diaChi)
         {
             MaPhong = maPhong;
