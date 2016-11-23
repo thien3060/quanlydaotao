@@ -54,13 +54,12 @@
     <Compile Include="DAO_DamNhiem.cs" />
     <Compile Include="DAO_NhomHP.cs" />
     <Compile Include="DAO_GVCN.cs" />
+    <Compile Include="DAO_NhomLop.cs" />
     <Compile Include="DAO_ThoiKhoaBieu.cs" />
     <Compile Include="DAO_TDDT.cs" />
     <Compile Include="DAO_KhoiLop.cs" />
     <Compile Include="DAO_HocVi.cs" />
-    <Compile Include="DAO_NhomLop.cs" />
     <Compile Include="DAO_Nganh.cs" />
-    <Compile Include="DAO_NhomLop.cs" />
     <Compile Include="DAO_PhongHoc.cs" />
     <Compile Include="DAO_Khoa.cs" />
     <Compile Include="DAO_GiaoVien.cs" />
@@ -76,12 +75,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyDaoTaoDataSet.xsd</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DTO\DTO.csproj">
-      <Project>{1231dddd-3681-44d7-8b27-4b6456b15ce5}</Project>
-      <Name>DTO</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -100,6 +93,12 @@
     <None Include="QuanLyDaoTaoDataSet.xss">
       <DependentUpon>QuanLyDaoTaoDataSet.xsd</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{1231dddd-3681-44d7-8b27-4b6456b15ce5}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

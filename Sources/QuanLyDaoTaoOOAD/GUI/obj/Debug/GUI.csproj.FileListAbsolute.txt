@@ -124,3 +124,23 @@ D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sour
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmGVCN.resources
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmGiangDay.resources
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmThoiKhoaBieu.resources
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmThoiKhoaBieu.resources
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmGiangDay.resources
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmGVCN.resources
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmNhomHP.resources
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmKhoiLop.resources
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmDamNhiem.resources
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmHocPhan.resources
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmKHDT.resources
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmBuoiHoc.resources
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmHeDT.resources
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmChucVu.resources
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmHocVi.resources
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmNhomLop.resources
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmTDDT.resources
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmNamHoc.resources
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmHocKy.resources
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmNguoiDung.resources
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmNganh.resources
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmPhongHoc.resources
+D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmKhoa.resources
