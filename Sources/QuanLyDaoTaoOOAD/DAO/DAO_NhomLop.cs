@@ -8,7 +8,7 @@ using DTO;
 
 namespace DAO
 {
-    class DAO_NhomLop
+    public class DAO_NhomLop
     {
         public Connection Connection = new Connection();
 
@@ -25,12 +25,12 @@ namespace DAO
         public void ThemNhomLop(DTO_NhomLop nhomlop)
         {
             AddParameter(nhomlop);
-            Connection.ExecuteSqlWithParameter("INSERT INTO nhomlop VALUES (@MaNL, @TenNL)", parameters);
+            Connection.ExecuteSqlWithParameter("INSERT INTO nhomlop VALUES (@MaNL, @TenNL, @MaKL)", parameters);
         }
         public void CapNhatNhomLop(DTO_NhomLop nhomlop)
         {
             AddParameter(nhomlop);
-            Connection.ExecuteSqlWithParameter("UPDATE nhomlop SET TenNL=@TenNL WHERE MaNhomLop=@MaNhomLop", parameters);
+            Connection.ExecuteSqlWithParameter("UPDATE nhomlop SET TenNL=@TenNL, MaKL=@MaKL WHERE MaNL=@MaNL", parameters);
         }
         public void XoaNhomLop(DTO_NhomLop nhomlop)
         {

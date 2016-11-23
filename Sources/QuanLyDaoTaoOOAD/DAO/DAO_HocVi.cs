@@ -43,7 +43,7 @@ namespace DAO
         }
         public string LayMaHocViLonNhat()
         {
-            DataTable temp = Connection.GetDataTable("SELECT * FROM hocvi ORDER BY MaHocVi ASC");
+            DataTable temp = Connection.GetDataTable("SELECT * FROM hocvi ORDER BY MaHV ASC");
             if (temp.Rows.Count == 0)
             {
                 return null;

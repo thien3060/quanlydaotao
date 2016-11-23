@@ -14,6 +14,8 @@ namespace DTO
         public string MaKhoa { get; set; }
         public string MaTDDT { get; set; }
 
+        public DTO_KhoiLop() { }
+
         public DTO_KhoiLop(string maKl, string tenKl, string maHdt, string maKhoa, string maTddt)
         {
             MaKL = maKl;

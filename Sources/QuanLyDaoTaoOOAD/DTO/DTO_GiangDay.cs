@@ -14,6 +14,8 @@ namespace DTO
         public string MaHK { get; set; }
         public string GhiChuGD { get; set; }
 
+        public DTO_GiangDay() { }
+
         public DTO_GiangDay(string maGd, string maGv, string maNhp, string maHk, string ghiChuGd)
         {
             MaGD = maGd;

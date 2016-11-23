@@ -11,6 +11,8 @@ namespace DTO
         public string MaNH { get; set; }
         public string TenNH { get; set; }
 
+        public DTO_NamHoc() { }
+
         public DTO_NamHoc(string maNh, string tenNh)
         {
             MaNH = maNh;

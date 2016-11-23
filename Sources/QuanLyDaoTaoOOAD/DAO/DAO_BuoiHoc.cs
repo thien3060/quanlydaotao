@@ -23,21 +23,30 @@ namespace DAO
         public void ThemBuoiHoc(DTO_BuoiHoc buoiHoc)
         {
             AddParameter(buoiHoc);
-            Connection.ExecuteSqlWithParameter("INSERT INTO buoihoc VALUES (N@MaBH, N@Ngay, N@TietBatDau, N@SoTiet)", parameters);
+            Connection.ExecuteSqlWithParameter("INSERT INTO buoihoc VALUES (@MaBH, @Ngay, @TietBatDau, @SoTiet)", parameters);
         }
         public void CapNhatBuoiHoc(DTO_BuoiHoc buoiHoc)
         {
             AddParameter(buoiHoc);
-            Connection.ExecuteSqlWithParameter("UPDATE buoihoc SET Ngay=N@Ngay, TietBatDau=N@TietBatDau, SoTiet=N@SoTiet WHERE MaBH=N@MaBH", parameters);
+            Connection.ExecuteSqlWithParameter("UPDATE buoihoc SET Ngay=@Ngay, TietBatDau=@TietBatDau, SoTiet=@SoTiet WHERE MaBH=@MaBH", parameters);
         }
         public void XoaBuoiHoc(DTO_BuoiHoc buoiHoc)
         {
             AddParameter(buoiHoc);
-            Connection.ExecuteSqlWithParameter("DELETE FROM buoihoc WHERE MaBH=N@MaBH", parameters);
+            Connection.ExecuteSqlWithParameter("DELETE FROM buoihoc WHERE MaBH=@MaBH", parameters);
         }
         public DataTable TaobangBuoiHoc(string dieukien)
         {
-            return Connection.GetDataTable("SECLECT * FROM buoihoc " + dieukien);
+            return Connection.GetDataTable("SELECT * FROM buoihoc " + dieukien);
+        }
+        public string LayMaBuoiHocLonNhat()
+        {
+            DataTable temp = Connection.GetDataTable("SELECT * FROM buoihoc ORDER BY MaBH ASC");
+            if (temp.Rows.Count == 0)
+            {
+                return null;
+            }
+            return temp.Rows[temp.Rows.Count - 1][0].ToString();
         }
         public int LayKichThuocBang()
         {

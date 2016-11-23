@@ -15,6 +15,8 @@ namespace DTO
         public string SoTC { get; set; }
         public string MaKHDT { get; set; }
 
+        public DTO_HocPhan() { }
+
         public DTO_HocPhan(string maHp, string tenHp, string soTietLt, string soTietTh, string soTc, string maKhdt)
         {
             MaHP = maHp;

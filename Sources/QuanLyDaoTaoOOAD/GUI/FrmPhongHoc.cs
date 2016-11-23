@@ -54,6 +54,8 @@ namespace QuanLyDaoTao
             dg_DanhSachGV.DataSource = bus_ph.TaobangPhongHoc("");
             khoaInput();
             bt_Luu.Enabled = false;
+            bt_Sua.Enabled = false;
+            bt_Xoa.Enabled = false;
         }
 
         private void bt_Them_Click(object sender, EventArgs e)
@@ -150,7 +152,7 @@ namespace QuanLyDaoTao
             }
         }
 
-        private void tb_CMND_KeyPress(object sender, KeyPressEventArgs e)
+        private void tb_SucChua_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
             {

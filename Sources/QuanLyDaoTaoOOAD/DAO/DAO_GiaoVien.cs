@@ -46,7 +46,7 @@ namespace DAO
         {
             return Connection.GetDataTable("SELECT * FROM giaovien " + dieukien);
         }
-        public string LayMaKhoaLonNhat()
+        public string LayMaGiaoVienLonNhat()
         {
             DataTable temp = Connection.GetDataTable("SELECT * FROM giaovien ORDER BY MaGV ASC");
             if (temp.Rows.Count == 0)

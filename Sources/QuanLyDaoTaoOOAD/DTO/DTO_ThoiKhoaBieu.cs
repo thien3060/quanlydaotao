@@ -13,6 +13,8 @@ namespace DTO
         public string MaPhong { get; set; }
         public string CoDay { get; set; }
 
+        public DTO_ThoiKhoaBieu() { }
+
         public DTO_ThoiKhoaBieu(string maGd, string maBh, string maPhong, string coDay)
         {
             MaGD = maGd;

@@ -12,6 +12,8 @@ namespace DTO
         public string TenHK { get; set; }
         public string MaNH { get; set; }
 
+        public DTO_HocKy() { }
+
         public DTO_HocKy(string maHk, string tenHk, string maNh)
         {
             MaHK = maHk;

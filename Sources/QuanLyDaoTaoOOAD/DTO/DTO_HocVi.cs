@@ -12,6 +12,8 @@ namespace DTO
         public string TenHV { get; set; }
         public string MoTa { get; set; }
 
+        public DTO_HocVi() { }
+
         public DTO_HocVi(string maHv, string tenHv, string moTa)
         {
             MaHV = maHv;

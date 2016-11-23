@@ -23,14 +23,14 @@ namespace QuanLyDaoTao
         {
             tb_MaNganh.Enabled = false;
             tb_TenNganh.Enabled = false;
-            cb_Ma_Khoa.Enabled = false;
+            cb_MaKhoa.Enabled = false;
         }
 
         private void moInput()
         {
             tb_MaNganh.Enabled = false;
             tb_TenNganh.Enabled = true;
-            cb_Ma_Khoa.Enabled = true;
+            cb_MaKhoa.Enabled = true;
         }
 
         private void xoaInput()
@@ -47,14 +47,15 @@ namespace QuanLyDaoTao
 
         private void FrmNganh_Load(object sender, EventArgs e)
         {
-            bus_ngh = new BUS_Nganh();
-            dg_DanhSachGV.DataSource = bus_ngh.TaobangNganh("");
+            dg_DanhSachNganh.DataSource = bus_ngh.TaobangNganh("");
             khoaInput();
-            foreach (DataRow khoa in bus_khoa.TaobangKhoa("").Rows)
+            foreach (DataRow datarow in bus_khoa.TaobangKhoa("").Rows)
             {
-                cb_Ma_Khoa.Properties.Items.Add(khoa[0]);
+                cb_MaKhoa.Properties.Items.Add(datarow[0]);
             }
             bt_Luu.Enabled = false;
+            bt_Sua.Enabled = false;
+            bt_Xoa.Enabled = false;
         }
 
         private void bt_Them_Click(object sender, EventArgs e)
@@ -90,18 +91,18 @@ namespace QuanLyDaoTao
             {
                 dto_ngh.MaNganh = tb_MaNganh.Text;
                 bus_ngh.XoadulieuNganh(dto_ngh);
-                dg_DanhSachGV.DataSource = bus_ngh.TaobangNganh("");
+                dg_DanhSachNganh.DataSource = bus_ngh.TaobangNganh("");
             }
         }
 
         private void bt_Luu_Click(object sender, EventArgs e)
         {
-            if (tb_MaNganh.Text != "" && tb_TenNganh.Text != "" && cb_Ma_Khoa.SelectedItem != null)
+            if (tb_MaNganh.Text != "" && tb_TenNganh.Text != "" && cb_MaKhoa.SelectedItem != null)
             {
 
                 dto_ngh.MaNganh = tb_MaNganh.Text;
                 dto_ngh.TenNganh = tb_TenNganh.Text;
-                dto_ngh.MaKhoa = cb_Ma_Khoa.SelectedItem.ToString();
+                dto_ngh.MaKhoa = cb_MaKhoa.SelectedItem.ToString();
                 try
                 {
                     if (Them)
@@ -124,12 +125,12 @@ namespace QuanLyDaoTao
                 bt_Xoa.Enabled = true;
                 bt_Them.Enabled = true;
                 bt_Luu.Enabled = false;
-                dg_DanhSachGV.DataSource = bus_ngh.TaobangNganh("");
+                dg_DanhSachNganh.DataSource = bus_ngh.TaobangNganh("");
 
             }
             else
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin giáo viên", "Lỗi");
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin ngành", "Lỗi");
             }
         }
 
@@ -137,9 +138,9 @@ namespace QuanLyDaoTao
         {
             try
             {
-                tb_MaNganh.Text = dg_DanhSachGV.CurrentRow.Cells[0].Value.ToString();
-                tb_TenNganh.Text = dg_DanhSachGV.CurrentRow.Cells[1].Value.ToString();                
-                cb_Ma_Khoa.Text = dg_DanhSachGV.CurrentRow.Cells[2].Value.ToString();
+                tb_MaNganh.Text = dg_DanhSachNganh.CurrentRow.Cells[0].Value.ToString();
+                tb_TenNganh.Text = dg_DanhSachNganh.CurrentRow.Cells[1].Value.ToString();                
+                cb_MaKhoa.Text = dg_DanhSachNganh.CurrentRow.Cells[2].Value.ToString();
 
                 bt_Sua.Enabled = true;
                 bt_Xoa.Enabled = true;
@@ -147,18 +148,6 @@ namespace QuanLyDaoTao
             }
             catch (Exception)
             {
-            }
-        }
-
-        private void tb_CMND_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-            else
-            {
-                e.Handled = false;
             }
         }
     }

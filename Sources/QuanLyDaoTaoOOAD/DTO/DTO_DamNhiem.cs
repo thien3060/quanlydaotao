@@ -12,6 +12,8 @@ namespace DTO
         public string MaCV { get; set; }
         public DateTime NgayNC { get; set; }
 
+        public DTO_DamNhiem() { }
+
         public DTO_DamNhiem(string maGv, string maCv, DateTime ngayNc)
         {
             MaGV = maGv;

@@ -38,11 +38,20 @@ namespace DAO
         public void XoaNguoiDung(DTO_NguoiDung nguoiDung)
         {
             AddParameter(nguoiDung);
-            Connection.ExecuteSqlWithParameter("DELETE FROM nguoidung WHERE MaND=@MaND", parameters);
+            Connection.ExecuteSql("DELETE FROM nguoidung WHERE MaND='" + nguoiDung.MaND + "'");
         }
         public DataTable TaobangNguoiDung(string dieukien)
         {
-            return Connection.GetDataTable("SECLECT * FROM nguoidung " + dieukien);
+            return Connection.GetDataTable("SELECT * FROM nguoidung " + dieukien);
+        }
+        public string LayMaNguoiDungLonNhat()
+        {
+            DataTable temp = Connection.GetDataTable("SELECT * FROM nguoidung ORDER BY MaND ASC");
+            if (temp.Rows.Count == 0)
+            {
+                return null;
+            }
+            return temp.Rows[temp.Rows.Count - 1][0].ToString();
         }
         public int LayKichThuocBang()
         {
