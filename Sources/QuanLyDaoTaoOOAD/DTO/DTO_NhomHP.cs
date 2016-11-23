@@ -13,6 +13,8 @@ namespace DTO
         public string MaHP { get; set; }
         public string MaKL { get; set; }
 
+        public DTO_NhomHP() { }
+
         public DTO_NhomHP(string maNhp, string tenNhp, string maHp, string maKl)
         {
             MaNHP = maNhp;

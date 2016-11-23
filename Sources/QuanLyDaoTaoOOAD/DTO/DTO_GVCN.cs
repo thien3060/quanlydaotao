@@ -13,6 +13,8 @@ namespace DTO
         public string MaNH { get; set; }
         public string GhiChu { get; set; }
 
+        public DTO_GVCN() { }
+
         public DTO_GVCN(string maGv, string maNl, string maNh, string ghiChu)
         {
             MaGV = maGv;

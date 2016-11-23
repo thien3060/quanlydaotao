@@ -40,7 +40,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS_HeDT.cs" />
+    <Compile Include="BUS_BuoiHoc.cs" />
+    <Compile Include="BUS_ChucVu.cs" />
+    <Compile Include="BUS_GVCN.cs" />
+    <Compile Include="BUS_GiangDay.cs" />
+    <Compile Include="BUS_HocPhan.cs" />
+    <Compile Include="BUS_KHDT.cs" />
+    <Compile Include="BUS_NguoiDung.cs" />
+    <Compile Include="BUS_NamHoc.cs" />
+    <Compile Include="BUS_HocKy.cs" />
+    <Compile Include="BUS_DamNhiem.cs" />
+    <Compile Include="BUS_NhomHP.cs" />
+    <Compile Include="BUS_ThoiKhoaBieu.cs" />
+    <Compile Include="BUS_TDDT.cs" />
+    <Compile Include="BUS_KhoiLop.cs" />
     <Compile Include="BUS_HocVi.cs" />
+    <Compile Include="BUS_NhomLop.cs" />
     <Compile Include="BUS_Nganh.cs" />
     <Compile Include="BUS_PhongHoc.cs" />
     <Compile Include="BUS_Khoa.cs" />

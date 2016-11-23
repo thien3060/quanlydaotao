@@ -11,6 +11,8 @@ namespace DTO
         public string MaHDT { get; set; }
         public string TenHDT { get; set; }
 
+        public DTO_HeDT() { }
+
         public DTO_HeDT(string maHdt, string tenHdt)
         {
             MaHDT = maHdt;

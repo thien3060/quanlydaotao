@@ -48,6 +48,8 @@ namespace QuanLyDaoTao
             dg_DanhSachKhoa.DataSource = bus_khoa.TaobangKhoa("");
             khoaInput();
             bt_Luu.Enabled = false;
+            bt_Sua.Enabled = false;
+            bt_Xoa.Enabled = false;
         }
 
         private void bt_Them_Click(object sender, EventArgs e)

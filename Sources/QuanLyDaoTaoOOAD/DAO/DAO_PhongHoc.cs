@@ -23,9 +23,9 @@ namespace DAO
             parameters.Add("@DiaChi", phongHoc.DiaChi);
         }
 
-        public void ThemPhongHoc(DTO_PhongHoc khoa)
+        public void ThemPhongHoc(DTO_PhongHoc phongHoc)
         {
-            AddParameter(khoa);
+            AddParameter(phongHoc);
             Connection.ExecuteSqlWithParameter("INSERT INTO phonghoc VALUES (@MaPhong, @ChucNang, @SucChua, @DiaChi)", parameters);
         }
         public void CapNhatPhongHoc(DTO_PhongHoc phongHoc)

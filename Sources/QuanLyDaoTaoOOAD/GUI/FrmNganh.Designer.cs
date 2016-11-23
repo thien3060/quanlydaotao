@@ -34,26 +34,26 @@
             this.bt_Luu = new DevExpress.XtraEditors.SimpleButton();
             this.bt_Sua = new DevExpress.XtraEditors.SimpleButton();
             this.bt_Them = new DevExpress.XtraEditors.SimpleButton();
-            this.cb_Ma_Khoa = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cb_MaKhoa = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.tb_TenNganh = new DevExpress.XtraEditors.TextEdit();
             this.tb_MaNganh = new DevExpress.XtraEditors.TextEdit();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.dg_DanhSachGV = new System.Windows.Forms.DataGridView();
+            this.dg_DanhSachNganh = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cb_Ma_Khoa.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cb_MaKhoa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_TenNganh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_MaNganh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dg_DanhSachGV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dg_DanhSachNganh)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -83,7 +83,7 @@
             this.groupControl1.Controls.Add(this.bt_Luu);
             this.groupControl1.Controls.Add(this.bt_Sua);
             this.groupControl1.Controls.Add(this.bt_Them);
-            this.groupControl1.Controls.Add(this.cb_Ma_Khoa);
+            this.groupControl1.Controls.Add(this.cb_MaKhoa);
             this.groupControl1.Controls.Add(this.labelControl4);
             this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Controls.Add(this.labelControl1);
@@ -93,7 +93,7 @@
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(798, 322);
             this.groupControl1.TabIndex = 0;
-            this.groupControl1.Text = "Giáo Viên";
+            this.groupControl1.Text = "Ngành";
             // 
             // bt_Xoa
             // 
@@ -131,14 +131,14 @@
             this.bt_Them.Text = "Thêm";
             this.bt_Them.Click += new System.EventHandler(this.bt_Them_Click);
             // 
-            // cb_Ma_Khoa
+            // cb_MaKhoa
             // 
-            this.cb_Ma_Khoa.Location = new System.Drawing.Point(184, 160);
-            this.cb_Ma_Khoa.Name = "cb_Ma_Khoa";
-            this.cb_Ma_Khoa.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cb_MaKhoa.Location = new System.Drawing.Point(184, 160);
+            this.cb_MaKhoa.Name = "cb_MaKhoa";
+            this.cb_MaKhoa.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cb_Ma_Khoa.Size = new System.Drawing.Size(193, 20);
-            this.cb_Ma_Khoa.TabIndex = 2;
+            this.cb_MaKhoa.Size = new System.Drawing.Size(193, 20);
+            this.cb_MaKhoa.TabIndex = 2;
             // 
             // labelControl4
             // 
@@ -183,21 +183,21 @@
             this.groupControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupControl2.Controls.Add(this.dg_DanhSachGV);
+            this.groupControl2.Controls.Add(this.dg_DanhSachNganh);
             this.groupControl2.Location = new System.Drawing.Point(3, 3);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(795, 295);
             this.groupControl2.TabIndex = 0;
-            this.groupControl2.Text = "Danh sách giáo viên";
+            this.groupControl2.Text = "Danh sách ngành";
             // 
-            // dg_DanhSachGV
+            // dg_DanhSachNganh
             // 
-            this.dg_DanhSachGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dg_DanhSachGV.Location = new System.Drawing.Point(5, 23);
-            this.dg_DanhSachGV.Name = "dg_DanhSachGV";
-            this.dg_DanhSachGV.Size = new System.Drawing.Size(790, 272);
-            this.dg_DanhSachGV.TabIndex = 0;
-            this.dg_DanhSachGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_DanhSachGV_CellClick);
+            this.dg_DanhSachNganh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dg_DanhSachNganh.Location = new System.Drawing.Point(5, 23);
+            this.dg_DanhSachNganh.Name = "dg_DanhSachNganh";
+            this.dg_DanhSachNganh.Size = new System.Drawing.Size(790, 272);
+            this.dg_DanhSachNganh.TabIndex = 0;
+            this.dg_DanhSachNganh.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_DanhSachGV_CellClick);
             // 
             // FrmNganh
             // 
@@ -218,12 +218,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cb_Ma_Khoa.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cb_MaKhoa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_TenNganh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_MaNganh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dg_DanhSachGV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dg_DanhSachNganh)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -242,7 +242,7 @@
         private DevExpress.XtraEditors.SimpleButton bt_Luu;
         private DevExpress.XtraEditors.SimpleButton bt_Sua;
         private DevExpress.XtraEditors.SimpleButton bt_Them;
-        private DevExpress.XtraEditors.ComboBoxEdit cb_Ma_Khoa;
-        private System.Windows.Forms.DataGridView dg_DanhSachGV;
+        private DevExpress.XtraEditors.ComboBoxEdit cb_MaKhoa;
+        private System.Windows.Forms.DataGridView dg_DanhSachNganh;
     }
 }

@@ -37,8 +37,8 @@
             this.rb_GTNu = new System.Windows.Forms.RadioButton();
             this.rb_GTNam = new System.Windows.Forms.RadioButton();
             this.dt_NgaySinh = new DevExpress.XtraEditors.DateEdit();
-            this.cb_MaHV = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.cb_Ma_Khoa = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cb_MaHocVi = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cb_MaKhoa = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
@@ -61,8 +61,8 @@
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dt_NgaySinh.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dt_NgaySinh.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cb_MaHV.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cb_Ma_Khoa.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cb_MaHocVi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cb_MaKhoa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_CMND.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_DiaChi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_HoTen.Properties)).BeginInit();
@@ -102,8 +102,8 @@
             this.groupControl1.Controls.Add(this.rb_GTNu);
             this.groupControl1.Controls.Add(this.rb_GTNam);
             this.groupControl1.Controls.Add(this.dt_NgaySinh);
-            this.groupControl1.Controls.Add(this.cb_MaHV);
-            this.groupControl1.Controls.Add(this.cb_Ma_Khoa);
+            this.groupControl1.Controls.Add(this.cb_MaHocVi);
+            this.groupControl1.Controls.Add(this.cb_MaKhoa);
             this.groupControl1.Controls.Add(this.labelControl8);
             this.groupControl1.Controls.Add(this.labelControl7);
             this.groupControl1.Controls.Add(this.labelControl6);
@@ -192,23 +192,23 @@
             this.dt_NgaySinh.Size = new System.Drawing.Size(193, 20);
             this.dt_NgaySinh.TabIndex = 3;
             // 
-            // cb_MaHV
+            // cb_MaHocVi
             // 
-            this.cb_MaHV.Location = new System.Drawing.Point(526, 222);
-            this.cb_MaHV.Name = "cb_MaHV";
-            this.cb_MaHV.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cb_MaHocVi.Location = new System.Drawing.Point(526, 222);
+            this.cb_MaHocVi.Name = "cb_MaHocVi";
+            this.cb_MaHocVi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cb_MaHV.Size = new System.Drawing.Size(193, 20);
-            this.cb_MaHV.TabIndex = 2;
+            this.cb_MaHocVi.Size = new System.Drawing.Size(193, 20);
+            this.cb_MaHocVi.TabIndex = 2;
             // 
-            // cb_Ma_Khoa
+            // cb_MaKhoa
             // 
-            this.cb_Ma_Khoa.Location = new System.Drawing.Point(184, 222);
-            this.cb_Ma_Khoa.Name = "cb_Ma_Khoa";
-            this.cb_Ma_Khoa.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cb_MaKhoa.Location = new System.Drawing.Point(184, 222);
+            this.cb_MaKhoa.Name = "cb_MaKhoa";
+            this.cb_MaKhoa.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cb_Ma_Khoa.Size = new System.Drawing.Size(193, 20);
-            this.cb_Ma_Khoa.TabIndex = 2;
+            this.cb_MaKhoa.Size = new System.Drawing.Size(193, 20);
+            this.cb_MaKhoa.TabIndex = 2;
             // 
             // labelControl8
             // 
@@ -345,8 +345,8 @@
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dt_NgaySinh.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dt_NgaySinh.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cb_MaHV.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cb_Ma_Khoa.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cb_MaHocVi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cb_MaKhoa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_CMND.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_DiaChi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_HoTen.Properties)).EndInit();
@@ -382,8 +382,8 @@
         private System.Windows.Forms.RadioButton rb_GTNu;
         private System.Windows.Forms.RadioButton rb_GTNam;
         private DevExpress.XtraEditors.DateEdit dt_NgaySinh;
-        private DevExpress.XtraEditors.ComboBoxEdit cb_MaHV;
-        private DevExpress.XtraEditors.ComboBoxEdit cb_Ma_Khoa;
+        private DevExpress.XtraEditors.ComboBoxEdit cb_MaHocVi;
+        private DevExpress.XtraEditors.ComboBoxEdit cb_MaKhoa;
         private System.Windows.Forms.DataGridView dg_DanhSachGV;
     }
 }

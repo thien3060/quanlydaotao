@@ -31,7 +31,7 @@ namespace BUS
 
         public string TuTinhMa()
         {
-            string s = gv.LayMaKhoaLonNhat();
+            string s = gv.LayMaGiaoVienLonNhat();
             string maMoi;
             if (s == null)
             {

@@ -174,7 +174,7 @@
             this.tb_SucChua.Name = "tb_SucChua";
             this.tb_SucChua.Size = new System.Drawing.Size(193, 20);
             this.tb_SucChua.TabIndex = 0;
-            this.tb_SucChua.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_CMND_KeyPress);
+            this.tb_SucChua.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_SucChua_KeyPress);
             // 
             // tb_DiaChi
             // 

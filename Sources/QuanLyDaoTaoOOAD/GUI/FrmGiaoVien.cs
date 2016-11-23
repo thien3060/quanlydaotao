@@ -28,8 +28,8 @@ namespace QuanLyDaoTao
             tb_HoTen.Enabled = false;
             rb_GTNam.Enabled = false;
             rb_GTNu.Enabled = false;
-            cb_Ma_Khoa.Enabled = false;
-            cb_MaHV.Enabled = false;
+            cb_MaKhoa.Enabled = false;
+            cb_MaHocVi.Enabled = false;
             dt_NgaySinh.Enabled = false;
         }
 
@@ -41,8 +41,8 @@ namespace QuanLyDaoTao
             tb_HoTen.Enabled = true;
             rb_GTNam.Enabled = true;
             rb_GTNu.Enabled = true;
-            cb_Ma_Khoa.Enabled = true;
-            cb_MaHV.Enabled = true;
+            cb_MaKhoa.Enabled = true;
+            cb_MaHocVi.Enabled = true;
             dt_NgaySinh.Enabled = true;
         }
 
@@ -68,17 +68,19 @@ namespace QuanLyDaoTao
             dg_DanhSachGV.DataSource = bus_gv.TaobangGiaoVien("");
             khoaInput();
 
-            foreach (DataRow khoa in bus_khoa.TaobangKhoa("").Rows)
+            foreach (DataRow datarow in bus_khoa.TaobangKhoa("").Rows)
             {
-                cb_Ma_Khoa.Properties.Items.Add(khoa[0]);
+                cb_MaKhoa.Properties.Items.Add(datarow[0]);
             }
 
-            foreach (DataRow hocvi in bus_hocvi.TaobangHocVi("").Rows)
+            foreach (DataRow datarow in bus_hocvi.TaobangHocVi("").Rows)
             {
-                cb_MaHV.Properties.Items.Add(hocvi[0]);
+                cb_MaHocVi.Properties.Items.Add(datarow[0]);
             }
 
             bt_Luu.Enabled = false;
+            bt_Sua.Enabled = false;
+            bt_Xoa.Enabled = false;
 
             //tb_MaGV.Text = dg_DanhSachGV.Rows[0].Cells[0].Value.ToString();
             //tb_HoTen.Text = dg_DanhSachGV.Rows[0].Cells[1].Value.ToString();
@@ -185,19 +187,19 @@ namespace QuanLyDaoTao
         {
             try
             {
-                tb_MaGV.Text = dg_DanhSachGV.Rows[0].Cells[0].Value.ToString();
-                tb_HoTen.Text = dg_DanhSachGV.Rows[0].Cells[1].Value.ToString();
-                dt_NgaySinh.Text = dg_DanhSachGV.Rows[0].Cells[2].Value.ToString();
-                tb_DiaChi.Text = dg_DanhSachGV.Rows[0].Cells[3].Value.ToString();
-                tb_CMND.Text = dg_DanhSachGV.Rows[0].Cells[5].Value.ToString();
+                tb_MaGV.Text = dg_DanhSachGV.CurrentRow.Cells[0].Value.ToString();
+                tb_HoTen.Text = dg_DanhSachGV.CurrentRow.Cells[1].Value.ToString();
+                dt_NgaySinh.Text = dg_DanhSachGV.CurrentRow.Cells[2].Value.ToString();
+                tb_DiaChi.Text = dg_DanhSachGV.CurrentRow.Cells[3].Value.ToString();
+                tb_CMND.Text = dg_DanhSachGV.CurrentRow.Cells[5].Value.ToString();
 
-                if (Int32.Parse(dg_DanhSachGV.Rows[0].Cells[4].Value.ToString()) == 1)
+                if (Int32.Parse(dg_DanhSachGV.CurrentRow.Cells[4].Value.ToString()) == 1)
                     rb_GTNam.Checked = true;
                 else
                     rb_GTNu.Checked = true;
 
-                cb_Ma_Khoa.Text = dg_DanhSachGV.Rows[e.RowIndex].Cells[6].Value.ToString();
-                cb_MaHV.Text = dg_DanhSachGV.Rows[e.RowIndex].Cells[7].Value.ToString();
+                cb_MaKhoa.Text = dg_DanhSachGV.CurrentRow.Cells[6].Value.ToString();
+                cb_MaHocVi.Text = dg_DanhSachGV.CurrentRow.Cells[7].Value.ToString();
 
                 bt_Sua.Enabled = true;
                 bt_Xoa.Enabled = true;

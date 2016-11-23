@@ -11,6 +11,8 @@ namespace DTO
         public string MaCV { get; set; }
         public string TenCV { get; set; }
 
+        public DTO_ChucVu() { }
+
         public DTO_ChucVu(string maCv, string tenCv)
         {
             MaCV = maCv;

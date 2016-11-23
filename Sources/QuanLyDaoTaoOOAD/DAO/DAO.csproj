@@ -44,7 +44,21 @@
   <ItemGroup>
     <Compile Include="Connection.cs" />
     <Compile Include="DAO_BuoiHoc.cs" />
+    <Compile Include="DAO_KHDT.cs" />
+    <Compile Include="DAO_GiangDay.cs" />
+    <Compile Include="DAO_HocPhan.cs" />
+    <Compile Include="DAO_HeDT.cs" />
+    <Compile Include="DAO_ChucVu.cs" />
+    <Compile Include="DAO_NamHoc.cs" />
+    <Compile Include="DAO_HocKy.cs" />
+    <Compile Include="DAO_DamNhiem.cs" />
+    <Compile Include="DAO_NhomHP.cs" />
+    <Compile Include="DAO_GVCN.cs" />
+    <Compile Include="DAO_ThoiKhoaBieu.cs" />
+    <Compile Include="DAO_TDDT.cs" />
+    <Compile Include="DAO_KhoiLop.cs" />
     <Compile Include="DAO_HocVi.cs" />
+    <Compile Include="DAO_NhomLop.cs" />
     <Compile Include="DAO_Nganh.cs" />
     <Compile Include="DAO_PhongHoc.cs" />
     <Compile Include="DAO_Khoa.cs" />
