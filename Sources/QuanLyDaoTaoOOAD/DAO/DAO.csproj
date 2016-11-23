@@ -46,6 +46,7 @@
     <Compile Include="DAO_BuoiHoc.cs" />
     <Compile Include="DAO_HocVi.cs" />
     <Compile Include="DAO_Nganh.cs" />
+    <Compile Include="DAO_NhomLop.cs" />
     <Compile Include="DAO_PhongHoc.cs" />
     <Compile Include="DAO_Khoa.cs" />
     <Compile Include="DAO_GiaoVien.cs" />
