@@ -144,3 +144,4 @@ D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTa
 D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmNganh.resources
 D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmPhongHoc.resources
 D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmKhoa.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.ChuongTrinhDaoTao.resources

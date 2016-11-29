@@ -49,6 +49,18 @@ namespace QuanLyDaoTao
         {
             dg_DanhSachNganh.DataSource = bus_ngh.TaobangNganh("");
             khoaInput();
+            this.lookUpEdit1.Properties.DataSource = bus_khoa.TaobangKhoa("");
+            this.lookUpEdit1.Properties.DisplayMember = "TenKhoa";
+            this.lookUpEdit1.Properties.ValueMember = "MaKhoa";
+
+            DevExpress.XtraEditors.Controls.LookUpColumnInfo col;
+
+            col = new DevExpress.XtraEditors.Controls.LookUpColumnInfo("TenKhoa", "MaKhoa", 10);
+
+            col.SortOrder = DevExpress.Data.ColumnSortOrder.Ascending;
+
+            this.lookUpEdit1.Properties.Columns.Add(col);
+
             foreach (DataRow datarow in bus_khoa.TaobangKhoa("").Rows)
             {
                 cb_MaKhoa.Properties.Items.Add(datarow[0]);

@@ -52,6 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChuongTrinhDaoTao.cs" />
+    <Compile Include="ChuongTrinhDaoTao.Designer.cs">
+      <DependentUpon>ChuongTrinhDaoTao.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmThoiKhoaBieu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +190,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChuongTrinhDaoTao.resx">
+      <DependentUpon>ChuongTrinhDaoTao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmThoiKhoaBieu.resx">
       <DependentUpon>FrmThoiKhoaBieu.cs</DependentUpon>
     </EmbeddedResource>

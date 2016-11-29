@@ -158,6 +158,7 @@
             this.bt_QLDamNhiem = new DevExpress.XtraBars.BarButtonItem();
             this.bt_QLGiangDay = new DevExpress.XtraBars.BarButtonItem();
             this.bt_QLTKB = new DevExpress.XtraBars.BarButtonItem();
+            this.bt_gvcn = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -204,7 +205,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.bt_gvcn = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl4)).BeginInit();
@@ -865,7 +865,7 @@
             // 
             // barButtonItem9
             // 
-            this.barButtonItem9.Caption = "barButtonItem9";
+            this.barButtonItem9.Caption = "Chương trình đào tạo";
             this.barButtonItem9.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.Glyph")));
             this.barButtonItem9.Id = 9;
             this.barButtonItem9.Name = "barButtonItem9";
@@ -1250,6 +1250,13 @@
             this.bt_QLTKB.Name = "bt_QLTKB";
             this.bt_QLTKB.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bt_QLTKB_ItemClick);
             // 
+            // bt_gvcn
+            // 
+            this.bt_gvcn.Caption = "Giáo viên chủ nhiệm";
+            this.bt_gvcn.Id = 53;
+            this.bt_gvcn.Name = "bt_gvcn";
+            this.bt_gvcn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bt_gvcn_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -1626,13 +1633,6 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(476, 25);
             this.label1.TabIndex = 2;
-            // 
-            // bt_gvcn
-            // 
-            this.bt_gvcn.Caption = "Giáo viên chủ nhiệm";
-            this.bt_gvcn.Id = 53;
-            this.bt_gvcn.Name = "bt_gvcn";
-            this.bt_gvcn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bt_gvcn_ItemClick);
             // 
             // FrmMain
             // 
