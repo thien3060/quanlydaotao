@@ -58,6 +58,18 @@ namespace QuanLyDaoTao
 
         #region Kế hoạch
 
+        private void bt_ChuongTrinhDaoTao_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form frm in this.MdiChildren)
+            {
+                frm.Close();
+            }
+            ChuongTrinhDaoTao ctdt = new ChuongTrinhDaoTao();
+            ctdt.Dock = DockStyle.Fill;
+            ctdt.MdiParent = this;
+            ctdt.Show();
+        }
+
         #endregion
 
         #region Mở lớp
@@ -349,11 +361,11 @@ namespace QuanLyDaoTao
             nguoidung.Show();
         }
 
+
+
         #endregion
 
         #region Hệ thống
-        #endregion
-
-        
+        #endregion     
     }
 }

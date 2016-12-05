@@ -44,6 +44,10 @@ namespace DAO
         {
             return Connection.GetDataTable("SELECT * FROM hocphan " + dieukien);
         }
+        public DataTable GetHocPhanByMaKHDT(String MaKHDT)
+        {
+            return Connection.GetDataTable("SELECT * FROM hocphan WHERE MaKHDT = '" + MaKHDT + "'");
+        }
         public string LayMaHocPhanLonNhat()
         {
             DataTable temp = Connection.GetDataTable("SELECT * FROM hocphan ORDER BY MaHP ASC");

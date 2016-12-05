@@ -41,6 +41,10 @@ namespace DAO
         {
             return Connection.GetDataTable("SELECT * FROM nganh " + dieukien);
         }
+        public DataTable GetByMaKhoa(DTO_Nganh nganh)
+        {
+            return Connection.GetDataTable("SELECT * FROM nganh WHERE MaKhoa = '" + nganh.MaKhoa + "'");
+        }
         public string LayMaNganhLonNhat()
         {
             DataTable temp = Connection.GetDataTable("SELECT * FROM nganh ORDER BY MaNganh ASC");

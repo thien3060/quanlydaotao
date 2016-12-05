@@ -30,6 +30,7 @@
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.bt_Xoa = new DevExpress.XtraEditors.SimpleButton();
             this.bt_Luu = new DevExpress.XtraEditors.SimpleButton();
             this.bt_Sua = new DevExpress.XtraEditors.SimpleButton();
             this.bt_Them = new DevExpress.XtraEditors.SimpleButton();
@@ -41,8 +42,6 @@
             this.tb_MaNganh = new DevExpress.XtraEditors.TextEdit();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.dg_DanhSachNganh = new System.Windows.Forms.DataGridView();
-            this.bt_Xoa = new DevExpress.XtraEditors.SimpleButton();
-            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -55,7 +54,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dg_DanhSachNganh)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -81,7 +79,6 @@
             this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupControl1.Controls.Add(this.lookUpEdit1);
             this.groupControl1.Controls.Add(this.bt_Xoa);
             this.groupControl1.Controls.Add(this.bt_Luu);
             this.groupControl1.Controls.Add(this.bt_Sua);
@@ -97,6 +94,15 @@
             this.groupControl1.Size = new System.Drawing.Size(798, 322);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Ngành";
+            // 
+            // bt_Xoa
+            // 
+            this.bt_Xoa.Location = new System.Drawing.Point(423, 276);
+            this.bt_Xoa.Name = "bt_Xoa";
+            this.bt_Xoa.Size = new System.Drawing.Size(75, 23);
+            this.bt_Xoa.TabIndex = 5;
+            this.bt_Xoa.Text = "Xoá";
+            this.bt_Xoa.Click += new System.EventHandler(this.bt_Xoa_Click);
             // 
             // bt_Luu
             // 
@@ -193,24 +199,6 @@
             this.dg_DanhSachNganh.TabIndex = 0;
             this.dg_DanhSachNganh.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_DanhSachGV_CellClick);
             // 
-            // bt_Xoa
-            // 
-            this.bt_Xoa.Location = new System.Drawing.Point(423, 276);
-            this.bt_Xoa.Name = "bt_Xoa";
-            this.bt_Xoa.Size = new System.Drawing.Size(75, 23);
-            this.bt_Xoa.TabIndex = 5;
-            this.bt_Xoa.Text = "Xoá";
-            this.bt_Xoa.Click += new System.EventHandler(this.bt_Xoa_Click);
-            // 
-            // lookUpEdit1
-            // 
-            this.lookUpEdit1.Location = new System.Drawing.Point(493, 156);
-            this.lookUpEdit1.Name = "lookUpEdit1";
-            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit1.Size = new System.Drawing.Size(100, 20);
-            this.lookUpEdit1.TabIndex = 6;
-            // 
             // FrmNganh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -236,7 +224,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dg_DanhSachNganh)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -257,6 +244,5 @@
         private DevExpress.XtraEditors.ComboBoxEdit cb_MaKhoa;
         private System.Windows.Forms.DataGridView dg_DanhSachNganh;
         private DevExpress.XtraEditors.SimpleButton bt_Xoa;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
     }
 }

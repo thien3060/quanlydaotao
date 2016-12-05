@@ -43,6 +43,10 @@ namespace DAO
         {
             return Connection.GetDataTable("SELECT * FROM khdt " + dieukien);
         }
+        public DataTable GetKHDT(DTO_KHDT khdt)
+        {
+            return Connection.GetDataTable("SELECT * FROM khdt WHERE MaTD = '" + khdt.MaTD + "' AND MaHDT = '" + khdt.MaHDT + "' AND MaNganh = '" + khdt.MaNganh + "'");
+        }
         public string LayMaKHDTLonNhat()
         {
             DataTable temp = Connection.GetDataTable("SELECT * FROM khdt ORDER BY MaKHDT ASC");

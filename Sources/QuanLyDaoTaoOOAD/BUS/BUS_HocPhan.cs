@@ -16,6 +16,10 @@ namespace BUS
         {
             return hocphan.TaobangHocPhan(dieukien);
         }
+        public DataTable GetHocPhanByMaKHDT(String MaKHDT)
+        {
+            return hocphan.GetHocPhanByMaKHDT(MaKHDT);
+        }
         public void ThemdulieuHocPhan(DTO_HocPhan et)
         {
             hocphan.ThemHocPhan(et);

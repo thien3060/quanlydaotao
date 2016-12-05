@@ -16,6 +16,10 @@ namespace BUS
         {
             return nganh.TaobangNganh(dieukien);
         }
+        public DataTable GetByMaKhoa(DTO_Nganh et)
+        {
+            return nganh.GetByMaKhoa(et);
+        }
         public void ThemdulieuNganh(DTO_Nganh et)
         {
             nganh.ThemNganh(et);

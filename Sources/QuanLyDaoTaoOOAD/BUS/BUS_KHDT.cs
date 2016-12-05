@@ -16,6 +16,10 @@ namespace BUS
         {
             return khdt.TaobangKHDT(dieukien);
         }
+        public DataTable GetKHDT(DTO_KHDT et)
+        {
+            return khdt.GetKHDT(et);
+        }
         public void ThemdulieuKHDT(DTO_KHDT et)
         {
             khdt.ThemKHDT(et);
