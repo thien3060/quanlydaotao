@@ -4,6 +4,7 @@ using System.Linq;
 using System.Windows.Forms;
 using DevExpress.UserSkins;
 using DevExpress.Skins;
+using QuanLyDaoTao.Presentation;
 
 namespace QuanLyDaoTao
 {
@@ -20,7 +21,7 @@ namespace QuanLyDaoTao
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            Application.Run(new FrmMain());
+            Application.Run(new frmChinh());
         }
     }
 }

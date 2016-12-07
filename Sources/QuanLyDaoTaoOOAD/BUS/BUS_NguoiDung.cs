@@ -28,6 +28,10 @@ namespace BUS
         {
             nguoidung.XoaNguoiDung(et);
         }
+        public bool KiemTraTenDangNhap(string TenDangNhap)
+        {
+            return nguoidung.KiemTraTonTai(TenDangNhap);
+        }
 
         public string TuTinhMa()
         {

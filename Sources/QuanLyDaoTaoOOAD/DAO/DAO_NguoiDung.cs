@@ -63,5 +63,14 @@ namespace DAO
         {
             return Connection.GetDataTable("SELECT TenDN, MatKhau, Quyen from nguoidung where TenDN = '" + nguoiDung.TenDN + "' and MatKhau = '" + nguoiDung.MatKhau + "'");
         }
+
+        public bool KiemTraTonTai(string TenDangNhap)
+        {
+            DataTable temp = Connection.GetDataTable("SELECT TenDN from nguoidung where TenDN = '" + TenDangNhap + "'");
+            if (temp.Rows.Count != 0)
+                return true;
+            else
+                return false;
+        }
     }
 }

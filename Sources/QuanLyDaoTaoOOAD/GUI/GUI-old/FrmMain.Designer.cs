@@ -28,18 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
-            DevExpress.Utils.SuperToolTip superToolTip17 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem17 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip18 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem18 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip19 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem5 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem19 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip20 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem20 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.Animation.PushTransition pushTransition1 = new DevExpress.Utils.Animation.PushTransition();
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem2 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem3 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip4 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem4 = new DevExpress.Utils.ToolTipItem();
             this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
             this.backstageViewControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
             this.backstageViewControl3 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
@@ -136,7 +134,6 @@
             this.bt_QLKHDT = new DevExpress.XtraBars.BarButtonItem();
             this.barDockingMenuItem1 = new DevExpress.XtraBars.BarDockingMenuItem();
             this.barWorkspaceMenuItem1 = new DevExpress.XtraBars.BarWorkspaceMenuItem();
-            this.workspaceManager1 = new DevExpress.Utils.WorkspaceManager();
             this.barButtonItem38 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem39 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem40 = new DevExpress.XtraBars.BarButtonItem();
@@ -167,6 +164,7 @@
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup22 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -204,8 +202,6 @@
             this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.ribbonPageGroup22 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl4)).BeginInit();
@@ -240,7 +236,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // barButtonItem15
@@ -790,9 +785,9 @@
             this.barButtonItem1.Id = 1;
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            toolTipItem17.Text = "Tìm kiếm nhanh một sinh viên, giảng viên";
-            superToolTip17.Items.Add(toolTipItem17);
-            this.barButtonItem1.SuperTip = superToolTip17;
+            toolTipItem1.Text = "Tìm kiếm nhanh một sinh viên, giảng viên";
+            superToolTip1.Items.Add(toolTipItem1);
+            this.barButtonItem1.SuperTip = superToolTip1;
             // 
             // bt_QLSV
             // 
@@ -815,9 +810,9 @@
             this.barButtonItem4.Id = 4;
             this.barButtonItem4.Name = "barButtonItem4";
             this.barButtonItem4.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            toolTipItem18.Text = "Tra cứu kết quả học tập, lịch học,..";
-            superToolTip18.Items.Add(toolTipItem18);
-            this.barButtonItem4.SuperTip = superToolTip18;
+            toolTipItem2.Text = "Tra cứu kết quả học tập, lịch học,..";
+            superToolTip2.Items.Add(toolTipItem2);
+            this.barButtonItem4.SuperTip = superToolTip2;
             // 
             // barButtonItem5
             // 
@@ -826,14 +821,14 @@
             this.barButtonItem5.Id = 5;
             this.barButtonItem5.Name = "barButtonItem5";
             this.barButtonItem5.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            toolTipTitleItem5.Appearance.Options.UseImage = true;
-            toolTipTitleItem5.Text = "Lập báo cáo mơi";
-            toolTipItem19.Appearance.Options.UseImage = true;
-            toolTipItem19.LeftIndent = 6;
-            toolTipItem19.Text = "Chỉnh sử báo cáo";
-            superToolTip19.Items.Add(toolTipTitleItem5);
-            superToolTip19.Items.Add(toolTipItem19);
-            this.barButtonItem5.SuperTip = superToolTip19;
+            toolTipTitleItem1.Appearance.Options.UseImage = true;
+            toolTipTitleItem1.Text = "Lập báo cáo mơi";
+            toolTipItem3.Appearance.Options.UseImage = true;
+            toolTipItem3.LeftIndent = 6;
+            toolTipItem3.Text = "Chỉnh sử báo cáo";
+            superToolTip3.Items.Add(toolTipTitleItem1);
+            superToolTip3.Items.Add(toolTipItem3);
+            this.barButtonItem5.SuperTip = superToolTip3;
             // 
             // barButtonItem6
             // 
@@ -860,9 +855,9 @@
             this.barButtonItem8.Id = 8;
             this.barButtonItem8.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.LargeGlyph")));
             this.barButtonItem8.Name = "barButtonItem8";
-            toolTipItem20.Text = "Cho phép lập các báo cáo cần thiết";
-            superToolTip20.Items.Add(toolTipItem20);
-            this.barButtonItem8.SuperTip = superToolTip20;
+            toolTipItem4.Text = "Cho phép lập các báo cáo cần thiết";
+            superToolTip4.Items.Add(toolTipItem4);
+            this.barButtonItem8.SuperTip = superToolTip4;
             // 
             // bt_ChuongTrinhDaoTao
             // 
@@ -1105,12 +1100,6 @@
             this.barWorkspaceMenuItem1.Caption = "barWorkspaceMenuItem1";
             this.barWorkspaceMenuItem1.Id = 31;
             this.barWorkspaceMenuItem1.Name = "barWorkspaceMenuItem1";
-            this.barWorkspaceMenuItem1.WorkspaceManager = this.workspaceManager1;
-            // 
-            // workspaceManager1
-            // 
-            this.workspaceManager1.TargetControl = this;
-            this.workspaceManager1.TransitionType = pushTransition1;
             // 
             // barButtonItem38
             // 
@@ -1331,6 +1320,11 @@
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.ShowCaptionButton = false;
             this.ribbonPageGroup5.Text = "Lập báo cáo liên quan";
+            // 
+            // ribbonPageGroup22
+            // 
+            this.ribbonPageGroup22.Name = "ribbonPageGroup22";
+            this.ribbonPageGroup22.Text = "Kế hoạch giảng dạy";
             // 
             // ribbonPage3
             // 
@@ -1637,11 +1631,6 @@
             this.label1.Size = new System.Drawing.Size(476, 25);
             this.label1.TabIndex = 2;
             // 
-            // ribbonPageGroup22
-            // 
-            this.ribbonPageGroup22.Name = "ribbonPageGroup22";
-            this.ribbonPageGroup22.Text = "Kế hoạch giảng dạy";
-            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1693,7 +1682,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1825,7 +1813,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl15;
         private DevExpress.XtraEditors.LabelControl labelControl16;
         private DevExpress.XtraEditors.TextEdit tb_TenTaiKhoan;
-        private System.Windows.Forms.BindingSource bindingSource1;
         private DevExpress.XtraBars.Ribbon.BackstageViewControl backstageViewControl6;
         private DevExpress.XtraBars.Ribbon.BackstageViewControl backstageViewControl7;
         private DevExpress.XtraBars.Ribbon.BackstageViewControl backstageViewControl9;
@@ -1842,7 +1829,6 @@
         private DevExpress.XtraBars.BarButtonItem bt_QLKHDT;
         private DevExpress.XtraBars.BarDockingMenuItem barDockingMenuItem1;
         private DevExpress.XtraBars.BarWorkspaceMenuItem barWorkspaceMenuItem1;
-        private DevExpress.Utils.WorkspaceManager workspaceManager1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem38;
         private DevExpress.XtraBars.BarButtonItem barButtonItem39;
         private DevExpress.XtraBars.BarButtonItem barButtonItem40;
