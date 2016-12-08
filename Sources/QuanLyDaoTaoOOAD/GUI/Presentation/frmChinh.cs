@@ -39,6 +39,7 @@ namespace QuanLyDaoTao.Presentation
                 TabPage.AutoScroll = true;
                 //TabPage.AutoScrollMargin = new Size(20, 20);
                 TabPage.AutoScrollMinSize = new Size(TabPage.Width, TabPage.Height);
+                
 
                 frm.TopLevel = false;
                 frm.Parent = TabPage;

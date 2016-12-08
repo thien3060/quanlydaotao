@@ -28,25 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.Utils.SuperToolTip superToolTip58 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem73 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem58 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem16 = new DevExpress.Utils.ToolTipSeparatorItem();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem74 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip54 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem68 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem54 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip59 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem69 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem59 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip60 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem75 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem60 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem15 = new DevExpress.Utils.ToolTipSeparatorItem();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem76 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip61 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem77 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem61 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip18 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem23 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem18 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem6 = new DevExpress.Utils.ToolTipSeparatorItem();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem24 = new DevExpress.Utils.ToolTipTitleItem();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChinh));
+            DevExpress.Utils.SuperToolTip superToolTip14 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem18 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem14 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip19 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem19 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem19 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip20 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem25 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem20 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem5 = new DevExpress.Utils.ToolTipSeparatorItem();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem26 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip21 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem27 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem21 = new DevExpress.Utils.ToolTipItem();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.lblQuyen = new DevExpress.XtraBars.BarStaticItem();
             this.lblTen = new DevExpress.XtraBars.BarStaticItem();
@@ -278,48 +279,50 @@
             this.rgbiSkins.Hint = "Chọn để thay đổi giao diện chương trình";
             this.rgbiSkins.Id = 60;
             this.rgbiSkins.Name = "rgbiSkins";
-            toolTipTitleItem73.Appearance.Options.UseImage = true;
-            toolTipTitleItem73.Text = "Giao diện";
-            toolTipItem58.LeftIndent = 6;
-            toolTipItem58.Text = "Chọn để thay đổi giao diện chương trình.";
-            toolTipTitleItem74.LeftIndent = 6;
-            toolTipTitleItem74.Text = "ViEvents_CRM";
-            superToolTip58.Items.Add(toolTipTitleItem73);
-            superToolTip58.Items.Add(toolTipItem58);
-            superToolTip58.Items.Add(toolTipSeparatorItem16);
-            superToolTip58.Items.Add(toolTipTitleItem74);
-            this.rgbiSkins.SuperTip = superToolTip58;
+            toolTipTitleItem23.Appearance.Options.UseImage = true;
+            toolTipTitleItem23.Text = "Giao diện";
+            toolTipItem18.LeftIndent = 6;
+            toolTipItem18.Text = "Chọn để thay đổi giao diện chương trình.";
+            toolTipTitleItem24.LeftIndent = 6;
+            toolTipTitleItem24.Text = "ViEvents_CRM";
+            superToolTip18.Items.Add(toolTipTitleItem23);
+            superToolTip18.Items.Add(toolTipItem18);
+            superToolTip18.Items.Add(toolTipSeparatorItem6);
+            superToolTip18.Items.Add(toolTipTitleItem24);
+            this.rgbiSkins.SuperTip = superToolTip18;
             // 
             // btnDangNhap
             // 
             this.btnDangNhap.Caption = "Đăng nhập";
             this.btnDangNhap.Description = "Nhấn vào đây để đăng nhập hệ thống";
+            this.btnDangNhap.Glyph = ((System.Drawing.Image)(resources.GetObject("btnDangNhap.Glyph")));
             this.btnDangNhap.Hint = "Nhấn vào đây để đăng nhập hệ thống";
             this.btnDangNhap.Id = 64;
             this.btnDangNhap.ImageIndex = 39;
             this.btnDangNhap.LargeImageIndex = 9;
             this.btnDangNhap.Name = "btnDangNhap";
-            toolTipTitleItem68.Text = "Người dùng";
-            toolTipItem54.LeftIndent = 6;
-            toolTipItem54.Text = "Nhấn vào đây để đăng nhập hệ thống";
-            superToolTip54.Items.Add(toolTipTitleItem68);
-            superToolTip54.Items.Add(toolTipItem54);
-            this.btnDangNhap.SuperTip = superToolTip54;
+            toolTipTitleItem18.Text = "Người dùng";
+            toolTipItem14.LeftIndent = 6;
+            toolTipItem14.Text = "Nhấn vào đây để đăng nhập hệ thống";
+            superToolTip14.Items.Add(toolTipTitleItem18);
+            superToolTip14.Items.Add(toolTipItem14);
+            this.btnDangNhap.SuperTip = superToolTip14;
             this.btnDangNhap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangNhap_ItemClick);
             // 
             // btnDangXuat
             // 
             this.btnDangXuat.Caption = "Đăng xuất";
             this.btnDangXuat.Enabled = false;
+            this.btnDangXuat.Glyph = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.Glyph")));
             this.btnDangXuat.Id = 65;
             this.btnDangXuat.ImageIndex = 20;
             this.btnDangXuat.Name = "btnDangXuat";
-            toolTipTitleItem69.Text = "Người dùng";
-            toolTipItem59.LeftIndent = 6;
-            toolTipItem59.Text = "Nhấn vào đây để đăng xuất hệ thống.";
-            superToolTip59.Items.Add(toolTipTitleItem69);
-            superToolTip59.Items.Add(toolTipItem59);
-            this.btnDangXuat.SuperTip = superToolTip59;
+            toolTipTitleItem19.Text = "Người dùng";
+            toolTipItem19.LeftIndent = 6;
+            toolTipItem19.Text = "Nhấn vào đây để đăng xuất hệ thống.";
+            superToolTip19.Items.Add(toolTipTitleItem19);
+            superToolTip19.Items.Add(toolTipItem19);
+            this.btnDangXuat.SuperTip = superToolTip19;
             // 
             // btnDoiMatKhau
             // 
@@ -330,36 +333,38 @@
             this.btnDoiMatKhau.Id = 66;
             this.btnDoiMatKhau.ImageIndex = 19;
             this.btnDoiMatKhau.Name = "btnDoiMatKhau";
-            toolTipTitleItem75.Appearance.Options.UseImage = true;
-            toolTipTitleItem75.Text = "Người dùng";
-            toolTipItem60.LeftIndent = 6;
-            toolTipItem60.Text = "Nhấn vào đây để đổi mật khẩu.";
-            toolTipTitleItem76.LeftIndent = 6;
-            toolTipTitleItem76.Text = "ViEvents_CRM";
-            superToolTip60.Items.Add(toolTipTitleItem75);
-            superToolTip60.Items.Add(toolTipItem60);
-            superToolTip60.Items.Add(toolTipSeparatorItem15);
-            superToolTip60.Items.Add(toolTipTitleItem76);
-            this.btnDoiMatKhau.SuperTip = superToolTip60;
+            toolTipTitleItem25.Appearance.Options.UseImage = true;
+            toolTipTitleItem25.Text = "Người dùng";
+            toolTipItem20.LeftIndent = 6;
+            toolTipItem20.Text = "Nhấn vào đây để đổi mật khẩu.";
+            toolTipTitleItem26.LeftIndent = 6;
+            toolTipTitleItem26.Text = "ViEvents_CRM";
+            superToolTip20.Items.Add(toolTipTitleItem25);
+            superToolTip20.Items.Add(toolTipItem20);
+            superToolTip20.Items.Add(toolTipSeparatorItem5);
+            superToolTip20.Items.Add(toolTipTitleItem26);
+            this.btnDoiMatKhau.SuperTip = superToolTip20;
             // 
             // btnThongTin
             // 
             this.btnThongTin.Caption = "Thông tin người dùng";
             this.btnThongTin.Enabled = false;
+            this.btnThongTin.Glyph = ((System.Drawing.Image)(resources.GetObject("btnThongTin.Glyph")));
             this.btnThongTin.Id = 67;
             this.btnThongTin.LargeImageIndex = 10;
             this.btnThongTin.Name = "btnThongTin";
-            toolTipTitleItem77.Text = "Người dùng";
-            toolTipItem61.LeftIndent = 6;
-            toolTipItem61.Text = "Nhấn vào đây để xem thông tin người dùng hệ thống hiện tại.";
-            superToolTip61.Items.Add(toolTipTitleItem77);
-            superToolTip61.Items.Add(toolTipItem61);
-            this.btnThongTin.SuperTip = superToolTip61;
+            toolTipTitleItem27.Text = "Người dùng";
+            toolTipItem21.LeftIndent = 6;
+            toolTipItem21.Text = "Nhấn vào đây để xem thông tin người dùng hệ thống hiện tại.";
+            superToolTip21.Items.Add(toolTipTitleItem27);
+            superToolTip21.Items.Add(toolTipItem21);
+            this.btnThongTin.SuperTip = superToolTip21;
             this.btnThongTin.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThongTin_ItemClick);
             // 
             // btnSuaSV
             // 
             this.btnSuaSV.Caption = "Cập nhật thông tin";
+            this.btnSuaSV.Glyph = ((System.Drawing.Image)(resources.GetObject("btnSuaSV.Glyph")));
             this.btnSuaSV.Id = 72;
             this.btnSuaSV.ImageIndex = 43;
             this.btnSuaSV.LargeImageIndex = 12;
@@ -368,6 +373,7 @@
             // btnThongTinSV
             // 
             this.btnThongTinSV.Caption = "Xem thông tin";
+            this.btnThongTinSV.Glyph = ((System.Drawing.Image)(resources.GetObject("btnThongTinSV.Glyph")));
             this.btnThongTinSV.Id = 73;
             this.btnThongTinSV.LargeImageIndex = 14;
             this.btnThongTinSV.Name = "btnThongTinSV";
@@ -413,7 +419,9 @@
             // btnNguoiDung
             // 
             this.btnNguoiDung.Caption = "Quản lý người dùng";
+            this.btnNguoiDung.Glyph = ((System.Drawing.Image)(resources.GetObject("btnNguoiDung.Glyph")));
             this.btnNguoiDung.Id = 115;
+            this.btnNguoiDung.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnNguoiDung.LargeGlyph")));
             this.btnNguoiDung.LargeImageIndex = 10;
             this.btnNguoiDung.Name = "btnNguoiDung";
             this.btnNguoiDung.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNguoiDung_ItemClick);
@@ -421,15 +429,19 @@
             // btnThemNguoiDung
             // 
             this.btnThemNguoiDung.Caption = "Thêm người dùng";
+            this.btnThemNguoiDung.Glyph = ((System.Drawing.Image)(resources.GetObject("btnThemNguoiDung.Glyph")));
             this.btnThemNguoiDung.Id = 116;
             this.btnThemNguoiDung.ImageIndex = 15;
+            this.btnThemNguoiDung.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnThemNguoiDung.LargeGlyph")));
             this.btnThemNguoiDung.Name = "btnThemNguoiDung";
             // 
             // btnXoaNguoiDung
             // 
             this.btnXoaNguoiDung.Caption = "Xóa người dùng";
+            this.btnXoaNguoiDung.Glyph = ((System.Drawing.Image)(resources.GetObject("btnXoaNguoiDung.Glyph")));
             this.btnXoaNguoiDung.Id = 117;
             this.btnXoaNguoiDung.ImageIndex = 23;
+            this.btnXoaNguoiDung.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnXoaNguoiDung.LargeGlyph")));
             this.btnXoaNguoiDung.Name = "btnXoaNguoiDung";
             // 
             // btnCauHinhCSDL
@@ -477,8 +489,10 @@
             // btnHuongDan
             // 
             this.btnHuongDan.Caption = "Hướng dẫn sử dụng";
+            this.btnHuongDan.Glyph = ((System.Drawing.Image)(resources.GetObject("btnHuongDan.Glyph")));
             this.btnHuongDan.Id = 124;
             this.btnHuongDan.ImageIndex = 8;
+            this.btnHuongDan.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnHuongDan.LargeGlyph")));
             this.btnHuongDan.LargeImageIndex = 41;
             this.btnHuongDan.Name = "btnHuongDan";
             this.btnHuongDan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHuongDan_ItemClick);
@@ -486,7 +500,9 @@
             // btnThongTinChuongTrinh
             // 
             this.btnThongTinChuongTrinh.Caption = "Thông tin chương trình";
+            this.btnThongTinChuongTrinh.Glyph = ((System.Drawing.Image)(resources.GetObject("btnThongTinChuongTrinh.Glyph")));
             this.btnThongTinChuongTrinh.Id = 125;
+            this.btnThongTinChuongTrinh.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnThongTinChuongTrinh.LargeGlyph")));
             this.btnThongTinChuongTrinh.LargeImageIndex = 42;
             this.btnThongTinChuongTrinh.Name = "btnThongTinChuongTrinh";
             this.btnThongTinChuongTrinh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThongTinChuongTrinh_ItemClick);
@@ -494,7 +510,9 @@
             // btnThongTinTacGia
             // 
             this.btnThongTinTacGia.Caption = "Thông tin tác giả";
+            this.btnThongTinTacGia.Glyph = ((System.Drawing.Image)(resources.GetObject("btnThongTinTacGia.Glyph")));
             this.btnThongTinTacGia.Id = 126;
+            this.btnThongTinTacGia.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnThongTinTacGia.LargeGlyph")));
             this.btnThongTinTacGia.LargeImageIndex = 43;
             this.btnThongTinTacGia.Name = "btnThongTinTacGia";
             this.btnThongTinTacGia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThongTinTacGia_ItemClick);
@@ -519,6 +537,7 @@
             this.btnThoat.Caption = "Thoát chương trình";
             this.btnThoat.Id = 131;
             this.btnThoat.ImageIndex = 6;
+            this.btnThoat.ImageUri.Uri = "Close";
             this.btnThoat.LargeImageIndex = 6;
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThoat_ItemClick);
@@ -526,8 +545,10 @@
             // btnXemTKBSV
             // 
             this.btnXemTKBSV.Caption = "Xem thời khóa biểu tuần";
+            this.btnXemTKBSV.Glyph = ((System.Drawing.Image)(resources.GetObject("btnXemTKBSV.Glyph")));
             this.btnXemTKBSV.Id = 138;
             this.btnXemTKBSV.ImageIndex = 41;
+            this.btnXemTKBSV.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnXemTKBSV.LargeGlyph")));
             this.btnXemTKBSV.LargeImageIndex = 17;
             this.btnXemTKBSV.Name = "btnXemTKBSV";
             this.btnXemTKBSV.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnXemTKBSV_ItemClick);
@@ -535,13 +556,16 @@
             // btnXemTKBThang
             // 
             this.btnXemTKBThang.Caption = "Xem TKB tháng";
+            this.btnXemTKBThang.Glyph = ((System.Drawing.Image)(resources.GetObject("btnXemTKBThang.Glyph")));
             this.btnXemTKBThang.Id = 139;
             this.btnXemTKBThang.ImageIndex = 41;
+            this.btnXemTKBThang.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnXemTKBThang.LargeGlyph")));
             this.btnXemTKBThang.Name = "btnXemTKBThang";
             // 
             // btnInTKBThang
             // 
             this.btnInTKBThang.Caption = "In TKB tháng";
+            this.btnInTKBThang.Glyph = ((System.Drawing.Image)(resources.GetObject("btnInTKBThang.Glyph")));
             this.btnInTKBThang.Id = 140;
             this.btnInTKBThang.ImageIndex = 46;
             this.btnInTKBThang.Name = "btnInTKBThang";
@@ -549,6 +573,7 @@
             // btnInTKBTuan
             // 
             this.btnInTKBTuan.Caption = "In TKB tuần";
+            this.btnInTKBTuan.Glyph = ((System.Drawing.Image)(resources.GetObject("btnInTKBTuan.Glyph")));
             this.btnInTKBTuan.Id = 141;
             this.btnInTKBTuan.ImageIndex = 46;
             this.btnInTKBTuan.Name = "btnInTKBTuan";
@@ -556,20 +581,25 @@
             // btnXemDSLop
             // 
             this.btnXemDSLop.Caption = "Danh sách lớp";
+            this.btnXemDSLop.Glyph = ((System.Drawing.Image)(resources.GetObject("btnXemDSLop.Glyph")));
             this.btnXemDSLop.Id = 142;
+            this.btnXemDSLop.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnXemDSLop.LargeGlyph")));
             this.btnXemDSLop.LargeImageIndex = 20;
             this.btnXemDSLop.Name = "btnXemDSLop";
             // 
             // btnInDSLop
             // 
             this.btnInDSLop.Caption = "In danh sách lớp";
+            this.btnInDSLop.Glyph = ((System.Drawing.Image)(resources.GetObject("btnInDSLop.Glyph")));
             this.btnInDSLop.Id = 143;
+            this.btnInDSLop.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnInDSLop.LargeGlyph")));
             this.btnInDSLop.LargeImageIndex = 48;
             this.btnInDSLop.Name = "btnInDSLop";
             // 
             // btnCapNhatGV
             // 
             this.btnCapNhatGV.Caption = "Cập nhật thông tin";
+            this.btnCapNhatGV.Glyph = ((System.Drawing.Image)(resources.GetObject("btnCapNhatGV.Glyph")));
             this.btnCapNhatGV.Id = 145;
             this.btnCapNhatGV.LargeImageIndex = 50;
             this.btnCapNhatGV.Name = "btnCapNhatGV";
@@ -577,6 +607,7 @@
             // btnThongTinGV
             // 
             this.btnThongTinGV.Caption = "Xem thông tin cá nhân";
+            this.btnThongTinGV.Glyph = ((System.Drawing.Image)(resources.GetObject("btnThongTinGV.Glyph")));
             this.btnThongTinGV.Id = 146;
             this.btnThongTinGV.LargeImageIndex = 14;
             this.btnThongTinGV.Name = "btnThongTinGV";
@@ -584,20 +615,25 @@
             // btnXemPC
             // 
             this.btnXemPC.Caption = "Phân công giảng dạy";
+            this.btnXemPC.Glyph = ((System.Drawing.Image)(resources.GetObject("btnXemPC.Glyph")));
             this.btnXemPC.Id = 147;
+            this.btnXemPC.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnXemPC.LargeGlyph")));
             this.btnXemPC.LargeImageIndex = 51;
             this.btnXemPC.Name = "btnXemPC";
             // 
             // btnInPC
             // 
             this.btnInPC.Caption = "In phân công giảng dạy";
+            this.btnInPC.Glyph = ((System.Drawing.Image)(resources.GetObject("btnInPC.Glyph")));
             this.btnInPC.Id = 148;
+            this.btnInPC.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnInPC.LargeGlyph")));
             this.btnInPC.LargeImageIndex = 48;
             this.btnInPC.Name = "btnInPC";
             // 
             // btnThemDeNghi
             // 
             this.btnThemDeNghi.Caption = "Đề nghị giảng dạy";
+            this.btnThemDeNghi.Glyph = ((System.Drawing.Image)(resources.GetObject("btnThemDeNghi.Glyph")));
             this.btnThemDeNghi.Id = 149;
             this.btnThemDeNghi.LargeImageIndex = 45;
             this.btnThemDeNghi.Name = "btnThemDeNghi";
@@ -606,6 +642,7 @@
             // btnXemDeNghi
             // 
             this.btnXemDeNghi.Caption = "Xem các đề nghị";
+            this.btnXemDeNghi.Glyph = ((System.Drawing.Image)(resources.GetObject("btnXemDeNghi.Glyph")));
             this.btnXemDeNghi.Id = 150;
             this.btnXemDeNghi.LargeImageIndex = 27;
             this.btnXemDeNghi.Name = "btnXemDeNghi";
@@ -613,20 +650,25 @@
             // btnXemTKBGV
             // 
             this.btnXemTKBGV.Caption = "Xem thời khóa biểu tuần";
+            this.btnXemTKBGV.Glyph = ((System.Drawing.Image)(resources.GetObject("btnXemTKBGV.Glyph")));
             this.btnXemTKBGV.Id = 151;
+            this.btnXemTKBGV.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnXemTKBGV.LargeGlyph")));
             this.btnXemTKBGV.LargeImageIndex = 17;
             this.btnXemTKBGV.Name = "btnXemTKBGV";
             // 
             // TKBThangGV
             // 
             this.TKBThangGV.Caption = "Xem TKB tháng";
+            this.TKBThangGV.Glyph = ((System.Drawing.Image)(resources.GetObject("TKBThangGV.Glyph")));
             this.TKBThangGV.Id = 152;
             this.TKBThangGV.ImageIndex = 41;
+            this.TKBThangGV.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("TKBThangGV.LargeGlyph")));
             this.TKBThangGV.Name = "TKBThangGV";
             // 
             // btnInTKBTuanGV
             // 
             this.btnInTKBTuanGV.Caption = "In TKB tuần";
+            this.btnInTKBTuanGV.Glyph = ((System.Drawing.Image)(resources.GetObject("btnInTKBTuanGV.Glyph")));
             this.btnInTKBTuanGV.Id = 153;
             this.btnInTKBTuanGV.ImageIndex = 46;
             this.btnInTKBTuanGV.Name = "btnInTKBTuanGV";
@@ -634,6 +676,7 @@
             // btnInTKBThangGV
             // 
             this.btnInTKBThangGV.Caption = "In TKB tháng";
+            this.btnInTKBThangGV.Glyph = ((System.Drawing.Image)(resources.GetObject("btnInTKBThangGV.Glyph")));
             this.btnInTKBThangGV.Id = 154;
             this.btnInTKBThangGV.ImageIndex = 46;
             this.btnInTKBThangGV.Name = "btnInTKBThangGV";
@@ -641,6 +684,7 @@
             // btnXemPhieuGiangDay
             // 
             this.btnXemPhieuGiangDay.Caption = "Xem phiếu giảng dạy";
+            this.btnXemPhieuGiangDay.Glyph = ((System.Drawing.Image)(resources.GetObject("btnXemPhieuGiangDay.Glyph")));
             this.btnXemPhieuGiangDay.Id = 155;
             this.btnXemPhieuGiangDay.LargeImageIndex = 20;
             this.btnXemPhieuGiangDay.Name = "btnXemPhieuGiangDay";
@@ -649,6 +693,7 @@
             // btnInPhieuGiangDay
             // 
             this.btnInPhieuGiangDay.Caption = "In phiếu giảng dạy";
+            this.btnInPhieuGiangDay.Glyph = ((System.Drawing.Image)(resources.GetObject("btnInPhieuGiangDay.Glyph")));
             this.btnInPhieuGiangDay.Id = 156;
             this.btnInPhieuGiangDay.LargeImageIndex = 48;
             this.btnInPhieuGiangDay.Name = "btnInPhieuGiangDay";
@@ -656,6 +701,7 @@
             // btnThemSV
             // 
             this.btnThemSV.Caption = "Thêm sinh viên mới";
+            this.btnThemSV.Glyph = ((System.Drawing.Image)(resources.GetObject("btnThemSV.Glyph")));
             this.btnThemSV.Id = 157;
             this.btnThemSV.LargeImageIndex = 13;
             this.btnThemSV.Name = "btnThemSV";
@@ -664,6 +710,7 @@
             // btnCapNhatSV
             // 
             this.btnCapNhatSV.Caption = "Cập nhật thông tin SV";
+            this.btnCapNhatSV.Glyph = ((System.Drawing.Image)(resources.GetObject("btnCapNhatSV.Glyph")));
             this.btnCapNhatSV.Id = 158;
             this.btnCapNhatSV.ImageIndex = 43;
             this.btnCapNhatSV.LargeImageIndex = 12;
@@ -673,6 +720,7 @@
             // btnThemLop
             // 
             this.btnThemLop.Caption = "Thêm lớp học mới";
+            this.btnThemLop.Glyph = ((System.Drawing.Image)(resources.GetObject("btnThemLop.Glyph")));
             this.btnThemLop.Id = 161;
             this.btnThemLop.LargeImageIndex = 52;
             this.btnThemLop.Name = "btnThemLop";
@@ -681,6 +729,7 @@
             // btnCapNhatLop
             // 
             this.btnCapNhatLop.Caption = "Cập nhật thông tin lớp";
+            this.btnCapNhatLop.Glyph = ((System.Drawing.Image)(resources.GetObject("btnCapNhatLop.Glyph")));
             this.btnCapNhatLop.Id = 162;
             this.btnCapNhatLop.LargeImageIndex = 53;
             this.btnCapNhatLop.Name = "btnCapNhatLop";
@@ -688,6 +737,7 @@
             // btnPhongHocMoi
             // 
             this.btnPhongHocMoi.Caption = "Phòng học mới";
+            this.btnPhongHocMoi.Glyph = ((System.Drawing.Image)(resources.GetObject("btnPhongHocMoi.Glyph")));
             this.btnPhongHocMoi.Id = 163;
             this.btnPhongHocMoi.LargeImageIndex = 54;
             this.btnPhongHocMoi.Name = "btnPhongHocMoi";
@@ -696,6 +746,7 @@
             // btnCapNhatPhongHoc
             // 
             this.btnCapNhatPhongHoc.Caption = "Cập nhật thông tin phòng";
+            this.btnCapNhatPhongHoc.Glyph = ((System.Drawing.Image)(resources.GetObject("btnCapNhatPhongHoc.Glyph")));
             this.btnCapNhatPhongHoc.Id = 164;
             this.btnCapNhatPhongHoc.LargeImageIndex = 53;
             this.btnCapNhatPhongHoc.Name = "btnCapNhatPhongHoc";
@@ -703,6 +754,7 @@
             // btnGiangVienMoi
             // 
             this.btnGiangVienMoi.Caption = "Giảng viên mới";
+            this.btnGiangVienMoi.Glyph = ((System.Drawing.Image)(resources.GetObject("btnGiangVienMoi.Glyph")));
             this.btnGiangVienMoi.Id = 165;
             this.btnGiangVienMoi.LargeImageIndex = 47;
             this.btnGiangVienMoi.Name = "btnGiangVienMoi";
@@ -711,6 +763,7 @@
             // btnCapNhatGV_giaoVu
             // 
             this.btnCapNhatGV_giaoVu.Caption = "Cập nhật thông tin GV";
+            this.btnCapNhatGV_giaoVu.Glyph = ((System.Drawing.Image)(resources.GetObject("btnCapNhatGV_giaoVu.Glyph")));
             this.btnCapNhatGV_giaoVu.Id = 166;
             this.btnCapNhatGV_giaoVu.LargeImageIndex = 50;
             this.btnCapNhatGV_giaoVu.Name = "btnCapNhatGV_giaoVu";
@@ -718,6 +771,7 @@
             // btnNhapPhieuGiangDay
             // 
             this.btnNhapPhieuGiangDay.Caption = "Nhập phiếu giảng dạy";
+            this.btnNhapPhieuGiangDay.Glyph = ((System.Drawing.Image)(resources.GetObject("btnNhapPhieuGiangDay.Glyph")));
             this.btnNhapPhieuGiangDay.Id = 167;
             this.btnNhapPhieuGiangDay.LargeImageIndex = 20;
             this.btnNhapPhieuGiangDay.Name = "btnNhapPhieuGiangDay";
@@ -726,6 +780,7 @@
             // btnPhanCong
             // 
             this.btnPhanCong.Caption = "Phân công giảng dạy";
+            this.btnPhanCong.Glyph = ((System.Drawing.Image)(resources.GetObject("btnPhanCong.Glyph")));
             this.btnPhanCong.Id = 168;
             this.btnPhanCong.LargeImageIndex = 45;
             this.btnPhanCong.Name = "btnPhanCong";
@@ -742,6 +797,7 @@
             // btnXepTKB
             // 
             this.btnXepTKB.Caption = "Xếp thời khóa biểu";
+            this.btnXepTKB.Glyph = ((System.Drawing.Image)(resources.GetObject("btnXepTKB.Glyph")));
             this.btnXepTKB.Id = 172;
             this.btnXepTKB.LargeImageIndex = 18;
             this.btnXepTKB.Name = "btnXepTKB";
@@ -750,6 +806,7 @@
             // btnXemTKB
             // 
             this.btnXemTKB.Caption = "Xem thời khóa biểu";
+            this.btnXemTKB.Glyph = ((System.Drawing.Image)(resources.GetObject("btnXemTKB.Glyph")));
             this.btnXemTKB.Id = 173;
             this.btnXemTKB.LargeImageIndex = 27;
             this.btnXemTKB.Name = "btnXemTKB";
@@ -758,6 +815,7 @@
             // btnInTKB
             // 
             this.btnInTKB.Caption = "In thời khóa biểu";
+            this.btnInTKB.Glyph = ((System.Drawing.Image)(resources.GetObject("btnInTKB.Glyph")));
             this.btnInTKB.Id = 174;
             this.btnInTKB.LargeImageIndex = 48;
             this.btnInTKB.Name = "btnInTKB";
@@ -765,6 +823,7 @@
             // btnNganhHoc
             // 
             this.btnNganhHoc.Caption = "Ngành học mới";
+            this.btnNganhHoc.Glyph = ((System.Drawing.Image)(resources.GetObject("btnNganhHoc.Glyph")));
             this.btnNganhHoc.Id = 175;
             this.btnNganhHoc.ImageIndex = 15;
             this.btnNganhHoc.Name = "btnNganhHoc";
@@ -773,6 +832,7 @@
             // btnCapNhatNganhHoc
             // 
             this.btnCapNhatNganhHoc.Caption = "Sửa ngành học";
+            this.btnCapNhatNganhHoc.Glyph = ((System.Drawing.Image)(resources.GetObject("btnCapNhatNganhHoc.Glyph")));
             this.btnCapNhatNganhHoc.Id = 176;
             this.btnCapNhatNganhHoc.ImageIndex = 47;
             this.btnCapNhatNganhHoc.Name = "btnCapNhatNganhHoc";
@@ -780,6 +840,7 @@
             // btnTrinhDo
             // 
             this.btnTrinhDo.Caption = "Trình độ";
+            this.btnTrinhDo.Glyph = ((System.Drawing.Image)(resources.GetObject("btnTrinhDo.Glyph")));
             this.btnTrinhDo.Id = 177;
             this.btnTrinhDo.ImageIndex = 27;
             this.btnTrinhDo.Name = "btnTrinhDo";
@@ -788,6 +849,7 @@
             // btnCapNhatTrinhDo
             // 
             this.btnCapNhatTrinhDo.Caption = "Cập nhật";
+            this.btnCapNhatTrinhDo.Glyph = ((System.Drawing.Image)(resources.GetObject("btnCapNhatTrinhDo.Glyph")));
             this.btnCapNhatTrinhDo.Id = 178;
             this.btnCapNhatTrinhDo.ImageIndex = 37;
             this.btnCapNhatTrinhDo.Name = "btnCapNhatTrinhDo";
@@ -795,6 +857,7 @@
             // btnThemMonHoc
             // 
             this.btnThemMonHoc.Caption = "Môn học mới";
+            this.btnThemMonHoc.Glyph = ((System.Drawing.Image)(resources.GetObject("btnThemMonHoc.Glyph")));
             this.btnThemMonHoc.Id = 179;
             this.btnThemMonHoc.ImageIndex = 7;
             this.btnThemMonHoc.Name = "btnThemMonHoc";
@@ -819,6 +882,7 @@
             this.btnReStart.Caption = "Khởi động lại ứng dụng";
             this.btnReStart.Id = 193;
             this.btnReStart.ImageIndex = 48;
+            this.btnReStart.ImageUri.Uri = "Refresh";
             this.btnReStart.LargeImageIndex = 57;
             this.btnReStart.Name = "btnReStart";
             this.btnReStart.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnReStart_ItemClick);
@@ -862,8 +926,8 @@
             // rpgTKBSV
             // 
             this.rpgTKBSV.ItemLinks.Add(this.btnXemTKBSV);
-            this.rpgTKBSV.ItemLinks.Add(this.btnInTKBTuan);
             this.rpgTKBSV.ItemLinks.Add(this.btnXemTKBThang);
+            this.rpgTKBSV.ItemLinks.Add(this.btnInTKBTuan);
             this.rpgTKBSV.ItemLinks.Add(this.btnInTKBThang);
             this.rpgTKBSV.Name = "rpgTKBSV";
             this.rpgTKBSV.Text = "Thời khóa biểu";
@@ -906,8 +970,8 @@
             this.rpgDeNghi.ItemLinks.Add(this.btnThemDeNghi);
             this.rpgDeNghi.ItemLinks.Add(this.btnXemDeNghi);
             this.rpgDeNghi.ItemLinks.Add(this.btnXemTKBGV, true);
-            this.rpgDeNghi.ItemLinks.Add(this.btnInTKBTuanGV);
             this.rpgDeNghi.ItemLinks.Add(this.TKBThangGV);
+            this.rpgDeNghi.ItemLinks.Add(this.btnInTKBTuanGV);
             this.rpgDeNghi.ItemLinks.Add(this.btnInTKBThangGV);
             this.rpgDeNghi.Name = "rpgDeNghi";
             this.rpgDeNghi.Text = "Đề nghị và TKB";
@@ -955,7 +1019,7 @@
             this.rpgSV.ItemLinks.Add(this.btnCapNhatLop);
             this.rpgSV.ItemLinks.Add(this.btnNganhHoc, true);
             this.rpgSV.ItemLinks.Add(this.btnCapNhatNganhHoc);
-            this.rpgSV.ItemLinks.Add(this.btnThemMonHoc);
+            this.rpgSV.ItemLinks.Add(this.btnThemMonHoc, true);
             this.rpgSV.Name = "rpgSV";
             this.rpgSV.Text = "Sinh viên và Lớp";
             // 
@@ -963,7 +1027,7 @@
             // 
             this.rpgGV.ItemLinks.Add(this.btnGiangVienMoi);
             this.rpgGV.ItemLinks.Add(this.btnCapNhatGV_giaoVu);
-            this.rpgGV.ItemLinks.Add(this.btnTrinhDo);
+            this.rpgGV.ItemLinks.Add(this.btnTrinhDo, true);
             this.rpgGV.ItemLinks.Add(this.btnCapNhatTrinhDo);
             this.rpgGV.Name = "rpgGV";
             this.rpgGV.Text = "Giảng viên";
@@ -1040,6 +1104,7 @@
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.Size = new System.Drawing.Size(1218, 526);
             this.xtraTabControl1.TabIndex = 1;
+            this.xtraTabControl1.CloseButtonClick += new System.EventHandler(this.xtraTabControl1_CloseButtonClick);
             // 
             // rpgGiaoDien
             // 
