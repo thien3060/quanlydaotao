@@ -372,8 +372,10 @@
     <Compile Include="UserControls\DeNghiGiangDay.Designer.cs">
       <DependentUpon>DeNghiGiangDay.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utils\ExceptionUtilities.cs" />
     <Compile Include="Utils\MessageBoxUtils.cs" />
     <Compile Include="Utils\StaticClass.cs" />
+    <Compile Include="Utils\UtilitiesClass.cs" />
     <EmbeddedResource Include="GUI-old\ChuongTrinhDaoTao.resx">
       <DependentUpon>ChuongTrinhDaoTao.cs</DependentUpon>
     </EmbeddedResource>

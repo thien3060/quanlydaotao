@@ -25,5 +25,10 @@ namespace BUS
         {
             return daoNguoiDung.LayThongTinUser(dto_nguoidung);
         }
+
+        public DTO_NguoiDung LayThongTiNguoiDung(string tenDN)
+        {
+            return daoNguoiDung.LayThongTinDangNhap(tenDN);
+        }
     }
 }

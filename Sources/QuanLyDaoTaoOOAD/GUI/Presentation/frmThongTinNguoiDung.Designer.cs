@@ -31,11 +31,9 @@
             this.btnDong = new DevExpress.XtraEditors.SimpleButton();
             this.lblQuyen = new DevExpress.XtraEditors.LabelControl();
             this.lblTen = new DevExpress.XtraEditors.LabelControl();
-            this.txtQuyen = new DevExpress.XtraEditors.TextEdit();
-            this.txtTen = new DevExpress.XtraEditors.TextEdit();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.txtQuyen.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).BeginInit();
+            this.labelQuyen = new DevExpress.XtraEditors.LabelControl();
+            this.labelTen = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +51,7 @@
             // lblQuyen
             // 
             this.lblQuyen.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.lblQuyen.Location = new System.Drawing.Point(170, 12);
+            this.lblQuyen.Location = new System.Drawing.Point(114, 12);
             this.lblQuyen.Name = "lblQuyen";
             this.lblQuyen.Size = new System.Drawing.Size(48, 18);
             this.lblQuyen.TabIndex = 2;
@@ -62,25 +60,11 @@
             // lblTen
             // 
             this.lblTen.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.lblTen.Location = new System.Drawing.Point(116, 39);
+            this.lblTen.Location = new System.Drawing.Point(115, 39);
             this.lblTen.Name = "lblTen";
             this.lblTen.Size = new System.Drawing.Size(31, 18);
             this.lblTen.TabIndex = 2;
             this.lblTen.Text = "Tên:";
-            // 
-            // txtQuyen
-            // 
-            this.txtQuyen.Location = new System.Drawing.Point(239, 12);
-            this.txtQuyen.Name = "txtQuyen";
-            this.txtQuyen.Size = new System.Drawing.Size(100, 20);
-            this.txtQuyen.TabIndex = 4;
-            // 
-            // txtTen
-            // 
-            this.txtTen.Location = new System.Drawing.Point(170, 38);
-            this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(169, 20);
-            this.txtTen.TabIndex = 5;
             // 
             // pictureBox1
             // 
@@ -92,14 +76,32 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // labelQuyen
+            // 
+            this.labelQuyen.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.labelQuyen.Location = new System.Drawing.Point(184, 12);
+            this.labelQuyen.Name = "labelQuyen";
+            this.labelQuyen.Size = new System.Drawing.Size(40, 18);
+            this.labelQuyen.TabIndex = 4;
+            this.labelQuyen.Text = "quyen";
+            // 
+            // labelTen
+            // 
+            this.labelTen.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.labelTen.Location = new System.Drawing.Point(184, 39);
+            this.labelTen.Name = "labelTen";
+            this.labelTen.Size = new System.Drawing.Size(21, 18);
+            this.labelTen.TabIndex = 4;
+            this.labelTen.Text = "ten";
+            // 
             // frmThongTinNguoiDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(351, 114);
             this.ControlBox = false;
-            this.Controls.Add(this.txtTen);
-            this.Controls.Add(this.txtQuyen);
+            this.Controls.Add(this.labelTen);
+            this.Controls.Add(this.labelQuyen);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblTen);
             this.Controls.Add(this.lblQuyen);
@@ -111,8 +113,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thông tin của bạn";
-            ((System.ComponentModel.ISupportInitialize)(this.txtQuyen.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).EndInit();
+            this.Load += new System.EventHandler(this.frmThongTinNguoiDung_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -125,7 +126,7 @@
         private DevExpress.XtraEditors.LabelControl lblQuyen;
         private DevExpress.XtraEditors.LabelControl lblTen;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private DevExpress.XtraEditors.TextEdit txtQuyen;
-        private DevExpress.XtraEditors.TextEdit txtTen;
+        private DevExpress.XtraEditors.LabelControl labelQuyen;
+        private DevExpress.XtraEditors.LabelControl labelTen;
     }
 }

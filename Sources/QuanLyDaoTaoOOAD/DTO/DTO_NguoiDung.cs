@@ -8,21 +8,19 @@ namespace DTO
 {
     public class DTO_NguoiDung
     {
-        public string MaND { get; set; }
-        public string TenDN { get; set; }
+        public string TenDangNhap { get; set; }
         public string MatKhau { get; set; }
-        public string TenND { get; set; }
+        public string TenNguoiDung { get; set; }
         public string Quyen { get; set; }
         public string MoTaQuyen { get; set; }
 
         public DTO_NguoiDung() { }
 
-        public DTO_NguoiDung(string maNd, string tenDn, string matKhau, string tenNd, string quyen, string moTaQuyen)
+        public DTO_NguoiDung(string tenDangNhap, string matKhau, string tenNguoiDung, string quyen, string moTaQuyen)
         {
-            MaND = maNd;
-            TenDN = tenDn;
+            TenDangNhap = tenDangNhap;
             MatKhau = matKhau;
-            TenND = tenNd;
+            TenNguoiDung = tenNguoiDung;
             Quyen = quyen;
             MoTaQuyen = moTaQuyen;
         }

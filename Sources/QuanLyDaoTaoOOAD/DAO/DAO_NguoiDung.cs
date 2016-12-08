@@ -17,10 +17,9 @@ namespace DAO
         private void AddParameter(DTO_NguoiDung nguoiDung)
         {
             parameters.Clear();
-            parameters.Add("@MaND", nguoiDung.MaND);
-            parameters.Add("@TenDN", nguoiDung.TenDN);
+            parameters.Add("@TenDangNhap", nguoiDung.TenDangNhap);
             parameters.Add("@MatKhau", nguoiDung.MatKhau);
-            parameters.Add("@TenND", nguoiDung.TenND);
+            parameters.Add("@TenNguoiDung", nguoiDung.TenNguoiDung);
             parameters.Add("@Quyen", nguoiDung.Quyen);
             parameters.Add("@MoTaQuyen", nguoiDung.MoTaQuyen);
         }
@@ -28,17 +27,17 @@ namespace DAO
         public void ThemNguoiDung(DTO_NguoiDung nguoiDung)
         {
             AddParameter(nguoiDung);
-            Connection.ExecuteSqlWithParameter("INSERT INTO nguoidung VALUES (@MaND, @TenDN, @MatKhau, @TenND, @Quyen, @MoTaQuyen)", parameters);
+            Connection.ExecuteSqlWithParameter("INSERT INTO nguoidung VALUES (@TenDangNhap, @MatKhau, @TenNguoiDung, @Quyen, @MoTaQuyen)", parameters);
         }
         public void CapNhatNguoiDung(DTO_NguoiDung nguoiDung)
         {
             AddParameter(nguoiDung);
-            Connection.ExecuteSqlWithParameter("UPDATE nguoidung SET TenDN=@TenDN,MatKhau=@MatKhau,TenND=@TenND,Quyen=@Quyen,MoTaQuyen=@MoTaQuyen WHERE MaND=@MaND", parameters);
+            Connection.ExecuteSqlWithParameter("UPDATE nguoidung SET TenDangNhap=@TenDangNhap,MatKhau=@MatKhau,TenND=@TenND,Quyen=@Quyen,MoTaQuyen=@MoTaQuyen WHERE MaND=@MaND", parameters);
         }
         public void XoaNguoiDung(DTO_NguoiDung nguoiDung)
         {
             AddParameter(nguoiDung);
-            Connection.ExecuteSql("DELETE FROM nguoidung WHERE MaND='" + nguoiDung.MaND + "'");
+            Connection.ExecuteSql("DELETE FROM nguoidung WHERE TenDangNhap='" + nguoiDung.TenDangNhap + "'");
         }
         public DataTable TaobangNguoiDung(string dieukien)
         {
@@ -46,7 +45,7 @@ namespace DAO
         }
         public string LayMaNguoiDungLonNhat()
         {
-            DataTable temp = Connection.GetDataTable("SELECT * FROM nguoidung ORDER BY MaND ASC");
+            DataTable temp = Connection.GetDataTable("SELECT * FROM nguoidung ORDER BY TenDangNhap ASC");
             if (temp.Rows.Count == 0)
             {
                 return null;
@@ -61,16 +60,29 @@ namespace DAO
 
         public DataTable LayThongTinUser(DTO_NguoiDung nguoiDung)
         {
-            return Connection.GetDataTable("SELECT TenDN, MatKhau, Quyen from nguoidung where TenDN = '" + nguoiDung.TenDN + "' and MatKhau = '" + nguoiDung.MatKhau + "'");
+            return Connection.GetDataTable("SELECT TenDangNhap, MatKhau, Quyen from nguoidung where TenDangNhap = '" + nguoiDung.TenDangNhap + "'");
         }
 
         public bool KiemTraTonTai(string TenDangNhap)
         {
-            DataTable temp = Connection.GetDataTable("SELECT TenDN from nguoidung where TenDN = '" + TenDangNhap + "'");
+            DataTable temp = Connection.GetDataTable("SELECT TenDangNhap from nguoidung where TenDangNhap = '" + TenDangNhap + "'");
             if (temp.Rows.Count != 0)
                 return true;
             else
                 return false;
+        }
+
+        public DTO_NguoiDung LayThongTinDangNhap(string tenDN)
+        {
+            DataTable temp = Connection.GetDataTable("SELECT TenDangNhap, TenNguoiDung, MatKhau, Quyen, MotaQuyen from nguoidung where TenDangNhap = '" + tenDN + "'");
+            DTO_NguoiDung nguoiDung = new DTO_NguoiDung();
+            nguoiDung.TenDangNhap = tenDN;
+            nguoiDung.MatKhau = temp.Rows[0]["MatKhau"].ToString();
+            nguoiDung.Quyen = temp.Rows[0]["Quyen"].ToString();
+            nguoiDung.MoTaQuyen = temp.Rows[0]["MoTaQuyen"].ToString();
+            nguoiDung.TenNguoiDung = temp.Rows[0]["TenNguoiDung"].ToString();
+
+            return nguoiDung;
         }
     }
 }

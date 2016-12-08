@@ -26,7 +26,7 @@ namespace QuanLyDaoTao
         }
         private void btn_DangNhap_Click(object sender, EventArgs e)
         {
-            dtoNguoiDung.TenDN = tb_TenTaiKhoan.Text;
+            dtoNguoiDung.TenDangNhap = tb_TenTaiKhoan.Text;
             dtoNguoiDung.MatKhau = tb_MatKhau.Text;
 
             DataTable dangnhap_datatable = busLogin.LayDanhSachTheoID(dtoNguoiDung);

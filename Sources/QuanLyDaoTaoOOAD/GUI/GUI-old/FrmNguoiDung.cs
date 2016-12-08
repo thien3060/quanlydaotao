@@ -75,7 +75,6 @@ namespace QuanLyDaoTao
 
             moInput();
             xoaInput();
-            tb_MaND.Text = bus_user.TuTinhMa();
             Them = true;
         }
 
@@ -96,7 +95,7 @@ namespace QuanLyDaoTao
             DialogResult dialog = MessageBox.Show("Bạn có muốn xóa người dùng này ?", "Thông Báo", MessageBoxButtons.YesNo);
             if (dialog == DialogResult.Yes)
             {
-                dto_user.MaND = tb_MaND.Text;
+                dto_user.TenDangNhap = tb_TenDN.Text;
                 bus_user.XoadulieuNguoiDung(dto_user);
                 dg_DanhSachND.DataSource = bus_user.TaobangNguoiDung("");
             }
@@ -107,9 +106,8 @@ namespace QuanLyDaoTao
             if (tb_MaND.Text != "" && tb_TenDN.Text != "" && tb_MatKhau.Text != "")
             {
 
-                dto_user.MaND = tb_MaND.Text;
-                dto_user.TenND = tb_TenND.Text;
-                dto_user.TenDN = tb_TenDN.Text;
+                dto_user.TenNguoiDung = tb_TenND.Text;
+                dto_user.TenDangNhap = tb_TenDN.Text;
                 dto_user.MatKhau = tb_MatKhau.Text;
                 dto_user.Quyen = tb_Quyen.Text;
                 dto_user.MoTaQuyen = tb_MoTaQuyen.Text;

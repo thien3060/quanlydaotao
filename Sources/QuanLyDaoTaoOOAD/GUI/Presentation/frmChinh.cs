@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using QuanLyDaoTao.Utils;
 using DevExpress.XtraTab;
+using QuanLyDaoTao.Utilities;
 
 namespace QuanLyDaoTao.Presentation
 {
@@ -129,6 +130,8 @@ namespace QuanLyDaoTao.Presentation
                         rpAdmin.Visible = false;
                         return;
                     }
+                    lblQuyen.Caption = StaticClass.User.MoTaQuyen + ":";
+                    lblTen.Caption = StaticClass.User.TenNguoiDung;
                 }
                 else//chua dang nhap
                 {
@@ -174,7 +177,7 @@ namespace QuanLyDaoTao.Presentation
                 if (frm.ShowDialog() == DialogResult.OK)
                 {
                     lblQuyen.Caption = StaticClass.User.MoTaQuyen + ":";
-                    lblTen.Caption = StaticClass.User.TenND;
+                    lblTen.Caption = StaticClass.User.TenNguoiDung;
                 }
                 else
                 {
@@ -212,6 +215,26 @@ namespace QuanLyDaoTao.Presentation
             if (XtraMessageBox.Show("Bạn muốn thoát chương trình?", "Quản lý đạo tạo", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 Application.Exit();
+            }
+        }
+
+
+        private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                StaticClass.DangNhap = false;
+                StaticClass.User = null;
+                PhanQuyen();
+                xtraTabControl1.TabPages.Clear();
+                lblQuyen.Caption = "Bạn chưa đăng nhập.";
+                lblTen.Caption = "Vui lòng đăng nhập để sử dụng hệ thống.";
+                MessageBoxUtils.Info("Bạn đã đăng xuất.\nVui lòng đăng nhập để sử dụng hệ thống.");
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+                return;
             }
         }
 
