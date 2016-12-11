@@ -108,11 +108,13 @@ namespace QuanLyDaoTao.Presentation
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-
-                DTO_SinhVien sv = new DTO_SinhVien();
-                if (TaoMoi(sv))
+            DTO_SinhVien sv = new DTO_SinhVien();
+            if (TaoMoi(sv))
+            {
+                frmMatKhau frm = new frmMatKhau();
+                frm.truyen += new frmMatKhau.TruyenMatKhau(GetMatKhau);
+                if (frm.ShowDialog() == DialogResult.OK)
                 {
-                    _matKhau = sv.MSSV;
                     DTO_NguoiDung user = new DTO_NguoiDung()
                     {
                         TenDangNhap = sv.MSSV.ToLower(),
@@ -127,7 +129,9 @@ namespace QuanLyDaoTao.Presentation
                     ClearText();
                     TaoMa();
                 }
-
+                else
+                    MessageBoxUtils.Exclamation("Không thể thêm sinh viên khi chưa thiết lập mật khẩu");
+            }
         }
 
         private void simpleButton2_Click(object sender, EventArgs e)
@@ -135,9 +139,6 @@ namespace QuanLyDaoTao.Presentation
             ClearText();
         }
 
-        /// <summary>
-        /// Hàm nhận mật khẩu từ form con
-        /// </summary>
         private void GetMatKhau(string value)
         {
             _matKhau = value;

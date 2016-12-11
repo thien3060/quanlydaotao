@@ -112,9 +112,7 @@ namespace QuanLyDaoTao.Presentation
         private void CapNhatDuLieuBang()
         {
             nguon = bus_sv.TaobangSinhVien("");
-            dataGridView1.DataSource = nguon;
-            dataGridView1.Update();
-            dataGridView1.Refresh();
+            gridControl1.DataSource = nguon;
         }
     }
 }

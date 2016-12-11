@@ -20,6 +20,8 @@ namespace QuanLyDaoTao.Presentation
         BUS_NguoiDung bus_nd = new BUS_NguoiDung();
         BUS_TDDT bus_td = new BUS_TDDT();
         BUS_GiangVien bus_gv = new BUS_GiangVien();
+
+        string _matKhau;
         public frmThemGiangVien()
         {
             InitializeComponent();
@@ -74,25 +76,36 @@ namespace QuanLyDaoTao.Presentation
                 DTO_GiangVien gv = new DTO_GiangVien();
                 if (TaoMoi(gv))
                 {
-                    DTO_NguoiDung user = new DTO_NguoiDung()
+                    frmMatKhau frm = new frmMatKhau();
+                    frm.truyen += new frmMatKhau.TruyenMatKhau(GetMatKhau);
+                    if (frm.ShowDialog() == DialogResult.OK)
                     {
-                        TenDangNhap = gv.MaGV.ToLower(),
-                        MatKhau = UtilitiesClass.MaHoaMD5(gv.MaGV),
-                        TenNguoiDung = gv.HoTen,
-                        Quyen = "2",
-                        MoTaQuyen = "Giảng viên"
-                    };
-                    bus_gv.ThemdulieuGiangVien(gv);
-                    bus_nd.ThemdulieuNguoiDung(user);
-                    MessageBoxUtils.Success("Thành công");
-                    ClearText();
-                    txtMaGV.Text = bus_gv.TuTinhMa();
+                        DTO_NguoiDung user = new DTO_NguoiDung()
+                        {
+                            TenDangNhap = gv.MaGV.ToLower(),
+                            MatKhau = UtilitiesClass.MaHoaMD5(_matKhau),
+                            TenNguoiDung = gv.HoTen,
+                            Quyen = "2",
+                            MoTaQuyen = "Giảng viên"
+                        };
+                        bus_gv.ThemdulieuGiangVien(gv);
+                        bus_nd.ThemdulieuNguoiDung(user);
+                        MessageBoxUtils.Success("Thành công");
+                        ClearText();
+                        txtMaGV.Text = bus_gv.TuTinhMa();
+                    }
+                    else
+                        MessageBoxUtils.Exclamation("Không thể thêm giảng viên khi chưa thiết lập mật khẩu");
                 }
             }
             catch (Exception ex)
             {
                 ExceptionUtil.ThrowMsgBox(ex.Message);
             }
+        }
+        private void GetMatKhau(string value)
+        {
+            _matKhau = value;
         }
 
         private void ClearText()

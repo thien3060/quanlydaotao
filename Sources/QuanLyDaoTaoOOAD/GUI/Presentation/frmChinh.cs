@@ -379,6 +379,19 @@ namespace QuanLyDaoTao.Presentation
             }
         }
 
+        private void btnCapNhatLop_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                frmCapNhatLop frm = new frmCapNhatLop();
+                TabCreating("Cập nhật thông tin lớp", frm);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
         private void btnNganhHoc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             try

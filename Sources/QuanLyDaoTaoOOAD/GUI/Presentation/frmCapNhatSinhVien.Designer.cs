@@ -40,24 +40,23 @@
             this.txtMSSV = new DevExpress.XtraEditors.TextEdit();
             this.lblHoTen = new DevExpress.XtraEditors.LabelControl();
             this.lblMSSV = new DevExpress.XtraEditors.LabelControl();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.MSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaLop = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.MSSV = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.HoTen = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NgaySinh = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.DiaChi = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.MaLop = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.cmbLop.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgaySinh.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgaySinh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoTen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMSSV.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
-            this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbLop
@@ -205,35 +204,6 @@
             this.lblMSSV.TabIndex = 14;
             this.lblMSSV.Text = "MSSV:";
             // 
-            // groupControl1
-            // 
-            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupControl1.Controls.Add(this.dataGridView1);
-            this.groupControl1.Location = new System.Drawing.Point(13, 241);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(913, 230);
-            this.groupControl1.TabIndex = 26;
-            this.groupControl1.Text = "Danh sách sinh viên";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MSSV,
-            this.HoTen,
-            this.NgaySinh,
-            this.DiaChi,
-            this.MaLop});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 24);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(902, 201);
-            this.dataGridView1.TabIndex = 0;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::QuanLyDaoTao.Properties.Resources.sinhvien;
@@ -244,45 +214,90 @@
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
             // 
+            // gridControl1
+            // 
+            this.gridControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridControl1.Location = new System.Drawing.Point(13, 222);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(913, 258);
+            this.gridControl1.TabIndex = 28;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.MSSV,
+            this.HoTen,
+            this.NgaySinh,
+            this.DiaChi,
+            this.MaLop});
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.GroupCount = 1;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.MaLop, DevExpress.Data.ColumnSortOrder.Ascending)});
+            // 
             // MSSV
             // 
-            this.MSSV.DataPropertyName = "MSSV";
-            this.MSSV.HeaderText = "MSSV";
+            this.MSSV.Caption = "MSSV";
+            this.MSSV.FieldName = "MSSV";
+            this.MSSV.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
             this.MSSV.Name = "MSSV";
+            this.MSSV.Visible = true;
+            this.MSSV.VisibleIndex = 0;
+            this.MSSV.Width = 100;
             // 
             // HoTen
             // 
-            this.HoTen.DataPropertyName = "HoTen";
-            this.HoTen.HeaderText = "Họ Tên";
+            this.HoTen.Caption = "Họ tên";
+            this.HoTen.FieldName = "HoTen";
+            this.HoTen.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
             this.HoTen.Name = "HoTen";
-            this.HoTen.Width = 200;
+            this.HoTen.Visible = true;
+            this.HoTen.VisibleIndex = 1;
+            this.HoTen.Width = 250;
             // 
             // NgaySinh
             // 
-            this.NgaySinh.DataPropertyName = "NgaySinh";
-            this.NgaySinh.HeaderText = "Ngày Sinh";
+            this.NgaySinh.Caption = "Ngày sinh";
+            this.NgaySinh.FieldName = "NgaySinh";
+            this.NgaySinh.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
             this.NgaySinh.Name = "NgaySinh";
+            this.NgaySinh.Visible = true;
+            this.NgaySinh.VisibleIndex = 3;
+            this.NgaySinh.Width = 150;
             // 
             // DiaChi
             // 
-            this.DiaChi.DataPropertyName = "DiaChi";
-            this.DiaChi.HeaderText = "Địa Chỉ";
+            this.DiaChi.Caption = "Địa chỉ";
+            this.DiaChi.FieldName = "DiaChi";
+            this.DiaChi.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
             this.DiaChi.Name = "DiaChi";
-            this.DiaChi.Width = 300;
+            this.DiaChi.Visible = true;
+            this.DiaChi.VisibleIndex = 2;
+            this.DiaChi.Width = 250;
             // 
             // MaLop
             // 
-            this.MaLop.DataPropertyName = "MaLop";
-            this.MaLop.HeaderText = "Mã Lớp";
+            this.MaLop.Caption = "Mã lớp";
+            this.MaLop.FieldName = "MaLop";
+            this.MaLop.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
             this.MaLop.Name = "MaLop";
+            this.MaLop.Visible = true;
+            this.MaLop.VisibleIndex = 2;
+            this.MaLop.Width = 100;
             // 
             // frmCapNhatSinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(938, 483);
+            this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.cmbLop);
             this.Controls.Add(this.dateNgaySinh);
             this.Controls.Add(this.btnHuy);
@@ -304,10 +319,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoTen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMSSV.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
-            this.groupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -329,13 +343,13 @@
         private DevExpress.XtraEditors.LabelControl lblMSSV;
         private System.Windows.Forms.ContextMenuStrip contextMenu;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuXoa;
-        private DevExpress.XtraEditors.GroupControl groupControl1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MSSV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaLop;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn MSSV;
+        private DevExpress.XtraGrid.Columns.GridColumn HoTen;
+        private DevExpress.XtraGrid.Columns.GridColumn NgaySinh;
+        private DevExpress.XtraGrid.Columns.GridColumn DiaChi;
+        private DevExpress.XtraGrid.Columns.GridColumn MaLop;
     }
 }

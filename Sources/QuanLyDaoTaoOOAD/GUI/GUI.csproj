@@ -163,6 +163,12 @@
     <Compile Include="GUI-old\FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\frmCapNhatLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmCapNhatLop.Designer.cs">
+      <DependentUpon>frmCapNhatLop.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\frmCapNhatSinhVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -408,6 +414,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI-old\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmCapNhatLop.resx">
+      <DependentUpon>frmCapNhatLop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmCapNhatSinhVien.resx">
       <DependentUpon>frmCapNhatSinhVien.cs</DependentUpon>
