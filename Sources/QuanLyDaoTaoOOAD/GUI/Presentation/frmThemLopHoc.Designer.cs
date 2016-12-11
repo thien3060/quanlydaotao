@@ -70,6 +70,7 @@
             this.btnLuu.Size = new System.Drawing.Size(114, 43);
             this.btnLuu.TabIndex = 9;
             this.btnLuu.Text = "Lưu";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // txtMaLop
             // 
@@ -112,6 +113,7 @@
             this.cmbNganh.Properties.ValueMember = "MaNganh";
             this.cmbNganh.Size = new System.Drawing.Size(197, 24);
             this.cmbNganh.TabIndex = 3;
+            this.cmbNganh.EditValueChanged += new System.EventHandler(this.cmbNganh_EditValueChanged);
             // 
             // labelControl1
             // 
@@ -133,6 +135,7 @@
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Cao đẳng")});
             this.rdgBacHoc.Size = new System.Drawing.Size(173, 30);
             this.rdgBacHoc.TabIndex = 5;
+            this.rdgBacHoc.SelectedIndexChanged += new System.EventHandler(this.rdgBacHoc_SelectedIndexChanged);
             // 
             // labelControl2
             // 
@@ -174,6 +177,7 @@
             this.dateBatDau.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.dateBatDau.Size = new System.Drawing.Size(77, 24);
             this.dateBatDau.TabIndex = 7;
+            this.dateBatDau.EditValueChanged += new System.EventHandler(this.dateBatDau_EditValueChanged);
             // 
             // labelControl4
             // 

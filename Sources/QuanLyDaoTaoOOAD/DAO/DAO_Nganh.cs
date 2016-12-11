@@ -19,35 +19,35 @@ namespace DAO
             parameters.Clear();
             parameters.Add("@MaNganh", nganh.MaNganh);
             parameters.Add("@TenNganh", nganh.TenNganh);
-            parameters.Add("@MaKhoa", nganh.MaKhoa);
+            parameters.Add("@Khoa", nganh.Khoa);
         }
 
         public void ThemNganh(DTO_Nganh nganh)
         {
             AddParameter(nganh);
-            Connection.ExecuteSqlWithParameter("INSERT INTO nganh VALUES (@MaNganh, @TenNganh, @MaKhoa)", parameters);
+            Connection.ExecuteSqlWithParameter("INSERT INTO NganhHoc VALUES (@MaNganh, @TenNganh, @Khoa)", parameters);
         }
         public void CapNhatNganh(DTO_Nganh nganh)
         {
             AddParameter(nganh);
-            Connection.ExecuteSqlWithParameter("UPDATE nganh SET TenNganh=@TenNganh, MaKhoa=@MaKhoa WHERE MaNganh=@MaNganh", parameters);
+            Connection.ExecuteSqlWithParameter("UPDATE NganhHoc SET TenNganh=@TenNganh, Khoa=@Khoa WHERE MaNganh=@MaNganh", parameters);
         }
         public void XoaNganh(DTO_Nganh nganh)
         {
             AddParameter(nganh);
-            Connection.ExecuteSql("DELETE FROM nganh WHERE MaNganh='" + nganh.MaNganh + "'");
+            Connection.ExecuteSql("DELETE FROM NganhHoc WHERE MaNganh='" + nganh.MaNganh + "'");
         }
         public DataTable TaobangNganh(string dieukien)
         {
-            return Connection.GetDataTable("SELECT * FROM nganh " + dieukien);
+            return Connection.GetDataTable("SELECT * FROM NganhHoc " + dieukien);
         }
         public DataTable GetByMaKhoa(DTO_Nganh nganh)
         {
-            return Connection.GetDataTable("SELECT * FROM nganh WHERE MaKhoa = '" + nganh.MaKhoa + "'");
+            return Connection.GetDataTable("SELECT * FROM NganhHoc WHERE Khoa = '" + nganh.Khoa + "'");
         }
         public string LayMaNganhLonNhat()
         {
-            DataTable temp = Connection.GetDataTable("SELECT * FROM nganh ORDER BY MaNganh ASC");
+            DataTable temp = Connection.GetDataTable("SELECT * FROM NganhHoc ORDER BY MaNganh ASC");
             if (temp.Rows.Count == 0)
             {
                 return null;
@@ -56,7 +56,7 @@ namespace DAO
         }
         public int LayKichThuocBang()
         {
-            DataTable dt = Connection.GetDataTable("SELECT * FROM nganh");
+            DataTable dt = Connection.GetDataTable("SELECT * FROM NganhHoc");
             return dt.Rows.Count;
         }
     }

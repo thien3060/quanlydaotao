@@ -103,7 +103,7 @@ namespace QuanLyDaoTao
 
                 dto_ngh.MaNganh = tb_MaNganh.Text;
                 dto_ngh.TenNganh = tb_TenNganh.Text;
-                dto_ngh.MaKhoa = cb_MaKhoa.SelectedItem.ToString();
+                dto_ngh.Khoa = cb_MaKhoa.SelectedItem.ToString();
                 try
                 {
                     if (Them)

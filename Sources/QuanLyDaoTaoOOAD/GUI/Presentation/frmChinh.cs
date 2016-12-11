@@ -86,6 +86,7 @@ namespace QuanLyDaoTao.Presentation
 
         private void PhanQuyen()
         {
+            DTO.DTO_NguoiDung user = new DTO.DTO_NguoiDung();
             try
             {
                 if (StaticClass.DangNhap)

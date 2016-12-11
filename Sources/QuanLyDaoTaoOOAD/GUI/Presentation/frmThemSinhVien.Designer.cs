@@ -97,6 +97,7 @@
             this.cmbLop.Properties.ValueMember = "MaLop";
             this.cmbLop.Size = new System.Drawing.Size(210, 24);
             this.cmbLop.TabIndex = 8;
+            this.cmbLop.EditValueChanged += new System.EventHandler(this.cmbLop_EditValueChanged);
             // 
             // dateNgaySinh
             // 
@@ -124,6 +125,7 @@
             this.btnHuy.Size = new System.Drawing.Size(114, 43);
             this.btnHuy.TabIndex = 12;
             this.btnHuy.Text = "Hủy";
+            this.btnHuy.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // btnLuu
             // 
@@ -134,6 +136,7 @@
             this.btnLuu.Size = new System.Drawing.Size(114, 43);
             this.btnLuu.TabIndex = 11;
             this.btnLuu.Text = "Lưu";
+            this.btnLuu.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // txtDiaChi
             // 
@@ -235,6 +238,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmThemSinhVien";
             this.Text = "Sinh viên mới";
+            this.Load += new System.EventHandler(this.frmThemSinhVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();

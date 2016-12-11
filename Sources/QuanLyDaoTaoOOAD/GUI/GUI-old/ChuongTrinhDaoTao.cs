@@ -179,7 +179,7 @@ namespace QuanLyDaoTao
 
         private void lookup_Khoa_EditValueChanged(object sender, EventArgs e)
         {
-            dto_nganh.MaKhoa = lookup_Khoa.EditValue.ToString();
+            dto_nganh.Khoa = lookup_Khoa.EditValue.ToString();
             lookup_Nganh.Properties.DataSource = bus_nganh.GetByMaKhoa(dto_nganh).DefaultView;
             lookup_Nganh.Properties.DisplayMember = "TenNganh";
             lookup_Nganh.Properties.ValueMember = "MaNganh";

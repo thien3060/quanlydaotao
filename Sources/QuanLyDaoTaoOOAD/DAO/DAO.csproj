@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Connection.cs" />
     <Compile Include="DAO_BuoiHoc.cs" />
+    <Compile Include="DAO_SinhVien.cs" />
     <Compile Include="DAO_KHDT.cs" />
     <Compile Include="DAO_GiangDay.cs" />
     <Compile Include="DAO_HocPhan.cs" />
@@ -52,6 +53,7 @@
     <Compile Include="DAO_NamHoc.cs" />
     <Compile Include="DAO_HocKy.cs" />
     <Compile Include="DAO_DamNhiem.cs" />
+    <Compile Include="DAO_Lop.cs" />
     <Compile Include="DAO_NhomHP.cs" />
     <Compile Include="DAO_GVCN.cs" />
     <Compile Include="DAO_NhomLop.cs" />

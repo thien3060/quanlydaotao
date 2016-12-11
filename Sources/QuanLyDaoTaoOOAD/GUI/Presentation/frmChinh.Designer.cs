@@ -145,6 +145,7 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.rpgGiaoDien = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit2)).BeginInit();
@@ -226,9 +227,10 @@
             this.btnThemMonHoc,
             this.btnNhapXuatDuLieu,
             this.btnThanhToanLuong,
-            this.btnReStart});
+            this.btnReStart,
+            this.barButtonItem1});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 194;
+            this.ribbonControl.MaxItemId = 195;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rpTrangChu,
@@ -713,7 +715,7 @@
             // 
             // btnCapNhatSV
             // 
-            this.btnCapNhatSV.Caption = "Cập nhật thông tin SV";
+            this.btnCapNhatSV.Caption = "Cập nhật SV";
             this.btnCapNhatSV.Glyph = ((System.Drawing.Image)(resources.GetObject("btnCapNhatSV.Glyph")));
             this.btnCapNhatSV.Id = 158;
             this.btnCapNhatSV.ImageIndex = 43;
@@ -732,7 +734,7 @@
             // 
             // btnCapNhatLop
             // 
-            this.btnCapNhatLop.Caption = "Cập nhật thông tin lớp";
+            this.btnCapNhatLop.Caption = "Cập nhật lớp";
             this.btnCapNhatLop.Glyph = ((System.Drawing.Image)(resources.GetObject("btnCapNhatLop.Glyph")));
             this.btnCapNhatLop.Id = 162;
             this.btnCapNhatLop.LargeImageIndex = 53;
@@ -749,7 +751,7 @@
             // 
             // btnCapNhatPhongHoc
             // 
-            this.btnCapNhatPhongHoc.Caption = "Cập nhật thông tin phòng";
+            this.btnCapNhatPhongHoc.Caption = "Cập nhật phòng";
             this.btnCapNhatPhongHoc.Glyph = ((System.Drawing.Image)(resources.GetObject("btnCapNhatPhongHoc.Glyph")));
             this.btnCapNhatPhongHoc.Id = 164;
             this.btnCapNhatPhongHoc.LargeImageIndex = 53;
@@ -835,7 +837,7 @@
             // 
             // btnCapNhatNganhHoc
             // 
-            this.btnCapNhatNganhHoc.Caption = "Sửa ngành học";
+            this.btnCapNhatNganhHoc.Caption = "Cập nhật ngành học";
             this.btnCapNhatNganhHoc.Glyph = ((System.Drawing.Image)(resources.GetObject("btnCapNhatNganhHoc.Glyph")));
             this.btnCapNhatNganhHoc.Id = 176;
             this.btnCapNhatNganhHoc.ImageIndex = 47;
@@ -843,7 +845,7 @@
             // 
             // btnTrinhDo
             // 
-            this.btnTrinhDo.Caption = "Trình độ";
+            this.btnTrinhDo.Caption = "Trình độ mới";
             this.btnTrinhDo.Glyph = ((System.Drawing.Image)(resources.GetObject("btnTrinhDo.Glyph")));
             this.btnTrinhDo.Id = 177;
             this.btnTrinhDo.ImageIndex = 27;
@@ -852,7 +854,7 @@
             // 
             // btnCapNhatTrinhDo
             // 
-            this.btnCapNhatTrinhDo.Caption = "Cập nhật";
+            this.btnCapNhatTrinhDo.Caption = "Cập nhật trình độ";
             this.btnCapNhatTrinhDo.Glyph = ((System.Drawing.Image)(resources.GetObject("btnCapNhatTrinhDo.Glyph")));
             this.btnCapNhatTrinhDo.Id = 178;
             this.btnCapNhatTrinhDo.ImageIndex = 37;
@@ -1024,6 +1026,7 @@
             this.rpgSV.ItemLinks.Add(this.btnNganhHoc, true);
             this.rpgSV.ItemLinks.Add(this.btnCapNhatNganhHoc);
             this.rpgSV.ItemLinks.Add(this.btnThemMonHoc, true);
+            this.rpgSV.ItemLinks.Add(this.barButtonItem1);
             this.rpgSV.Name = "rpgSV";
             this.rpgSV.Text = "Sinh viên và Lớp";
             // 
@@ -1116,6 +1119,13 @@
             this.rpgGiaoDien.Name = "rpgGiaoDien";
             this.rpgGiaoDien.ShowCaptionButton = false;
             this.rpgGiaoDien.Text = "Giao diện";
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Cập nhật lớp";
+            this.barButtonItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.Glyph")));
+            this.barButtonItem1.Id = 194;
+            this.barButtonItem1.Name = "barButtonItem1";
             // 
             // frmChinh
             // 
@@ -1239,5 +1249,6 @@
         private DevExpress.XtraBars.BarButtonItem btnThanhToanLuong;
         private DevExpress.XtraBars.BarButtonItem btnReStart;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup rpgGiaoDien;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
     }
 }

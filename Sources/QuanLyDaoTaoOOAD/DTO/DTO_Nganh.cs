@@ -10,15 +10,15 @@ namespace DTO
     {
         public string MaNganh { get; set; }
         public string TenNganh { get; set; }
-        public string MaKhoa { get; set; }
+        public string Khoa { get; set; }
 
         public DTO_Nganh() { }
 
-        public DTO_Nganh(string maNganh, string tenNganh, string maKhoa)
+        public DTO_Nganh(string maNganh, string tenNganh, string khoa)
         {
             MaNganh = maNganh;
             TenNganh = tenNganh;
-            MaKhoa = maKhoa;
+            Khoa = khoa;
         }
     }
 }
