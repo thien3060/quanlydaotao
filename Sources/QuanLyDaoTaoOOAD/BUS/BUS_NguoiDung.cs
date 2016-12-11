@@ -36,5 +36,11 @@ namespace BUS
         {
             return nguoidung.KiemTraTonTai(TenDangNhap);
         }
+
+        public void ThietLapLaiMatKhau(string tenDangNhap, string matKhauMoi)
+        {
+            DTO_NguoiDung user = new DTO_NguoiDung(tenDangNhap, matKhauMoi, "", "", "");
+            nguoidung.ThietLapLaiMatKhau(user);
+        }
     }
 }

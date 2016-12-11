@@ -40,6 +40,9 @@
     <Reference Include="DevExpress.XtraBars.v15.2" />
     <Reference Include="DevExpress.Sparkline.v15.2.Core" />
     <Reference Include="DevExpress.XtraEditors.v15.2" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -171,6 +174,12 @@
     </Compile>
     <Compile Include="Presentation\frmChinh.Designer.cs">
       <DependentUpon>frmChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmMatKhau.Designer.cs">
+      <DependentUpon>frmMatKhau.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\frmDangNhap.cs">
       <SubType>Form</SubType>
@@ -405,6 +414,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmChinh.resx">
       <DependentUpon>frmChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmMatKhau.resx">
+      <DependentUpon>frmMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>

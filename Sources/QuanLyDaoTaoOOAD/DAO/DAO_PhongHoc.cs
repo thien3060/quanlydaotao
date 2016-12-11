@@ -26,25 +26,25 @@ namespace DAO
         public void ThemPhongHoc(DTO_PhongHoc phongHoc)
         {
             AddParameter(phongHoc);
-            Connection.ExecuteSqlWithParameter("INSERT INTO phonghoc VALUES (@MaPhong, @ChucNang, @SucChua, @DiaChi)", parameters);
+            Connection.ExecuteSqlWithParameter("INSERT INTO PhongHoc VALUES (@MaPhong, @ChucNang, @SucChua, @DiaChi)", parameters);
         }
         public void CapNhatPhongHoc(DTO_PhongHoc phongHoc)
         {
             AddParameter(phongHoc);
-            Connection.ExecuteSqlWithParameter("UPDATE phonghoc SET ChucNang=@ChucNang, SucChua=@SucChua, DiaChi=@DiaChi WHERE MaPhong=@MaPhong", parameters);
+            Connection.ExecuteSqlWithParameter("UPDATE PhongHoc SET ChucNang=@ChucNang, SucChua=@SucChua, DiaChi=@DiaChi WHERE MaPhong=@MaPhong", parameters);
         }
         public void XoaPhongHoc(DTO_PhongHoc phongHoc)
         {
             AddParameter(phongHoc);
-            Connection.ExecuteSql("DELETE FROM phonghoc WHERE MaPhong='" + phongHoc.MaPhong + "'");
+            Connection.ExecuteSql("DELETE FROM PhongHoc WHERE MaPhong='" + phongHoc.MaPhong + "'");
         }
         public DataTable TaobangPhongHoc(string dieukien)
         {
-            return Connection.GetDataTable("SELECT * FROM phonghoc " + dieukien);
+            return Connection.GetDataTable("SELECT * FROM PhongHoc " + dieukien);
         }
         public string LayMaPhongHocLonNhat()
         {
-            DataTable temp = Connection.GetDataTable("SELECT * FROM phonghoc ORDER BY MaPhong ASC");
+            DataTable temp = Connection.GetDataTable("SELECT * FROM PhongHoc ORDER BY MaPhong ASC");
             if (temp.Rows.Count == 0)
             {
                 return null;
@@ -53,7 +53,7 @@ namespace DAO
         }
         public int LayKichThuocBang()
         {
-            DataTable dt = Connection.GetDataTable("SELECT * FROM phonghoc");
+            DataTable dt = Connection.GetDataTable("SELECT * FROM PhongHoc");
             return dt.Rows.Count;
         }
     }

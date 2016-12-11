@@ -126,6 +126,7 @@
             this.btnHuy.Size = new System.Drawing.Size(114, 43);
             this.btnHuy.TabIndex = 9;
             this.btnHuy.Text = "Hủy";
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnLuu
             // 
@@ -136,6 +137,7 @@
             this.btnLuu.Size = new System.Drawing.Size(114, 43);
             this.btnLuu.TabIndex = 8;
             this.btnLuu.Text = "Lưu";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // numSucChua
             // 

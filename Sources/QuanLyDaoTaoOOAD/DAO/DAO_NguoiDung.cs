@@ -32,7 +32,12 @@ namespace DAO
         public void CapNhatNguoiDung(DTO_NguoiDung nguoiDung)
         {
             AddParameter(nguoiDung);
-            Connection.ExecuteSqlWithParameter("UPDATE nguoidung SET TenDangNhap=@TenDangNhap,MatKhau=@MatKhau,TenND=@TenND,Quyen=@Quyen,MoTaQuyen=@MoTaQuyen WHERE MaND=@MaND", parameters);
+            Connection.ExecuteSqlWithParameter("UPDATE nguoidung SET MatKhau=@MatKhau,TenND=@TenND,Quyen=@Quyen,MoTaQuyen=@MoTaQuyen WHERE TenDangNhap=@TenDangNhap", parameters);
+        }
+        public void ThietLapLaiMatKhau(DTO_NguoiDung nguoiDung)
+        {
+            AddParameter(nguoiDung);
+            Connection.ExecuteSqlWithParameter("UPDATE nguoidung SET MatKhau=@MatKhau WHERE TenDangNhap=@TenDangNhap", parameters);
         }
         public void XoaNguoiDung(DTO_NguoiDung nguoiDung)
         {

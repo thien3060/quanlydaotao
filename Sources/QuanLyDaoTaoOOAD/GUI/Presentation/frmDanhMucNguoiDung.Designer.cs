@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnDoiMatKhau = new DevExpress.XtraEditors.SimpleButton();
             this.btnIn = new DevExpress.XtraEditors.SimpleButton();
             this.txtQuyen = new DevExpress.XtraEditors.TextEdit();
@@ -37,22 +39,26 @@
             this.txtTenDangNhap = new DevExpress.XtraEditors.TextEdit();
             this.lblTenKH = new DevExpress.XtraEditors.LabelControl();
             this.lblMaNV = new DevExpress.XtraEditors.LabelControl();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.TenDangNhap = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.HoTen = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Quyen = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtQuyen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoTen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
-            this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.simpleButton2);
+            this.panelControl1.Controls.Add(this.simpleButton1);
             this.panelControl1.Controls.Add(this.pictureBox3);
             this.panelControl1.Controls.Add(this.btnDoiMatKhau);
             this.panelControl1.Controls.Add(this.btnIn);
@@ -67,6 +73,26 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(957, 156);
             this.panelControl1.TabIndex = 3;
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.simpleButton1.Location = new System.Drawing.Point(808, 112);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(137, 39);
+            this.simpleButton1.TabIndex = 9;
+            this.simpleButton1.Text = "In ";
+            this.simpleButton1.Click += new System.EventHandler(this.btnIn_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::QuanLyDaoTao.Properties.Resources.nguoidung;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.Location = new System.Drawing.Point(19, 18);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(124, 103);
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
             // 
             // btnDoiMatKhau
             // 
@@ -165,52 +191,81 @@
             this.lblMaNV.TabIndex = 0;
             this.lblMaNV.Text = "Tên đăng nhập:";
             // 
-            // groupControl1
+            // gridControl1
             // 
-            this.groupControl1.Controls.Add(this.dataGridView1);
-            this.groupControl1.Location = new System.Drawing.Point(13, 163);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(932, 253);
-            this.groupControl1.TabIndex = 4;
-            this.groupControl1.Text = "Danh sách người dùng";
+            this.gridControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridControl1.Location = new System.Drawing.Point(0, 162);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(957, 264);
+            this.gridControl1.TabIndex = 4;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
             // 
-            // dataGridView1
+            // gridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 24);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(921, 224);
-            this.dataGridView1.TabIndex = 0;
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.TenDangNhap,
+            this.HoTen,
+            this.Quyen});
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
             // 
-            // pictureBox3
+            // TenDangNhap
             // 
-            this.pictureBox3.BackgroundImage = global::QuanLyDaoTao.Properties.Resources.nguoidung;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(19, 18);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(124, 103);
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
+            this.TenDangNhap.Caption = "Tên Đăng Nhập";
+            this.TenDangNhap.FieldName = "TenDangNhap";
+            this.TenDangNhap.Name = "TenDangNhap";
+            this.TenDangNhap.Visible = true;
+            this.TenDangNhap.VisibleIndex = 0;
+            // 
+            // HoTen
+            // 
+            this.HoTen.Caption = "Họ Tên";
+            this.HoTen.FieldName = "TenNguoiDung";
+            this.HoTen.Name = "HoTen";
+            this.HoTen.Visible = true;
+            this.HoTen.VisibleIndex = 1;
+            // 
+            // Quyen
+            // 
+            this.Quyen.Caption = "Quyền";
+            this.Quyen.FieldName = "MoTaQuyen";
+            this.Quyen.Name = "Quyen";
+            this.Quyen.Visible = true;
+            this.Quyen.VisibleIndex = 2;
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.simpleButton2.Location = new System.Drawing.Point(649, 112);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(137, 39);
+            this.simpleButton2.TabIndex = 9;
+            this.simpleButton2.Text = "Thiết Lập Mật Khẩu";
+            this.simpleButton2.Click += new System.EventHandler(this.btnReload_Click);
             // 
             // frmDanhMucNguoiDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(957, 428);
-            this.Controls.Add(this.groupControl1);
+            this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.panelControl1);
             this.Name = "frmDanhMucNguoiDung";
             this.Text = "frmDanhMucNguoiDung";
+            this.Load += new System.EventHandler(this.frmDanhMucNguoiDung_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtQuyen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoTen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
-            this.groupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -227,7 +282,12 @@
         private DevExpress.XtraEditors.LabelControl lblTenKH;
         private DevExpress.XtraEditors.LabelControl lblMaNV;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private DevExpress.XtraEditors.GroupControl groupControl1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraGrid.Columns.GridColumn TenDangNhap;
+        private DevExpress.XtraGrid.Columns.GridColumn HoTen;
+        private DevExpress.XtraGrid.Columns.GridColumn Quyen;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
     }
 }
