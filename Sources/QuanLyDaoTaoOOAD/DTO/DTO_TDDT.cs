@@ -8,15 +8,17 @@ namespace DTO
 {
     public class DTO_TDDT
     {
-        public string MaTD { get; set; }
-        public string TenTD { get; set; }
+        public string MaTrinhDo { get; set; }
+        public string TenTrinhDo { get; set; }
+        public string HeSoLuong { get; set; }
 
         public DTO_TDDT() { }
 
-        public DTO_TDDT(string maTd, string tenTd)
+        public DTO_TDDT(string maTrinhDo, string tenTrinhDo, string heSoLuong)
         {
-            MaTD = maTd;
-            TenTD = tenTd;
+            MaTrinhDo = maTrinhDo;
+            TenTrinhDo = tenTrinhDo;
+            HeSoLuong = heSoLuong;
         }
     }
 }

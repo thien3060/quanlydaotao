@@ -43,9 +43,10 @@
     <Compile Include="DTO_BuoiHoc.cs" />
     <Compile Include="DTO_ChucVu.cs" />
     <Compile Include="DTO_DamNhiem.cs" />
+    <Compile Include="DTO_MonHoc.cs" />
     <Compile Include="DTO_GiangDay.cs" />
     <Compile Include="DTO_SinhVien.cs" />
-    <Compile Include="DTO_GiaoVien.cs" />
+    <Compile Include="DTO_GiangVien.cs" />
     <Compile Include="DTO_GVCN.cs" />
     <Compile Include="DTO_HeDT.cs" />
     <Compile Include="DTO_HocKy.cs" />

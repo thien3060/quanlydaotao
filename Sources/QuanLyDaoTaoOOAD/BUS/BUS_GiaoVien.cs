@@ -9,37 +9,37 @@ using DTO;
 
 namespace BUS
 {
-    public class BUS_GiaoVien
+    public class BUS_GiangVien
     {
-        private DAO_GiaoVien gv = new DAO_GiaoVien();
-        public DataTable TaobangGiaoVien(string dieukien)
+        private DAO_GiangVien gv = new DAO_GiangVien();
+        public DataTable TaobangGiangVien(string dieukien)
         {
-            return gv.TaobangGiaoVien(dieukien);
+            return gv.TaobangGiangVien(dieukien);
         }
-        public void ThemdulieuGiaoVien(DTO_GiaoVien et)
+        public void ThemdulieuGiangVien(DTO_GiangVien et)
         {
-            gv.ThemGiaoVien(et);
+            gv.ThemGiangVien(et);
         }
-        public void SuadulieuGiaoVien(DTO_GiaoVien et)
+        public void SuadulieuGiangVien(DTO_GiangVien et)
         {
-            gv.CapNhatGiaoVien(et);
+            gv.CapNhatGiangVien(et);
         }
-        public void XoadulieuGiaoVien(DTO_GiaoVien et)
+        public void XoadulieuGiangVien(DTO_GiangVien et)
         {
-            gv.XoaGiaoVien(et);
+            gv.XoaGiangVien(et);
         }
 
         public string TuTinhMa()
         {
-            string s = gv.LayMaGiaoVienLonNhat();
+            string s = gv.LayMaGiangVienLonNhat();
             string maMoi;
             if (s == null)
             {
-                maMoi = "GV001";
+                maMoi = "GV0001";
                 return maMoi;
             }
             int last = Int32.Parse(s.Substring(2).ToString()) + 1;
-            maMoi = "GV" + last.ToString("000");
+            maMoi = "GV" + last.ToString("0000");
             return maMoi;
         }
     }

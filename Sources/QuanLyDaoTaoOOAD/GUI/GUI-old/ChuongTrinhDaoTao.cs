@@ -17,8 +17,7 @@ namespace QuanLyDaoTao
         private bool CapNhat;
         DTO_Nganh dto_nganh = new DTO_Nganh();
         DTO_KHDT dto_khdt = new DTO_KHDT();
-        DTO_GiaoVien dto_gv = new DTO_GiaoVien();
-        BUS_GiaoVien bus_gv = new BUS_GiaoVien();
+        DTO_GiangVien dto_gv = new DTO_GiangVien();
         BUS_HocPhan bus_hocphan = new BUS_HocPhan();
         BUS_Khoa bus_khoa = new BUS_Khoa();        
         BUS_TDDT bus_tddt = new BUS_TDDT();

@@ -801,7 +801,6 @@
             this.bt_QLGV.Caption = "Giảng viên";
             this.bt_QLGV.Id = 3;
             this.bt_QLGV.Name = "bt_QLGV";
-            this.bt_QLGV.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bt_QLGV_ItemClick);
             // 
             // barButtonItem4
             // 
@@ -1192,7 +1191,6 @@
             this.bt_QLTDDT.Caption = "Trình độ đào tạo";
             this.bt_QLTDDT.Id = 45;
             this.bt_QLTDDT.Name = "bt_QLTDDT";
-            this.bt_QLTDDT.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bt_QLTDDT_ItemClick);
             // 
             // bt_QLNamHoc
             // 
@@ -1225,14 +1223,12 @@
             this.bt_QLDamNhiem.Caption = "Đảm nhiệm";
             this.bt_QLDamNhiem.Id = 50;
             this.bt_QLDamNhiem.Name = "bt_QLDamNhiem";
-            this.bt_QLDamNhiem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bt_QLDamNhiem_ItemClick);
             // 
             // bt_QLGiangDay
             // 
             this.bt_QLGiangDay.Caption = "Giảng dạy";
             this.bt_QLGiangDay.Id = 51;
             this.bt_QLGiangDay.Name = "bt_QLGiangDay";
-            this.bt_QLGiangDay.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bt_QLGiangDay_ItemClick);
             // 
             // bt_QLTKB
             // 
@@ -1246,7 +1242,6 @@
             this.bt_gvcn.Caption = "Giáo viên chủ nhiệm";
             this.bt_gvcn.Id = 53;
             this.bt_gvcn.Name = "bt_gvcn";
-            this.bt_gvcn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bt_gvcn_ItemClick);
             // 
             // ribbonPage1
             // 

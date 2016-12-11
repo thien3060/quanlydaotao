@@ -17,32 +17,33 @@ namespace DAO
         private void AddParameter(DTO_TDDT tddt)
         {
             parameters.Clear();
-            parameters.Add("@MaTD", tddt.MaTD);
-            parameters.Add("@TenTD", tddt.TenTD);
+            parameters.Add("@MaTrinhDo", tddt.MaTrinhDo);
+            parameters.Add("@TenTrinhDo", tddt.TenTrinhDo);
+            parameters.Add("@HeSoLuong", tddt.HeSoLuong);
         }
 
         public void ThemTDDT(DTO_TDDT tddt)
         {
             AddParameter(tddt);
-            Connection.ExecuteSqlWithParameter("INSERT INTO tddt VALUES (@MaTD, @TenTD)", parameters);
+            Connection.ExecuteSqlWithParameter("INSERT INTO TrinhDo VALUES (@MaTrinhDo, @TenTrinhDo, @HeSoLuong)", parameters);
         }
         public void CapNhatTDDT(DTO_TDDT tddt)
         {
             AddParameter(tddt);
-            Connection.ExecuteSqlWithParameter("UPDATE tddt SET TenTD=@TenTD WHERE MaTD=@MaTD", parameters);
+            Connection.ExecuteSqlWithParameter("UPDATE TrinhDo SET TenTrinhDo=@TenTrinhDo,HeSoLuong=@HeSoLuong WHERE MaTrinhDo=@MaTrinhDo", parameters);
         }
         public void XoaTDDT(DTO_TDDT tddt)
         {
             AddParameter(tddt);
-            Connection.ExecuteSql("DELETE FROM tddt WHERE MaTD='" + tddt.MaTD + "'");
+            Connection.ExecuteSql("DELETE FROM TrinhDo WHERE MaTrinhDo='" + tddt.MaTrinhDo + "'");
         }
         public DataTable TaobangTDDT(string dieukien)
         {
-            return Connection.GetDataTable("SELECT * FROM tddt " + dieukien);
+            return Connection.GetDataTable("SELECT * FROM TrinhDo " + dieukien);
         }
         public string LayMaTDDTLonNhat()
         {
-            DataTable temp = Connection.GetDataTable("SELECT * FROM tddt ORDER BY MaTD ASC");
+            DataTable temp = Connection.GetDataTable("SELECT * FROM TrinhDo ORDER BY MaTrinhDo ASC");
             if (temp.Rows.Count == 0)
             {
                 return null;
@@ -51,7 +52,7 @@ namespace DAO
         }
         public int LayKichThuocBang()
         {
-            DataTable dt = Connection.GetDataTable("SELECT * FROM tddt");
+            DataTable dt = Connection.GetDataTable("SELECT * FROM TrinhDo");
             return dt.Rows.Count;
         }
     }

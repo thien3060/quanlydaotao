@@ -64,18 +64,6 @@
     <Compile Include="GUI-old\FrmThoiKhoaBieu.Designer.cs">
       <DependentUpon>FrmThoiKhoaBieu.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI-old\FrmGiangDay.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI-old\FrmGiangDay.Designer.cs">
-      <DependentUpon>FrmGiangDay.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI-old\FrmGVCN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI-old\FrmGVCN.Designer.cs">
-      <DependentUpon>FrmGVCN.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI-old\FrmNhomHP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,12 +75,6 @@
     </Compile>
     <Compile Include="GUI-old\FrmKhoiLop.Designer.cs">
       <DependentUpon>FrmKhoiLop.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI-old\FrmDamNhiem.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI-old\FrmDamNhiem.Designer.cs">
-      <DependentUpon>FrmDamNhiem.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI-old\FrmHocPhan.cs">
       <SubType>Form</SubType>
@@ -136,12 +118,6 @@
     <Compile Include="GUI-old\FrmNhomLop.Designer.cs">
       <DependentUpon>FrmNhomLop.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI-old\FrmTDDT.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI-old\FrmTDDT.Designer.cs">
-      <DependentUpon>FrmTDDT.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI-old\FrmNamHoc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,12 +153,6 @@
     </Compile>
     <Compile Include="GUI-old\FrmKhoa.Designer.cs">
       <DependentUpon>FrmKhoa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI-old\FrmGiaoVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI-old\FrmGiaoVien.Designer.cs">
-      <DependentUpon>FrmGiaoVien.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI-old\FrmMain.cs">
       <SubType>Form</SubType>
@@ -382,20 +352,11 @@
     <EmbeddedResource Include="GUI-old\FrmThoiKhoaBieu.resx">
       <DependentUpon>FrmThoiKhoaBieu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI-old\FrmGiangDay.resx">
-      <DependentUpon>FrmGiangDay.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI-old\FrmGVCN.resx">
-      <DependentUpon>FrmGVCN.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI-old\FrmNhomHP.resx">
       <DependentUpon>FrmNhomHP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI-old\FrmKhoiLop.resx">
       <DependentUpon>FrmKhoiLop.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI-old\FrmDamNhiem.resx">
-      <DependentUpon>FrmDamNhiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI-old\FrmHocPhan.resx">
       <DependentUpon>FrmHocPhan.cs</DependentUpon>
@@ -418,9 +379,6 @@
     <EmbeddedResource Include="GUI-old\FrmNhomLop.resx">
       <DependentUpon>FrmNhomLop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI-old\FrmTDDT.resx">
-      <DependentUpon>FrmTDDT.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI-old\FrmNamHoc.resx">
       <DependentUpon>FrmNamHoc.cs</DependentUpon>
     </EmbeddedResource>
@@ -438,9 +396,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI-old\FrmKhoa.resx">
       <DependentUpon>FrmKhoa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI-old\FrmGiaoVien.resx">
-      <DependentUpon>FrmGiaoVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI-old\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>

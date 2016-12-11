@@ -24,7 +24,7 @@ namespace BUS
         {
             sv.CapNhatSinhVien(et);
         }
-        public void XoadulieuSinhVienn(DTO_SinhVien et)
+        public void XoadulieuSinhVien(DTO_SinhVien et)
         {
             sv.XoaSinhVien(et);
         }

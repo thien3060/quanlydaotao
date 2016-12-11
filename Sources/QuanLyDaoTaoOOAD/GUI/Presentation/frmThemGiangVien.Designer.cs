@@ -173,6 +173,7 @@
             this.btnHuy.Size = new System.Drawing.Size(114, 43);
             this.btnHuy.TabIndex = 11;
             this.btnHuy.Text = "Hủy";
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnLuu
             // 
@@ -183,6 +184,7 @@
             this.btnLuu.Size = new System.Drawing.Size(114, 43);
             this.btnLuu.TabIndex = 10;
             this.btnLuu.Text = "Lưu";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // pictureBox1
             // 
@@ -214,6 +216,7 @@
             this.Controls.Add(this.lblMSSV);
             this.Name = "frmThemGiangVien";
             this.Text = "Giảng viên mới";
+            this.Load += new System.EventHandler(this.frmThemGiangVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cmbTrinhDo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoTen.Properties)).EndInit();

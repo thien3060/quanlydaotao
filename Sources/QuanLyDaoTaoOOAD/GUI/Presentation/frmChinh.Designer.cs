@@ -118,6 +118,7 @@
             this.btnNhapXuatDuLieu = new DevExpress.XtraBars.BarButtonItem();
             this.btnThanhToanLuong = new DevExpress.XtraBars.BarButtonItem();
             this.btnReStart = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.rpTrangChu = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgNguoiDung = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpSinhVien = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -145,7 +146,6 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.rpgGiaoDien = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit2)).BeginInit();
@@ -768,7 +768,7 @@
             // 
             // btnCapNhatGV_giaoVu
             // 
-            this.btnCapNhatGV_giaoVu.Caption = "Cập nhật thông tin GV";
+            this.btnCapNhatGV_giaoVu.Caption = "Cập nhật GV";
             this.btnCapNhatGV_giaoVu.Glyph = ((System.Drawing.Image)(resources.GetObject("btnCapNhatGV_giaoVu.Glyph")));
             this.btnCapNhatGV_giaoVu.Id = 166;
             this.btnCapNhatGV_giaoVu.LargeImageIndex = 50;
@@ -892,6 +892,13 @@
             this.btnReStart.LargeImageIndex = 57;
             this.btnReStart.Name = "btnReStart";
             this.btnReStart.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnReStart_ItemClick);
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Cập nhật môn học";
+            this.barButtonItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.Glyph")));
+            this.barButtonItem1.Id = 194;
+            this.barButtonItem1.Name = "barButtonItem1";
             // 
             // rpTrangChu
             // 
@@ -1119,13 +1126,6 @@
             this.rpgGiaoDien.Name = "rpgGiaoDien";
             this.rpgGiaoDien.ShowCaptionButton = false;
             this.rpgGiaoDien.Text = "Giao diện";
-            // 
-            // barButtonItem1
-            // 
-            this.barButtonItem1.Caption = "Cập nhật lớp";
-            this.barButtonItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.Glyph")));
-            this.barButtonItem1.Id = 194;
-            this.barButtonItem1.Name = "barButtonItem1";
             // 
             // frmChinh
             // 

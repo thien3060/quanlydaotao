@@ -43,6 +43,11 @@
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.MSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaLop = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.cmbLop.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgaySinh.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgaySinh.Properties)).BeginInit();
@@ -98,6 +103,7 @@
             this.btnHuy.Size = new System.Drawing.Size(114, 43);
             this.btnHuy.TabIndex = 25;
             this.btnHuy.Text = "Xóa";
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnLuu
             // 
@@ -108,6 +114,7 @@
             this.btnLuu.Size = new System.Drawing.Size(148, 43);
             this.btnLuu.TabIndex = 24;
             this.btnLuu.Text = "Lưu thay đổi";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // txtDiaChi
             // 
@@ -200,19 +207,31 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupControl1.Controls.Add(this.dataGridView1);
             this.groupControl1.Location = new System.Drawing.Point(13, 241);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(913, 196);
+            this.groupControl1.Size = new System.Drawing.Size(913, 230);
             this.groupControl1.TabIndex = 26;
             this.groupControl1.Text = "Danh sách sinh viên";
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MSSV,
+            this.HoTen,
+            this.NgaySinh,
+            this.DiaChi,
+            this.MaLop});
             this.dataGridView1.Location = new System.Drawing.Point(6, 24);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(902, 167);
+            this.dataGridView1.Size = new System.Drawing.Size(902, 201);
             this.dataGridView1.TabIndex = 0;
             // 
             // pictureBox1
@@ -224,6 +243,38 @@
             this.pictureBox1.Size = new System.Drawing.Size(131, 139);
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
+            // 
+            // MSSV
+            // 
+            this.MSSV.DataPropertyName = "MSSV";
+            this.MSSV.HeaderText = "MSSV";
+            this.MSSV.Name = "MSSV";
+            // 
+            // HoTen
+            // 
+            this.HoTen.DataPropertyName = "HoTen";
+            this.HoTen.HeaderText = "Họ Tên";
+            this.HoTen.Name = "HoTen";
+            this.HoTen.Width = 200;
+            // 
+            // NgaySinh
+            // 
+            this.NgaySinh.DataPropertyName = "NgaySinh";
+            this.NgaySinh.HeaderText = "Ngày Sinh";
+            this.NgaySinh.Name = "NgaySinh";
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.DataPropertyName = "DiaChi";
+            this.DiaChi.HeaderText = "Địa Chỉ";
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.Width = 300;
+            // 
+            // MaLop
+            // 
+            this.MaLop.DataPropertyName = "MaLop";
+            this.MaLop.HeaderText = "Mã Lớp";
+            this.MaLop.Name = "MaLop";
             // 
             // frmCapNhatSinhVien
             // 
@@ -246,6 +297,7 @@
             this.Controls.Add(this.lblMSSV);
             this.Name = "frmCapNhatSinhVien";
             this.Text = "Cập nhật sinh viên";
+            this.Load += new System.EventHandler(this.frmCapNhatSinhVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cmbLop.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgaySinh.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgaySinh.Properties)).EndInit();
@@ -280,5 +332,10 @@
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MSSV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaLop;
     }
 }

@@ -115,18 +115,6 @@ namespace QuanLyDaoTao
 
         }
 
-        private void bt_QLGV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            foreach (Form frm in this.MdiChildren)
-            {
-                frm.Close();
-            }
-            FrmGiaoVien gv = new FrmGiaoVien();
-            gv.Dock = DockStyle.Fill;
-            gv.MdiParent = this;
-            gv.Show();
-        }
-
         private void bt_QLNganh_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             foreach (Form frm in this.MdiChildren)
@@ -185,18 +173,6 @@ namespace QuanLyDaoTao
             buoihoc.Dock = DockStyle.Fill;
             buoihoc.MdiParent = this;
             buoihoc.Show();
-        }
-
-        private void bt_QLGiangDay_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            foreach (Form frm in this.MdiChildren)
-            {
-                frm.Close();
-            }
-            FrmGiangDay giangday = new FrmGiangDay();
-            giangday.Dock = DockStyle.Fill;
-            giangday.MdiParent = this;
-            giangday.Show();
         }
 
         private void bt_QLTKB_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -273,18 +249,6 @@ namespace QuanLyDaoTao
             hocphan.Show();
         }
 
-        private void bt_gvcn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            foreach (Form frm in this.MdiChildren)
-            {
-                frm.Close();
-            }
-            FrmGVCN gvcn = new FrmGVCN();
-            gvcn.Dock = DockStyle.Fill;
-            gvcn.MdiParent = this;
-            gvcn.Show();
-        }
-
         //TODO: Danh mục chung
 
         private void bt_QLChucVu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -321,30 +285,6 @@ namespace QuanLyDaoTao
             hedt.Dock = DockStyle.Fill;
             hedt.MdiParent = this;
             hedt.Show();
-        }
-
-        private void bt_QLTDDT_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            foreach (Form frm in this.MdiChildren)
-            {
-                frm.Close();
-            }
-            FrmTDDT tddt = new FrmTDDT();
-            tddt.Dock = DockStyle.Fill;
-            tddt.MdiParent = this;
-            tddt.Show();
-        }
-
-        private void bt_QLDamNhiem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            foreach (Form frm in this.MdiChildren)
-            {
-                frm.Close();
-            }
-            FrmDamNhiem damnhiem = new FrmDamNhiem();
-            damnhiem.Dock = DockStyle.Fill;
-            damnhiem.MdiParent = this;
-            damnhiem.Show();
         }
 
         //TODO: Admin
