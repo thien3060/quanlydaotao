@@ -80,9 +80,10 @@ namespace QuanLyDaoTao.Presentation
                     frm.truyen += new frmMatKhau.TruyenMatKhau(GetMatKhau);
                     if (frm.ShowDialog() == DialogResult.OK)
                     {
+                        //them "user" vao ten dang nhap de tranh trung ten dang nhap
                         DTO_NguoiDung user = new DTO_NguoiDung()
                         {
-                            TenDangNhap = gv.MaGV.ToLower(),
+                            TenDangNhap = "user" + gv.MaGV.ToLower(),
                             MatKhau = UtilitiesClass.MaHoaMD5(_matKhau),
                             TenNguoiDung = gv.HoTen,
                             Quyen = "2",
@@ -92,7 +93,6 @@ namespace QuanLyDaoTao.Presentation
                         bus_nd.ThemdulieuNguoiDung(user);
                         MessageBoxUtils.Success("Thành công");
                         ClearText();
-                        txtMaGV.Text = bus_gv.TuTinhMa();
                     }
                     else
                         MessageBoxUtils.Exclamation("Không thể thêm giảng viên khi chưa thiết lập mật khẩu");
@@ -110,6 +110,8 @@ namespace QuanLyDaoTao.Presentation
 
         private void ClearText()
         {
+            txtMaGV.ResetText();
+            txtMaGV.Text = bus_gv.TuTinhMa();
             txtHoTen.ResetText();
             txtDiaChi.ResetText();
             txtHoTen.Focus();

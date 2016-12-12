@@ -68,6 +68,7 @@
             // 
             // txtMaNganh
             // 
+            this.txtMaNganh.Enabled = false;
             this.txtMaNganh.EnterMoveNextControl = true;
             this.txtMaNganh.Location = new System.Drawing.Point(242, 25);
             this.txtMaNganh.Name = "txtMaNganh";

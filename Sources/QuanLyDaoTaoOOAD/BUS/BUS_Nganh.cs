@@ -39,11 +39,11 @@ namespace BUS
             string maMoi;
             if (s == null)
             {
-                maMoi = "NGH001";
+                maMoi = "NG001";
                 return maMoi;
             }
-            int last = Int32.Parse(s.Substring(3).ToString()) + 1;
-            maMoi = "NGH" + last.ToString("000");
+            int last = Int32.Parse(s.Substring(2).ToString()) + 1;
+            maMoi = "NG" + last.ToString("000");
             return maMoi;
         }
     }

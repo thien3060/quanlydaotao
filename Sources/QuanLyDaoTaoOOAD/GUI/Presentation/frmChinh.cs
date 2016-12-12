@@ -405,6 +405,19 @@ namespace QuanLyDaoTao.Presentation
             }
         }
 
+        private void btnCapNhatNganhHoc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                frmCapNhatNganhHoc frm = new frmCapNhatNganhHoc();
+                TabCreating("Cập nhật ngành học", frm);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
         private void btnThemMonHoc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             try
@@ -418,12 +431,38 @@ namespace QuanLyDaoTao.Presentation
             }
         }
 
+        private void btnCapNhatMonHoc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                frmCapNhatMonHoc frm = new frmCapNhatMonHoc();
+                TabCreating("Cập nhật môn học", frm);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
         private void btnGiangVienMoi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             try
             {
                 frmThemGiangVien frm = new frmThemGiangVien();
                 TabCreating("Giảng viên mới", frm);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void btnCapNhatGV_giaoVu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                frmCapNhatGiangVien frm = new frmCapNhatGiangVien();
+                TabCreating("Cập nhật giảng viên", frm);
             }
             catch (Exception)
             {
@@ -444,12 +483,38 @@ namespace QuanLyDaoTao.Presentation
             }
         }
 
+        private void btnCapNhatTrinhDo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                frmCapNhatTrinhDo frm = new frmCapNhatTrinhDo();
+                TabCreating("Cập nhật trình độ", frm);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
         private void btnPhongHocMoi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             try
             {
                 frmThemPhongHoc frm = new frmThemPhongHoc();
                 TabCreating("Phòng học mới", frm);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void btnCapNhatPhongHoc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                frmCapNhatPhongHoc frm = new frmCapNhatPhongHoc();
+                TabCreating("Cập nhật phòng học", frm);
             }
             catch (Exception)
             {

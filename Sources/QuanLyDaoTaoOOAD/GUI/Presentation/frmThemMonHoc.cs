@@ -23,6 +23,19 @@ namespace QuanLyDaoTao.Presentation
             InitializeComponent();
         }
 
+        private void frmThemMonHoc_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                txtMaMH.Text = bus_mh.TuTinhMa();
+                txtTenMH.Focus();
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
+
         private void btnLuu_Click(object sender, EventArgs e)
         {
             try
@@ -87,14 +100,27 @@ namespace QuanLyDaoTao.Presentation
             }
         }
 
-        private void btnHuy_Click(object sender, EventArgs e)
+        private void ClearText()
         {
             txtMaMH.ResetText();
+            txtMaMH.Text = bus_mh.TuTinhMa();
             txtTenMH.ResetText();
             numSTC.Value = 0;
             numLyThuyet.Value = 3;
             numThucHanh.Value = 0;
             txtMaMH.Focus();
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ClearText();
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
         }
     }
 }

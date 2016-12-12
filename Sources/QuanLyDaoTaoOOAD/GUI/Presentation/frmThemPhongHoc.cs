@@ -23,6 +23,19 @@ namespace QuanLyDaoTao.Presentation
             InitializeComponent();
         }
 
+        private void frmThemPhongHoc_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                txtMaPhong.Text = bus_ph.TuTinhMa();
+                txtChucNang.Focus();
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
+
         private void btnLuu_Click(object sender, EventArgs e)
         {
             try
@@ -39,6 +52,12 @@ namespace QuanLyDaoTao.Presentation
                     p.ChucNang = txtChucNang.Text;
                 if (!string.IsNullOrEmpty(txtDiaChi.Text))
                     p.DiaChi = txtDiaChi.Text;
+                else
+                {
+                    MessageBoxUtils.Exclamation("Địa chỉ phòng không được rỗng");
+                    return;
+                }
+
                 p.SucChua = numSucChua.Value.ToString();
                 bus_ph.ThemdulieuPhongHoc(p);
                 MessageBoxUtils.Success("Thành công!");
@@ -55,6 +74,7 @@ namespace QuanLyDaoTao.Presentation
             try
             {
                 txtMaPhong.ResetText();
+                txtMaPhong.Text = bus_ph.TuTinhMa();
                 numSucChua.Value = 1;
                 txtChucNang.ResetText();
                 txtDiaChi.ResetText();

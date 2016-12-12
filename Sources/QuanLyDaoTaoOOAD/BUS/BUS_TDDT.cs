@@ -35,11 +35,11 @@ namespace BUS
             string maMoi;
             if (s == null)
             {
-                maMoi = "TDDT001";
+                maMoi = "TD001";
                 return maMoi;
             }
             int last = Int32.Parse(s.Substring(4).ToString()) + 1;
-            maMoi = "TDDT" + last.ToString("000"); 
+            maMoi = "TD" + last.ToString("000"); 
             return maMoi;
         }
     }

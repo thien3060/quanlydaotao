@@ -13,23 +13,24 @@ using BUS;
 using QuanLyDaoTao.Utilities;
 using QuanLyDaoTao.Utils;
 
-
 namespace QuanLyDaoTao.Presentation
 {
-    public partial class frmThemTrinhDo : DevExpress.XtraEditors.XtraForm
+    public partial class frmCapNhatTrinhDo : DevExpress.XtraEditors.XtraForm
     {
-        BUS_TDDT bus_td = new BUS_TDDT();
-        public frmThemTrinhDo()
+        BUS_TDDT bus_trinhdo = new BUS_TDDT();
+
+        public frmCapNhatTrinhDo()
         {
             InitializeComponent();
         }
 
-        private void frmThemTrinhDo_Load(object sender, EventArgs e)
+        private DataTable nguon;
+
+        private void frmCapNhatTrinhDo_Load(object sender, EventArgs e)
         {
             try
             {
-                txtMaTrinhDo.Text = bus_td.TuTinhMa();
-                txtTenTrinhDo.Focus();
+                CapNhatDuLieuBang();
             }
             catch (Exception ex)
             {
@@ -37,18 +38,17 @@ namespace QuanLyDaoTao.Presentation
             }
         }
 
-        private void btnLuu_Click(object sender, EventArgs e)
+        private bool check(DTO_TDDT td)
         {
             try
             {
-                DTO_TDDT td = new DTO_TDDT();
                 if (!string.IsNullOrEmpty(txtMaTrinhDo.Text))
                     td.MaTrinhDo = txtMaTrinhDo.Text.Trim();
                 else
                 {
                     MessageBoxUtils.Exclamation("Mã trình độ không được để trống");
                     txtMaTrinhDo.Focus();
-                    return;
+                    return false;
                 }
                 if (!string.IsNullOrEmpty(txtTenTrinhDo.Text))
                     td.TenTrinhDo = txtTenTrinhDo.Text.Trim();
@@ -56,7 +56,7 @@ namespace QuanLyDaoTao.Presentation
                 {
                     MessageBoxUtils.Exclamation("Tên trình độ không được để trống");
                     txtTenTrinhDo.Focus();
-                    return;
+                    return false;
                 }
                 if (numLuong.Value > 0)
                     td.HeSoLuong = numLuong.Value.ToString();
@@ -64,27 +64,10 @@ namespace QuanLyDaoTao.Presentation
                 {
                     MessageBoxUtils.Exclamation("Tên trình độ không được để trống");
                     txtTenTrinhDo.Focus();
-                    return;
+                    return false;
                 }
-                bus_td.ThemdulieuTDDT(td);
-                MessageBoxUtils.Success("Thành công");
-                ClearText();
-            }
-            catch (Exception ex)
-            {
-                ExceptionUtil.ThrowMsgBox(ex.Message);
-            }
-        }
 
-        private void ClearText()
-        {
-            try
-            {
-                txtMaTrinhDo.ResetText();
-                txtMaTrinhDo.Text = bus_td.TuTinhMa();
-                numLuong.Value = 50000;
-                txtTenTrinhDo.ResetText();
-                txtMaTrinhDo.Focus();
+                return true;
             }
             catch (Exception ex)
             {
@@ -92,16 +75,69 @@ namespace QuanLyDaoTao.Presentation
             }
         }
 
-        private void btnHuy_Click(object sender, EventArgs e)
+        private void btnLuu_Click(object sender, EventArgs e)
         {
             try
             {
-                ClearText();
+                DTO_TDDT td = TrinhDoHienTai();
+                if (check(td))
+                {
+                    bus_trinhdo.SuadulieuTDDT(td);
+                    CapNhatDuLieuBang();
+                    MessageBoxUtils.Success("Đã cập nhật thay đổi vào CSDL");
+                }
+                
             }
             catch (Exception ex)
             {
                 ExceptionUtil.ThrowMsgBox(ex.Message);
             }
+        }
+
+        private void toolStripMenuXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MessageBoxUtils.YesNo("Bạn muốn xóa trình độ " + txtTenTrinhDo.Text + "?") == DialogResult.Yes)
+                {
+                    bus_trinhdo.XoadulieuTDDT(TrinhDoHienTai());
+                    CapNhatDuLieuBang();
+                }
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                toolStripMenuXoa_Click(null, null);
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
+
+        private DTO_TDDT TrinhDoHienTai()
+        {
+            return new DTO_TDDT(txtMaTrinhDo.Text, txtTenTrinhDo.Text, numLuong.Text);
+        }
+
+        private void CapNhatDuLieuBang()
+        {
+            nguon = bus_trinhdo.TaobangTDDT("");
+            gridControl1.DataSource = nguon;
+
+            txtMaTrinhDo.DataBindings.Clear();
+            txtMaTrinhDo.DataBindings.Add("Text", nguon, "MaTrinhDo");
+            txtTenTrinhDo.DataBindings.Clear();
+            txtTenTrinhDo.DataBindings.Add("Text", nguon, "TenTrinhDo");
+            numLuong.DataBindings.Clear();
+            numLuong.DataBindings.Add("Text", nguon, "HeSoLuong");
         }
     }
 }

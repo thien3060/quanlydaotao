@@ -83,6 +83,7 @@
             // 
             // txtMaMH
             // 
+            this.txtMaMH.Enabled = false;
             this.txtMaMH.EnterMoveNextControl = true;
             this.txtMaMH.Location = new System.Drawing.Point(249, 32);
             this.txtMaMH.Name = "txtMaMH";
@@ -276,6 +277,7 @@
             this.Controls.Add(this.lblHoTen);
             this.Name = "frmThemMonHoc";
             this.Text = "Môn học mới";
+            this.Load += new System.EventHandler(this.frmThemMonHoc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtTenMH.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaMH.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSTC.Properties)).EndInit();

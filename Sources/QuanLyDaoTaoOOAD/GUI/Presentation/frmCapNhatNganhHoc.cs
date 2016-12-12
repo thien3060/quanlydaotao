@@ -10,33 +10,23 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DTO;
 using BUS;
-using QuanLyDaoTao.Utils;
 using QuanLyDaoTao.Utilities;
+using QuanLyDaoTao.Utils;
 
 namespace QuanLyDaoTao.Presentation
 {
-    public partial class frmThemNganhHoc : DevExpress.XtraEditors.XtraForm
+    public partial class frmCapNhatNganhHoc : DevExpress.XtraEditors.XtraForm
     {
         BUS_Nganh bus_nganh = new BUS_Nganh();
-        public frmThemNganhHoc()
+
+        public frmCapNhatNganhHoc()
         {
             InitializeComponent();
         }
 
-        private void frmThemNganhHoc_Load(object sender, EventArgs e)
-        {            
-            try
-            {
-                txtMaNganh.Text = bus_nganh.TuTinhMa();
-                txtTenNganh.Focus();
-            }
-            catch (Exception ex)
-            {
-                ExceptionUtil.ThrowMsgBox(ex.Message);
-            }
-        }
+        private DataTable nguon;
 
-        private bool TaoMoi(DTO_Nganh nh)
+        private bool check(DTO_Nganh nh)
         {
             try
             {
@@ -69,16 +59,28 @@ namespace QuanLyDaoTao.Presentation
             }
         }
 
+        private void frmCapNhatNganhHoc_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                CapNhatDuLieuBang();
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
+
         private void btnLuu_Click(object sender, EventArgs e)
         {
             try
             {
-                DTO_Nganh nh = new DTO_Nganh();
-                if (TaoMoi(nh))
+                DTO_Nganh nh = NganhHocHienTai();
+                if (check(nh))
                 {
-                    bus_nganh.ThemdulieuNganh(nh);
-                    MessageBoxUtils.Success("Thành công");
-                    ClearText();
+                    bus_nganh.SuadulieuNganh(nh);
+                    CapNhatDuLieuBang();
+                    MessageBoxUtils.Success("Đã cập nhật thay đổi vào CSDL");
                 }
             }
             catch (Exception ex)
@@ -87,25 +89,50 @@ namespace QuanLyDaoTao.Presentation
             }
         }
 
-        private void ClearText()
+        private void toolStripMenuXoa_Click(object sender, EventArgs e)
         {
-            txtMaNganh.ResetText();
-            txtMaNganh.Text = bus_nganh.TuTinhMa();
-            txtTenNganh.ResetText();
-            txtKhoa.ResetText();
-            txtMaNganh.Focus();
+            try
+            {
+                if (MessageBoxUtils.YesNo("Bạn muốn xóa ngành học " + txtTenNganh.Text + "?") == DialogResult.Yes)
+                {
+                    bus_nganh.XoadulieuNganh(NganhHocHienTai());
+                    CapNhatDuLieuBang();
+                }
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
             try
             {
-                ClearText();
+                toolStripMenuXoa_Click(null, null);
             }
             catch (Exception ex)
             {
                 ExceptionUtil.ThrowMsgBox(ex.Message);
             }
+        }
+
+        private DTO_Nganh NganhHocHienTai()
+        {
+            return new DTO_Nganh(txtMaNganh.Text, txtTenNganh.Text, txtKhoa.Text);
+        }
+
+        private void CapNhatDuLieuBang()
+        {
+            nguon = bus_nganh.TaobangNganh("");
+            gridControl1.DataSource = nguon;
+
+            txtMaNganh.DataBindings.Clear();
+            txtMaNganh.DataBindings.Add("Text", nguon, "MaNganh");
+            txtTenNganh.DataBindings.Clear();
+            txtTenNganh.DataBindings.Add("Text", nguon, "TenNganh");
+            txtKhoa.DataBindings.Clear();
+            txtKhoa.DataBindings.Add("Text", nguon, "Khoa");
         }
     }
 }

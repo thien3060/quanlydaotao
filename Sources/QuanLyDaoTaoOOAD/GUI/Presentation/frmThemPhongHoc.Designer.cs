@@ -84,6 +84,7 @@
             // 
             // txtMaPhong
             // 
+            this.txtMaPhong.Enabled = false;
             this.txtMaPhong.EnterMoveNextControl = true;
             this.txtMaPhong.Location = new System.Drawing.Point(262, 20);
             this.txtMaPhong.Name = "txtMaPhong";
@@ -211,6 +212,7 @@
             this.Controls.Add(this.lblMSSV);
             this.Name = "frmThemPhongHoc";
             this.Text = "frmThemPhongHoc";
+            this.Load += new System.EventHandler(this.frmThemPhongHoc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtChucNang.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaPhong.Properties)).EndInit();
