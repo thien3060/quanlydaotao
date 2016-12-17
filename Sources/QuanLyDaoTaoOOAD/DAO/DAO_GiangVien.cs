@@ -39,6 +39,11 @@ namespace DAO
             AddParameter(giangvien);
             Connection.ExecuteSql("DELETE FROM GiangVien WHERE MaGV='" + giangvien.MaGV+"'");
         }
+        public DataRow GetGiangVienByID(string id)
+        {
+            DataRow temp = Connection.GetDataTable("SELECT * FROM GiangVien WHERE MaGV = '" + id + "'").Rows[0];
+            return temp;
+        }
         public DataTable TaobangGiangVien(string dieukien)
         {
             return Connection.GetDataTable("SELECT * FROM GiangVien " + dieukien);

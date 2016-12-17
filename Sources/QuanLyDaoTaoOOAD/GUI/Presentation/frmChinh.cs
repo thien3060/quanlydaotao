@@ -40,7 +40,7 @@ namespace QuanLyDaoTao.Presentation
                 TabPage.AutoScroll = true;
                 //TabPage.AutoScrollMargin = new Size(20, 20);
                 TabPage.AutoScrollMinSize = new Size(TabPage.Width, TabPage.Height);
-                
+
 
                 frm.TopLevel = false;
                 frm.Parent = TabPage;
@@ -162,7 +162,7 @@ namespace QuanLyDaoTao.Presentation
             }
             catch (Exception)
             {
-                
+
             }
         }
 
@@ -189,7 +189,7 @@ namespace QuanLyDaoTao.Presentation
             }
             catch (Exception)
             {
-                
+
             }
         }
 
@@ -251,12 +251,51 @@ namespace QuanLyDaoTao.Presentation
             }
             catch (Exception)
             {
-                
+
             }
         }
         #endregion
 
         #region Giảng Viên
+
+        private void btnThongTinGV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                frmThongTinGiangVien frm = new frmThongTinGiangVien();
+                frm.ShowDialog();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void btnXemPC_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                frmPhanCongGiangDay frm = new frmPhanCongGiangDay();
+                TabCreating("Phân công giảng dạy", frm);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void btnInPC_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                frmInPhanCongGiangDay frm = new frmInPhanCongGiangDay();
+                TabCreating("In phân công giảng dạy", frm);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
 
         private void btnThemDeNghi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -267,8 +306,13 @@ namespace QuanLyDaoTao.Presentation
             }
             catch (Exception)
             {
-                
+
             }
+        }
+
+        private void btnXemDeNghi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
         }
 
         private void btnXemPhieuGiangDay_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -280,7 +324,7 @@ namespace QuanLyDaoTao.Presentation
             }
             catch (Exception)
             {
-                
+
             }
         }
 
@@ -323,7 +367,7 @@ namespace QuanLyDaoTao.Presentation
             }
             catch (Exception)
             {
-                
+
             }
         }
 
@@ -427,7 +471,7 @@ namespace QuanLyDaoTao.Presentation
             }
             catch (Exception)
             {
-                
+
             }
         }
 
@@ -570,7 +614,7 @@ namespace QuanLyDaoTao.Presentation
             }
             catch (Exception)
             {
-                
+
             }
         }
 

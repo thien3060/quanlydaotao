@@ -28,6 +28,25 @@ namespace BUS
         {
             gv.XoaGiangVien(et);
         }
+        public DTO_GiangVien GetGiangVienbyID(string id)
+        {
+            DataRow row = gv.GetGiangVienByID(id);
+            DTO_GiangVien giangvien = new DTO_GiangVien();
+            if (row != null)
+            {
+                giangvien.MaGV = row[0].ToString();
+                giangvien.HoTen = row[1].ToString();
+                giangvien.GioiTinh = (bool) row[2];
+                giangvien.DiaChi = row[3].ToString();
+                giangvien.MaTrinhDo = row[4].ToString();
+
+                return giangvien;
+            }
+            else
+            {
+                return null;
+            }
+        }
 
         public string TuTinhMa()
         {

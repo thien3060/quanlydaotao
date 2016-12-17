@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Connection.cs" />
     <Compile Include="DAO_BuoiHoc.cs" />
+    <Compile Include="DAO_PhanCong.cs" />
     <Compile Include="DAO_MonHoc.cs" />
     <Compile Include="DAO_SinhVien.cs" />
     <Compile Include="DAO_KHDT.cs" />

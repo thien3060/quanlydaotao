@@ -80,10 +80,9 @@ namespace QuanLyDaoTao.Presentation
                     frm.truyen += new frmMatKhau.TruyenMatKhau(GetMatKhau);
                     if (frm.ShowDialog() == DialogResult.OK)
                     {
-                        //them "user" vao ten dang nhap de tranh trung ten dang nhap
                         DTO_NguoiDung user = new DTO_NguoiDung()
                         {
-                            TenDangNhap = "user" + gv.MaGV.ToLower(),
+                            TenDangNhap = gv.MaGV.ToLower(),
                             MatKhau = UtilitiesClass.MaHoaMD5(_matKhau),
                             TenNguoiDung = gv.HoTen,
                             Quyen = "2",

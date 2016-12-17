@@ -40,10 +40,16 @@
             this.cmbGiangVien = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.cmbLop = new DevExpress.XtraEditors.LookUpEdit();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnThem = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.MaPC = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.MaGV = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.MaMH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.MaLop = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.HocKy = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NamHoc = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numHocKy.Properties)).BeginInit();
@@ -51,10 +57,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbMonHoc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbGiangVien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbLop.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
-            this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dateNamHoc
@@ -146,6 +151,7 @@
             this.txtMaPC.Properties.ReadOnly = true;
             this.txtMaPC.Size = new System.Drawing.Size(127, 24);
             this.txtMaPC.TabIndex = 1;
+            this.txtMaPC.Visible = false;
             // 
             // lblMSSV
             // 
@@ -155,6 +161,7 @@
             this.lblMSSV.Size = new System.Drawing.Size(98, 18);
             this.lblMSSV.TabIndex = 0;
             this.lblMSSV.Text = "Mã phân công:";
+            this.lblMSSV.Visible = false;
             // 
             // cmbMonHoc
             // 
@@ -225,26 +232,6 @@
             this.cmbLop.Size = new System.Drawing.Size(168, 24);
             this.cmbLop.TabIndex = 11;
             // 
-            // groupControl1
-            // 
-            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupControl1.Controls.Add(this.dataGridView1);
-            this.groupControl1.Location = new System.Drawing.Point(4, 205);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(726, 241);
-            this.groupControl1.TabIndex = 16;
-            this.groupControl1.Text = "Phân công giảng dạy";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(8, 23);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(710, 209);
-            this.dataGridView1.TabIndex = 0;
-            // 
             // btnThem
             // 
             this.btnThem.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
@@ -254,6 +241,7 @@
             this.btnThem.Size = new System.Drawing.Size(87, 43);
             this.btnThem.TabIndex = 12;
             this.btnThem.Text = "Thêm";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // pictureBox1
             // 
@@ -261,18 +249,101 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(12, 29);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 111);
+            this.pictureBox1.Size = new System.Drawing.Size(100, 108);
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridControl1.Location = new System.Drawing.Point(12, 226);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(924, 234);
+            this.gridControl1.TabIndex = 29;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.MaPC,
+            this.MaGV,
+            this.MaMH,
+            this.MaLop,
+            this.HocKy,
+            this.NamHoc});
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            // 
+            // MaPC
+            // 
+            this.MaPC.Caption = "Mã phân công";
+            this.MaPC.FieldName = "MaPC";
+            this.MaPC.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
+            this.MaPC.Name = "MaPC";
+            this.MaPC.Visible = true;
+            this.MaPC.VisibleIndex = 0;
+            this.MaPC.Width = 100;
+            // 
+            // MaGV
+            // 
+            this.MaGV.Caption = "Mã giảng viên";
+            this.MaGV.FieldName = "MaGV";
+            this.MaGV.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
+            this.MaGV.Name = "MaGV";
+            this.MaGV.Visible = true;
+            this.MaGV.VisibleIndex = 1;
+            this.MaGV.Width = 170;
+            // 
+            // MaMH
+            // 
+            this.MaMH.Caption = "Mã môn học";
+            this.MaMH.FieldName = "MaMH";
+            this.MaMH.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
+            this.MaMH.Name = "MaMH";
+            this.MaMH.Visible = true;
+            this.MaMH.VisibleIndex = 2;
+            this.MaMH.Width = 95;
+            // 
+            // MaLop
+            // 
+            this.MaLop.Caption = "Mã lớp";
+            this.MaLop.FieldName = "MaLop";
+            this.MaLop.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
+            this.MaLop.Name = "MaLop";
+            this.MaLop.Visible = true;
+            this.MaLop.VisibleIndex = 3;
+            this.MaLop.Width = 113;
+            // 
+            // HocKy
+            // 
+            this.HocKy.Caption = "Học kỳ";
+            this.HocKy.FieldName = "HocKy";
+            this.HocKy.Name = "HocKy";
+            this.HocKy.Visible = true;
+            this.HocKy.VisibleIndex = 4;
+            this.HocKy.Width = 139;
+            // 
+            // NamHoc
+            // 
+            this.NamHoc.Caption = "Năm học";
+            this.NamHoc.FieldName = "NamHoc";
+            this.NamHoc.Name = "NamHoc";
+            this.NamHoc.Visible = true;
+            this.NamHoc.VisibleIndex = 5;
+            this.NamHoc.Width = 372;
             // 
             // frmPhanCongGiangDay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 449);
+            this.ClientSize = new System.Drawing.Size(948, 472);
+            this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnThem);
-            this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.cmbGiangVien);
             this.Controls.Add(this.cmbLop);
             this.Controls.Add(this.cmbMonHoc);
@@ -287,6 +358,7 @@
             this.Controls.Add(this.labelControl3);
             this.Name = "frmPhanCongGiangDay";
             this.Text = "Phân công giảng dạy";
+            this.Load += new System.EventHandler(this.frmPhanCongGiangDay_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numHocKy.Properties)).EndInit();
@@ -294,10 +366,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbMonHoc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbGiangVien.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbLop.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
-            this.groupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,9 +388,15 @@
         private DevExpress.XtraEditors.LookUpEdit cmbGiangVien;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LookUpEdit cmbLop;
-        private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.SimpleButton btnThem;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn MaPC;
+        private DevExpress.XtraGrid.Columns.GridColumn MaGV;
+        private DevExpress.XtraGrid.Columns.GridColumn MaMH;
+        private DevExpress.XtraGrid.Columns.GridColumn MaLop;
+        private DevExpress.XtraGrid.Columns.GridColumn HocKy;
+        private DevExpress.XtraGrid.Columns.GridColumn NamHoc;
     }
 }
