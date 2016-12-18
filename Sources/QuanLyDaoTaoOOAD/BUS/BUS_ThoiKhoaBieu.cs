@@ -28,5 +28,9 @@ namespace BUS
         {
             thoikhoabieu.XoaThoiKhoaBieu(et);
         }
+        public DataTable XemTKBSinhVien(string mssv, DateTime ngayDauTuan)
+        {
+            return thoikhoabieu.XemTKBSinhVien(mssv, ngayDauTuan);
+        }
     }
 }

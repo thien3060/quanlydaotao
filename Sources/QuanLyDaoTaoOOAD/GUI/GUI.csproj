@@ -55,17 +55,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\QuyenNguoiDung.cs" />
+    <Compile Include="Enums\TableNames.cs" />
+    <Compile Include="Enums\Thu.cs" />
     <Compile Include="GUI-old\ChuongTrinhDaoTao.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI-old\ChuongTrinhDaoTao.Designer.cs">
       <DependentUpon>ChuongTrinhDaoTao.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI-old\FrmThoiKhoaBieu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI-old\FrmThoiKhoaBieu.Designer.cs">
-      <DependentUpon>FrmThoiKhoaBieu.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI-old\FrmNhomHP.cs">
       <SubType>Form</SubType>
@@ -399,12 +396,6 @@
     <Compile Include="UserControls\XemThoiKhoaBieuGiangVien.Designer.cs">
       <DependentUpon>XemThoiKhoaBieuGiangVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\XemThoiKhoaBieuSinhVien.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\XemThoiKhoaBieuSinhVien.Designer.cs">
-      <DependentUpon>XemThoiKhoaBieuSinhVien.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\XemPhieuGiangDay.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -429,15 +420,18 @@
     <Compile Include="UserControls\DeNghiGiangDay.Designer.cs">
       <DependentUpon>DeNghiGiangDay.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\XemThoiKhoaBieuSinhVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\XemThoiKhoaBieuSinhVien.designer.cs">
+      <DependentUpon>XemThoiKhoaBieuSinhVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utils\ExceptionUtilities.cs" />
     <Compile Include="Utils\MessageBoxUtils.cs" />
     <Compile Include="Utils\StaticClass.cs" />
     <Compile Include="Utils\UtilitiesClass.cs" />
     <EmbeddedResource Include="GUI-old\ChuongTrinhDaoTao.resx">
       <DependentUpon>ChuongTrinhDaoTao.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI-old\FrmThoiKhoaBieu.resx">
-      <DependentUpon>FrmThoiKhoaBieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI-old\FrmNhomHP.resx">
       <DependentUpon>FrmNhomHP.cs</DependentUpon>
@@ -597,9 +591,6 @@
     <EmbeddedResource Include="UserControls\XemThoiKhoaBieuGiangVien.resx">
       <DependentUpon>XemThoiKhoaBieuGiangVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\XemThoiKhoaBieuSinhVien.resx">
-      <DependentUpon>XemThoiKhoaBieuSinhVien.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\XemPhieuGiangDay.resx">
       <DependentUpon>XemPhieuGiangDay.cs</DependentUpon>
     </EmbeddedResource>
@@ -611,6 +602,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\DeNghiGiangDay.resx">
       <DependentUpon>DeNghiGiangDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\XemThoiKhoaBieuSinhVien.resx">
+      <DependentUpon>XemThoiKhoaBieuSinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\BUS.BUS_Khoa.datasource" />
     <None Include="Properties\Settings.settings">
@@ -645,6 +639,7 @@
     <Content Include="Resources\info72.png" />
     <Content Include="Resources\list 64.png" />
     <Content Include="Resources\lophoc128.png" />
+    <None Include="Resources\non 32.png" />
     <Content Include="Resources\trinhdo128.png" />
     <Content Include="Resources\note.png" />
     <Content Include="Resources\phong hoc128.png" />
@@ -655,9 +650,7 @@
     <Content Include="Resources\sua.png" />
     <Content Include="Resources\tkb64.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Enums\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

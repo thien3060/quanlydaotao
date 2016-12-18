@@ -175,18 +175,6 @@ namespace QuanLyDaoTao
             buoihoc.Show();
         }
 
-        private void bt_QLTKB_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            foreach (Form frm in this.MdiChildren)
-            {
-                frm.Close();
-            }
-            FrmThoiKhoaBieu thoikhoabieu = new FrmThoiKhoaBieu();
-            thoikhoabieu.Dock = DockStyle.Fill;
-            thoikhoabieu.MdiParent = this;
-            thoikhoabieu.Show();
-        }
-
         //TODO: Cơ cấu tổ chức
 
         private void bt_QLKhoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

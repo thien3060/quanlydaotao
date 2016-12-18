@@ -62,6 +62,22 @@ namespace DAO
             return dt;
         }
 
+        public DataTable ExecuteStoreProcedure(string procedure, Dictionary<string, object> parameters)
+        {
+            OpenConnection();
+            SqlCommand sqlcmd = new SqlCommand(procedure, Connect);
+            sqlcmd.CommandType = CommandType.StoredProcedure;
+            foreach (var parameter in parameters)
+            {
+                sqlcmd.Parameters.AddWithValue(parameter.Key, parameter.Value);
+            }
+            var dt = new DataTable();
+            var sqlda = new SqlDataAdapter(sqlcmd);
+            sqlda.Fill(dt); 
+            CloseConnection();
+            return dt;
+        }
+
         public string SearchDaTaGrid(string key, string table, string columnName)
         {
             int count = 0;

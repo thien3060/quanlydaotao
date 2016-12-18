@@ -1235,7 +1235,6 @@
             this.bt_QLTKB.Caption = "Thời khóa biểu";
             this.bt_QLTKB.Id = 52;
             this.bt_QLTKB.Name = "bt_QLTKB";
-            this.bt_QLTKB.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bt_QLTKB_ItemClick);
             // 
             // bt_gvcn
             // 
