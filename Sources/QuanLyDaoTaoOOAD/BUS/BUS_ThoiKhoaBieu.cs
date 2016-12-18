@@ -32,5 +32,9 @@ namespace BUS
         {
             return thoikhoabieu.XemTKBSinhVien(mssv, ngayDauTuan);
         }
+        public DataTable XemTKBGiangVien(string magv, DateTime ngayDauTuan)
+        {
+            return thoikhoabieu.XemTKBGiangVien(magv, ngayDauTuan);
+        }
     }
 }

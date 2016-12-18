@@ -55,5 +55,12 @@ namespace DAO
             parameters.Add("@ngayDauTuan", ngayDauTuan);
             return Connection.ExecuteStoreProcedure("sp_XemTKBSinhVien", parameters);
         }
+        public DataTable XemTKBGiangVien(string magv, DateTime ngayDauTuan)
+        {
+            parameters.Clear();
+            parameters.Add("@maGV", magv);
+            parameters.Add("@ngayDauTuan", ngayDauTuan);
+            return Connection.ExecuteStoreProcedure("sp_XemTKBGiangVien", parameters);
+        }
     }
 }

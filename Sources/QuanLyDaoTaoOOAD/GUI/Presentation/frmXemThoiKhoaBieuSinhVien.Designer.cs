@@ -130,6 +130,10 @@
             this.cmbSinhVien.Properties.Appearance.Options.UseFont = true;
             this.cmbSinhVien.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbSinhVien.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("MSSV", 50, "MSSV"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("HoTen", 100, "Họ Tên"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("MaLop", 50, "Mã lớp")});
             this.cmbSinhVien.Properties.DisplayMember = "HoTen";
             this.cmbSinhVien.Properties.ValueMember = "MSSV";
             this.cmbSinhVien.Size = new System.Drawing.Size(187, 24);
@@ -199,6 +203,7 @@
             this.xemThoiKhoaBieuSinhVien1.MinimumSize = new System.Drawing.Size(1146, 475);
             this.xemThoiKhoaBieuSinhVien1.MSSV = "";
             this.xemThoiKhoaBieuSinhVien1.Name = "xemThoiKhoaBieuSinhVien1";
+            this.xemThoiKhoaBieuSinhVien1.NgayDauTuan = new System.DateTime(2016, 12, 19, 20, 50, 23, 984);
             this.xemThoiKhoaBieuSinhVien1.Size = new System.Drawing.Size(1146, 475);
             this.xemThoiKhoaBieuSinhVien1.TabIndex = 14;
             // 
