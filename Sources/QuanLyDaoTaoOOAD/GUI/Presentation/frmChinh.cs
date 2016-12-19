@@ -242,6 +242,33 @@ namespace QuanLyDaoTao.Presentation
         #endregion
 
         #region Sinh Viên
+        
+        private void btnSuaSV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                frmSuaThongTinSinhVien frm = new frmSuaThongTinSinhVien();
+                frm.ShowDialog();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void btnThongTinSV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                frmThongTinSinhVien frm = new frmThongTinSinhVien();
+                frm.ShowDialog();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
         private void btnXemTKBSV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             try
@@ -257,6 +284,19 @@ namespace QuanLyDaoTao.Presentation
         #endregion
 
         #region Giảng Viên
+        
+        private void btnCapNhatGV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                frmSuaThongTinGiangVien frm = new frmSuaThongTinGiangVien();
+                frm.ShowDialog();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
 
         private void btnThongTinGV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {

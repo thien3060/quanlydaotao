@@ -375,6 +375,7 @@
             this.btnSuaSV.ImageIndex = 43;
             this.btnSuaSV.LargeImageIndex = 12;
             this.btnSuaSV.Name = "btnSuaSV";
+            this.btnSuaSV.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSuaSV_ItemClick);
             // 
             // btnThongTinSV
             // 
@@ -383,6 +384,7 @@
             this.btnThongTinSV.Id = 73;
             this.btnThongTinSV.LargeImageIndex = 14;
             this.btnThongTinSV.Name = "btnThongTinSV";
+            this.btnThongTinSV.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThongTinSV_ItemClick);
             // 
             // btnHopThu
             // 
@@ -609,6 +611,7 @@
             this.btnCapNhatGV.Id = 145;
             this.btnCapNhatGV.LargeImageIndex = 50;
             this.btnCapNhatGV.Name = "btnCapNhatGV";
+            this.btnCapNhatGV.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCapNhatGV_ItemClick);
             // 
             // btnThongTinGV
             // 

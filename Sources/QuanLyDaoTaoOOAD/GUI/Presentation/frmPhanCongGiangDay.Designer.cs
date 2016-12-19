@@ -151,7 +151,6 @@
             this.txtMaPC.Properties.ReadOnly = true;
             this.txtMaPC.Size = new System.Drawing.Size(127, 24);
             this.txtMaPC.TabIndex = 1;
-            this.txtMaPC.Visible = false;
             // 
             // lblMSSV
             // 
@@ -161,7 +160,6 @@
             this.lblMSSV.Size = new System.Drawing.Size(98, 18);
             this.lblMSSV.TabIndex = 0;
             this.lblMSSV.Text = "Mã phân công:";
-            this.lblMSSV.Visible = false;
             // 
             // cmbMonHoc
             // 

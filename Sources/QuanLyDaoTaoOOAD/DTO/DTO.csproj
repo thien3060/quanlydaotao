@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO_DeNghi.cs" />
     <Compile Include="DTO_BuoiHoc.cs" />
     <Compile Include="DTO_ChucVu.cs" />
     <Compile Include="DTO_DamNhiem.cs" />

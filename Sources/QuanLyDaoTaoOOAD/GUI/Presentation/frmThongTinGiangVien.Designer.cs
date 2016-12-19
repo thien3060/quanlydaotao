@@ -28,42 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtDiaChi = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.txtHoTen = new DevExpress.XtraEditors.TextEdit();
             this.lblHoTen = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.btnDong = new DevExpress.XtraEditors.SimpleButton();
-            this.btnCapNhat = new DevExpress.XtraEditors.SimpleButton();
+            this.labelHoTen = new DevExpress.XtraEditors.LabelControl();
+            this.labelGioiTinh = new DevExpress.XtraEditors.LabelControl();
+            this.labelDiaChi = new DevExpress.XtraEditors.LabelControl();
+            this.labelTrinhDo = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtGioiTinh = new DevExpress.XtraEditors.TextEdit();
-            this.cmbTrinhDo = new DevExpress.XtraEditors.LookUpEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtHoTen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGioiTinh.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbTrinhDo.Properties)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtDiaChi
-            // 
-            this.txtDiaChi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDiaChi.EnterMoveNextControl = true;
-            this.txtDiaChi.Location = new System.Drawing.Point(290, 105);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.txtDiaChi.Properties.Appearance.Options.UseFont = true;
-            this.txtDiaChi.Properties.Mask.BeepOnError = true;
-            this.txtDiaChi.Properties.MaxLength = 50;
-            this.txtDiaChi.Size = new System.Drawing.Size(455, 24);
-            this.txtDiaChi.TabIndex = 9;
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl2.Location = new System.Drawing.Point(177, 108);
+            this.labelControl2.Location = new System.Drawing.Point(165, 95);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(47, 18);
             this.labelControl2.TabIndex = 8;
@@ -72,30 +53,16 @@
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl1.Location = new System.Drawing.Point(486, 63);
+            this.labelControl1.Location = new System.Drawing.Point(355, 50);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(60, 18);
             this.labelControl1.TabIndex = 6;
             this.labelControl1.Text = "Trình độ:";
             // 
-            // txtHoTen
-            // 
-            this.txtHoTen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtHoTen.Enabled = false;
-            this.txtHoTen.EnterMoveNextControl = true;
-            this.txtHoTen.Location = new System.Drawing.Point(290, 22);
-            this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.txtHoTen.Properties.Appearance.Options.UseFont = true;
-            this.txtHoTen.Properties.MaxLength = 50;
-            this.txtHoTen.Size = new System.Drawing.Size(455, 24);
-            this.txtHoTen.TabIndex = 3;
-            // 
             // lblHoTen
             // 
             this.lblHoTen.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.lblHoTen.Location = new System.Drawing.Point(177, 25);
+            this.lblHoTen.Location = new System.Drawing.Point(165, 12);
             this.lblHoTen.Name = "lblHoTen";
             this.lblHoTen.Size = new System.Drawing.Size(49, 18);
             this.lblHoTen.TabIndex = 2;
@@ -104,7 +71,7 @@
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl3.Location = new System.Drawing.Point(177, 63);
+            this.labelControl3.Location = new System.Drawing.Point(165, 50);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(55, 18);
             this.labelControl3.TabIndex = 4;
@@ -114,23 +81,48 @@
             // 
             this.btnDong.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnDong.Appearance.Options.UseFont = true;
-            this.btnDong.Location = new System.Drawing.Point(448, 158);
+            this.btnDong.Location = new System.Drawing.Point(355, 123);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(114, 43);
             this.btnDong.TabIndex = 11;
             this.btnDong.Text = "Đóng";
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
-            // btnCapNhat
+            // labelHoTen
             // 
-            this.btnCapNhat.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.btnCapNhat.Appearance.Options.UseFont = true;
-            this.btnCapNhat.Location = new System.Drawing.Point(290, 158);
-            this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(114, 43);
-            this.btnCapNhat.TabIndex = 10;
-            this.btnCapNhat.Text = "Cập nhật";
-            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
+            this.labelHoTen.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.labelHoTen.Location = new System.Drawing.Point(269, 12);
+            this.labelHoTen.Name = "labelHoTen";
+            this.labelHoTen.Size = new System.Drawing.Size(44, 18);
+            this.labelHoTen.TabIndex = 13;
+            this.labelHoTen.Text = "HoTen";
+            // 
+            // labelGioiTinh
+            // 
+            this.labelGioiTinh.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.labelGioiTinh.Location = new System.Drawing.Point(269, 50);
+            this.labelGioiTinh.Name = "labelGioiTinh";
+            this.labelGioiTinh.Size = new System.Drawing.Size(50, 18);
+            this.labelGioiTinh.TabIndex = 14;
+            this.labelGioiTinh.Text = "GioiTinh";
+            // 
+            // labelDiaChi
+            // 
+            this.labelDiaChi.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelDiaChi.Location = new System.Drawing.Point(269, 95);
+            this.labelDiaChi.Name = "labelDiaChi";
+            this.labelDiaChi.Size = new System.Drawing.Size(39, 18);
+            this.labelDiaChi.TabIndex = 15;
+            this.labelDiaChi.Text = "DiaChi";
+            // 
+            // labelTrinhDo
+            // 
+            this.labelTrinhDo.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.labelTrinhDo.Location = new System.Drawing.Point(436, 50);
+            this.labelTrinhDo.Name = "labelTrinhDo";
+            this.labelTrinhDo.Size = new System.Drawing.Size(51, 18);
+            this.labelTrinhDo.TabIndex = 16;
+            this.labelTrinhDo.Text = "TrinhDo";
             // 
             // pictureBox1
             // 
@@ -142,76 +134,44 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // txtGioiTinh
-            // 
-            this.txtGioiTinh.Enabled = false;
-            this.txtGioiTinh.EnterMoveNextControl = true;
-            this.txtGioiTinh.Location = new System.Drawing.Point(290, 60);
-            this.txtGioiTinh.Name = "txtGioiTinh";
-            this.txtGioiTinh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.txtGioiTinh.Properties.Appearance.Options.UseFont = true;
-            this.txtGioiTinh.Properties.MaxLength = 50;
-            this.txtGioiTinh.Size = new System.Drawing.Size(148, 24);
-            this.txtGioiTinh.TabIndex = 14;
-            // 
-            // cmbTrinhDo
-            // 
-            this.cmbTrinhDo.Enabled = false;
-            this.cmbTrinhDo.EnterMoveNextControl = true;
-            this.cmbTrinhDo.Location = new System.Drawing.Point(565, 60);
-            this.cmbTrinhDo.Name = "cmbTrinhDo";
-            this.cmbTrinhDo.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.cmbTrinhDo.Properties.Appearance.Options.UseFont = true;
-            this.cmbTrinhDo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbTrinhDo.Properties.DisplayMember = "TenTrinhDo";
-            this.cmbTrinhDo.Properties.ValueMember = "MaTrinhDo";
-            this.cmbTrinhDo.Size = new System.Drawing.Size(180, 24);
-            this.cmbTrinhDo.TabIndex = 15;
-            // 
             // frmThongTinGiangVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 217);
+            this.ClientSize = new System.Drawing.Size(531, 178);
             this.ControlBox = false;
-            this.Controls.Add(this.cmbTrinhDo);
-            this.Controls.Add(this.txtGioiTinh);
+            this.Controls.Add(this.labelTrinhDo);
+            this.Controls.Add(this.labelDiaChi);
+            this.Controls.Add(this.labelGioiTinh);
+            this.Controls.Add(this.labelHoTen);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnDong);
-            this.Controls.Add(this.btnCapNhat);
             this.Controls.Add(this.labelControl3);
-            this.Controls.Add(this.txtDiaChi);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl1);
-            this.Controls.Add(this.txtHoTen);
             this.Controls.Add(this.lblHoTen);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmThongTinGiangVien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thông tin của bạn";
             this.Load += new System.EventHandler(this.frmThongTinGiangVien_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtHoTen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGioiTinh.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbTrinhDo.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private DevExpress.XtraEditors.TextEdit txtDiaChi;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.TextEdit txtHoTen;
         private DevExpress.XtraEditors.LabelControl lblHoTen;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.SimpleButton btnDong;
-        private DevExpress.XtraEditors.SimpleButton btnCapNhat;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private DevExpress.XtraEditors.TextEdit txtGioiTinh;
-        private DevExpress.XtraEditors.LookUpEdit cmbTrinhDo;
+        private DevExpress.XtraEditors.LabelControl labelHoTen;
+        private DevExpress.XtraEditors.LabelControl labelGioiTinh;
+        private DevExpress.XtraEditors.LabelControl labelDiaChi;
+        private DevExpress.XtraEditors.LabelControl labelTrinhDo;
     }
 }

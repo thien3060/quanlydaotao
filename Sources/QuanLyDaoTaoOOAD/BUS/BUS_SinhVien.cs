@@ -28,6 +28,25 @@ namespace BUS
         {
             sv.XoaSinhVien(et);
         }
+        public DTO_SinhVien GetSinhVienbyID(string id)
+        {
+            DataRow row = sv.GetSinhVienByID(id);
+            DTO_SinhVien sinhvien = new DTO_SinhVien();
+            if (row != null)
+            {
+                sinhvien.MSSV = row[0].ToString();
+                sinhvien.HoTen = row[1].ToString();
+                sinhvien.NgaySinh = (DateTime) row[2];
+                sinhvien.DiaChi = row[3].ToString();
+                sinhvien.MaLop = row[4].ToString();
+
+                return sinhvien;
+            }
+            else
+            {
+                return null;
+            }
+        }
 
         public string TuTinhMa(string dinhDang)
         {

@@ -31,38 +31,17 @@ namespace QuanLyDaoTao.Presentation
             try
             {
                 gv = bus_gv.GetGiangVienbyID(StaticClass.User.TenDangNhap.ToUpper());
-                txtHoTen.Text = gv.HoTen;
+                labelHoTen.Text = gv.HoTen;
                 if (gv.GioiTinh)
-                    txtGioiTinh.Text = "Nam";
+                    labelGioiTinh.Text = "Nam";
                 else
-                    txtGioiTinh.Text = "Nữ";
-                cmbTrinhDo.Properties.DataSource = bus_td.TaobangTDDT("");
-                cmbTrinhDo.EditValue = gv.MaTrinhDo;
-                txtDiaChi.Text = gv.DiaChi;
-                
-                txtDiaChi.Focus();
-            }
-            catch (Exception ex)
-            {
-                ExceptionUtil.ThrowMsgBox(ex.Message);
-            }
-        }
+                    labelGioiTinh.Text = "Nữ";
+                DataTable trinhdo = bus_td.TaobangTDDT("");                
+                DataRow tentrinhdo = trinhdo.Select("MaTrinhDo = '" + gv.MaTrinhDo + "'")[0];
+                labelTrinhDo.Text = tentrinhdo.ItemArray[1].ToString();
+                labelDiaChi.Text = gv.DiaChi;
 
-        private void btnCapNhat_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (!string.IsNullOrEmpty(txtDiaChi.Text))
-                    gv.DiaChi = txtDiaChi.Text.Trim();
-                else
-                {
-                    MessageBoxUtils.Exclamation("Địa chỉ không được để trống");
-                    return;
-                }
-
-                bus_gv.SuadulieuGiangVien(gv);
-                MessageBoxUtils.Success("Đã cập nhật thay đổi vào CSDL");
-                txtDiaChi.Text = gv.DiaChi;
+                btnDong.Focus();
             }
             catch (Exception ex)
             {

@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\Thu.cs" />
     <Compile Include="GUI-old\ChuongTrinhDaoTao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -265,11 +266,29 @@
     <Compile Include="Presentation\frmPhanCongGiangDay.Designer.cs">
       <DependentUpon>frmPhanCongGiangDay.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\frmSuaThongTinSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmSuaThongTinSinhVien.Designer.cs">
+      <DependentUpon>frmSuaThongTinSinhVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\frmThemDeNghi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentation\frmThemDeNghi.Designer.cs">
       <DependentUpon>frmThemDeNghi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmSuaThongTinGiangVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmSuaThongTinGiangVien.Designer.cs">
+      <DependentUpon>frmSuaThongTinGiangVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmThongTinSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmThongTinSinhVien.Designer.cs">
+      <DependentUpon>frmThongTinSinhVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\frmThongTinGiangVien.cs">
       <SubType>Form</SubType>
@@ -535,8 +554,17 @@
     <EmbeddedResource Include="Presentation\frmPhanCongGiangDay.resx">
       <DependentUpon>frmPhanCongGiangDay.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmSuaThongTinSinhVien.resx">
+      <DependentUpon>frmSuaThongTinSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmThemDeNghi.resx">
       <DependentUpon>frmThemDeNghi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmSuaThongTinGiangVien.resx">
+      <DependentUpon>frmSuaThongTinGiangVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmThongTinSinhVien.resx">
+      <DependentUpon>frmThongTinSinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmThongTinGiangVien.resx">
       <DependentUpon>frmThongTinGiangVien.cs</DependentUpon>
@@ -655,9 +683,7 @@
     <Content Include="Resources\sua.png" />
     <Content Include="Resources\tkb64.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Enums\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
