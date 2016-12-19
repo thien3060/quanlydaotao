@@ -1,65 +1,7 @@
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.exe
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.pdb
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\QuanLyDaoTao.exe
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\QuanLyDaoTao.pdb
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.BonusSkins.v15.2.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.Data.v15.2.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.Printing.v15.2.Core.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.Sparkline.v15.2.Core.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.Utils.v15.2.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.XtraBars.v15.2.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.XtraEditors.v15.2.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.Data.v15.2.xml
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.Printing.v15.2.Core.xml
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.Utils.v15.2.xml
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.XtraBars.v15.2.xml
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.Sparkline.v15.2.Core.xml
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.XtraEditors.v15.2.xml
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\de\DevExpress.Data.v15.2.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\es\DevExpress.Data.v15.2.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ja\DevExpress.Data.v15.2.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ru\DevExpress.Data.v15.2.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\de\DevExpress.Printing.v15.2.Core.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\es\DevExpress.Printing.v15.2.Core.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ja\DevExpress.Printing.v15.2.Core.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ru\DevExpress.Printing.v15.2.Core.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\de\DevExpress.Utils.v15.2.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\es\DevExpress.Utils.v15.2.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ja\DevExpress.Utils.v15.2.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ru\DevExpress.Utils.v15.2.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\de\DevExpress.XtraBars.v15.2.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\es\DevExpress.XtraBars.v15.2.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ja\DevExpress.XtraBars.v15.2.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ru\DevExpress.XtraBars.v15.2.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\de\DevExpress.Sparkline.v15.2.Core.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\es\DevExpress.Sparkline.v15.2.Core.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ja\DevExpress.Sparkline.v15.2.Core.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ru\DevExpress.Sparkline.v15.2.Core.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\de\DevExpress.XtraEditors.v15.2.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\es\DevExpress.XtraEditors.v15.2.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ja\DevExpress.XtraEditors.v15.2.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ru\DevExpress.XtraEditors.v15.2.resources.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Properties.Resources.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.exe.licenses
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\BUS.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DTO.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\BUS.pdb
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DTO.pdb
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmMain.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DAO.dll
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DAO.pdb
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmGiaoVien.resources
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmGiaoVien.resources
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmMain.resources
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Properties.Resources.resources
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.exe.licenses
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\QuanLyDaoTao.exe
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\QuanLyDaoTao.pdb
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\BUS.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DAO.dll
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.BonusSkins.v15.2.dll
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.Data.v15.2.dll
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.Printing.v15.2.Core.dll
@@ -67,9 +9,17 @@ D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sour
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.Utils.v15.2.dll
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.XtraBars.v15.2.dll
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.XtraEditors.v15.2.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.XtraGrid.v15.2.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.XtraLayout.v15.2.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.XtraPrinting.v15.2.dll
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DTO.dll
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DAO.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.RichEdit.v15.2.Core.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.XtraTreeList.v15.2.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.Office.v15.2.Core.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.Pdf.v15.2.Core.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.Pdf.v15.2.Drawing.dll
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\BUS.pdb
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DAO.pdb
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DTO.pdb
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.Data.v15.2.xml
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.Printing.v15.2.Core.xml
@@ -77,7 +27,14 @@ D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sour
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.XtraBars.v15.2.xml
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.Sparkline.v15.2.Core.xml
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.XtraEditors.v15.2.xml
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DAO.pdb
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.XtraGrid.v15.2.xml
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.XtraLayout.v15.2.xml
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.XtraPrinting.v15.2.xml
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.RichEdit.v15.2.Core.xml
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.XtraTreeList.v15.2.xml
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.Office.v15.2.Core.xml
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.Pdf.v15.2.Core.xml
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\DevExpress.Pdf.v15.2.Drawing.xml
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\de\DevExpress.Data.v15.2.resources.dll
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\es\DevExpress.Data.v15.2.resources.dll
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ja\DevExpress.Data.v15.2.resources.dll
@@ -102,46 +59,96 @@ D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sour
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\es\DevExpress.XtraEditors.v15.2.resources.dll
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ja\DevExpress.XtraEditors.v15.2.resources.dll
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ru\DevExpress.XtraEditors.v15.2.resources.dll
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.exe
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.pdb
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmKhoa.resources
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmPhongHoc.resources
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmNganh.resources
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmNguoiDung.resources
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmKHDT.resources
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmNamHoc.resources
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmHocKy.resources
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmBuoiHoc.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\de\DevExpress.XtraGrid.v15.2.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\es\DevExpress.XtraGrid.v15.2.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ja\DevExpress.XtraGrid.v15.2.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ru\DevExpress.XtraGrid.v15.2.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\de\DevExpress.XtraLayout.v15.2.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\es\DevExpress.XtraLayout.v15.2.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ja\DevExpress.XtraLayout.v15.2.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ru\DevExpress.XtraLayout.v15.2.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\de\DevExpress.XtraPrinting.v15.2.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\es\DevExpress.XtraPrinting.v15.2.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ja\DevExpress.XtraPrinting.v15.2.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ru\DevExpress.XtraPrinting.v15.2.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\de\DevExpress.RichEdit.v15.2.Core.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\es\DevExpress.RichEdit.v15.2.Core.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ja\DevExpress.RichEdit.v15.2.Core.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ru\DevExpress.RichEdit.v15.2.Core.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\de\DevExpress.XtraTreeList.v15.2.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\es\DevExpress.XtraTreeList.v15.2.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ja\DevExpress.XtraTreeList.v15.2.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ru\DevExpress.XtraTreeList.v15.2.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\de\DevExpress.Office.v15.2.Core.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\es\DevExpress.Office.v15.2.Core.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ja\DevExpress.Office.v15.2.Core.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ru\DevExpress.Office.v15.2.Core.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\de\DevExpress.Pdf.v15.2.Core.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\es\DevExpress.Pdf.v15.2.Core.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ja\DevExpress.Pdf.v15.2.Core.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\bin\Debug\ru\DevExpress.Pdf.v15.2.Core.resources.dll
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.ChuongTrinhDaoTao.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmThoiKhoaBieu.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmNhomHP.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmKhoiLop.resources
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmHocPhan.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmKHDT.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmBuoiHoc.resources
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmHeDT.resources
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmChucVu.resources
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmHocVi.resources
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmTDDT.resources
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmDamNhiem.resources
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmKhoiLop.resources
 D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmNhomLop.resources
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmNhomHP.resources
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmGVCN.resources
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmGiangDay.resources
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmThoiKhoaBieu.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmThoiKhoaBieu.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmGiangDay.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmGVCN.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmNhomHP.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmKhoiLop.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmDamNhiem.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmHocPhan.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmKHDT.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmBuoiHoc.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmHeDT.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmChucVu.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmHocVi.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmNhomLop.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmTDDT.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmNamHoc.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmHocKy.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmNguoiDung.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmNganh.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmPhongHoc.resources
-D:\Documents\UIT\HK9\OOAD\git\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmKhoa.resources
-D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.ChuongTrinhDaoTao.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmNamHoc.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmHocKy.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmNguoiDung.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmNganh.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmPhongHoc.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmKhoa.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.FrmMain.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmCapNhatLop.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmCapNhatPhongHoc.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmCapNhatSinhVien.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmChinh.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmMatKhau.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmDangNhap.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmDanhMucNguoiDung.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmGioiThieu.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmNhapPhieuGiangDay.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmNhapTKB.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmPhanCongGiangDay.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmThemDeNghi.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmThemGiangVien.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmThemLopHoc.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmThemMonHoc.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmThemNganhHoc.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmThemPhongHoc.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmThemSinhVien.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmThemTrinhDo.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmThongTinChuongTrinh.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmThongTinNguoiDung.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmXemDeNghi.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmXemPhieuGiangDay.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmXemThoiKhoaBieuGiangVien.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmXemThoiKhoaBieuSinhVien.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmXepThoiKhoaBieu.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Properties.Resources.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.UserControls.XemThoiKhoaBieuGiangVien.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.UserControls.XemThoiKhoaBieuSinhVien.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.UserControls.XemPhieuGiangDay.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.UserControls.ThoiKhoaBieu.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.UserControls.NhapPhieuGiangDay.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.UserControls.DeNghiGiangDay.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.exe.licenses
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.exe
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.pdb
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmCapNhatGiangVien.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmCapNhatTrinhDo.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmCapNhatMonHoc.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmCapNhatNganhHoc.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmThongTinGiangVien.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmInPhanCongGiangDay.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmSuaThongTinGiangVien.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmThongTinSinhVien.resources
+D:\HOC TAP\nam5 - HK1\ooad\do an\QuanLyDaoTao\QuanLyDaoTao\Git\quanlydaotao\Sources\QuanLyDaoTaoOOAD\GUI\obj\Debug\QuanLyDaoTao.Presentation.frmSuaThongTinSinhVien.resources

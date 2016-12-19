@@ -8,19 +8,21 @@ namespace DTO
 {
     public class DTO_ThoiKhoaBieu
     {
-        public string MaGD { get; set; }
-        public string MaBH { get; set; }
+        public string MaPC { get; set; }
+        public string BuoiHoc { get; set; }
         public string MaPhong { get; set; }
         public string CoDay { get; set; }
+        public string DaThanhToan { get; set; }
 
         public DTO_ThoiKhoaBieu() { }
 
-        public DTO_ThoiKhoaBieu(string maGd, string maBh, string maPhong, string coDay)
+        public DTO_ThoiKhoaBieu(string maPC, string buoiHoc, string maPhong, string coDay, string daThanhToan)
         {
-            MaGD = maGd;
-            MaBH = maBh;
+            MaPC = maPC;
+            BuoiHoc = buoiHoc;
             MaPhong = maPhong;
             CoDay = coDay;
+            DaThanhToan = daThanhToan;
         }
     }
 }

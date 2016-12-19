@@ -17,35 +17,50 @@ namespace DAO
         private void AddParameter(DTO_ThoiKhoaBieu thoikhoabieu)
         {
             parameters.Clear();
-            parameters.Add("@MaGD", thoikhoabieu.MaGD);
-            parameters.Add("@MaBH", thoikhoabieu.MaBH);
+            parameters.Add("@MaPC", thoikhoabieu.MaPC);
+            parameters.Add("@BuoiHoc", thoikhoabieu.BuoiHoc);
             parameters.Add("@MaPhong", thoikhoabieu.MaPhong);
             parameters.Add("@CoDay", thoikhoabieu.CoDay);
+            parameters.Add("@DaThanhToan", thoikhoabieu.DaThanhToan);
         }
 
         public void ThemThoiKhoaBieu(DTO_ThoiKhoaBieu thoikhoabieu)
         {
             AddParameter(thoikhoabieu);
-            Connection.ExecuteSqlWithParameter("INSERT INTO thoikhoabieu VALUES (@MaGD, @MaBH, @MaPhong, @CoDay)", parameters);
+            Connection.ExecuteSqlWithParameter("INSERT INTO ThoiKhoaBieu VALUES (@MaPC, @BuoiHoc, @MaPhong, @CoDay, @DaThanhToan)", parameters);
         }
         public void CapNhatThoiKhoaBieu(DTO_ThoiKhoaBieu thoikhoabieu)
         {
             AddParameter(thoikhoabieu);
-            Connection.ExecuteSqlWithParameter("UPDATE thoikhoabieu SET CoDay=@CoDay WHERE MaGD=@MaGD AND MaBH=@MaBH AND MaPhong=@MaPhong", parameters);
+            Connection.ExecuteSqlWithParameter("UPDATE ThoiKhoaBieu SET CoDay=@CoDay, MaPhong=@MaPhong, DaThanhToan=@DaThanhToan WHERE MaGD=@MaGD AND BuoiHoc=@BuoiHoc", parameters);
         }
         public void XoaThoiKhoaBieu(DTO_ThoiKhoaBieu thoikhoabieu)
         {
             AddParameter(thoikhoabieu);
-            Connection.ExecuteSql("DELETE FROM thoikhoabieu WHERE MaGD='" + thoikhoabieu.MaGD + "' AND MaBH='" + thoikhoabieu.MaBH + "' AND MaPhong='" + thoikhoabieu.MaPhong + "'");
+            Connection.ExecuteSql("DELETE FROM ThoiKhoaBieu WHERE MaPC='" + thoikhoabieu.MaPC + "' AND BuoiHoc='" + thoikhoabieu.BuoiHoc + "'");
         }
         public DataTable TaobangThoiKhoaBieu(string dieukien)
         {
-            return Connection.GetDataTable("SELECT * FROM thoikhoabieu " + dieukien);
+            return Connection.GetDataTable("SELECT * FROM ThoiKhoaBieu " + dieukien);
         }
         public int LayKichThuocBang()
         {
-            DataTable dt = Connection.GetDataTable("SELECT * FROM thoikhoabieu");
+            DataTable dt = Connection.GetDataTable("SELECT * FROM ThoiKhoaBieu");
             return dt.Rows.Count;
+        }
+        public DataTable XemTKBSinhVien(string mssv, DateTime ngayDauTuan)
+        {
+            parameters.Clear();
+            parameters.Add("@mssv", mssv);
+            parameters.Add("@ngayDauTuan", ngayDauTuan);
+            return Connection.ExecuteStoreProcedure("sp_XemTKBSinhVien", parameters);
+        }
+        public DataTable XemTKBGiangVien(string magv, DateTime ngayDauTuan)
+        {
+            parameters.Clear();
+            parameters.Add("@maGV", magv);
+            parameters.Add("@ngayDauTuan", ngayDauTuan);
+            return Connection.ExecuteStoreProcedure("sp_XemTKBGiangVien", parameters);
         }
     }
 }

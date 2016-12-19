@@ -37,8 +37,9 @@
             this.cmbTuan = new DevExpress.XtraEditors.ComboBoxEdit();
             this.lblChuY = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.xemPhieuGiangDay1 = new QuanLyDaoTao.UserControls.XemPhieuGiangDay();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.xemPhieuGiangDay1 = new QuanLyDaoTao.UserControls.XemPhieuGiangDay();
+            this.btIn = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.numHocKy.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties)).BeginInit();
@@ -78,6 +79,7 @@
             0});
             this.numHocKy.Size = new System.Drawing.Size(70, 24);
             this.numHocKy.TabIndex = 1;
+            this.numHocKy.EditValueChanged += new System.EventHandler(this.numHocKy_EditValueChanged);
             // 
             // labelControl1
             // 
@@ -129,10 +131,15 @@
             this.cmbGiangVien.Properties.Appearance.Options.UseFont = true;
             this.cmbGiangVien.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbGiangVien.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("MaGV", 50, "Mã GV"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("HoTen", 100, "Họ Tên"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("MaTrinhDo", 50, "Trình Độ")});
             this.cmbGiangVien.Properties.DisplayMember = "HoTen";
             this.cmbGiangVien.Properties.ValueMember = "MaGV";
             this.cmbGiangVien.Size = new System.Drawing.Size(179, 24);
             this.cmbGiangVien.TabIndex = 7;
+            this.cmbGiangVien.EditValueChanged += new System.EventHandler(this.cmbGiangVien_EditValueChanged);
             // 
             // labelControl2
             // 
@@ -158,6 +165,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbTuan.Size = new System.Drawing.Size(399, 24);
             this.cmbTuan.TabIndex = 5;
+            this.cmbTuan.SelectedIndexChanged += new System.EventHandler(this.cmbTuan_SelectedIndexChanged);
             // 
             // lblChuY
             // 
@@ -179,15 +187,6 @@
             this.labelControl5.TabIndex = 6;
             this.labelControl5.Text = "Giảng viên:";
             // 
-            // xemPhieuGiangDay1
-            // 
-            this.xemPhieuGiangDay1.Location = new System.Drawing.Point(56, 67);
-            this.xemPhieuGiangDay1.MaximumSize = new System.Drawing.Size(1146, 475);
-            this.xemPhieuGiangDay1.MinimumSize = new System.Drawing.Size(1146, 475);
-            this.xemPhieuGiangDay1.Name = "xemPhieuGiangDay1";
-            this.xemPhieuGiangDay1.Size = new System.Drawing.Size(1146, 475);
-            this.xemPhieuGiangDay1.TabIndex = 14;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::QuanLyDaoTao.Properties.Resources.tkb64;
@@ -198,11 +197,32 @@
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
+            // xemPhieuGiangDay1
+            // 
+            this.xemPhieuGiangDay1.Location = new System.Drawing.Point(56, 67);
+            this.xemPhieuGiangDay1.MaGV = "";
+            this.xemPhieuGiangDay1.MaximumSize = new System.Drawing.Size(1146, 475);
+            this.xemPhieuGiangDay1.MinimumSize = new System.Drawing.Size(1146, 475);
+            this.xemPhieuGiangDay1.Name = "xemPhieuGiangDay1";
+            this.xemPhieuGiangDay1.NgayDauTuan = new System.DateTime(2016, 12, 19, 21, 39, 28, 888);
+            this.xemPhieuGiangDay1.Size = new System.Drawing.Size(1146, 475);
+            this.xemPhieuGiangDay1.TabIndex = 14;
+            // 
+            // btIn
+            // 
+            this.btIn.Location = new System.Drawing.Point(1143, 12);
+            this.btIn.Name = "btIn";
+            this.btIn.Size = new System.Drawing.Size(36, 23);
+            this.btIn.TabIndex = 16;
+            this.btIn.Text = "In";
+            this.btIn.Click += new System.EventHandler(this.btIn_Click);
+            // 
             // frmXemPhieuGiangDay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1214, 546);
+            this.Controls.Add(this.btIn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.lblChuY);
@@ -216,6 +236,7 @@
             this.Controls.Add(this.xemPhieuGiangDay1);
             this.Name = "frmXemPhieuGiangDay";
             this.Text = "Giảng viên xem phiếu giảng dạy";
+            this.Load += new System.EventHandler(this.frmThemDeNghi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numHocKy.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties)).EndInit();
@@ -240,5 +261,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private QuanLyDaoTao.UserControls.XemPhieuGiangDay xemPhieuGiangDay1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private DevExpress.XtraEditors.SimpleButton btIn;
     }
 }

@@ -367,10 +367,21 @@ namespace QuanLyDaoTao.Presentation
 
             }
         }
+        private void btnXemTKBGV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                frmXemThoiKhoaBieuGiangVien frm = new frmXemThoiKhoaBieuGiangVien();
+                TabCreating("Giảng viên xem thời khóa biểu tuần", frm);
+            }
+            catch (Exception)
+            {
+            }
+        }
 
         #endregion
 
-        #region Giáo Vụ
+                #region Giáo Vụ
 
         private void btnXepTKB_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {

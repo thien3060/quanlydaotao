@@ -37,8 +37,8 @@
             this.cmbTuan = new DevExpress.XtraEditors.ComboBoxEdit();
             this.lblChuY = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.xemThoiKhoaBieuSinhVien1 = new QuanLyDaoTao.UserControls.XemThoiKhoaBieuSinhVien();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.xemThoiKhoaBieuSinhVien1 = new QuanLyDaoTao.UserControls.XemThoiKhoaBieuSinhVien();
             ((System.ComponentModel.ISupportInitialize)(this.numHocKy.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties)).BeginInit();
@@ -78,6 +78,7 @@
             0});
             this.numHocKy.Size = new System.Drawing.Size(70, 24);
             this.numHocKy.TabIndex = 1;
+            this.numHocKy.EditValueChanged += new System.EventHandler(this.numHocKy_EditValueChanged);
             // 
             // labelControl1
             // 
@@ -129,10 +130,15 @@
             this.cmbSinhVien.Properties.Appearance.Options.UseFont = true;
             this.cmbSinhVien.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbSinhVien.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("MSSV", 50, "MSSV"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("HoTen", 100, "Họ Tên"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("MaLop", 50, "Mã lớp")});
             this.cmbSinhVien.Properties.DisplayMember = "HoTen";
             this.cmbSinhVien.Properties.ValueMember = "MSSV";
             this.cmbSinhVien.Size = new System.Drawing.Size(187, 24);
             this.cmbSinhVien.TabIndex = 7;
+            this.cmbSinhVien.EditValueChanged += new System.EventHandler(this.cmbGiangVien_EditValueChanged);
             // 
             // labelControl2
             // 
@@ -158,6 +164,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbTuan.Size = new System.Drawing.Size(399, 24);
             this.cmbTuan.TabIndex = 5;
+            this.cmbTuan.SelectedIndexChanged += new System.EventHandler(this.cmbTuan_SelectedIndexChanged);
             // 
             // lblChuY
             // 
@@ -179,15 +186,6 @@
             this.labelControl5.TabIndex = 6;
             this.labelControl5.Text = "Sinh viên:";
             // 
-            // xemThoiKhoaBieuSinhVien1
-            // 
-            this.xemThoiKhoaBieuSinhVien1.Location = new System.Drawing.Point(56, 61);
-            this.xemThoiKhoaBieuSinhVien1.MaximumSize = new System.Drawing.Size(1146, 475);
-            this.xemThoiKhoaBieuSinhVien1.MinimumSize = new System.Drawing.Size(1146, 475);
-            this.xemThoiKhoaBieuSinhVien1.Name = "xemThoiKhoaBieuSinhVien1";
-            this.xemThoiKhoaBieuSinhVien1.Size = new System.Drawing.Size(1146, 475);
-            this.xemThoiKhoaBieuSinhVien1.TabIndex = 14;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::QuanLyDaoTao.Properties.Resources.tkb64;
@@ -197,6 +195,17 @@
             this.pictureBox1.Size = new System.Drawing.Size(75, 66);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
+            // 
+            // xemThoiKhoaBieuSinhVien1
+            // 
+            this.xemThoiKhoaBieuSinhVien1.Location = new System.Drawing.Point(56, 61);
+            this.xemThoiKhoaBieuSinhVien1.MaximumSize = new System.Drawing.Size(1146, 475);
+            this.xemThoiKhoaBieuSinhVien1.MinimumSize = new System.Drawing.Size(1146, 475);
+            this.xemThoiKhoaBieuSinhVien1.MSSV = "";
+            this.xemThoiKhoaBieuSinhVien1.Name = "xemThoiKhoaBieuSinhVien1";
+            this.xemThoiKhoaBieuSinhVien1.NgayDauTuan = new System.DateTime(2016, 12, 19, 20, 50, 23, 984);
+            this.xemThoiKhoaBieuSinhVien1.Size = new System.Drawing.Size(1146, 475);
+            this.xemThoiKhoaBieuSinhVien1.TabIndex = 14;
             // 
             // frmXemThoiKhoaBieuSinhVien
             // 
@@ -216,6 +225,7 @@
             this.Controls.Add(this.labelControl3);
             this.Name = "frmXemThoiKhoaBieuSinhVien";
             this.Text = "Xem thời khóa biểu sinh viên";
+            this.Load += new System.EventHandler(this.frmThemDeNghi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numHocKy.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties)).EndInit();

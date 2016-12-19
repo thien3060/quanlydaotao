@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.Utils.SuperToolTip superToolTip10 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem13 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem10 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem4 = new DevExpress.Utils.ToolTipSeparatorItem();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem14 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem1 = new DevExpress.Utils.ToolTipSeparatorItem();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChinh));
-            DevExpress.Utils.SuperToolTip superToolTip6 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem8 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem6 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip11 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem9 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem11 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip12 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem15 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem12 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem3 = new DevExpress.Utils.ToolTipSeparatorItem();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem16 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip13 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem17 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem13 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem3 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem2 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem4 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem3 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip4 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem5 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem4 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem2 = new DevExpress.Utils.ToolTipSeparatorItem();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem6 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip5 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem7 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem5 = new DevExpress.Utils.ToolTipItem();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.lblQuyen = new DevExpress.XtraBars.BarStaticItem();
             this.lblTen = new DevExpress.XtraBars.BarStaticItem();
@@ -281,17 +281,17 @@
             this.rgbiSkins.Hint = "Chọn để thay đổi giao diện chương trình";
             this.rgbiSkins.Id = 60;
             this.rgbiSkins.Name = "rgbiSkins";
-            toolTipTitleItem13.Appearance.Options.UseImage = true;
-            toolTipTitleItem13.Text = "Giao diện";
-            toolTipItem10.LeftIndent = 6;
-            toolTipItem10.Text = "Chọn để thay đổi giao diện chương trình.";
-            toolTipTitleItem14.LeftIndent = 6;
-            toolTipTitleItem14.Text = "ViEvents_CRM";
-            superToolTip10.Items.Add(toolTipTitleItem13);
-            superToolTip10.Items.Add(toolTipItem10);
-            superToolTip10.Items.Add(toolTipSeparatorItem4);
-            superToolTip10.Items.Add(toolTipTitleItem14);
-            this.rgbiSkins.SuperTip = superToolTip10;
+            toolTipTitleItem1.Appearance.Options.UseImage = true;
+            toolTipTitleItem1.Text = "Giao diện";
+            toolTipItem1.LeftIndent = 6;
+            toolTipItem1.Text = "Chọn để thay đổi giao diện chương trình.";
+            toolTipTitleItem2.LeftIndent = 6;
+            toolTipTitleItem2.Text = "ViEvents_CRM";
+            superToolTip1.Items.Add(toolTipTitleItem1);
+            superToolTip1.Items.Add(toolTipItem1);
+            superToolTip1.Items.Add(toolTipSeparatorItem1);
+            superToolTip1.Items.Add(toolTipTitleItem2);
+            this.rgbiSkins.SuperTip = superToolTip1;
             // 
             // btnDangNhap
             // 
@@ -304,12 +304,12 @@
             this.btnDangNhap.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnDangNhap.LargeGlyph")));
             this.btnDangNhap.LargeImageIndex = 9;
             this.btnDangNhap.Name = "btnDangNhap";
-            toolTipTitleItem8.Text = "Người dùng";
-            toolTipItem6.LeftIndent = 6;
-            toolTipItem6.Text = "Nhấn vào đây để đăng nhập hệ thống";
-            superToolTip6.Items.Add(toolTipTitleItem8);
-            superToolTip6.Items.Add(toolTipItem6);
-            this.btnDangNhap.SuperTip = superToolTip6;
+            toolTipTitleItem3.Text = "Người dùng";
+            toolTipItem2.LeftIndent = 6;
+            toolTipItem2.Text = "Nhấn vào đây để đăng nhập hệ thống";
+            superToolTip2.Items.Add(toolTipTitleItem3);
+            superToolTip2.Items.Add(toolTipItem2);
+            this.btnDangNhap.SuperTip = superToolTip2;
             this.btnDangNhap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangNhap_ItemClick);
             // 
             // btnDangXuat
@@ -321,12 +321,12 @@
             this.btnDangXuat.ImageIndex = 20;
             this.btnDangXuat.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.LargeGlyph")));
             this.btnDangXuat.Name = "btnDangXuat";
-            toolTipTitleItem9.Text = "Người dùng";
-            toolTipItem11.LeftIndent = 6;
-            toolTipItem11.Text = "Nhấn vào đây để đăng xuất hệ thống.";
-            superToolTip11.Items.Add(toolTipTitleItem9);
-            superToolTip11.Items.Add(toolTipItem11);
-            this.btnDangXuat.SuperTip = superToolTip11;
+            toolTipTitleItem4.Text = "Người dùng";
+            toolTipItem3.LeftIndent = 6;
+            toolTipItem3.Text = "Nhấn vào đây để đăng xuất hệ thống.";
+            superToolTip3.Items.Add(toolTipTitleItem4);
+            superToolTip3.Items.Add(toolTipItem3);
+            this.btnDangXuat.SuperTip = superToolTip3;
             this.btnDangXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangXuat_ItemClick);
             // 
             // btnDoiMatKhau
@@ -338,17 +338,17 @@
             this.btnDoiMatKhau.Id = 66;
             this.btnDoiMatKhau.ImageIndex = 19;
             this.btnDoiMatKhau.Name = "btnDoiMatKhau";
-            toolTipTitleItem15.Appearance.Options.UseImage = true;
-            toolTipTitleItem15.Text = "Người dùng";
-            toolTipItem12.LeftIndent = 6;
-            toolTipItem12.Text = "Nhấn vào đây để đổi mật khẩu.";
-            toolTipTitleItem16.LeftIndent = 6;
-            toolTipTitleItem16.Text = "ViEvents_CRM";
-            superToolTip12.Items.Add(toolTipTitleItem15);
-            superToolTip12.Items.Add(toolTipItem12);
-            superToolTip12.Items.Add(toolTipSeparatorItem3);
-            superToolTip12.Items.Add(toolTipTitleItem16);
-            this.btnDoiMatKhau.SuperTip = superToolTip12;
+            toolTipTitleItem5.Appearance.Options.UseImage = true;
+            toolTipTitleItem5.Text = "Người dùng";
+            toolTipItem4.LeftIndent = 6;
+            toolTipItem4.Text = "Nhấn vào đây để đổi mật khẩu.";
+            toolTipTitleItem6.LeftIndent = 6;
+            toolTipTitleItem6.Text = "ViEvents_CRM";
+            superToolTip4.Items.Add(toolTipTitleItem5);
+            superToolTip4.Items.Add(toolTipItem4);
+            superToolTip4.Items.Add(toolTipSeparatorItem2);
+            superToolTip4.Items.Add(toolTipTitleItem6);
+            this.btnDoiMatKhau.SuperTip = superToolTip4;
             // 
             // btnThongTin
             // 
@@ -359,12 +359,12 @@
             this.btnThongTin.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnThongTin.LargeGlyph")));
             this.btnThongTin.LargeImageIndex = 10;
             this.btnThongTin.Name = "btnThongTin";
-            toolTipTitleItem17.Text = "Người dùng";
-            toolTipItem13.LeftIndent = 6;
-            toolTipItem13.Text = "Nhấn vào đây để xem thông tin người dùng hệ thống hiện tại.";
-            superToolTip13.Items.Add(toolTipTitleItem17);
-            superToolTip13.Items.Add(toolTipItem13);
-            this.btnThongTin.SuperTip = superToolTip13;
+            toolTipTitleItem7.Text = "Người dùng";
+            toolTipItem5.LeftIndent = 6;
+            toolTipItem5.Text = "Nhấn vào đây để xem thông tin người dùng hệ thống hiện tại.";
+            superToolTip5.Items.Add(toolTipTitleItem7);
+            superToolTip5.Items.Add(toolTipItem5);
+            this.btnThongTin.SuperTip = superToolTip5;
             this.btnThongTin.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThongTin_ItemClick);
             // 
             // btnSuaSV
@@ -668,6 +668,7 @@
             this.btnXemTKBGV.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnXemTKBGV.LargeGlyph")));
             this.btnXemTKBGV.LargeImageIndex = 17;
             this.btnXemTKBGV.Name = "btnXemTKBGV";
+            this.btnXemTKBGV.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnXemTKBGV_ItemClick);
             // 
             // TKBThangGV
             // 
