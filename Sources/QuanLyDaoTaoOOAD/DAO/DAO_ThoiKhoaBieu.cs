@@ -62,5 +62,19 @@ namespace DAO
             parameters.Add("@ngayDauTuan", ngayDauTuan);
             return Connection.ExecuteStoreProcedure("sp_XemTKBGiangVien", parameters);
         }
+        public DataTable ThongTinTKB(string maPhong, DateTime ngayDauTuan)
+        {
+            parameters.Clear();
+            parameters.Add("@maPhong", maPhong);
+            parameters.Add("@ngayDauTuan", ngayDauTuan);
+            return Connection.ExecuteStoreProcedure("sp_ThongTinTKB", parameters);
+        }
+        public DataTable DeNghiTheoPhongTrongTuan(string maPhong, DateTime ngayDauTuan)
+        {
+            parameters.Clear();
+            parameters.Add("@maPhong", maPhong);
+            parameters.Add("@ngayDauTuan", ngayDauTuan);
+            return Connection.ExecuteStoreProcedure("sp_DeNghiTheoPhongTrongTuan", parameters);
+        }
     }
 }
