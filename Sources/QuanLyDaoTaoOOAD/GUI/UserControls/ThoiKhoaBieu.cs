@@ -14,6 +14,7 @@ using QuanLyDaoTao.Enums;
 using QuanLyDaoTao.Presentation;
 using QuanLyDaoTao.Utilities;
 using QuanLyDaoTao.Utils;
+using System.Collections.ObjectModel;
 
 namespace QuanLyDaoTao.UserControls
 {
@@ -27,7 +28,7 @@ namespace QuanLyDaoTao.UserControls
                 InitializeComponent();
                 maPhong = string.Empty;
                 ngayDauTuan = DateTime.Now.AddDays(DayOfWeek.Monday - DateTime.Now.DayOfWeek);
-                TKBDangXep = new DTO_ThoiKhoaBieu();
+                TKBDangXep = new Collection<DTO_ThoiKhoaBieu>();
                 thongTinhXeopTKB = new DataTable();
                 TKBs = new DataTable();
             }
@@ -97,20 +98,11 @@ namespace QuanLyDaoTao.UserControls
 
         private Thu thu = Thu.Thu2;
 
-        /// <summary>
-        /// Các thời khóa biểu đã được xếp
-        /// </summary>
         public DataTable TKBs;
 
-        /// <summary>
-        /// Các đề nghị được giảng dạy trong tuần này
-        /// </summary>
         public DataTable thongTinhXeopTKB;
 
-        /// <summary>
-        /// Các thời khóa biểu đang xếp
-        /// </summary>
-        public DTO_ThoiKhoaBieu TKBDangXep;
+        public Collection<DTO_ThoiKhoaBieu> TKBDangXep;
 
         private int[] XThu = { 0, 144, 287, 431, 575, 719, 863 };
         private int[] YTiet = { 0, 41, 82, 123, 164, 205, 246, 287, 328, 369 };
@@ -119,16 +111,9 @@ namespace QuanLyDaoTao.UserControls
         {
             try
             {
-                //TKBDangXep.Add(new QuanLyDaoTao.DataAccess.ThoiKhoaBieu()
-                //{
-                //    BuoiHoc = t.BuoiHoc,
-                //    MaPC = t.MaPC,
-                //    MaPhong = maPhong,
-                //    CoDay = false,
-                //    DaThanhToan = false,
-                //    BuoiHoc1 = BuoiHocBUS.LayThongTin(t.BuoiHoc)
-                //});
-                //Paint(t.MaPC, t.BuoiHoc, (int)thu, t.TietBatDau, t.SoTiet, t.TenMH, t.TenGV, t.MaLop, 1, t.MaGV, t.MaMH);
+                TKBDangXep.Add(new DTO_ThoiKhoaBieu("", "", maPhong, false, false));
+
+                Paint(t[0].ToString(), int.Parse(t[7].ToString()), (int)thu, int.Parse(t[9].ToString()), int.Parse(t[10].ToString()), t[5].ToString(), t[3].ToString(), t[6].ToString(), 1, t[1].ToString(), t[4].ToString());
                 return true;
             }
             catch (Exception ex)
@@ -311,67 +296,67 @@ namespace QuanLyDaoTao.UserControls
                 Clear();
 
                 #region Vẽ các đề nghị
-                //foreach (DataRow i in thongTinhXeopTKB.Rows)
-                //{
-                //    Thu t = Thu.Thu2;
-                //    switch (i.Ngay.DayOfWeek)
-                //    {
-                //        case DayOfWeek.Monday:
-                //            t = Thu.Thu2;
-                //            break;
-                //        case DayOfWeek.Tuesday:
-                //            t = Thu.Thu3;
-                //            break;
-                //        case DayOfWeek.Wednesday:
-                //            t = Thu.Thu4;
-                //            break;
-                //        case DayOfWeek.Thursday:
-                //            t = Thu.Thu5;
-                //            break;
-                //        case DayOfWeek.Friday:
-                //            t = Thu.Thu6;
-                //            break;
-                //        case DayOfWeek.Saturday:
-                //            t = Thu.Thu7;
-                //            break;
-                //        case DayOfWeek.Sunday:
-                //            t = Thu.ChuNhat;
-                //            break;
-                //    }
-                //    Paint(i.MaPC, i.BuoiHoc, (int)t, i.TietBatDau, i.SoTiet, "", "", "", 0, "", "");
-                //}
-                //#endregion
+                foreach (DataRow i in thongTinhXeopTKB.Rows)
+                {
+                    Thu t = Thu.Thu2;
+                    switch (DateTime.Parse(i[7].ToString()).DayOfWeek)
+                    {
+                        case DayOfWeek.Monday:
+                            t = Thu.Thu2;
+                            break;
+                        case DayOfWeek.Tuesday:
+                            t = Thu.Thu3;
+                            break;
+                        case DayOfWeek.Wednesday:
+                            t = Thu.Thu4;
+                            break;
+                        case DayOfWeek.Thursday:
+                            t = Thu.Thu5;
+                            break;
+                        case DayOfWeek.Friday:
+                            t = Thu.Thu6;
+                            break;
+                        case DayOfWeek.Saturday:
+                            t = Thu.Thu7;
+                            break;
+                        case DayOfWeek.Sunday:
+                            t = Thu.ChuNhat;
+                            break;
+                    }
+                    Paint(i[0].ToString(), int.Parse(i[7].ToString()), (int)t, int.Parse(i[8].ToString()), int.Parse(i[9].ToString()), "", "", "", 0, "", "");
+                }
+                #endregion
 
-                //#region Vẽ các thời khóa biểu đã xếp
-                //foreach (DataRow t in TKBs.Rows)
-                //{
-                //    Thu th = Thu.Thu2;
-                //    switch (t.Ngay.DayOfWeek)
-                //    {
-                //        case DayOfWeek.Monday:
-                //            th = Thu.Thu2;
-                //            break;
-                //        case DayOfWeek.Tuesday:
-                //            th = Thu.Thu3;
-                //            break;
-                //        case DayOfWeek.Wednesday:
-                //            th = Thu.Thu4;
-                //            break;
-                //        case DayOfWeek.Thursday:
-                //            th = Thu.Thu5;
-                //            break;
-                //        case DayOfWeek.Friday:
-                //            th = Thu.Thu6;
-                //            break;
-                //        case DayOfWeek.Saturday:
-                //            th = Thu.Thu7;
-                //            break;
-                //        case DayOfWeek.Sunday:
-                //            th = Thu.ChuNhat;
-                //            break;
-                //    }
-                //    Paint(t.MaPC, t.BuoiHoc, (int)th, t.TietBatDau, t.SoTiet, t.TenMH, t.TenGV, t.MaLop, 2, t.MaGV, t.MaMH);
-                //}
+                #region Vẽ các thời khóa biểu đã xếp
+                foreach (DataRow t in TKBs.Rows)
+                {
+                    Thu th = Thu.Thu2;
+                    switch (DateTime.Parse(t[7].ToString()).DayOfWeek)
+                    {
+                        case DayOfWeek.Monday:
+                            th = Thu.Thu2;
+                            break;
+                        case DayOfWeek.Tuesday:
+                            th = Thu.Thu3;
+                            break;
+                        case DayOfWeek.Wednesday:
+                            th = Thu.Thu4;
+                            break;
+                        case DayOfWeek.Thursday:
+                            th = Thu.Thu5;
+                            break;
+                        case DayOfWeek.Friday:
+                            th = Thu.Thu6;
+                            break;
+                        case DayOfWeek.Saturday:
+                            th = Thu.Thu7;
+                            break;
+                        case DayOfWeek.Sunday:
+                            th = Thu.ChuNhat;
+                            break;
+                    }
+                    Paint(t[0].ToString(), int.Parse(t[6].ToString()), (int)th, int.Parse(t[8].ToString()), int.Parse(t[9].ToString()), t[4].ToString(), t[2].ToString(), t[5].ToString(), 2, t[1].ToString(), t[3].ToString());
+                }
                 #endregion
             }
             catch (Exception ex)

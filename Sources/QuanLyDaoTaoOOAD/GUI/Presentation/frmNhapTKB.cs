@@ -12,6 +12,7 @@ using DTO;
 using BUS;
 using QuanLyDaoTao.Enums;
 using QuanLyDaoTao.Utilities;
+using System.Collections.ObjectModel;
 
 namespace QuanLyDaoTao.Presentation
 {
@@ -26,7 +27,7 @@ namespace QuanLyDaoTao.Presentation
                 source = new DataTable();
                 maPhong = string.Empty;
                 ngayDauTuan = new DateTime();
-                TKBDangXep = new DTO_ThoiKhoaBieu();
+                TKBDangXep = new Collection<DTO_ThoiKhoaBieu>();
             }
             catch (Exception ex)
             {
@@ -37,7 +38,7 @@ namespace QuanLyDaoTao.Presentation
         /// <summary>
         /// Các thời khóa biểu đang xếp
         /// </summary>
-        public DTO_ThoiKhoaBieu TKBDangXep;
+        public Collection<DTO_ThoiKhoaBieu> TKBDangXep;
 
         /// <summary>
         /// Các thời khóa biểu đã được xếp

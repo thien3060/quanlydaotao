@@ -170,7 +170,7 @@ namespace QuanLyDaoTao.Presentation
         {
             try
             {
-                bus_tkb.ThemdulieuThoiKhoaBieu(thoiKhoaBieu1.TKBDangXep);
+                //bus_tkb.ThemdulieuThoiKhoaBieu(thoiKhoaBieu1.TKBDangXep);
                 string tam = thoiKhoaBieu1.MaPhong;
                 thoiKhoaBieu1.MaPhong = tam;
                 MessageBoxUtils.Success("Thành công");

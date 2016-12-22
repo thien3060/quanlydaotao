@@ -347,6 +347,7 @@
             this.lbl6.TabStop = true;
             this.lbl6.Text = "Chủ nhật\r\n06/04/2014";
             this.lbl6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbl0_LinkClicked);
             // 
             // panel6
             // 
@@ -371,6 +372,7 @@
             this.lbl5.TabStop = true;
             this.lbl5.Text = "Thứ 7\r\n05/04/2014";
             this.lbl5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbl0_LinkClicked);
             // 
             // panel5
             // 
@@ -395,6 +397,7 @@
             this.lbl4.TabStop = true;
             this.lbl4.Text = "Thứ 6\r\n04/04/2014";
             this.lbl4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbl0_LinkClicked);
             // 
             // panel4
             // 
@@ -419,6 +422,7 @@
             this.lbl3.TabStop = true;
             this.lbl3.Text = "Thứ 5\r\n03/04/2014";
             this.lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbl0_LinkClicked);
             // 
             // panel19
             // 
@@ -443,6 +447,7 @@
             this.lbl2.TabStop = true;
             this.lbl2.Text = "Thứ 4\r\n02/04/2014";
             this.lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbl0_LinkClicked);
             // 
             // panel3
             // 
@@ -477,6 +482,7 @@
             this.lbl1.TabStop = true;
             this.lbl1.Text = "Thứ 3\r\n01/04/2014";
             this.lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbl0_LinkClicked);
             // 
             // panel1
             // 
@@ -501,6 +507,7 @@
             this.lbl0.TabStop = true;
             this.lbl0.Text = "Thứ 2\r\n31/3/2014";
             this.lbl0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl0.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbl0_LinkClicked);
             // 
             // pnChinh
             // 

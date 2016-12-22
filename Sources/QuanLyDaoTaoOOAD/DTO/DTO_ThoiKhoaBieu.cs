@@ -11,12 +11,12 @@ namespace DTO
         public string MaPC { get; set; }
         public string BuoiHoc { get; set; }
         public string MaPhong { get; set; }
-        public string CoDay { get; set; }
-        public string DaThanhToan { get; set; }
+        public bool CoDay { get; set; }
+        public bool DaThanhToan { get; set; }
 
         public DTO_ThoiKhoaBieu() { }
 
-        public DTO_ThoiKhoaBieu(string maPC, string buoiHoc, string maPhong, string coDay, string daThanhToan)
+        public DTO_ThoiKhoaBieu(string maPC, string buoiHoc, string maPhong, bool coDay, bool daThanhToan)
         {
             MaPC = maPC;
             BuoiHoc = buoiHoc;
