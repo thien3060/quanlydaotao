@@ -64,21 +64,21 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl0 = new System.Windows.Forms.LinkLabel();
             this.pnChinh = new System.Windows.Forms.Panel();
-            this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
-            this.separatorControl2 = new DevExpress.XtraEditors.SeparatorControl();
-            this.separatorControl3 = new DevExpress.XtraEditors.SeparatorControl();
-            this.separatorControl4 = new DevExpress.XtraEditors.SeparatorControl();
-            this.separatorControl5 = new DevExpress.XtraEditors.SeparatorControl();
-            this.separatorControl6 = new DevExpress.XtraEditors.SeparatorControl();
-            this.separatorControl7 = new DevExpress.XtraEditors.SeparatorControl();
-            this.separatorControl8 = new DevExpress.XtraEditors.SeparatorControl();
-            this.separatorControl9 = new DevExpress.XtraEditors.SeparatorControl();
-            this.separatorControl10 = new DevExpress.XtraEditors.SeparatorControl();
-            this.separatorControl11 = new DevExpress.XtraEditors.SeparatorControl();
-            this.separatorControl12 = new DevExpress.XtraEditors.SeparatorControl();
-            this.separatorControl13 = new DevExpress.XtraEditors.SeparatorControl();
-            this.separatorControl14 = new DevExpress.XtraEditors.SeparatorControl();
             this.separatorControl15 = new DevExpress.XtraEditors.SeparatorControl();
+            this.separatorControl14 = new DevExpress.XtraEditors.SeparatorControl();
+            this.separatorControl13 = new DevExpress.XtraEditors.SeparatorControl();
+            this.separatorControl12 = new DevExpress.XtraEditors.SeparatorControl();
+            this.separatorControl11 = new DevExpress.XtraEditors.SeparatorControl();
+            this.separatorControl3 = new DevExpress.XtraEditors.SeparatorControl();
+            this.separatorControl10 = new DevExpress.XtraEditors.SeparatorControl();
+            this.separatorControl9 = new DevExpress.XtraEditors.SeparatorControl();
+            this.separatorControl8 = new DevExpress.XtraEditors.SeparatorControl();
+            this.separatorControl7 = new DevExpress.XtraEditors.SeparatorControl();
+            this.separatorControl6 = new DevExpress.XtraEditors.SeparatorControl();
+            this.separatorControl5 = new DevExpress.XtraEditors.SeparatorControl();
+            this.separatorControl4 = new DevExpress.XtraEditors.SeparatorControl();
+            this.separatorControl2 = new DevExpress.XtraEditors.SeparatorControl();
+            this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -87,21 +87,21 @@
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnChinh.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
             this.SuspendLayout();
             // 
             // label20
@@ -347,6 +347,7 @@
             this.lbl6.TabStop = true;
             this.lbl6.Text = "Chủ nhật\r\n06/04/2014";
             this.lbl6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblThu2_LinkClicked);
             // 
             // panel6
             // 
@@ -371,6 +372,7 @@
             this.lbl5.TabStop = true;
             this.lbl5.Text = "Thứ 7\r\n05/04/2014";
             this.lbl5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblThu2_LinkClicked);
             // 
             // panel5
             // 
@@ -395,6 +397,7 @@
             this.lbl4.TabStop = true;
             this.lbl4.Text = "Thứ 6\r\n04/04/2014";
             this.lbl4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblThu2_LinkClicked);
             // 
             // panel4
             // 
@@ -419,6 +422,7 @@
             this.lbl3.TabStop = true;
             this.lbl3.Text = "Thứ 5\r\n03/04/2014";
             this.lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblThu2_LinkClicked);
             // 
             // panel19
             // 
@@ -443,6 +447,7 @@
             this.lbl2.TabStop = true;
             this.lbl2.Text = "Thứ 4\r\n02/04/2014";
             this.lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblThu2_LinkClicked);
             // 
             // panel3
             // 
@@ -477,6 +482,7 @@
             this.lbl1.TabStop = true;
             this.lbl1.Text = "Thứ 3\r\n01/04/2014";
             this.lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblThu2_LinkClicked);
             // 
             // panel1
             // 
@@ -501,6 +507,7 @@
             this.lbl0.TabStop = true;
             this.lbl0.Text = "Thứ 2\r\n31/3/2014";
             this.lbl0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl0.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblThu2_LinkClicked);
             // 
             // pnChinh
             // 
@@ -524,100 +531,13 @@
             this.pnChinh.Size = new System.Drawing.Size(1001, 411);
             this.pnChinh.TabIndex = 19;
             // 
-            // separatorControl1
+            // separatorControl15
             // 
-            this.separatorControl1.Location = new System.Drawing.Point(0, 32);
-            this.separatorControl1.Name = "separatorControl1";
-            this.separatorControl1.Size = new System.Drawing.Size(1001, 23);
-            this.separatorControl1.TabIndex = 0;
-            // 
-            // separatorControl2
-            // 
-            this.separatorControl2.Location = new System.Drawing.Point(0, 76);
-            this.separatorControl2.Name = "separatorControl2";
-            this.separatorControl2.Size = new System.Drawing.Size(1001, 23);
-            this.separatorControl2.TabIndex = 1;
-            // 
-            // separatorControl3
-            // 
-            this.separatorControl3.LineOrientation = System.Windows.Forms.Orientation.Vertical;
-            this.separatorControl3.Location = new System.Drawing.Point(129, 0);
-            this.separatorControl3.Name = "separatorControl3";
-            this.separatorControl3.Size = new System.Drawing.Size(23, 411);
-            this.separatorControl3.TabIndex = 2;
-            // 
-            // separatorControl4
-            // 
-            this.separatorControl4.Location = new System.Drawing.Point(0, 194);
-            this.separatorControl4.Name = "separatorControl4";
-            this.separatorControl4.Size = new System.Drawing.Size(1001, 23);
-            this.separatorControl4.TabIndex = 2;
-            // 
-            // separatorControl5
-            // 
-            this.separatorControl5.Location = new System.Drawing.Point(0, 116);
-            this.separatorControl5.Name = "separatorControl5";
-            this.separatorControl5.Size = new System.Drawing.Size(1001, 23);
-            this.separatorControl5.TabIndex = 3;
-            // 
-            // separatorControl6
-            // 
-            this.separatorControl6.Location = new System.Drawing.Point(0, 156);
-            this.separatorControl6.Name = "separatorControl6";
-            this.separatorControl6.Size = new System.Drawing.Size(1001, 23);
-            this.separatorControl6.TabIndex = 4;
-            // 
-            // separatorControl7
-            // 
-            this.separatorControl7.Location = new System.Drawing.Point(0, 235);
-            this.separatorControl7.Name = "separatorControl7";
-            this.separatorControl7.Size = new System.Drawing.Size(1001, 23);
-            this.separatorControl7.TabIndex = 5;
-            // 
-            // separatorControl8
-            // 
-            this.separatorControl8.Location = new System.Drawing.Point(0, 277);
-            this.separatorControl8.Name = "separatorControl8";
-            this.separatorControl8.Size = new System.Drawing.Size(1001, 23);
-            this.separatorControl8.TabIndex = 6;
-            // 
-            // separatorControl9
-            // 
-            this.separatorControl9.Location = new System.Drawing.Point(0, 317);
-            this.separatorControl9.Name = "separatorControl9";
-            this.separatorControl9.Size = new System.Drawing.Size(1001, 23);
-            this.separatorControl9.TabIndex = 7;
-            // 
-            // separatorControl10
-            // 
-            this.separatorControl10.Location = new System.Drawing.Point(2, 362);
-            this.separatorControl10.Name = "separatorControl10";
-            this.separatorControl10.Size = new System.Drawing.Size(999, 23);
-            this.separatorControl10.TabIndex = 8;
-            // 
-            // separatorControl11
-            // 
-            this.separatorControl11.LineOrientation = System.Windows.Forms.Orientation.Vertical;
-            this.separatorControl11.Location = new System.Drawing.Point(273, 0);
-            this.separatorControl11.Name = "separatorControl11";
-            this.separatorControl11.Size = new System.Drawing.Size(23, 411);
-            this.separatorControl11.TabIndex = 9;
-            // 
-            // separatorControl12
-            // 
-            this.separatorControl12.LineOrientation = System.Windows.Forms.Orientation.Vertical;
-            this.separatorControl12.Location = new System.Drawing.Point(416, 0);
-            this.separatorControl12.Name = "separatorControl12";
-            this.separatorControl12.Size = new System.Drawing.Size(23, 411);
-            this.separatorControl12.TabIndex = 10;
-            // 
-            // separatorControl13
-            // 
-            this.separatorControl13.LineOrientation = System.Windows.Forms.Orientation.Vertical;
-            this.separatorControl13.Location = new System.Drawing.Point(561, 0);
-            this.separatorControl13.Name = "separatorControl13";
-            this.separatorControl13.Size = new System.Drawing.Size(23, 411);
-            this.separatorControl13.TabIndex = 11;
+            this.separatorControl15.LineOrientation = System.Windows.Forms.Orientation.Vertical;
+            this.separatorControl15.Location = new System.Drawing.Point(848, 0);
+            this.separatorControl15.Name = "separatorControl15";
+            this.separatorControl15.Size = new System.Drawing.Size(23, 411);
+            this.separatorControl15.TabIndex = 13;
             // 
             // separatorControl14
             // 
@@ -627,13 +547,100 @@
             this.separatorControl14.Size = new System.Drawing.Size(23, 411);
             this.separatorControl14.TabIndex = 12;
             // 
-            // separatorControl15
+            // separatorControl13
             // 
-            this.separatorControl15.LineOrientation = System.Windows.Forms.Orientation.Vertical;
-            this.separatorControl15.Location = new System.Drawing.Point(848, 0);
-            this.separatorControl15.Name = "separatorControl15";
-            this.separatorControl15.Size = new System.Drawing.Size(23, 411);
-            this.separatorControl15.TabIndex = 13;
+            this.separatorControl13.LineOrientation = System.Windows.Forms.Orientation.Vertical;
+            this.separatorControl13.Location = new System.Drawing.Point(561, 0);
+            this.separatorControl13.Name = "separatorControl13";
+            this.separatorControl13.Size = new System.Drawing.Size(23, 411);
+            this.separatorControl13.TabIndex = 11;
+            // 
+            // separatorControl12
+            // 
+            this.separatorControl12.LineOrientation = System.Windows.Forms.Orientation.Vertical;
+            this.separatorControl12.Location = new System.Drawing.Point(416, 0);
+            this.separatorControl12.Name = "separatorControl12";
+            this.separatorControl12.Size = new System.Drawing.Size(23, 411);
+            this.separatorControl12.TabIndex = 10;
+            // 
+            // separatorControl11
+            // 
+            this.separatorControl11.LineOrientation = System.Windows.Forms.Orientation.Vertical;
+            this.separatorControl11.Location = new System.Drawing.Point(273, 0);
+            this.separatorControl11.Name = "separatorControl11";
+            this.separatorControl11.Size = new System.Drawing.Size(23, 411);
+            this.separatorControl11.TabIndex = 9;
+            // 
+            // separatorControl3
+            // 
+            this.separatorControl3.LineOrientation = System.Windows.Forms.Orientation.Vertical;
+            this.separatorControl3.Location = new System.Drawing.Point(129, 0);
+            this.separatorControl3.Name = "separatorControl3";
+            this.separatorControl3.Size = new System.Drawing.Size(23, 411);
+            this.separatorControl3.TabIndex = 2;
+            // 
+            // separatorControl10
+            // 
+            this.separatorControl10.Location = new System.Drawing.Point(2, 362);
+            this.separatorControl10.Name = "separatorControl10";
+            this.separatorControl10.Size = new System.Drawing.Size(999, 23);
+            this.separatorControl10.TabIndex = 8;
+            // 
+            // separatorControl9
+            // 
+            this.separatorControl9.Location = new System.Drawing.Point(0, 317);
+            this.separatorControl9.Name = "separatorControl9";
+            this.separatorControl9.Size = new System.Drawing.Size(1001, 23);
+            this.separatorControl9.TabIndex = 7;
+            // 
+            // separatorControl8
+            // 
+            this.separatorControl8.Location = new System.Drawing.Point(0, 277);
+            this.separatorControl8.Name = "separatorControl8";
+            this.separatorControl8.Size = new System.Drawing.Size(1001, 23);
+            this.separatorControl8.TabIndex = 6;
+            // 
+            // separatorControl7
+            // 
+            this.separatorControl7.Location = new System.Drawing.Point(0, 235);
+            this.separatorControl7.Name = "separatorControl7";
+            this.separatorControl7.Size = new System.Drawing.Size(1001, 23);
+            this.separatorControl7.TabIndex = 5;
+            // 
+            // separatorControl6
+            // 
+            this.separatorControl6.Location = new System.Drawing.Point(0, 156);
+            this.separatorControl6.Name = "separatorControl6";
+            this.separatorControl6.Size = new System.Drawing.Size(1001, 23);
+            this.separatorControl6.TabIndex = 4;
+            // 
+            // separatorControl5
+            // 
+            this.separatorControl5.Location = new System.Drawing.Point(0, 116);
+            this.separatorControl5.Name = "separatorControl5";
+            this.separatorControl5.Size = new System.Drawing.Size(1001, 23);
+            this.separatorControl5.TabIndex = 3;
+            // 
+            // separatorControl4
+            // 
+            this.separatorControl4.Location = new System.Drawing.Point(0, 194);
+            this.separatorControl4.Name = "separatorControl4";
+            this.separatorControl4.Size = new System.Drawing.Size(1001, 23);
+            this.separatorControl4.TabIndex = 2;
+            // 
+            // separatorControl2
+            // 
+            this.separatorControl2.Location = new System.Drawing.Point(0, 76);
+            this.separatorControl2.Name = "separatorControl2";
+            this.separatorControl2.Size = new System.Drawing.Size(1001, 23);
+            this.separatorControl2.TabIndex = 1;
+            // 
+            // separatorControl1
+            // 
+            this.separatorControl1.Location = new System.Drawing.Point(0, 32);
+            this.separatorControl1.Name = "separatorControl1";
+            this.separatorControl1.Size = new System.Drawing.Size(1001, 23);
+            this.separatorControl1.TabIndex = 0;
             // 
             // DeNghiGiangDay
             // 
@@ -670,6 +677,7 @@
             this.Controls.Add(this.pnChinh);
             this.Name = "DeNghiGiangDay";
             this.Size = new System.Drawing.Size(1146, 475);
+            this.Load += new System.EventHandler(this.DeNghiGiangDay_Load);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -685,21 +693,21 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.pnChinh.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

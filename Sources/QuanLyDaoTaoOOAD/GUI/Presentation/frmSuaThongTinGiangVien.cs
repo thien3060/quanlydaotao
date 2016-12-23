@@ -30,17 +30,37 @@ namespace QuanLyDaoTao.Presentation
         {
             try
             {
-                gv = bus_gv.GetGiangVienbyID(StaticClass.User.TenDangNhap.ToUpper());
-                txtHoTen.Text = gv.HoTen;
-                if (gv.GioiTinh)
-                    txtGioiTinh.Text = "Nam";
+                if (StaticClass.User.Quyen == "2")
+                {
+                    gv = bus_gv.GetGiangVienbyID(StaticClass.User.TenDangNhap.ToUpper());
+                    txtHoTen.Text = gv.HoTen;
+                    if (gv.GioiTinh)
+                        txtGioiTinh.Text = "Nam";
+                    else
+                        txtGioiTinh.Text = "Nữ";
+                    cmbTrinhDo.Properties.DataSource = bus_td.TaobangTDDT("");
+                    cmbTrinhDo.EditValue = gv.MaTrinhDo;
+                    txtDiaChi.Text = gv.DiaChi;
+
+                    txtDiaChi.Focus();
+                }
                 else
-                    txtGioiTinh.Text = "Nữ";
-                cmbTrinhDo.Properties.DataSource = bus_td.TaobangTDDT("");
-                cmbTrinhDo.EditValue = gv.MaTrinhDo;
-                txtDiaChi.Text = gv.DiaChi;
-                
-                txtDiaChi.Focus();
+                {
+                    lblHoTen.Visible = false;
+                    lblGioiTinh.Visible = false;
+                    lblTrinhDo.Visible = false;
+                    lblDiaChi.Visible = false;
+
+                    txtHoTen.Visible = false;
+                    txtGioiTinh.Visible = false;
+                    cmbTrinhDo.Visible = false;
+                    txtDiaChi.Visible = false;
+
+                    lblThongBao.Visible = true;
+
+                    btnCapNhat.Visible = false;
+                    btnDong.Focus();
+                }
             }
             catch (Exception ex)
             {

@@ -10,12 +10,12 @@ namespace DTO
     {
         public string MaBH { get; set; }
         public DateTime Ngay { get; set; }
-        public string TietBatDau { get; set; }
-        public string SoTiet { get; set; }
+        public int TietBatDau { get; set; }
+        public int SoTiet { get; set; }
 
         public DTO_BuoiHoc() { }
 
-        public DTO_BuoiHoc(string maBh, DateTime ngay, string tietBatDau, string soTiet)
+        public DTO_BuoiHoc(string maBh, DateTime ngay, int tietBatDau, int soTiet)
         {
             MaBH = maBh;
             Ngay = ngay;

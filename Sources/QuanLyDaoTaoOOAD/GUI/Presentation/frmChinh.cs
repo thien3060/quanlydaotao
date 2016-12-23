@@ -344,9 +344,10 @@ namespace QuanLyDaoTao.Presentation
                 frmThemDeNghi frm = new frmThemDeNghi();
                 TabCreating("Đề nghị giảng dạy", frm);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+                return;
             }
         }
 

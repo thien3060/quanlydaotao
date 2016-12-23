@@ -535,6 +535,9 @@
     <EmbeddedResource Include="Presentation\frmGioiThieu.resx">
       <DependentUpon>frmGioiThieu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmNhapDeNghi.resx">
+      <DependentUpon>frmNhapDeNghi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmNhapPhieuGiangDay.resx">
       <DependentUpon>frmNhapPhieuGiangDay.cs</DependentUpon>
     </EmbeddedResource>

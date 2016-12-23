@@ -30,16 +30,33 @@ namespace QuanLyDaoTao.Presentation
         {
             try
             {
-                gv = bus_gv.GetGiangVienbyID(StaticClass.User.TenDangNhap.ToUpper());
-                labelHoTen.Text = gv.HoTen;
-                if (gv.GioiTinh)
-                    labelGioiTinh.Text = "Nam";
+                if (StaticClass.User.Quyen == "2")
+                {
+                    gv = bus_gv.GetGiangVienbyID(StaticClass.User.TenDangNhap.ToUpper());
+                    labelHoTen.Text = gv.HoTen;
+                    if (gv.GioiTinh)
+                        labelGioiTinh.Text = "Nam";
+                    else
+                        labelGioiTinh.Text = "Nữ";
+                    DataTable trinhdo = bus_td.TaobangTDDT("");
+                    DataRow tentrinhdo = trinhdo.Select("MaTrinhDo = '" + gv.MaTrinhDo + "'")[0];
+                    labelTrinhDo.Text = tentrinhdo.ItemArray[1].ToString();
+                    labelDiaChi.Text = gv.DiaChi;
+                }
                 else
-                    labelGioiTinh.Text = "Nữ";
-                DataTable trinhdo = bus_td.TaobangTDDT("");                
-                DataRow tentrinhdo = trinhdo.Select("MaTrinhDo = '" + gv.MaTrinhDo + "'")[0];
-                labelTrinhDo.Text = tentrinhdo.ItemArray[1].ToString();
-                labelDiaChi.Text = gv.DiaChi;
+                {
+                    lblHoTen.Visible = false;
+                    lblGioiTinh.Visible = false;
+                    lblDiaChi.Visible = false;
+                    lblTrinhDo.Visible = false;
+
+                    labelHoTen.Visible = false;
+                    labelGioiTinh.Visible = false;
+                    labelDiaChi.Visible = false;
+                    labelTrinhDo.Visible = false;
+
+                    lblThongBao.Visible = true;
+                }
 
                 btnDong.Focus();
             }

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using DTO;
@@ -41,6 +42,40 @@ namespace DAO
         {
             DataTable dt = Connection.GetDataTable("SELECT * FROM denghi");
             return dt.Rows.Count;
+        }
+        public DataRow LayDeNghi(string mapc, int buoihoc)
+        {
+            DataTable temp = Connection.GetDataTable("SELECT * FROM denghi WHERE MaPC='" + mapc + "' AND BuoiHoc='" + buoihoc + "'");
+            if (temp.Rows.Count != 0)
+            {
+                return temp.Rows[0];
+            }
+            else
+            {
+                return null;
+            }
+        }
+        public DataTable ThongTinDeNghi(int mabuoihoc, string mapc)
+        {
+            parameters.Clear();
+            parameters.Add("@maBuoiHoc", mabuoihoc);
+            parameters.Add("@maPC", mapc);
+            return Connection.ExecuteStoreProcedure("sp_ThongTinDeNghi", parameters);
+        }
+        public DataTable ThongTinPhanCongTheoGV(string maGV, int hocky, int namhoc)
+        {
+            parameters.Clear();
+            parameters.Add("@maGV", maGV);
+            parameters.Add("@hocKy", hocky);
+            parameters.Add("@namHoc", namhoc);
+            return Connection.ExecuteStoreProcedure("sp_ThongTinPhanCongTheoGV", parameters);
+        }
+        public DataTable DanhSachDeNghiTheoTuan(string magv, DateTime ngayDauTuan)
+        {
+            parameters.Clear();
+            parameters.Add("@maGV", magv);
+            parameters.Add("@ngayDauTuan", ngayDauTuan);
+            return Connection.ExecuteStoreProcedure("sp_DeNghiTheoTuan", parameters);
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Data;
 using System.Linq;
 using DTO;
+using System;
 
 namespace DAO
 {
@@ -28,12 +29,24 @@ namespace DAO
         public void CapNhatBuoiHoc(DTO_BuoiHoc buoiHoc)
         {
             AddParameter(buoiHoc);
-            Connection.ExecuteSqlWithParameter("UPDATE buoihoc SET Ngay=@Ngay, TietBatDau=@TietBatDau, SoTiet=@SoTiet WHERE MaBH=@MaBH", parameters);
+            Connection.ExecuteSqlWithParameter("UPDATE buoihoc SET Ngay=@Ngay, TietBatDau=@TietBatDau, SoTiet=@SoTiet WHERE BuoiHoc=@MaBH", parameters);
         }
         public void XoaBuoiHoc(DTO_BuoiHoc buoiHoc)
         {
             AddParameter(buoiHoc);
-            Connection.ExecuteSqlWithParameter("DELETE FROM buoihoc WHERE MaBH=@MaBH", parameters);
+            Connection.ExecuteSqlWithParameter("DELETE FROM buoihoc WHERE BuoiHoc=@MaBH", parameters);
+        }
+        public DataRow LayBuoiHoc(string mabuoihoc)
+        {
+            DataTable temp = Connection.GetDataTable("SELECT * FROM buoihoc WHERE BuoiHoc='" + mabuoihoc + "'");
+            if (temp.Rows.Count != 0)
+            {
+                return temp.Rows[0];
+            }
+            else
+            {
+                return null;
+            }
         }
         public DataTable TaobangBuoiHoc(string dieukien)
         {
@@ -41,12 +54,18 @@ namespace DAO
         }
         public string LayMaBuoiHocLonNhat()
         {
-            DataTable temp = Connection.GetDataTable("SELECT * FROM buoihoc ORDER BY MaBH ASC");
+            DataTable temp = Connection.GetDataTable("SELECT * FROM buoihoc ORDER BY BuoiHoc ASC");
             if (temp.Rows.Count == 0)
             {
                 return null;
             }
             return temp.Rows[temp.Rows.Count - 1][0].ToString();
+        }
+        public DataTable DanhSachBuoiHocTheoTuan(DateTime ngayDauTuan)
+        {
+            parameters.Clear();
+            parameters.Add("@ngayDauTuan", ngayDauTuan);
+            return Connection.ExecuteStoreProcedure("sp_BuoiHocTheoTuan", parameters);
         }
         public int LayKichThuocBang()
         {

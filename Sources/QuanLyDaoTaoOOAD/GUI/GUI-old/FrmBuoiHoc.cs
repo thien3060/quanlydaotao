@@ -100,8 +100,8 @@ namespace QuanLyDaoTao
             {
                 dto_buoihoc.MaBH = tb_MaBH.Text;
                 dto_buoihoc.Ngay = Convert.ToDateTime(dt_Ngay.Text);
-                dto_buoihoc.TietBatDau = tb_TietBatDau.Text;
-                dto_buoihoc.SoTiet = tb_SoTiet.Text;
+                dto_buoihoc.TietBatDau = int.Parse(tb_TietBatDau.Text);
+                dto_buoihoc.SoTiet = int.Parse(tb_SoTiet.Text);
 
                 try
                 {

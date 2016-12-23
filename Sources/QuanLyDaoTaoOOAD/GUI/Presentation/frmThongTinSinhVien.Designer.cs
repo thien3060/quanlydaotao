@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnDong = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.lblDiaChi = new DevExpress.XtraEditors.LabelControl();
             this.lblNgaySinh = new DevExpress.XtraEditors.LabelControl();
             this.lblHoTen = new DevExpress.XtraEditors.LabelControl();
             this.lblMSSV = new DevExpress.XtraEditors.LabelControl();
@@ -38,6 +38,7 @@
             this.labelNgaySinh = new DevExpress.XtraEditors.LabelControl();
             this.labelDiaChi = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblThongBao = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,14 +53,14 @@
             this.btnDong.Text = "Đóng";
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
-            // labelControl2
+            // lblDiaChi
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl2.Location = new System.Drawing.Point(159, 136);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(47, 18);
-            this.labelControl2.TabIndex = 21;
-            this.labelControl2.Text = "Địa chỉ:";
+            this.lblDiaChi.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.lblDiaChi.Location = new System.Drawing.Point(159, 136);
+            this.lblDiaChi.Name = "lblDiaChi";
+            this.lblDiaChi.Size = new System.Drawing.Size(47, 18);
+            this.lblDiaChi.TabIndex = 21;
+            this.lblDiaChi.Text = "Địa chỉ:";
             // 
             // lblNgaySinh
             // 
@@ -134,18 +135,29 @@
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
             // 
+            // lblThongBao
+            // 
+            this.lblThongBao.Appearance.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblThongBao.Location = new System.Drawing.Point(159, 68);
+            this.lblThongBao.Name = "lblThongBao";
+            this.lblThongBao.Size = new System.Drawing.Size(291, 29);
+            this.lblThongBao.TabIndex = 29;
+            this.lblThongBao.Text = "Bạn không phải là sinh viên";
+            this.lblThongBao.Visible = false;
+            // 
             // frmThongTinSinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(560, 241);
             this.ControlBox = false;
+            this.Controls.Add(this.lblThongBao);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelDiaChi);
             this.Controls.Add(this.labelNgaySinh);
             this.Controls.Add(this.labelHoTen);
             this.Controls.Add(this.labelMSSV);
-            this.Controls.Add(this.labelControl2);
+            this.Controls.Add(this.lblDiaChi);
             this.Controls.Add(this.lblNgaySinh);
             this.Controls.Add(this.lblHoTen);
             this.Controls.Add(this.lblMSSV);
@@ -164,7 +176,7 @@
 
         #endregion
         private DevExpress.XtraEditors.SimpleButton btnDong;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl lblDiaChi;
         private DevExpress.XtraEditors.LabelControl lblNgaySinh;
         private DevExpress.XtraEditors.LabelControl lblHoTen;
         private DevExpress.XtraEditors.LabelControl lblMSSV;
@@ -173,5 +185,6 @@
         private DevExpress.XtraEditors.LabelControl labelNgaySinh;
         private DevExpress.XtraEditors.LabelControl labelDiaChi;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private DevExpress.XtraEditors.LabelControl lblThongBao;
     }
 }

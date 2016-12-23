@@ -34,13 +34,14 @@
             this.cmbLop = new DevExpress.XtraEditors.LookUpEdit();
             this.dateNgaySinh = new DevExpress.XtraEditors.DateEdit();
             this.txtDiaChi = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.lblDiaChi = new DevExpress.XtraEditors.LabelControl();
+            this.lblLop = new DevExpress.XtraEditors.LabelControl();
             this.lblNgaySinh = new DevExpress.XtraEditors.LabelControl();
             this.txtHoTen = new DevExpress.XtraEditors.TextEdit();
             this.txtMSSV = new DevExpress.XtraEditors.TextEdit();
             this.lblHoTen = new DevExpress.XtraEditors.LabelControl();
             this.lblMSSV = new DevExpress.XtraEditors.LabelControl();
+            this.lblThongBao = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbLop.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgaySinh.Properties.CalendarTimeProperties)).BeginInit();
@@ -129,23 +130,23 @@
             this.txtDiaChi.Size = new System.Drawing.Size(567, 24);
             this.txtDiaChi.TabIndex = 22;
             // 
-            // labelControl2
+            // lblDiaChi
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl2.Location = new System.Drawing.Point(166, 136);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(47, 18);
-            this.labelControl2.TabIndex = 21;
-            this.labelControl2.Text = "Địa chỉ:";
+            this.lblDiaChi.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.lblDiaChi.Location = new System.Drawing.Point(166, 136);
+            this.lblDiaChi.Name = "lblDiaChi";
+            this.lblDiaChi.Size = new System.Drawing.Size(47, 18);
+            this.lblDiaChi.TabIndex = 21;
+            this.lblDiaChi.Text = "Địa chỉ:";
             // 
-            // labelControl1
+            // lblLop
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl1.Location = new System.Drawing.Point(521, 91);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(28, 18);
-            this.labelControl1.TabIndex = 19;
-            this.labelControl1.Text = "Lớp:";
+            this.lblLop.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.lblLop.Location = new System.Drawing.Point(521, 91);
+            this.lblLop.Name = "lblLop";
+            this.lblLop.Size = new System.Drawing.Size(28, 18);
+            this.lblLop.TabIndex = 19;
+            this.lblLop.Text = "Lớp:";
             // 
             // lblNgaySinh
             // 
@@ -205,17 +206,28 @@
             this.lblMSSV.TabIndex = 13;
             this.lblMSSV.Text = "MSSV:";
             // 
+            // lblThongBao
+            // 
+            this.lblThongBao.Appearance.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblThongBao.Location = new System.Drawing.Point(290, 67);
+            this.lblThongBao.Name = "lblThongBao";
+            this.lblThongBao.Size = new System.Drawing.Size(291, 29);
+            this.lblThongBao.TabIndex = 30;
+            this.lblThongBao.Text = "Bạn không phải là sinh viên";
+            this.lblThongBao.Visible = false;
+            // 
             // frmSuaThongTinSinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(878, 257);
             this.ControlBox = false;
+            this.Controls.Add(this.lblThongBao);
             this.Controls.Add(this.cmbLop);
             this.Controls.Add(this.dateNgaySinh);
             this.Controls.Add(this.txtDiaChi);
-            this.Controls.Add(this.labelControl2);
-            this.Controls.Add(this.labelControl1);
+            this.Controls.Add(this.lblDiaChi);
+            this.Controls.Add(this.lblLop);
             this.Controls.Add(this.lblNgaySinh);
             this.Controls.Add(this.txtHoTen);
             this.Controls.Add(this.txtMSSV);
@@ -249,12 +261,13 @@
         private DevExpress.XtraEditors.LookUpEdit cmbLop;
         private DevExpress.XtraEditors.DateEdit dateNgaySinh;
         private DevExpress.XtraEditors.TextEdit txtDiaChi;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl lblDiaChi;
+        private DevExpress.XtraEditors.LabelControl lblLop;
         private DevExpress.XtraEditors.LabelControl lblNgaySinh;
         private DevExpress.XtraEditors.TextEdit txtHoTen;
         private DevExpress.XtraEditors.TextEdit txtMSSV;
         private DevExpress.XtraEditors.LabelControl lblHoTen;
         private DevExpress.XtraEditors.LabelControl lblMSSV;
+        private DevExpress.XtraEditors.LabelControl lblThongBao;
     }
 }

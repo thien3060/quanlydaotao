@@ -30,11 +30,30 @@ namespace QuanLyDaoTao.Presentation
         {
             try
             {
-                sv = bus_sv.GetSinhVienbyID(StaticClass.User.TenDangNhap.ToUpper());
-                labelMSSV.Text = sv.MSSV;
-                labelHoTen.Text = sv.HoTen;
-                labelNgaySinh.Text = sv.NgaySinh.ToString("dd-MM-yyyy");
-                labelDiaChi.Text = sv.DiaChi;
+                if (StaticClass.User.Quyen == "3")
+                {
+
+                    sv = bus_sv.GetSinhVienbyID(StaticClass.User.TenDangNhap.ToUpper());
+                    labelMSSV.Text = sv.MSSV;
+                    labelHoTen.Text = sv.HoTen;
+                    labelNgaySinh.Text = sv.NgaySinh.ToString("dd-MM-yyyy");
+                    labelDiaChi.Text = sv.DiaChi;
+
+                }
+                else
+                {
+                    lblMSSV.Visible = false;
+                    lblHoTen.Visible = false;
+                    lblNgaySinh.Visible = false;
+                    lblDiaChi.Visible = false;
+
+                    labelMSSV.Visible = false;
+                    labelHoTen.Visible = false;
+                    labelNgaySinh.Visible = false;
+                    labelDiaChi.Visible = false;
+
+                    lblThongBao.Visible = true;
+                }
 
                 btnDong.Focus();
             }

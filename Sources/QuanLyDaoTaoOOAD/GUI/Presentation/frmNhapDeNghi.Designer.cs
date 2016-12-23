@@ -141,6 +141,7 @@
             this.btnHuy.Size = new System.Drawing.Size(73, 36);
             this.btnHuy.TabIndex = 11;
             this.btnHuy.Text = "Hủy";
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnOk
             // 
@@ -151,6 +152,7 @@
             this.btnOk.Size = new System.Drawing.Size(73, 36);
             this.btnOk.TabIndex = 10;
             this.btnOk.Text = "Lưu";
+            this.btnOk.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // cmbPhanCong
             // 
@@ -179,18 +181,20 @@
             this.Controls.Add(this.labelControl4);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.labelControl1);
-            this.MaximumSize = new System.Drawing.Size(330, 154);
-            this.MinimumSize = new System.Drawing.Size(330, 154);
+            this.MaximumSize = new System.Drawing.Size(330, 155);
+            this.MinimumSize = new System.Drawing.Size(330, 155);
             this.Name = "frmNhapDeNghi";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Đề nghị";
+            this.Load += new System.EventHandler(this.frmNhapDeNghi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numTietBatDau.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSoTiet.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPhanCong.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

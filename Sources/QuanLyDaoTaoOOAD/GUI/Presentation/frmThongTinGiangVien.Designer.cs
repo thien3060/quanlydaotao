@@ -28,36 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.lblDiaChi = new DevExpress.XtraEditors.LabelControl();
+            this.lblTrinhDo = new DevExpress.XtraEditors.LabelControl();
             this.lblHoTen = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.lblGioiTinh = new DevExpress.XtraEditors.LabelControl();
             this.btnDong = new DevExpress.XtraEditors.SimpleButton();
             this.labelHoTen = new DevExpress.XtraEditors.LabelControl();
             this.labelGioiTinh = new DevExpress.XtraEditors.LabelControl();
             this.labelDiaChi = new DevExpress.XtraEditors.LabelControl();
             this.labelTrinhDo = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblThongBao = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // labelControl2
+            // lblDiaChi
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl2.Location = new System.Drawing.Point(165, 95);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(47, 18);
-            this.labelControl2.TabIndex = 8;
-            this.labelControl2.Text = "Địa chỉ:";
+            this.lblDiaChi.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.lblDiaChi.Location = new System.Drawing.Point(165, 95);
+            this.lblDiaChi.Name = "lblDiaChi";
+            this.lblDiaChi.Size = new System.Drawing.Size(47, 18);
+            this.lblDiaChi.TabIndex = 8;
+            this.lblDiaChi.Text = "Địa chỉ:";
             // 
-            // labelControl1
+            // lblTrinhDo
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl1.Location = new System.Drawing.Point(355, 50);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(60, 18);
-            this.labelControl1.TabIndex = 6;
-            this.labelControl1.Text = "Trình độ:";
+            this.lblTrinhDo.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.lblTrinhDo.Location = new System.Drawing.Point(355, 50);
+            this.lblTrinhDo.Name = "lblTrinhDo";
+            this.lblTrinhDo.Size = new System.Drawing.Size(60, 18);
+            this.lblTrinhDo.TabIndex = 6;
+            this.lblTrinhDo.Text = "Trình độ:";
             // 
             // lblHoTen
             // 
@@ -68,14 +69,14 @@
             this.lblHoTen.TabIndex = 2;
             this.lblHoTen.Text = "Họ tên:";
             // 
-            // labelControl3
+            // lblGioiTinh
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl3.Location = new System.Drawing.Point(165, 50);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(55, 18);
-            this.labelControl3.TabIndex = 4;
-            this.labelControl3.Text = "Giới tính:";
+            this.lblGioiTinh.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.lblGioiTinh.Location = new System.Drawing.Point(165, 50);
+            this.lblGioiTinh.Name = "lblGioiTinh";
+            this.lblGioiTinh.Size = new System.Drawing.Size(55, 18);
+            this.lblGioiTinh.TabIndex = 4;
+            this.lblGioiTinh.Text = "Giới tính:";
             // 
             // btnDong
             // 
@@ -134,21 +135,32 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // lblThongBao
+            // 
+            this.lblThongBao.Appearance.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblThongBao.Location = new System.Drawing.Point(165, 60);
+            this.lblThongBao.Name = "lblThongBao";
+            this.lblThongBao.Size = new System.Drawing.Size(306, 29);
+            this.lblThongBao.TabIndex = 17;
+            this.lblThongBao.Text = "Bạn không phải là giảng viên";
+            this.lblThongBao.Visible = false;
+            // 
             // frmThongTinGiangVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(531, 178);
             this.ControlBox = false;
+            this.Controls.Add(this.lblThongBao);
             this.Controls.Add(this.labelTrinhDo);
             this.Controls.Add(this.labelDiaChi);
             this.Controls.Add(this.labelGioiTinh);
             this.Controls.Add(this.labelHoTen);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnDong);
-            this.Controls.Add(this.labelControl3);
-            this.Controls.Add(this.labelControl2);
-            this.Controls.Add(this.labelControl1);
+            this.Controls.Add(this.lblGioiTinh);
+            this.Controls.Add(this.lblDiaChi);
+            this.Controls.Add(this.lblTrinhDo);
             this.Controls.Add(this.lblHoTen);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -163,15 +175,16 @@
         }
 
         #endregion
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl lblDiaChi;
+        private DevExpress.XtraEditors.LabelControl lblTrinhDo;
         private DevExpress.XtraEditors.LabelControl lblHoTen;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.LabelControl lblGioiTinh;
         private DevExpress.XtraEditors.SimpleButton btnDong;
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.XtraEditors.LabelControl labelHoTen;
         private DevExpress.XtraEditors.LabelControl labelGioiTinh;
         private DevExpress.XtraEditors.LabelControl labelDiaChi;
         private DevExpress.XtraEditors.LabelControl labelTrinhDo;
+        private DevExpress.XtraEditors.LabelControl lblThongBao;
     }
 }
