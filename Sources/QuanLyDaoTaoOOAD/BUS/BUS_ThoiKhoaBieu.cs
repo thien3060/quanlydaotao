@@ -36,5 +36,13 @@ namespace BUS
         {
             return thoikhoabieu.XemTKBGiangVien(magv, ngayDauTuan);
         }
+        public DataTable ThongTinTKB(string maPhong, DateTime ngayDauTuan)
+        {
+            return thoikhoabieu.ThongTinTKB(maPhong, ngayDauTuan);
+        }
+        public DataTable DeNghiTheoPhongTrongTuan(string maPhong, DateTime ngayDauTuan)
+        {
+            return thoikhoabieu.DeNghiTheoPhongTrongTuan(maPhong, ngayDauTuan);
+        }
     }
 }

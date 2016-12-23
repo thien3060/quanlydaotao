@@ -36,13 +36,12 @@
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.cmbTuan = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
             this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.lblChuY = new DevExpress.XtraEditors.LabelControl();
-            this.thoiKhoaBieu1 = new QuanLyDaoTao.UserControls.ThoiKhoaBieu();
             this.txtSucChua = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.thoiKhoaBieu1 = new QuanLyDaoTao.UserControls.ThoiKhoaBieu();
             ((System.ComponentModel.ISupportInitialize)(this.numHocKy.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties)).BeginInit();
@@ -83,6 +82,7 @@
             0});
             this.numHocKy.Size = new System.Drawing.Size(70, 24);
             this.numHocKy.TabIndex = 1;
+            this.numHocKy.EditValueChanged += new System.EventHandler(this.numHocKy_EditValueChanged);
             // 
             // labelControl1
             // 
@@ -134,10 +134,15 @@
             this.cmbPhong.Properties.Appearance.Options.UseFont = true;
             this.cmbPhong.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbPhong.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("MaPhong", 30, "Mã phòng"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ChucNang", 50, "Chức năng"),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("DiaChi", 50, "Địa chỉ")});
             this.cmbPhong.Properties.DisplayMember = "MaPhong";
             this.cmbPhong.Properties.ValueMember = "MaPhong";
             this.cmbPhong.Size = new System.Drawing.Size(88, 24);
             this.cmbPhong.TabIndex = 7;
+            this.cmbPhong.EditValueChanged += new System.EventHandler(this.cmbGiangVien_EditValueChanged);
             // 
             // labelControl4
             // 
@@ -172,16 +177,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbTuan.Size = new System.Drawing.Size(399, 24);
             this.cmbTuan.TabIndex = 5;
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.btnHuy.Appearance.Options.UseFont = true;
-            this.btnHuy.Location = new System.Drawing.Point(278, 44);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(92, 34);
-            this.btnHuy.TabIndex = 9;
-            this.btnHuy.Text = "Hủy";
+            this.cmbTuan.SelectedIndexChanged += new System.EventHandler(this.cmbTuan_SelectedIndexChanged);
             // 
             // btnLuu
             // 
@@ -192,6 +188,7 @@
             this.btnLuu.Size = new System.Drawing.Size(92, 34);
             this.btnLuu.TabIndex = 8;
             this.btnLuu.Text = "Lưu";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // lblChuY
             // 
@@ -203,15 +200,6 @@
             this.lblChuY.TabIndex = 13;
             this.lblChuY.Text = "Lưu ý: Học kỳ 1 bắt đầu từ tháng 8 --> 12. Học kỳ 2 từ tháng 1 --> 5. Học kỳ 3 từ" +
     " tháng 6 --> 7.";
-            // 
-            // thoiKhoaBieu1
-            // 
-            this.thoiKhoaBieu1.Location = new System.Drawing.Point(56, 84);
-            this.thoiKhoaBieu1.MaximumSize = new System.Drawing.Size(1146, 475);
-            this.thoiKhoaBieu1.MinimumSize = new System.Drawing.Size(1146, 475);
-            this.thoiKhoaBieu1.Name = "thoiKhoaBieu1";
-            this.thoiKhoaBieu1.Size = new System.Drawing.Size(1146, 475);
-            this.thoiKhoaBieu1.TabIndex = 14;
             // 
             // txtSucChua
             // 
@@ -246,6 +234,15 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
+            // thoiKhoaBieu1
+            // 
+            this.thoiKhoaBieu1.Location = new System.Drawing.Point(56, 84);
+            this.thoiKhoaBieu1.MaximumSize = new System.Drawing.Size(1146, 475);
+            this.thoiKhoaBieu1.MinimumSize = new System.Drawing.Size(1146, 475);
+            this.thoiKhoaBieu1.Name = "thoiKhoaBieu1";
+            this.thoiKhoaBieu1.Size = new System.Drawing.Size(1146, 475);
+            this.thoiKhoaBieu1.TabIndex = 14;
+            // 
             // frmXepThoiKhoaBieu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -256,7 +253,6 @@
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.thoiKhoaBieu1);
             this.Controls.Add(this.lblChuY);
-            this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.cmbTuan);
             this.Controls.Add(this.cmbPhong);
@@ -268,6 +264,7 @@
             this.Controls.Add(this.labelControl3);
             this.Name = "frmXepThoiKhoaBieu";
             this.Text = "Xếp thời khóa biểu";
+            this.Load += new System.EventHandler(this.frmThemDeNghi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numHocKy.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties)).EndInit();
@@ -290,7 +287,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.ComboBoxEdit cmbTuan;
-        private DevExpress.XtraEditors.SimpleButton btnHuy;
         private DevExpress.XtraEditors.SimpleButton btnLuu;
         private DevExpress.XtraEditors.LabelControl lblChuY;
         private QuanLyDaoTao.UserControls.ThoiKhoaBieu thoiKhoaBieu1;
