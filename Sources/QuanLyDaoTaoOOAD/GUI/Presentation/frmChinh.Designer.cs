@@ -594,6 +594,7 @@
             this.btnXemDSLop.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnXemDSLop.LargeGlyph")));
             this.btnXemDSLop.LargeImageIndex = 20;
             this.btnXemDSLop.Name = "btnXemDSLop";
+            this.btnXemDSLop.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnXemDSLop_ItemClick);
             // 
             // btnInDSLop
             // 

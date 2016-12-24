@@ -28,6 +28,10 @@ namespace BUS
         {
             denghi.XoaDeNghi(et);
         }
+        //public string[] LayMaCuoiCung()
+        //{
+        //    return denghi.LayMaDeNghiLonNhat();
+        //}
         public DTO_DeNghi LayDeNghi(string mapc, int buoihoc)
         {
             DataRow row = denghi.LayDeNghi(mapc, buoihoc);
@@ -56,7 +60,7 @@ namespace BUS
                 return false;
             }
         }
-        public bool Them(DataTable deNghis)
+        public void Them(DataTable deNghis)
         {
             try
             {
@@ -66,10 +70,8 @@ namespace BUS
                     if (LayDeNghi(dn.MaPC, dn.BuoiHoc) == null)
                     {
                         ThemdulieuDeNghi(dn);
-                        return true;
                     }                        
                 }
-                return false;
             }
             catch (Exception ex)
             {

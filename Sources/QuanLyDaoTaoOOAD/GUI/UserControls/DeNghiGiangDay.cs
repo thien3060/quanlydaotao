@@ -121,8 +121,15 @@ namespace QuanLyDaoTao.UserControls
                     throw new Exception("Tiết bắt đầu không hợp lệ.");
                 if (soTiet < 1 || soTiet > 5)
                     throw new Exception("Số tiết không hợp lệ.");
-
-                int idBuoiHoc = int.Parse(bus_buoihoc.LayMaCuoiCung()) + 1;
+                int idBuoiHoc;
+                if (buoiHocs.Rows.Count != 0)
+                {
+                    idBuoiHoc = int.Parse(buoiHocs.Rows[buoiHocs.Rows.Count - 1][0].ToString()) + 1;
+                }
+                else
+                {
+                    idBuoiHoc = int.Parse(bus_buoihoc.LayMaCuoiCung().ToString()) + 1;
+                }
 
                 //kiem tra co ton tai buoi hoc chua
                 bool tonTaiBuoiHoc = false;
@@ -132,7 +139,7 @@ namespace QuanLyDaoTao.UserControls
                     DTO_BuoiHoc b = new DTO_BuoiHoc(row[0].ToString(), DateTime.Parse(row[1].ToString()), int.Parse(row[2].ToString()), int.Parse(row[3].ToString()));
                     if (b.Ngay == ngayDauTuan.AddDays((int)thu) && b.TietBatDau == tietBD && b.SoTiet == soTiet)
                     {
-                        idBuoiHoc = int.Parse(b.MaBH);
+                        idBuoiHoc = int.Parse(b.MaBH.ToString());
                         tonTaiBuoiHoc = true;
                         if (bus_denghi.KiemTraTonTai(maPC, idBuoiHoc))
                         {
@@ -152,29 +159,31 @@ namespace QuanLyDaoTao.UserControls
                 foreach (DataRow i in deNghis.Rows)
                 {
                     DTO_BuoiHoc b = bus_buoihoc.LayBuoiHoc(i[0].ToString());
-
-                    if (b.Ngay == ngayDangXet)
+                    if (b != null)
                     {
-                        int tietKTCu = b.TietBatDau + b.SoTiet - 1;
-                        if (tietBD == b.TietBatDau)
+                        if (b.Ngay == ngayDangXet)
                         {
-                            MessageBoxUtils.Exclamation("Trùng rồi bạn ơi");
-                            return false;
-                        }
-                        if (tietBD < b.TietBatDau && tietKT >= b.TietBatDau)
-                        {
-                            MessageBoxUtils.Exclamation("Trùng rồi bạn ơi");
-                            return false;
-                        }
-                        if (tietBD > b.TietBatDau && tietKT <= tietKTCu)
-                        {
-                            MessageBoxUtils.Exclamation("Trùng rồi bạn ơi");
-                            return false;
-                        }
-                        if (tietBD == tietKTCu)
-                        {
-                            MessageBoxUtils.Exclamation("Trùng rồi bạn ơi");
-                            return false;
+                            int tietKTCu = b.TietBatDau + b.SoTiet - 1;
+                            if (tietBD == b.TietBatDau)
+                            {
+                                MessageBoxUtils.Exclamation("Trùng rồi bạn ơi");
+                                return false;
+                            }
+                            if (tietBD < b.TietBatDau && tietKT >= b.TietBatDau)
+                            {
+                                MessageBoxUtils.Exclamation("Trùng rồi bạn ơi");
+                                return false;
+                            }
+                            if (tietBD > b.TietBatDau && tietKT <= tietKTCu)
+                            {
+                                MessageBoxUtils.Exclamation("Trùng rồi bạn ơi");
+                                return false;
+                            }
+                            if (tietBD == tietKTCu)
+                            {
+                                MessageBoxUtils.Exclamation("Trùng rồi bạn ơi");
+                                return false;
+                            }
                         }
                     }
                 }
@@ -212,7 +221,7 @@ namespace QuanLyDaoTao.UserControls
                     thu = Thu.ChuNhat;
 
                 frmNhapDeNghi frm = new frmNhapDeNghi() { Text = thu.ToString(), MaGV = maGV, HocKy = hocKy, NamHoc = namHoc };
-                frm.truyen += new frmNhapDeNghi.TruyenDulieu(NhanDuLieu);
+                frm.truyen = new frmNhapDeNghi.TruyenDulieu(NhanDuLieu);
                 frm.ShowDialog();
             }
             catch (Exception ex)

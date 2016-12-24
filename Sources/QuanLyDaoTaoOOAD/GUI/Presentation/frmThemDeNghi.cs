@@ -141,7 +141,7 @@ namespace QuanLyDaoTao.Presentation
                 deNghiGiangDay1.NamHoc = dateNamHoc.DateTime.Year;
                 deNghiGiangDay1.HocKy = (int)numHocKy.Value;
                 //deNghiGiangDay1.NgayDauTuan = DateTime.Parse(cmbTuan.SelectedItem.ToString().Substring(3, 10));
-                
+
                 deNghiGiangDay1.buoiHocs = bus_buoihoc.DanhSachBuoiHocTheoTuan(deNghiGiangDay1.NgayDauTuan);
             }
             catch (Exception ex)
@@ -193,11 +193,8 @@ namespace QuanLyDaoTao.Presentation
             try
             {
                 bus_buoihoc.Them(deNghiGiangDay1.buoiHocs);
-                bool kq = bus_denghi.Them(deNghiGiangDay1.deNghis);
-                if (kq)
-                    MessageBoxUtils.Success("Thành công");
-                else
-                    MessageBoxUtils.Info("Vui lòng nhập đề nghị");
+                bus_denghi.Them(deNghiGiangDay1.deNghis);
+                MessageBoxUtils.Success("Thành công");
             }
             catch (Exception ex)
             {

@@ -281,10 +281,16 @@ namespace QuanLyDaoTao.Presentation
 
             }
         }
+
+        private void btnXemDSLop_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
         #endregion
 
         #region Giảng Viên
-        
+
         private void btnCapNhatGV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             try

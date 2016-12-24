@@ -38,6 +38,21 @@ namespace DAO
         {
             return Connection.GetDataTable("SELECT * FROM denghi " + dieukien);
         }
+        //public string[] LayMaDeNghiLonNhat()
+        //{
+        //    DataTable temp = Connection.GetDataTable("SELECT * FROM denghi ORDER BY MaPC ASC, BuoiHoc");
+        //    string[] kq = new string[2];
+        //    if (temp.Rows.Count == 0)
+        //    {
+        //        return null;
+        //    }
+        //    else
+        //    {
+        //        kq[0] = temp.Rows[temp.Rows.Count - 1][0].ToString();
+        //        kq[1] = temp.Rows[temp.Rows.Count - 1][1].ToString();
+        //    }
+        //    return kq;
+        //}
         public int LayKichThuocBang()
         {
             DataTable dt = Connection.GetDataTable("SELECT * FROM denghi");
