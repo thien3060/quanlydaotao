@@ -47,6 +47,10 @@ namespace BUS
                 return null;
             }
         }
+        public DataTable GetDanhSachLop(string malop)
+        {
+            return sv.GetDanhSanhLop(malop);
+        }
 
         public string TuTinhMa(string dinhDang)
         {

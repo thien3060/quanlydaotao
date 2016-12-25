@@ -37,8 +37,8 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.cmbTuan = new DevExpress.XtraEditors.ComboBoxEdit();
             this.lblChuY = new DevExpress.XtraEditors.LabelControl();
-            this.deNgiGiangDay1 = new QuanLyDaoTao.UserControls.DeNghiGiangDay();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.deNghiGiangDay1 = new QuanLyDaoTao.UserControls.DeNghiGiangDay();
             ((System.ComponentModel.ISupportInitialize)(this.numHocKy.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties)).BeginInit();
@@ -78,6 +78,7 @@
             0});
             this.numHocKy.Size = new System.Drawing.Size(70, 24);
             this.numHocKy.TabIndex = 1;
+            this.numHocKy.EditValueChanged += new System.EventHandler(this.numHocKy_EditValueChanged);
             // 
             // labelControl1
             // 
@@ -133,6 +134,7 @@
             this.cmbGiangVien.Properties.ValueMember = "MaGV";
             this.cmbGiangVien.Size = new System.Drawing.Size(198, 24);
             this.cmbGiangVien.TabIndex = 7;
+            this.cmbGiangVien.EditValueChanged += new System.EventHandler(this.cmbGiangVien_EditValueChanged);
             // 
             // labelControl4
             // 
@@ -167,6 +169,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbTuan.Size = new System.Drawing.Size(399, 24);
             this.cmbTuan.TabIndex = 5;
+            this.cmbTuan.SelectedIndexChanged += new System.EventHandler(this.cmbTuan_SelectedIndexChanged);
             // 
             // lblChuY
             // 
@@ -179,15 +182,6 @@
             this.lblChuY.Text = "Lưu ý: Học kỳ 1 bắt đầu từ tháng 8 --> 12. Học kỳ 2 từ tháng 1 --> 5. Học kỳ 3 từ" +
     " tháng 6 --> 7.";
             // 
-            // deNgiGiangDay1
-            // 
-            this.deNgiGiangDay1.Location = new System.Drawing.Point(56, 63);
-            this.deNgiGiangDay1.MaximumSize = new System.Drawing.Size(1146, 475);
-            this.deNgiGiangDay1.MinimumSize = new System.Drawing.Size(1146, 475);
-            this.deNgiGiangDay1.Name = "deNgiGiangDay1";
-            this.deNgiGiangDay1.Size = new System.Drawing.Size(1146, 475);
-            this.deNgiGiangDay1.TabIndex = 12;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::QuanLyDaoTao.Properties.Resources.list_64;
@@ -198,6 +192,19 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
+            // deNghiGiangDay1
+            // 
+            this.deNghiGiangDay1.HocKy = 0;
+            this.deNghiGiangDay1.Location = new System.Drawing.Point(56, 63);
+            this.deNghiGiangDay1.MaGV = "";
+            this.deNghiGiangDay1.MaximumSize = new System.Drawing.Size(1146, 475);
+            this.deNghiGiangDay1.MinimumSize = new System.Drawing.Size(1146, 475);
+            this.deNghiGiangDay1.Name = "deNghiGiangDay1";
+            this.deNghiGiangDay1.NamHoc = 0;
+            this.deNghiGiangDay1.NgayDauTuan = new System.DateTime(2016, 12, 26, 13, 11, 45, 191);
+            this.deNghiGiangDay1.Size = new System.Drawing.Size(1146, 475);
+            this.deNghiGiangDay1.TabIndex = 12;
+            // 
             // frmXemDeNghi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -206,7 +213,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.lblChuY);
-            this.Controls.Add(this.deNgiGiangDay1);
+            this.Controls.Add(this.deNghiGiangDay1);
             this.Controls.Add(this.cmbTuan);
             this.Controls.Add(this.cmbGiangVien);
             this.Controls.Add(this.labelControl2);
@@ -216,6 +223,7 @@
             this.Controls.Add(this.labelControl3);
             this.Name = "frmXemDeNghi";
             this.Text = "Xem đề nghị";
+            this.Load += new System.EventHandler(this.frmThemDeNghi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numHocKy.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties)).EndInit();
@@ -237,7 +245,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.ComboBoxEdit cmbTuan;
-        private QuanLyDaoTao.UserControls.DeNghiGiangDay deNgiGiangDay1;
+        private QuanLyDaoTao.UserControls.DeNghiGiangDay deNghiGiangDay1;
         private DevExpress.XtraEditors.LabelControl lblChuY;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

@@ -37,12 +37,17 @@ namespace DAO
         public void XoaSinhVien(DTO_SinhVien sinhvien)
         {
             AddParameter(sinhvien);
-            Connection.ExecuteSql("DELETE FROM SinhVien WHERE MSSV='" + sinhvien.MSSV+"'");
+            Connection.ExecuteSql("DELETE FROM SinhVien WHERE MSSV='" + sinhvien.MSSV + "'");
         }
         public DataRow GetSinhVienByID(string id)
         {
             DataRow temp = Connection.GetDataTable("SELECT * FROM SinhVien WHERE MSSV = '" + id + "'").Rows[0];
             return temp;
+        }
+        public DataTable GetDanhSanhLop(string malop)
+        {
+            return Connection.GetDataTable("SELECT ROW_NUMBER() over (order by (select 1)) as STT, SinhVien.MSSV, SinhVien.HoTen, SinhVien.NgaySinh, SinhVien.DiaChi, Lop.MaLop FROM SinhVien, Lop " +
+                                            "WHERE Lop.MaLop = '" + malop + "' and SinhVien.MaLop = '" + malop + "'");
         }
         public DataTable TaobangSinhVien(string dieukien)
         {

@@ -284,7 +284,15 @@ namespace QuanLyDaoTao.Presentation
 
         private void btnXemDSLop_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            try
+            {
+                frmDanhSachLop frm = new frmDanhSachLop();
+                TabCreating("Xem danh sách lớp", frm);
+            }
+            catch (Exception)
+            {
 
+            }
         }
 
         #endregion
@@ -359,7 +367,16 @@ namespace QuanLyDaoTao.Presentation
 
         private void btnXemDeNghi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            try
+            {
+                frmXemDeNghi frm = new frmXemDeNghi();
+                TabCreating("Xem các đề nghị", frm);
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+                return;
+            }
         }
 
         private void btnXemPhieuGiangDay_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

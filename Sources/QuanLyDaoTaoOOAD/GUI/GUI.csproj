@@ -208,6 +208,12 @@
     <Compile Include="Presentation\frmChinh.Designer.cs">
       <DependentUpon>frmChinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\frmDanhSachLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmDanhSachLop.Designer.cs">
+      <DependentUpon>frmDanhSachLop.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\frmMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -522,6 +528,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmChinh.resx">
       <DependentUpon>frmChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmDanhSachLop.resx">
+      <DependentUpon>frmDanhSachLop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmMatKhau.resx">
       <DependentUpon>frmMatKhau.cs</DependentUpon>
