@@ -28,6 +28,10 @@ namespace BUS
         {
             thoikhoabieu.XoaThoiKhoaBieu(et);
         }
+        public void XoadulieuThoiKhoaBieu(string maPC, int maBuoi)
+        { 
+            thoikhoabieu.XoaThoiKhoaBieu(new DTO_ThoiKhoaBieu(maPC, maBuoi.ToString(), "", false, false));
+        }
         public DataTable XemTKBSinhVien(string mssv, DateTime ngayDauTuan)
         {
             return thoikhoabieu.XemTKBSinhVien(mssv, ngayDauTuan);

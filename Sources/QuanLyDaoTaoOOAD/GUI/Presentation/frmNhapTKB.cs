@@ -19,6 +19,7 @@ namespace QuanLyDaoTao.Presentation
     public partial class frmNhapTKB : DevExpress.XtraEditors.XtraForm
     {
         BUS_ThoiKhoaBieu bus_tkb = new BUS_ThoiKhoaBieu();
+        BUS_BuoiHoc bus_bh = new BUS_BuoiHoc();
         public frmNhapTKB()
         {
             try
@@ -35,14 +36,8 @@ namespace QuanLyDaoTao.Presentation
             }
         }
 
-        /// <summary>
-        /// Các thời khóa biểu đang xếp
-        /// </summary>
         public Collection<DTO_ThoiKhoaBieu> TKBDangXep;
 
-        /// <summary>
-        /// Các thời khóa biểu đã được xếp
-        /// </summary>
         public DataTable TKBs;
 
         string maPhong;
@@ -106,110 +101,111 @@ namespace QuanLyDaoTao.Presentation
             try
             {
                 groupControl1.Text = "Các đề nghị giảng dạy ngày: " + ngayDauTuan.AddDays((int)thu).ToString("dd/MM/yyyy");
-                //load cac de nghi cho mot ngay
-                //source = bus_tkb.DeNghiTheoPhongTrongTuan(maPhong, ngayDauTuan).Where(i => i.Ngay == ngayDauTuan.AddDays((int)thu)).ToList<sp_DeNghiTheoPhongTrongTuanResult>();
                 source = bus_tkb.DeNghiTheoPhongTrongTuan(maPhong, ngayDauTuan);
+                List<DataRow> remove_list = new List<DataRow>();
 
-                //foreach (var x in TKBDangXep)//loại bỏ các đề nghị đang được xếp thời khóa biểu (chưa lưu vào CSDL)
-                //{
-                //    for (int i = source.Count - 1; i >= 0; i--)//loại bỏ những đề nghị trùng buổi với cái đã xếp
-                //    {
-                //        if (source[i].BuoiHoc == x.BuoiHoc)
-                //            source.Remove(source[i]);
-                //    }
-                //}
+                foreach (DataRow t in source.Rows)
+                {
+                    int tietKT = int.Parse(t[8].ToString()) + int.Parse(t[9].ToString()) - 1;
+                    DateTime ngayDangXet = ngayDauTuan.AddDays((int)thu);
 
-                //foreach (var x in TKBs)//loại bỏ các đề nghị trùng với thời khóa biểu đã được xếp rồi (đã lưu trong CSDL)
-                //{
-                //    BuoiHoc buoi = BuoiHocBUS.LayThongTin(x.BuoiHoc);
-                //    if (source.Any(i => i.MaLop == LopBUS.LayMaLop(x.MaPC) && i.TietBatDau == buoi.TietBatDau && i.SoTiet == buoi.SoTiet))
-                //        source.Remove(source.Single(i => i.MaLop == LopBUS.LayMaLop(x.MaPC) && i.TietBatDau == buoi.TietBatDau && i.SoTiet == buoi.SoTiet));
-                //}
+                    if (DateTime.Parse(t[7].ToString()) != ngayDauTuan.AddDays((int)thu))//loại bỏ các đề nghị không nằm trong ngày đã chọn
+                    {
+                        remove_list.Add(t);
+                        continue;
+                    }
+                        
+                    foreach (var x in TKBDangXep)//loại bỏ các đề nghị đang được xếp thời khóa biểu (chưa lưu vào CSDL)
+                    {
+                        if (t[6].ToString() == x.BuoiHoc)
+                        {
+                            remove_list.Add(t);
+                            continue;
+                        } 
+                    }
 
-                //loại bỏ các đề nghị mà mã lớp của đề nghị đó đã được xếp vào học buổi đang chọn rồi
-                //để tránh trường hợp 1 lớp học 2 môn cùng 1 buổi
-                //for (int i = source.Count - 1; i >= 0; i--)
-                //{
-                //    if (ThoiKhoaBieuBUS.KiemTraLopNayDaHocBuoiNayChua(source[i].MaPC, source[i].BuoiHoc))
-                //        source.Remove(source[i]);
-                //}
+                    foreach (DataRow x in TKBs.Rows)
+                    {
+                        //loại bỏ các đề nghị trùng với thời khóa biểu đã được xếp rồi (đã lưu trong CSDL)
+                        DTO_BuoiHoc buoi = bus_bh.LayBuoiHoc(x[6].ToString());
+                        if(t[5].ToString() == x[5].ToString() && t[8].ToString() == x[8].ToString() && t[9].ToString() == x[9].ToString())
+                        {
+                            remove_list.Add(t);
+                            break;
+                        }
 
-                //loại bỏ các trường hợp trùng 1 số tiết với thời khóa biểu đã xếp
-                //for (int i = source.Count - 1; i >= 0; i--)
-                //{
-                //    int tietKT = source[i].TietBatDau + source[i].SoTiet - 1;
-                //    DateTime ngayDangXet = ngayDauTuan.AddDays((int)thu);
+                        //loại bỏ các đề nghị mà mã lớp của đề nghị đó đã được xếp vào học buổi đang chọn rồi để tránh trường hợp 1 lớp học 2 môn cùng 1 buổi
+                        if (t[5].ToString() == x[5].ToString() && t[6].ToString() == x[6].ToString())
+                        {
+                            remove_list.Add(t);
+                            break;
+                        }
 
-                //    foreach (var tkb in TKBs)
-                //    {
-                //        BuoiHoc b = BuoiHocBUS.LayThongTin(tkb.BuoiHoc);
-                //        if (b.Ngay == ngayDangXet)
-                //        {
-                //            int tietKTCu = b.TietBatDau + b.SoTiet - 1;
-                //            if (source[i].TietBatDau == b.TietBatDau)
-                //            {
-                //                source.Remove(source[i]);
-                //                break;
-                //            }
-                //            if (source[i].TietBatDau < b.TietBatDau && tietKT >= b.TietBatDau)
-                //            {
-                //                source.Remove(source[i]);
-                //                break;
-                //            }
-                //            if (source[i].TietBatDau > b.TietBatDau && tietKT <= tietKTCu)
-                //            {
-                //                source.Remove(source[i]);
-                //                break;
-                //            }
-                //            if (source[i].TietBatDau == tietKTCu)
-                //            {
-                //                source.Remove(source[i]);
-                //                break;
-                //            }
-                //        }
-                //    }
-                //}
+                        //loại bỏ các trường hợp trùng 1 số tiết với thời khóa biểu đã xếp
+                        if (buoi.Ngay == ngayDangXet)
+                        {
+                            int tietKTCu = buoi.TietBatDau + buoi.SoTiet - 1;
+                            if (int.Parse(t[8].ToString()) == buoi.TietBatDau)
+                            {
+                                remove_list.Add(t);
+                                break;
+                            }
+                            if (int.Parse(t[8].ToString()) < buoi.TietBatDau && tietKT >= buoi.TietBatDau)
+                            {
+                                remove_list.Add(t);
+                                break;
+                            }
+                            if (int.Parse(t[8].ToString()) > buoi.TietBatDau && tietKT <= tietKTCu)
+                            {
+                                remove_list.Add(t);
+                                break;
+                            }
+                            if (int.Parse(t[8].ToString()) == tietKTCu)
+                            {
+                                remove_list.Add(t);
+                                break;
+                            }
+                        }
+                    }
 
-                //loại bỏ các trường hợp trùng 1 số tiết với thời khóa biểu đang xếp
-                //for (int i = source.Count - 1; i >= 0; i--)
-                //{
-                //    int tietKT = source[i].TietBatDau + source[i].SoTiet - 1;
-                //    DateTime ngayDangXet = ngayDauTuan.AddDays((int)thu);
+                    //loại bỏ các trường hợp trùng 1 số tiết với thời khóa biểu đang xếp
+                    foreach (var tkb in TKBDangXep)
+                    {
+                        DTO_BuoiHoc b = bus_bh.LayBuoiHoc(tkb.BuoiHoc);
+                        if (b.Ngay == ngayDangXet)
+                        {
+                            int tietKTCu = b.TietBatDau + b.SoTiet - 1;
+                            if (int.Parse(t[8].ToString()) == b.TietBatDau)
+                            {
+                                remove_list.Add(t);
+                                break;
+                            }
+                            if (int.Parse(t[8].ToString()) < b.TietBatDau && tietKT >= b.TietBatDau)
+                            {
+                                remove_list.Add(t);
+                                break;
+                            }
+                            if (int.Parse(t[8].ToString()) > b.TietBatDau && tietKT <= tietKTCu)
+                            {
+                                remove_list.Add(t);
+                                break;
+                            }
+                            if (int.Parse(t[8].ToString()) > b.TietBatDau && int.Parse(t[8].ToString()) <= tietKTCu && tietKT > tietKTCu)
+                            {
+                                remove_list.Add(t);
+                                break;
+                            }
+                            if (int.Parse(t[8].ToString()) == tietKTCu)
+                            {
+                                remove_list.Add(t);
+                                break;
+                            }
+                        }
+                    }
+                }
 
-                //    foreach (var tkb in TKBDangXep)
-                //    {
-                //        BuoiHoc b = BuoiHocBUS.LayThongTin(tkb.BuoiHoc);
-                //        if (b.Ngay == ngayDangXet)
-                //        {
-                //            int tietKTCu = b.TietBatDau + b.SoTiet - 1;
-                //            if (source[i].TietBatDau == b.TietBatDau)
-                //            {
-                //                source.Remove(source[i]);
-                //                break;
-                //            }
-                //            if (source[i].TietBatDau < b.TietBatDau && tietKT >= b.TietBatDau)
-                //            {
-                //                source.Remove(source[i]);
-                //                break;
-                //            }
-                //            if (source[i].TietBatDau > b.TietBatDau && tietKT <= tietKTCu)
-                //            {
-                //                source.Remove(source[i]);
-                //                break;
-                //            }
-                //            if (source[i].TietBatDau > b.TietBatDau && source[i].TietBatDau <= tietKTCu && tietKT > tietKTCu)
-                //            {
-                //                source.Remove(source[i]);
-                //                break;
-                //            }
-                //            if (source[i].TietBatDau == tietKTCu)
-                //            {
-                //                source.Remove(source[i]);
-                //                break;
-                //            }
-                //        }
-                //    }
-                //}
+                foreach (DataRow i in remove_list.Distinct().ToList())
+                    source.Rows.Remove(i);
 
                 gridControl1.DataSource = source;
                 if (source.Rows.Count > 0)

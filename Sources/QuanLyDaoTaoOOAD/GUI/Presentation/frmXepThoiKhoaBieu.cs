@@ -170,11 +170,26 @@ namespace QuanLyDaoTao.Presentation
         {
             try
             {
-                //bus_tkb.ThemdulieuThoiKhoaBieu(thoiKhoaBieu1.TKBDangXep);
+                foreach(DTO_ThoiKhoaBieu i in thoiKhoaBieu1.TKBDangXep)
+                {
+                    bus_tkb.ThemdulieuThoiKhoaBieu(i);
+                }
                 string tam = thoiKhoaBieu1.MaPhong;
                 thoiKhoaBieu1.MaPhong = tam;
                 MessageBoxUtils.Success("Thành công");
-                //thoiKhoaBieu1.TKBDangXep.Clear();
+                thoiKhoaBieu1.TKBDangXep.Clear();
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                thoiKhoaBieu1.Cancel();
             }
             catch (Exception ex)
             {

@@ -42,6 +42,7 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.thoiKhoaBieu1 = new QuanLyDaoTao.UserControls.ThoiKhoaBieu();
+            this.btn_huy = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.numHocKy.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties)).BeginInit();
@@ -237,11 +238,24 @@
             // thoiKhoaBieu1
             // 
             this.thoiKhoaBieu1.Location = new System.Drawing.Point(56, 84);
+            this.thoiKhoaBieu1.MaPhong = "";
             this.thoiKhoaBieu1.MaximumSize = new System.Drawing.Size(1146, 475);
             this.thoiKhoaBieu1.MinimumSize = new System.Drawing.Size(1146, 475);
             this.thoiKhoaBieu1.Name = "thoiKhoaBieu1";
+            this.thoiKhoaBieu1.NgayDauTuan = new System.DateTime(2016, 12, 26, 14, 20, 33, 403);
             this.thoiKhoaBieu1.Size = new System.Drawing.Size(1146, 475);
             this.thoiKhoaBieu1.TabIndex = 14;
+            // 
+            // btn_huy
+            // 
+            this.btn_huy.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.btn_huy.Appearance.Options.UseFont = true;
+            this.btn_huy.Location = new System.Drawing.Point(279, 44);
+            this.btn_huy.Name = "btn_huy";
+            this.btn_huy.Size = new System.Drawing.Size(92, 34);
+            this.btn_huy.TabIndex = 8;
+            this.btn_huy.Text = "Huỷ";
+            this.btn_huy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // frmXepThoiKhoaBieu
             // 
@@ -253,6 +267,7 @@
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.thoiKhoaBieu1);
             this.Controls.Add(this.lblChuY);
+            this.Controls.Add(this.btn_huy);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.cmbTuan);
             this.Controls.Add(this.cmbPhong);
@@ -293,5 +308,6 @@
         private DevExpress.XtraEditors.TextEdit txtSucChua;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private DevExpress.XtraEditors.SimpleButton btn_huy;
     }
 }

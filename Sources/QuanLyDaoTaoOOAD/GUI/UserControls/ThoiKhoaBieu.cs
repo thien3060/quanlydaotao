@@ -87,7 +87,7 @@ namespace QuanLyDaoTao.UserControls
                         thongTinhXeopTKB = bus_tkb.DeNghiTheoPhongTrongTuan(maPhong, value);
                         TKBs.Clear();
                         TKBs = bus_tkb.ThongTinTKB(maPhong, value);
-                        //TKBDangXep.Clear();
+                        TKBDangXep.Clear();
                         ThoiKhoaBieu_Load(null, null);
                     }
                 }
@@ -111,9 +111,9 @@ namespace QuanLyDaoTao.UserControls
         {
             try
             {
-                TKBDangXep.Add(new DTO_ThoiKhoaBieu("", "", maPhong, false, false));
+                TKBDangXep.Add(new DTO_ThoiKhoaBieu(t[0].ToString(), t[6].ToString(), maPhong, false, false));
 
-                Paint(t[0].ToString(), int.Parse(t[7].ToString()), (int)thu, int.Parse(t[9].ToString()), int.Parse(t[10].ToString()), t[5].ToString(), t[3].ToString(), t[6].ToString(), 1, t[1].ToString(), t[4].ToString());
+                Paint(t[0].ToString(), int.Parse(t[6].ToString()), (int)thu, int.Parse(t[8].ToString()), int.Parse(t[9].ToString()), t[4].ToString(), t[2].ToString(), t[5].ToString(), 1, t[1].ToString(), t[3].ToString());
                 return true;
             }
             catch (Exception ex)
@@ -323,7 +323,7 @@ namespace QuanLyDaoTao.UserControls
                             t = Thu.ChuNhat;
                             break;
                     }
-                    Paint(i[0].ToString(), int.Parse(i[7].ToString()), (int)t, int.Parse(i[8].ToString()), int.Parse(i[9].ToString()), "", "", "", 0, "", "");
+                    Paint(i[0].ToString(), int.Parse(i[6].ToString()), (int)t, int.Parse(i[8].ToString()), int.Parse(i[9].ToString()), "", "", "", 0, "", "");
                 }
                 #endregion
 
@@ -388,9 +388,10 @@ namespace QuanLyDaoTao.UserControls
         {
             try
             {
-                //TKBs.Clear();
-                //TKBs = ThoiKhoaBieuBUS.ThongTinTKB(ngayDauTuan, maPhong);
-                //ThoiKhoaBieu_Load(null, null);
+                TKBs.Clear();
+                TKBs = bus_tkb.ThongTinTKB(maPhong, ngayDauTuan);
+                ThoiKhoaBieu_Load(null, null);
+                TKBDangXep.Clear();
             }
             catch (Exception ex)
             {
@@ -402,7 +403,7 @@ namespace QuanLyDaoTao.UserControls
         {
             try
             {
-                DateTime ngay = DateTime.Parse(((UserControl)sender).Name.Substring(1, 10));
+                DateTime ngay = DateTime.ParseExact(((UserControl)sender).Name.Substring(1, 10), "dd/MM/yyyy", null);
                 Label lbl = new Label();
                 switch ((int)ngay.Subtract(ngayDauTuan).TotalDays)
                 {
@@ -447,7 +448,7 @@ namespace QuanLyDaoTao.UserControls
                     pnChinh.Controls.Remove(((Label)sender).Parent);
                     string maPC = name.Substring(14, 7);
                     int maBuoi = int.Parse(name.Substring(21));
-                    //TKBDangXep.Remove(TKBDangXep.Single(x => x.MaPC == maPC && x.BuoiHoc == maBuoi));
+                    TKBDangXep.Remove(TKBDangXep.Single(x => x.MaPC == maPC && x.BuoiHoc == maBuoi.ToString()));
                 }
             }
             catch (Exception ex)
@@ -466,17 +467,15 @@ namespace QuanLyDaoTao.UserControls
                     int mode = int.Parse(name.Substring(13, 1));
                     if (mode == 2)
                     {
-                        //pnChinh.Controls.Remove(((Label)sender).Parent);
-                        //string maPC = name.Substring(14, 7);
-                        //int maBuoi = int.Parse(name.Substring(21));
-                        //TKBs.Remove(TKBs.Single(i => i.BuoiHoc == maBuoi && i.MaPC == maPC));
-                        //ThoiKhoaBieuBUS.Xoa(maPC, maBuoi);
-                        //StaticClass.LuuThayDoi();
-                        //thongTinhXeopTKB.Clear();
-                        //thongTinhXeopTKB = ThoiKhoaBieuBUS.ThongTinXepTKB(maPhong, ngayDauTuan);
-                        //TKBs.Clear();
-                        //TKBs = ThoiKhoaBieuBUS.ThongTinTKB(ngayDauTuan, maPhong);
-                        //ThoiKhoaBieu_Load(null, null);
+                        pnChinh.Controls.Remove(((Label)sender).Parent);
+                        string maPC = name.Substring(14, 7);
+                        int maBuoi = int.Parse(name.Substring(21));
+                        bus_tkb.XoadulieuThoiKhoaBieu(maPC, maBuoi);
+                        thongTinhXeopTKB.Clear();
+                        thongTinhXeopTKB = bus_tkb.DeNghiTheoPhongTrongTuan(maPhong, ngayDauTuan);
+                        TKBs.Clear();
+                        TKBs = bus_tkb.ThongTinTKB(maPhong, ngayDauTuan);
+                        ThoiKhoaBieu_Load(null, null);
                     }
                 }
             }
