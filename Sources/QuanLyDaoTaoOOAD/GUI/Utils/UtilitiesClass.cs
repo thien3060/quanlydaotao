@@ -52,10 +52,7 @@ namespace QuanLyDaoTao.Utilities
         /// </summary>
         public static DateTime GetWeek(this DateTime date)
         {
-            // first generate all dates in the month of 'date'
-            var dates = Enumerable.Range(1, DateTime.DaysInMonth(date.Year, date.Month)).Select(n => new DateTime(date.Year, date.Month, n));
-            // then filter the only the start of weeks
-            return dates.Single(d => d.DayOfWeek == DayOfWeek.Monday && d >= date && d <= date.AddDays(7)).AddDays(-7);
+            return date.AddDays(DayOfWeek.Monday - date.DayOfWeek);
         }
 
         #region Đọc số thành chữ
