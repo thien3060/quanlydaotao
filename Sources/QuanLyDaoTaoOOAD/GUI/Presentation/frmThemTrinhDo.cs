@@ -23,20 +23,7 @@ namespace QuanLyDaoTao.Presentation
         {
             InitializeComponent();
         }
-
-        private void frmThemTrinhDo_Load(object sender, EventArgs e)
-        {
-            try
-            {
-                txtMaTrinhDo.Text = bus_td.TuTinhMa();
-                txtTenTrinhDo.Focus();
-            }
-            catch (Exception ex)
-            {
-                ExceptionUtil.ThrowMsgBox(ex.Message);
-            }
-        }
-
+        
         private void btnLuu_Click(object sender, EventArgs e)
         {
             try
@@ -81,7 +68,6 @@ namespace QuanLyDaoTao.Presentation
             try
             {
                 txtMaTrinhDo.ResetText();
-                txtMaTrinhDo.Text = bus_td.TuTinhMa();
                 numLuong.Value = 50000;
                 txtTenTrinhDo.ResetText();
                 txtMaTrinhDo.Focus();

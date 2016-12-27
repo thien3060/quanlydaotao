@@ -32,5 +32,9 @@ namespace BUS
         {
             lop.XoaLop(et);
         }
+        public DataTable DanhSachTuyChinh()
+        {
+            return lop.DanhSachTuyChinh();
+        }
     }
 }

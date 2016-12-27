@@ -68,7 +68,6 @@
             // 
             // txtMaNganh
             // 
-            this.txtMaNganh.Enabled = false;
             this.txtMaNganh.EnterMoveNextControl = true;
             this.txtMaNganh.Location = new System.Drawing.Point(242, 25);
             this.txtMaNganh.Name = "txtMaNganh";
@@ -163,7 +162,6 @@
             this.Controls.Add(this.lblHoTen);
             this.Name = "frmThemNganhHoc";
             this.Text = "Ngành học mới";
-            this.Load += new System.EventHandler(this.frmThemNganhHoc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtTenNganh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaNganh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKhoa.Properties)).EndInit();

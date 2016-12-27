@@ -93,6 +93,7 @@
             this.cmbLop.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbLop.Properties.DisplayMember = "MaLop";
+            this.cmbLop.Properties.ReadOnly = true;
             this.cmbLop.Properties.ValueMember = "MaLop";
             this.cmbLop.Size = new System.Drawing.Size(210, 24);
             this.cmbLop.TabIndex = 20;

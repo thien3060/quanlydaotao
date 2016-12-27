@@ -41,8 +41,15 @@ namespace DAO
         }
         public DataRow GetSinhVienByID(string id)
         {
-            DataRow temp = Connection.GetDataTable("SELECT * FROM SinhVien WHERE MSSV = '" + id + "'").Rows[0];
-            return temp;
+            DataTable temp = Connection.GetDataTable("SELECT * FROM SinhVien WHERE MSSV = '" + id + "'");
+            if (temp.Rows.Count != 0)
+            {
+                return temp.Rows[0];
+            }
+            else
+            {
+                return null;
+            }
         }
         public DataTable GetDanhSanhLop(string malop)
         {

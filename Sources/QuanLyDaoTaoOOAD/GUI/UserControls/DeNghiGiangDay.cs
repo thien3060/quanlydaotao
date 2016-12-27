@@ -22,8 +22,10 @@ namespace QuanLyDaoTao.UserControls
         BUS_BuoiHoc bus_buoihoc = new BUS_BuoiHoc();
 
         public DataTable buoiHocs;
+        public DataTable buoiHocs_them;
 
         public DataTable deNghis;
+        public DataTable deNghis_them;
 
         public DeNghiGiangDay()
         {
@@ -31,6 +33,8 @@ namespace QuanLyDaoTao.UserControls
             ngayDauTuan = DateTime.Now.AddDays(DayOfWeek.Monday - DateTime.Now.DayOfWeek);
             buoiHocs = new DataTable();
             deNghis = new DataTable();
+            buoiHocs_them = new DataTable();
+            deNghis_them = new DataTable();
             maGV = string.Empty;
         }
 
@@ -95,11 +99,13 @@ namespace QuanLyDaoTao.UserControls
                     {
                         buoiHocs.Clear();
                         buoiHocs = bus_buoihoc.DanhSachBuoiHocTheoTuan(value);
+                        buoiHocs_them = buoiHocs.Clone();
                     }
                     if (!string.IsNullOrEmpty(maGV))
                     {
                         deNghis.Clear();
                         deNghis = bus_denghi.DanhSachDeNghiTheoTuan(maGV, value);
+                        deNghis_them = deNghis.Clone();
                         DeNghiGiangDay_Load(null, null);
                     }
                 }
@@ -150,7 +156,10 @@ namespace QuanLyDaoTao.UserControls
                 }
                 //them buoi hoc
                 if (!tonTaiBuoiHoc)//neu chua ton tai buoi hoc   
+                {
                     buoiHocs.Rows.Add(idBuoiHoc.ToString(), ngayDauTuan.AddDays((int)thu), tietBD, soTiet);
+                    buoiHocs_them.Rows.Add(idBuoiHoc.ToString(), ngayDauTuan.AddDays((int)thu), tietBD, soTiet);
+                }
 
                 //kiểm tra không cho trùng
                 int tietKT = tietBD + soTiet - 1;
@@ -191,6 +200,7 @@ namespace QuanLyDaoTao.UserControls
                 //vẽ các panel
                 Paint((int)thu, tietBD, soTiet, lop, monHoc);
                 deNghis.Rows.Add(idBuoiHoc, maPC);
+                deNghis_them.Rows.Add(idBuoiHoc, maPC);
 
                 return true;
             }

@@ -80,6 +80,7 @@
             0});
             this.numHocKy.Size = new System.Drawing.Size(70, 24);
             this.numHocKy.TabIndex = 1;
+            this.numHocKy.EditValueChanged += new System.EventHandler(this.numHocKy_EditValueChanged);
             // 
             // labelControl1
             // 
@@ -135,6 +136,7 @@
             this.cmbLop.Properties.ValueMember = "MaLop";
             this.cmbLop.Size = new System.Drawing.Size(206, 24);
             this.cmbLop.TabIndex = 7;
+            this.cmbLop.EditValueChanged += new System.EventHandler(this.cmbLop_EditValueChanged);
             // 
             // labelControl2
             // 
@@ -160,6 +162,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbTuan.Size = new System.Drawing.Size(399, 24);
             this.cmbTuan.TabIndex = 5;
+            this.cmbTuan.EditValueChanged += new System.EventHandler(this.cmbTuan_SelectedIndexChanged);
             // 
             // btnHuy
             // 
@@ -170,6 +173,7 @@
             this.btnHuy.Size = new System.Drawing.Size(92, 34);
             this.btnHuy.TabIndex = 9;
             this.btnHuy.Text = "Hủy";
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnLuu
             // 
@@ -180,6 +184,7 @@
             this.btnLuu.Size = new System.Drawing.Size(92, 34);
             this.btnLuu.TabIndex = 8;
             this.btnLuu.Text = "Lưu";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // lblChuY
             // 
@@ -204,9 +209,11 @@
             // nhapPhieuGiangDay1
             // 
             this.nhapPhieuGiangDay1.Location = new System.Drawing.Point(56, 84);
+            this.nhapPhieuGiangDay1.MaLop = "";
             this.nhapPhieuGiangDay1.MaximumSize = new System.Drawing.Size(1146, 475);
             this.nhapPhieuGiangDay1.MinimumSize = new System.Drawing.Size(1146, 475);
             this.nhapPhieuGiangDay1.Name = "nhapPhieuGiangDay1";
+            //this.nhapPhieuGiangDay1.NgayDauTuan = new System.DateTime(((long)(0)));
             this.nhapPhieuGiangDay1.Size = new System.Drawing.Size(1146, 475);
             this.nhapPhieuGiangDay1.TabIndex = 14;
             // 
@@ -240,6 +247,7 @@
             this.Controls.Add(this.labelControl3);
             this.Name = "frmNhapPhieuGiangDay";
             this.Text = "Nhập phiếu giảng dạy";
+            this.Load += new System.EventHandler(this.frmNhapPhieuGiangDay_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numHocKy.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties)).EndInit();

@@ -97,7 +97,6 @@
             // 
             // txtMaTrinhDo
             // 
-            this.txtMaTrinhDo.Enabled = false;
             this.txtMaTrinhDo.EnterMoveNextControl = true;
             this.txtMaTrinhDo.Location = new System.Drawing.Point(244, 32);
             this.txtMaTrinhDo.Name = "txtMaTrinhDo";
@@ -171,7 +170,6 @@
             this.Controls.Add(this.lblHoTen);
             this.Name = "frmThemTrinhDo";
             this.Text = "Trình độ mới";
-            this.Load += new System.EventHandler(this.frmThemTrinhDo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtTenTrinhDo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaTrinhDo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numLuong.Properties)).EndInit();

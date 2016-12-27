@@ -192,8 +192,8 @@ namespace QuanLyDaoTao.Presentation
         {
             try
             {
-                bus_buoihoc.Them(deNghiGiangDay1.buoiHocs);
-                bus_denghi.Them(deNghiGiangDay1.deNghis);
+                bus_buoihoc.Them(deNghiGiangDay1.buoiHocs_them);
+                bus_denghi.Them(deNghiGiangDay1.deNghis_them);
                 MessageBoxUtils.Success("Thành công");
             }
             catch (Exception ex)

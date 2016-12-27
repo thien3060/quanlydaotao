@@ -23,19 +23,6 @@ namespace QuanLyDaoTao.Presentation
             InitializeComponent();
         }
 
-        private void frmThemNganhHoc_Load(object sender, EventArgs e)
-        {            
-            try
-            {
-                txtMaNganh.Text = bus_nganh.TuTinhMa();
-                txtTenNganh.Focus();
-            }
-            catch (Exception ex)
-            {
-                ExceptionUtil.ThrowMsgBox(ex.Message);
-            }
-        }
-
         private bool TaoMoi(DTO_Nganh nh)
         {
             try
@@ -90,7 +77,6 @@ namespace QuanLyDaoTao.Presentation
         private void ClearText()
         {
             txtMaNganh.ResetText();
-            txtMaNganh.Text = bus_nganh.TuTinhMa();
             txtTenNganh.ResetText();
             txtKhoa.ResetText();
             txtMaNganh.Focus();

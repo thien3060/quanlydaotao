@@ -48,6 +48,18 @@ namespace DAO
             DataTable dt = Connection.GetDataTable("SELECT * FROM ThoiKhoaBieu");
             return dt.Rows.Count;
         }
+        public DataRow LayThoiKhoaBieu(string mapc, int buoihoc)
+        {
+            DataTable temp = Connection.GetDataTable("SELECT * FROM ThoiKhoaBieu WHERE MaPC='" + mapc + "' AND BuoiHoc='" + buoihoc + "'");
+            if (temp.Rows.Count != 0)
+            {
+                return temp.Rows[0];
+            }
+            else
+            {
+                return null;
+            }
+        }
         public DataTable XemTKBSinhVien(string mssv, DateTime ngayDauTuan)
         {
             parameters.Clear();
@@ -75,6 +87,25 @@ namespace DAO
             parameters.Add("@maPhong", maPhong);
             parameters.Add("@ngayDauTuan", ngayDauTuan);
             return Connection.ExecuteStoreProcedure("sp_DeNghiTheoPhongTrongTuan", parameters);
+        }
+        public DataTable PhieuGiangDay(string maLop, DateTime ngayDauTuan)
+        {
+            string mssv = "";
+            DataTable temp = Connection.GetDataTable("SELECT * FROM SinhVien WHERE MaLop = '" + maLop + "'");
+            
+            if (temp.Rows.Count != 0)
+            {
+                mssv = temp.Rows[0][0].ToString();
+            }
+            parameters.Clear();
+            parameters.Add("@mssv", mssv);
+            parameters.Add("@ngayDauTuan", ngayDauTuan);
+            return Connection.ExecuteStoreProcedure("sp_XemTKBSinhVien", parameters);
+        }
+        public void LuuPhieuGiangDay(DTO_ThoiKhoaBieu thoikhoabieu)
+        {
+            AddParameter(thoikhoabieu);
+            Connection.ExecuteSqlWithParameter("UPDATE ThoiKhoaBieu SET CoDay=@CoDay WHERE MaPC=@MaPC AND BuoiHoc=@BuoiHoc", parameters);
         }
     }
 }

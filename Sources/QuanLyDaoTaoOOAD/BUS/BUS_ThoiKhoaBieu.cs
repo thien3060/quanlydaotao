@@ -32,6 +32,10 @@ namespace BUS
         { 
             thoikhoabieu.XoaThoiKhoaBieu(new DTO_ThoiKhoaBieu(maPC, maBuoi.ToString(), "", false, false));
         }
+        public DataRow LayThoiKhoaBieu(string mapc, int buoihoc)
+        {
+            return thoikhoabieu.LayThoiKhoaBieu(mapc, buoihoc);
+        }
         public DataTable XemTKBSinhVien(string mssv, DateTime ngayDauTuan)
         {
             return thoikhoabieu.XemTKBSinhVien(mssv, ngayDauTuan);
@@ -47,6 +51,14 @@ namespace BUS
         public DataTable DeNghiTheoPhongTrongTuan(string maPhong, DateTime ngayDauTuan)
         {
             return thoikhoabieu.DeNghiTheoPhongTrongTuan(maPhong, ngayDauTuan);
+        }
+        public DataTable PhieuGiangDay(string maLop, DateTime ngayDauTuan)
+        {
+            return thoikhoabieu.PhieuGiangDay(maLop, ngayDauTuan);
+        }
+        public void LuuPhieuGiangDay(DTO_ThoiKhoaBieu tkb)
+        {
+            thoikhoabieu.LuuPhieuGiangDay(tkb);
         }
     }
 }

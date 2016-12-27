@@ -44,6 +44,10 @@ namespace DAO
         {
             return Connection.GetDataTable("SELECT * FROM Lop WHERE MaNganh = '" + lop.MaNganh + "'");
         }
+        public DataTable DanhSachTuyChinh()
+        {
+            return Connection.GetDataTable("SELECT * FROM Lop INNER JOIN NganhHoc ON Lop.MaNganh = NganhHoc.MaNganh");
+        }
         public int LayKichThuocBang()
         {
             DataTable dt = Connection.GetDataTable("SELECT * FROM Lop");

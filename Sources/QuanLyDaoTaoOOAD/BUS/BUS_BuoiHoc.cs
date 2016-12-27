@@ -57,8 +57,7 @@ namespace BUS
                 foreach (DataRow row in buoiHocs.Rows)
                 {
                     DTO_BuoiHoc b = new DTO_BuoiHoc(row[0].ToString(), DateTime.Parse(row[1].ToString()), int.Parse(row[2].ToString()), int.Parse(row[3].ToString()));
-                    if (LayBuoiHoc(b.MaBH) == null)
-                        ThemdulieuBuoiHoc(b);
+                    ThemdulieuBuoiHoc(b);
                 }
             }
             catch (Exception ex)

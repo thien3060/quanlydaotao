@@ -67,10 +67,7 @@ namespace BUS
                 foreach (DataRow row in deNghis.Rows)
                 {
                     DTO_DeNghi dn = new DTO_DeNghi(row[1].ToString(), int.Parse(row[0].ToString()));
-                    if (LayDeNghi(dn.MaPC, dn.BuoiHoc) == null)
-                    {
-                        ThemdulieuDeNghi(dn);
-                    }                        
+                    ThemdulieuDeNghi(dn);
                 }
             }
             catch (Exception ex)
