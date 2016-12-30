@@ -262,6 +262,12 @@
     <Compile Include="Presentation\frmInPhanCongGiangDay.Designer.cs">
       <DependentUpon>frmInPhanCongGiangDay.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\frmXemPhanCongGiangDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmXemPhanCongGiangDay.Designer.cs">
+      <DependentUpon>frmXemPhanCongGiangDay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\frmPhanCongGiangDay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -556,6 +562,9 @@
     <EmbeddedResource Include="Presentation\frmInPhanCongGiangDay.resx">
       <DependentUpon>frmInPhanCongGiangDay.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmXemPhanCongGiangDay.resx">
+      <DependentUpon>frmXemPhanCongGiangDay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmPhanCongGiangDay.resx">
       <DependentUpon>frmPhanCongGiangDay.cs</DependentUpon>
     </EmbeddedResource>
@@ -674,6 +683,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\databasebackup512.png" />
+    <None Include="Resources\databaserestore512.png" />
     <Content Include="Resources\graduation_hat.png" />
     <Content Include="Resources\info72.png" />
     <Content Include="Resources\list 64.png" />

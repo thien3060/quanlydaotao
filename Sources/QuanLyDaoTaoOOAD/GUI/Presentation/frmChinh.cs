@@ -11,6 +11,7 @@ using DevExpress.XtraEditors;
 using QuanLyDaoTao.Utils;
 using DevExpress.XtraTab;
 using QuanLyDaoTao.Utilities;
+using System.IO;
 
 namespace QuanLyDaoTao.Presentation
 {
@@ -242,7 +243,7 @@ namespace QuanLyDaoTao.Presentation
         #endregion
 
         #region Sinh Viên
-        
+
         private void btnSuaSV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             try
@@ -329,7 +330,7 @@ namespace QuanLyDaoTao.Presentation
         {
             try
             {
-                frmPhanCongGiangDay frm = new frmPhanCongGiangDay();
+                frmXemPhanCongGiangDay frm = new frmXemPhanCongGiangDay();
                 TabCreating("Phân công giảng dạy", frm);
             }
             catch (Exception)
@@ -405,7 +406,7 @@ namespace QuanLyDaoTao.Presentation
 
         #endregion
 
-                #region Giáo Vụ
+        #region Giáo Vụ
 
         private void btnXepTKB_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -655,6 +656,67 @@ namespace QuanLyDaoTao.Presentation
             catch (Exception)
             {
 
+            }
+        }
+
+        private void btnSaoLuu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                string path = "";
+                string fileName = "";
+                BUS.BUS_Backup backup = new BUS.BUS_Backup();
+                SaveFileDialog save = new SaveFileDialog();
+                save.Filter = "Backup file (*.bak)|*.bak";
+                if (save.ShowDialog() == DialogResult.OK)
+                {
+                    this.Cursor = Cursors.WaitCursor;
+                    path = save.FileName;
+                    fileName = Path.GetFileName(path);
+                    path = path.Substring(0, path.Length - (fileName.Length + 1));
+                    backup.BackupDatabase(fileName, path);
+                    
+                    this.Cursor = Cursors.Default;
+                    MessageBoxUtils.Success("Sao lưu CSDL thành công!");                    
+                }
+
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+            finally
+            {
+                this.Cursor = Cursors.Default;
+            }
+        }
+
+        private void btnPhucHoi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                string path = "";
+                BUS.BUS_Backup backup = new BUS.BUS_Backup();
+                OpenFileDialog open = new OpenFileDialog();
+                open.Filter = "Backup file (*.bak)|*.bak";
+                open.Multiselect = false;
+                if (open.ShowDialog() == DialogResult.OK)
+                {
+                    this.Cursor = Cursors.WaitCursor;
+                    path = open.FileName;
+                    backup.RestoreDatabase(path);
+                    this.Cursor = Cursors.Default;
+                    MessageBoxUtils.Success("Phục hồi CSDL thành công!");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+            finally
+            {
+                this.Cursor = Cursors.Default;
             }
         }
 

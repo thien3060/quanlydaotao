@@ -36,11 +36,11 @@
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.MaPC = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MaGV = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.MaMH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MaLop = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.MaMH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TenMH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.HocKy = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NamHoc = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.btnLoc = new DevExpress.XtraEditors.SimpleButton();
             this.numHocKy = new DevExpress.XtraEditors.SpinEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.dateNamHoc = new DevExpress.XtraEditors.DateEdit();
@@ -76,6 +76,7 @@
             this.cmbGiangVien.Properties.ValueMember = "MaGV";
             this.cmbGiangVien.Size = new System.Drawing.Size(446, 24);
             this.cmbGiangVien.TabIndex = 7;
+            this.cmbGiangVien.EditValueChanged += new System.EventHandler(this.cmbGiangVien_EditValueChanged);
             // 
             // btnIn
             // 
@@ -116,8 +117,9 @@
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.MaPC,
             this.MaGV,
-            this.MaMH,
             this.MaLop,
+            this.MaMH,
+            this.TenMH,
             this.HocKy,
             this.NamHoc});
             this.gridView1.GridControl = this.gridControl1;
@@ -141,17 +143,7 @@
             this.MaGV.Name = "MaGV";
             this.MaGV.Visible = true;
             this.MaGV.VisibleIndex = 1;
-            this.MaGV.Width = 170;
-            // 
-            // MaMH
-            // 
-            this.MaMH.Caption = "Mã môn học";
-            this.MaMH.FieldName = "MaMH";
-            this.MaMH.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
-            this.MaMH.Name = "MaMH";
-            this.MaMH.Visible = true;
-            this.MaMH.VisibleIndex = 2;
-            this.MaMH.Width = 95;
+            this.MaGV.Width = 116;
             // 
             // MaLop
             // 
@@ -160,8 +152,27 @@
             this.MaLop.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
             this.MaLop.Name = "MaLop";
             this.MaLop.Visible = true;
-            this.MaLop.VisibleIndex = 3;
+            this.MaLop.VisibleIndex = 2;
             this.MaLop.Width = 113;
+            // 
+            // MaMH
+            // 
+            this.MaMH.Caption = "Mã môn học";
+            this.MaMH.FieldName = "MaMH";
+            this.MaMH.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
+            this.MaMH.Name = "MaMH";
+            this.MaMH.Visible = true;
+            this.MaMH.VisibleIndex = 3;
+            this.MaMH.Width = 95;
+            // 
+            // TenMH
+            // 
+            this.TenMH.Caption = "Tên môn học";
+            this.TenMH.FieldName = "TenMH";
+            this.TenMH.Name = "TenMH";
+            this.TenMH.Visible = true;
+            this.TenMH.VisibleIndex = 4;
+            this.TenMH.Width = 113;
             // 
             // HocKy
             // 
@@ -169,8 +180,8 @@
             this.HocKy.FieldName = "HocKy";
             this.HocKy.Name = "HocKy";
             this.HocKy.Visible = true;
-            this.HocKy.VisibleIndex = 4;
-            this.HocKy.Width = 139;
+            this.HocKy.VisibleIndex = 5;
+            this.HocKy.Width = 99;
             // 
             // NamHoc
             // 
@@ -178,19 +189,8 @@
             this.NamHoc.FieldName = "NamHoc";
             this.NamHoc.Name = "NamHoc";
             this.NamHoc.Visible = true;
-            this.NamHoc.VisibleIndex = 5;
-            this.NamHoc.Width = 372;
-            // 
-            // btnLoc
-            // 
-            this.btnLoc.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.btnLoc.Appearance.Options.UseFont = true;
-            this.btnLoc.Location = new System.Drawing.Point(265, 134);
-            this.btnLoc.Name = "btnLoc";
-            this.btnLoc.Size = new System.Drawing.Size(87, 43);
-            this.btnLoc.TabIndex = 30;
-            this.btnLoc.Text = "Lọc";
-            this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
+            this.NamHoc.VisibleIndex = 6;
+            this.NamHoc.Width = 268;
             // 
             // numHocKy
             // 
@@ -200,7 +200,7 @@
             0,
             0});
             this.numHocKy.EnterMoveNextControl = true;
-            this.numHocKy.Location = new System.Drawing.Point(328, 26);
+            this.numHocKy.Location = new System.Drawing.Point(265, 26);
             this.numHocKy.Name = "numHocKy";
             this.numHocKy.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.numHocKy.Properties.Appearance.Options.UseFont = true;
@@ -223,11 +223,12 @@
             0});
             this.numHocKy.Size = new System.Drawing.Size(70, 24);
             this.numHocKy.TabIndex = 32;
+            this.numHocKy.EditValueChanged += new System.EventHandler(this.numHocKy_EditValueChanged);
             // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl1.Location = new System.Drawing.Point(265, 29);
+            this.labelControl1.Location = new System.Drawing.Point(154, 29);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(50, 18);
             this.labelControl1.TabIndex = 31;
@@ -237,7 +238,7 @@
             // 
             this.dateNamHoc.EditValue = new System.DateTime(2014, 1, 1, 0, 0, 0, 0);
             this.dateNamHoc.EnterMoveNextControl = true;
-            this.dateNamHoc.Location = new System.Drawing.Point(469, 26);
+            this.dateNamHoc.Location = new System.Drawing.Point(543, 26);
             this.dateNamHoc.Name = "dateNamHoc";
             this.dateNamHoc.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.dateNamHoc.Properties.Appearance.Options.UseFont = true;
@@ -255,11 +256,12 @@
             this.dateNamHoc.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.dateNamHoc.Size = new System.Drawing.Size(77, 24);
             this.dateNamHoc.TabIndex = 34;
+            this.dateNamHoc.EditValueChanged += new System.EventHandler(this.dateNamHoc_EditValueChanged);
             // 
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl3.Location = new System.Drawing.Point(419, 29);
+            this.labelControl3.Location = new System.Drawing.Point(452, 29);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(36, 18);
             this.labelControl3.TabIndex = 33;
@@ -274,7 +276,6 @@
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.dateNamHoc);
             this.Controls.Add(this.labelControl3);
-            this.Controls.Add(this.btnLoc);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnIn);
@@ -308,10 +309,10 @@
         private DevExpress.XtraGrid.Columns.GridColumn MaLop;
         private DevExpress.XtraGrid.Columns.GridColumn HocKy;
         private DevExpress.XtraGrid.Columns.GridColumn NamHoc;
-        private DevExpress.XtraEditors.SimpleButton btnLoc;
         private DevExpress.XtraEditors.SpinEdit numHocKy;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.DateEdit dateNamHoc;
         private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraGrid.Columns.GridColumn TenMH;
     }
 }

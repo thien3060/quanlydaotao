@@ -63,6 +63,26 @@ namespace QuanLyDaoTao.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap databasebackup512 {
+            get {
+                object obj = ResourceManager.GetObject("databasebackup512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap databaserestore512 {
+            get {
+                object obj = ResourceManager.GetObject("databaserestore512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap graduation_hat {
             get {
                 object obj = ResourceManager.GetObject("graduation_hat", resourceCulture);

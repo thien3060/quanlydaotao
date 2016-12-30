@@ -1,6 +1,6 @@
 ﻿namespace QuanLyDaoTao.Presentation
 {
-    partial class frmPhanCongGiangDay
+    partial class frmXemPhanCongGiangDay
     {
         /// <summary>
         /// Required designer variable.
@@ -40,7 +40,6 @@
             this.cmbGiangVien = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.cmbLop = new DevExpress.XtraEditors.LookUpEdit();
-            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -84,6 +83,7 @@
             this.dateNamHoc.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.dateNamHoc.Size = new System.Drawing.Size(77, 24);
             this.dateNamHoc.TabIndex = 5;
+            this.dateNamHoc.EditValueChanged += new System.EventHandler(this.dateNamHoc_EditValueChanged);
             // 
             // labelControl3
             // 
@@ -125,6 +125,7 @@
             0});
             this.numHocKy.Size = new System.Drawing.Size(70, 24);
             this.numHocKy.TabIndex = 3;
+            this.numHocKy.EditValueChanged += new System.EventHandler(this.numHocKy_EditValueChanged);
             // 
             // labelControl1
             // 
@@ -206,6 +207,7 @@
             this.cmbGiangVien.Properties.ValueMember = "MaGV";
             this.cmbGiangVien.Size = new System.Drawing.Size(446, 24);
             this.cmbGiangVien.TabIndex = 7;
+            this.cmbGiangVien.EditValueChanged += new System.EventHandler(this.cmbGiangVien_EditValueChanged);
             // 
             // labelControl5
             // 
@@ -230,17 +232,6 @@
             this.cmbLop.Size = new System.Drawing.Size(168, 24);
             this.cmbLop.TabIndex = 11;
             // 
-            // btnThem
-            // 
-            this.btnThem.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.btnThem.Appearance.Options.UseFont = true;
-            this.btnThem.Location = new System.Drawing.Point(265, 156);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(87, 43);
-            this.btnThem.TabIndex = 12;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::QuanLyDaoTao.Properties.Resources.note;
@@ -256,10 +247,10 @@
             this.gridControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridControl1.Location = new System.Drawing.Point(12, 226);
+            this.gridControl1.Location = new System.Drawing.Point(12, 169);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(924, 234);
+            this.gridControl1.Size = new System.Drawing.Size(924, 291);
             this.gridControl1.TabIndex = 29;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -274,7 +265,10 @@
             this.HocKy,
             this.NamHoc});
             this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.GroupCount = 1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.MaLop, DevExpress.Data.ColumnSortOrder.Ascending)});
             // 
             // MaPC
             // 
@@ -322,7 +316,7 @@
             this.HocKy.FieldName = "HocKy";
             this.HocKy.Name = "HocKy";
             this.HocKy.Visible = true;
-            this.HocKy.VisibleIndex = 4;
+            this.HocKy.VisibleIndex = 3;
             this.HocKy.Width = 139;
             // 
             // NamHoc
@@ -331,17 +325,16 @@
             this.NamHoc.FieldName = "NamHoc";
             this.NamHoc.Name = "NamHoc";
             this.NamHoc.Visible = true;
-            this.NamHoc.VisibleIndex = 5;
+            this.NamHoc.VisibleIndex = 4;
             this.NamHoc.Width = 372;
             // 
-            // frmPhanCongGiangDay
+            // frmXemPhanCongGiangDay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(948, 472);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnThem);
             this.Controls.Add(this.cmbGiangVien);
             this.Controls.Add(this.cmbLop);
             this.Controls.Add(this.cmbMonHoc);
@@ -354,9 +347,9 @@
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.dateNamHoc);
             this.Controls.Add(this.labelControl3);
-            this.Name = "frmPhanCongGiangDay";
-            this.Text = "Phân công giảng dạy";
-            this.Load += new System.EventHandler(this.frmPhanCongGiangDay_Load);
+            this.Name = "frmXemPhanCongGiangDay";
+            this.Text = "Xem phân công giảng dạy";
+            this.Load += new System.EventHandler(this.frmXemPhanCongGiangDay_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numHocKy.Properties)).EndInit();
@@ -386,7 +379,6 @@
         private DevExpress.XtraEditors.LookUpEdit cmbGiangVien;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LookUpEdit cmbLop;
-        private DevExpress.XtraEditors.SimpleButton btnThem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;

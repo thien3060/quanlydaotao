@@ -33,6 +33,11 @@ namespace BUS
             phancong.XoaPhanCong(et);
         }
 
+        public DataTable ThongTinPhanCongTheoGV(string magv, int hocky, int namhoc)
+        {
+            return phancong.ThongTinPhanCongTheoGV(magv, hocky, namhoc);
+        }
+
         public string TuTinhMa()
         {
             string s = phancong.LayMaPhanCongLonNhat();

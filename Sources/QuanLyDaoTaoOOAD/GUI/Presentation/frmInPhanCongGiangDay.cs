@@ -12,6 +12,7 @@ using DTO;
 using BUS;
 using QuanLyDaoTao.Utilities;
 using QuanLyDaoTao.Utils;
+using QuanLyDaoTao.Enums;
 
 namespace QuanLyDaoTao.Presentation
 {
@@ -27,15 +28,37 @@ namespace QuanLyDaoTao.Presentation
         {
             InitializeComponent();
         }
-        
+
+        private void Set_cmbGiangVien()
+        {
+            try
+            {
+                cmbGiangVien.Properties.DataSource = bus_giangvien.TaobangGiangVien("");
+                //neu dang nhap bang quyen giang vien
+                if (int.Parse(StaticClass.User.Quyen) == (int)QuyenNguoiDung.GiangVien)
+                {
+                    cmbGiangVien.EditValue = StaticClass.User.TenDangNhap.ToUpper();
+                    cmbGiangVien.Properties.ReadOnly = true;
+                }
+                else//dang nhap bang quyen admin
+                {
+                    cmbGiangVien.Properties.ReadOnly = false;
+                    cmbGiangVien.EditValue = cmbGiangVien.Properties.GetDataSourceValue("MaGV", 0);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         private DataTable nguon;
 
         private void frmInPhanCongGiangDay_Load(object sender, EventArgs e)
         {
             try
             {
-                cmbGiangVien.Properties.DataSource = bus_giangvien.TaobangGiangVien("");
-                cmbGiangVien.EditValue = cmbGiangVien.Properties.GetDataSourceValue("MaGV", 0);           
+                Set_cmbGiangVien();     
                 CapNhatDuLieuBang();
             }
             catch (Exception ex)
@@ -46,7 +69,10 @@ namespace QuanLyDaoTao.Presentation
 
         private void CapNhatDuLieuBang()
         {
-            nguon = bus_phancong.GetPhanCong(dto_phancong);
+            if (dateNamHoc.EditValue != null)
+                nguon = bus_phancong.ThongTinPhanCongTheoGV(cmbGiangVien.EditValue.ToString(), int.Parse(numHocKy.EditValue.ToString()), DateTime.Parse(dateNamHoc.EditValue.ToString()).Year);
+            else
+                nguon = bus_phancong.ThongTinPhanCongTheoGV(cmbGiangVien.EditValue.ToString(), int.Parse(numHocKy.EditValue.ToString()), DateTime.Now.Year);
             gridControl1.DataSource = nguon;
         }
 
@@ -54,9 +80,6 @@ namespace QuanLyDaoTao.Presentation
         {
             try
             {
-                dto_phancong.MaGV = cmbGiangVien.EditValue.ToString();
-                dto_phancong.HocKy = (int) numHocKy.Value;
-                dto_phancong.NamHoc = dateNamHoc.DateTime.Year;
                 CapNhatDuLieuBang();
                 MessageBoxUtils.Success("Đã lọc xong");
             }
@@ -71,6 +94,42 @@ namespace QuanLyDaoTao.Presentation
             try
             {
                 gridControl1.ShowRibbonPrintPreview();
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
+
+        private void numHocKy_EditValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                CapNhatDuLieuBang();
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
+
+        private void dateNamHoc_EditValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                CapNhatDuLieuBang();
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
+
+        private void cmbGiangVien_EditValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                CapNhatDuLieuBang();
             }
             catch (Exception ex)
             {

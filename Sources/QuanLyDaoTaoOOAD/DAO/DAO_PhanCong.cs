@@ -48,6 +48,14 @@ namespace DAO
         {
             return Connection.GetDataTable("SELECT * FROM phancong WHERE MaGV = '" + phancong.MaGV + "' AND HocKy = '" + phancong.HocKy + "' AND NamHoc = '" + phancong.NamHoc + "'");
         }
+        public DataTable ThongTinPhanCongTheoGV(string magv, int hocky, int namhoc)
+        {
+            parameters.Clear();
+            parameters.Add("@maGV", magv);
+            parameters.Add("@hocKy", hocky);
+            parameters.Add("@namHoc", namhoc);
+            return Connection.ExecuteStoreProcedure("sp_ThongTinPhanCongTheoGV", parameters);
+        }
 
         public string LayMaPhanCongLonNhat()
         {
