@@ -88,6 +88,7 @@
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Size = new System.Drawing.Size(145, 20);
             this.txtTenDangNhap.TabIndex = 0;
+            this.txtTenDangNhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmDangNhap_KeyPress);
             // 
             // txtMatKhau
             // 
@@ -96,6 +97,7 @@
             this.txtMatKhau.Properties.PasswordChar = '*';
             this.txtMatKhau.Size = new System.Drawing.Size(145, 20);
             this.txtMatKhau.TabIndex = 1;
+            this.txtMatKhau.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmDangNhap_KeyPress);
             // 
             // pictureBox1
             // 

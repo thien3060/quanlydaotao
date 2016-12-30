@@ -121,8 +121,11 @@
   <data name="sinhvien" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sinhvien.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="note" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\note.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="non 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\non 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="student" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\student.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="graduation_hat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\graduation_hat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,14 +133,17 @@
   <data name="phong hoc128" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\phong hoc128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="man-key" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\man-key.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="QuanLyDaoTao" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\QuanLyDaoTao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="non 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\non 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="databaserestore512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\databaserestore512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="man-key" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\man-key.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="note" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\note.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo-uit 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo-uit 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,16 +163,16 @@
   <data name="sua" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="databasebackup512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\databasebackup512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="lophoc128" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lophoc128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="trinhdo128" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trinhdo128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="databasebackup512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\databasebackup512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="databaserestore512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\databaserestore512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="wRe8n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wRe8n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

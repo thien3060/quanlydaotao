@@ -22,6 +22,28 @@ namespace QuanLyDaoTao.Presentation
             InitializeComponent();
         }
 
+        private void frmChinh_Load(object sender, EventArgs e)
+        {
+            try
+            {
+
+                timer1_Tick(null, null);
+                //đăng nhập và phân quyền
+                frmDangNhap frm = new frmDangNhap();
+                if (frm.ShowDialog() == DialogResult.OK)
+                {
+                    lblQuyen.Caption = StaticClass.User.MoTaQuyen + ":";
+                    lblTen.Caption = StaticClass.User.TenNguoiDung;
+                }
+                PhanQuyen();
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+                return;
+            }
+        }
+
         #region Xử lý add form vào xtra tab control
 
         protected void TabCreating(string tabTitle, XtraForm frm)
@@ -38,6 +60,7 @@ namespace QuanLyDaoTao.Presentation
                 TabPage.AutoScroll = true;
                 xtraTabControl1.TabPages.Add(TabPage);
                 xtraTabControl1.SelectedTabPage = TabPage;
+                xtraTabControl1.Visible = true;
                 TabPage.AutoScroll = true;
                 //TabPage.AutoScrollMargin = new Size(20, 20);
                 TabPage.AutoScrollMinSize = new Size(TabPage.Width, TabPage.Height);
@@ -229,6 +252,7 @@ namespace QuanLyDaoTao.Presentation
                 StaticClass.User = null;
                 PhanQuyen();
                 xtraTabControl1.TabPages.Clear();
+                xtraTabControl1.Visible = false;
                 lblQuyen.Caption = "Bạn chưa đăng nhập.";
                 lblTen.Caption = "Vui lòng đăng nhập để sử dụng hệ thống.";
                 MessageBoxUtils.Info("Bạn đã đăng xuất.\nVui lòng đăng nhập để sử dụng hệ thống.");
@@ -756,5 +780,19 @@ namespace QuanLyDaoTao.Presentation
         }
 
         #endregion
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                DateTime now = DateTime.Now;
+                lblNgayGio.Caption = now.ToString("HH:mm") + " ngày " + now.ToString("dd/MM/yyyy");
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+                return;
+            }
+        }
     }
 }

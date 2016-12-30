@@ -530,6 +530,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\wRe8n.jpg" />
     <None Include="Resources\databasebackup512.png" />
     <None Include="Resources\databaserestore512.png" />
     <Content Include="Resources\graduation_hat.png" />
@@ -537,6 +538,7 @@
     <Content Include="Resources\list 64.png" />
     <Content Include="Resources\lophoc128.png" />
     <None Include="Resources\non 32.png" />
+    <None Include="Resources\student.jpg" />
     <Content Include="Resources\trinhdo128.png" />
     <Content Include="Resources\note.png" />
     <Content Include="Resources\phong hoc128.png" />

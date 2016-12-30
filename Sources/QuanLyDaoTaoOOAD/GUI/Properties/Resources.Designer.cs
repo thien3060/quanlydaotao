@@ -203,6 +203,16 @@ namespace QuanLyDaoTao.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap student {
+            get {
+                object obj = ResourceManager.GetObject("student", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sua {
             get {
                 object obj = ResourceManager.GetObject("sua", resourceCulture);
@@ -226,6 +236,16 @@ namespace QuanLyDaoTao.Properties {
         internal static System.Drawing.Bitmap trinhdo128 {
             get {
                 object obj = ResourceManager.GetObject("trinhdo128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wRe8n {
+            get {
+                object obj = ResourceManager.GetObject("wRe8n", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

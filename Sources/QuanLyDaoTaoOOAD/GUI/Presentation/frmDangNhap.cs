@@ -51,7 +51,7 @@ namespace QuanLyDaoTao.Presentation
                     return;
                 }
 
-        }
+            }
             catch (Exception ex)
             {
                 MessageBoxUtils.Error(ex.Message);
@@ -92,6 +92,66 @@ namespace QuanLyDaoTao.Presentation
             catch (Exception ex)
             {
                 throw ex;
+            }
+        }
+
+        private void frmDangNhap_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                if (!KiemTra())
+                {
+                    return;
+                }
+                try
+                {
+                    BUS_Login bus_login = new BUS_Login();
+                    BUS_NguoiDung bus_dangnhap = new BUS_NguoiDung();
+                    if (bus_dangnhap.KiemTraTenDangNhap(txtTenDangNhap.Text.Trim()))
+                    {
+                        DTO_NguoiDung user = new DTO_NguoiDung();
+                        user.TenDangNhap = txtTenDangNhap.Text.Trim();
+                        user = bus_login.LayThongTiNguoiDung(txtTenDangNhap.Text.Trim());
+                        if (user.MatKhau == UtilitiesClass.MaHoaMD5(txtMatKhau.Text))
+                        {
+                            StaticClass.User = user;
+                            StaticClass.DangNhap = true; DialogResult = DialogResult.OK;
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBoxUtils.Exclamation("Mật khẩu không đúng.");
+                            txtMatKhau.Focus();
+                            txtMatKhau.SelectAll();
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        MessageBoxUtils.Exclamation("Người dùng không tồn tại");
+                        txtTenDangNhap.Focus();
+                        txtTenDangNhap.SelectAll();
+                        return;
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBoxUtils.Error(ex.Message);
+                }
+            }
+
+            if (e.KeyChar == (char)27)
+            {
+                try
+                {
+                    DialogResult = DialogResult.Cancel;
+                    this.Close();
+                }
+                catch (Exception)
+                {
+
+                }
             }
         }
     }
