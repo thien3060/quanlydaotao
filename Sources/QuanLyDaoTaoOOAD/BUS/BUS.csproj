@@ -45,31 +45,16 @@
     <Compile Include="BUS_PhanCong.cs" />
     <Compile Include="BUS_MonHoc.cs" />
     <Compile Include="BUS_SinhVien.cs" />
-    <Compile Include="BUS_HeDT.cs" />
     <Compile Include="BUS_BuoiHoc.cs" />
-    <Compile Include="BUS_ChucVu.cs" />
-    <Compile Include="BUS_GVCN.cs" />
-    <Compile Include="BUS_GiangDay.cs" />
-    <Compile Include="BUS_HocPhan.cs" />
-    <Compile Include="BUS_KHDT.cs" />
     <Compile Include="BUS_Lop.cs" />
     <Compile Include="BUS_NguoiDung.cs" />
-    <Compile Include="BUS_NamHoc.cs" />
-    <Compile Include="BUS_HocKy.cs" />
-    <Compile Include="BUS_DamNhiem.cs" />
-    <Compile Include="BUS_NhomHP.cs" />
     <Compile Include="BUS_ThoiKhoaBieu.cs" />
     <Compile Include="BUS_TDDT.cs" />
-    <Compile Include="BUS_KhoiLop.cs" />
-    <Compile Include="BUS_HocVi.cs" />
-    <Compile Include="BUS_NhomLop.cs" />
     <Compile Include="BUS_Nganh.cs" />
     <Compile Include="BUS_PhongHoc.cs" />
-    <Compile Include="BUS_Khoa.cs" />
     <Compile Include="BUS_GiangVien.cs" />
     <Compile Include="BUS_Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="BUS_QuanLyThoiKhoaBieu.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAO\DAO.csproj">

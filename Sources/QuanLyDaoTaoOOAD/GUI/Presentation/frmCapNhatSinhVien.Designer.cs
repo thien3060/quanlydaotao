@@ -341,8 +341,6 @@
         private DevExpress.XtraEditors.TextEdit txtMSSV;
         private DevExpress.XtraEditors.LabelControl lblHoTen;
         private DevExpress.XtraEditors.LabelControl lblMSSV;
-        private System.Windows.Forms.ContextMenuStrip contextMenu;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuXoa;
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;

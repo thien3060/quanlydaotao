@@ -42,27 +42,13 @@
   <ItemGroup>
     <Compile Include="DTO_DeNghi.cs" />
     <Compile Include="DTO_BuoiHoc.cs" />
-    <Compile Include="DTO_ChucVu.cs" />
-    <Compile Include="DTO_DamNhiem.cs" />
     <Compile Include="DTO_MonHoc.cs" />
-    <Compile Include="DTO_GiangDay.cs" />
     <Compile Include="DTO_PhanCong.cs" />
     <Compile Include="DTO_SinhVien.cs" />
     <Compile Include="DTO_GiangVien.cs" />
-    <Compile Include="DTO_GVCN.cs" />
-    <Compile Include="DTO_HeDT.cs" />
-    <Compile Include="DTO_HocKy.cs" />
-    <Compile Include="DTO_HocPhan.cs" />
-    <Compile Include="DTO_HocVi.cs" />
-    <Compile Include="DTO_KHDT.cs" />
-    <Compile Include="DTO_Khoa.cs" />
-    <Compile Include="DTO_KhoiLop.cs" />
-    <Compile Include="DTO_NamHoc.cs" />
     <Compile Include="DTO_Nganh.cs" />
     <Compile Include="DTO_NguoiDung.cs" />
-    <Compile Include="DTO_NhomHP.cs" />
     <Compile Include="DTO_Lop.cs" />
-    <Compile Include="DTO_NhomLop.cs" />
     <Compile Include="DTO_PhongHoc.cs" />
     <Compile Include="DTO_TDDT.cs" />
     <Compile Include="DTO_ThoiKhoaBieu.cs" />
