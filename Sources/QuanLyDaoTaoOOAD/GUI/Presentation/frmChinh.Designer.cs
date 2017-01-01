@@ -952,9 +952,7 @@
             // rpgTKBSV
             // 
             this.rpgTKBSV.ItemLinks.Add(this.btnXemTKBSV);
-            this.rpgTKBSV.ItemLinks.Add(this.btnXemTKBThang);
             this.rpgTKBSV.ItemLinks.Add(this.btnInTKBTuan);
-            this.rpgTKBSV.ItemLinks.Add(this.btnInTKBThang);
             this.rpgTKBSV.Name = "rpgTKBSV";
             this.rpgTKBSV.Text = "Thời khóa biểu";
             // 
@@ -996,9 +994,7 @@
             this.rpgDeNghi.ItemLinks.Add(this.btnThemDeNghi);
             this.rpgDeNghi.ItemLinks.Add(this.btnXemDeNghi);
             this.rpgDeNghi.ItemLinks.Add(this.btnXemTKBGV, true);
-            this.rpgDeNghi.ItemLinks.Add(this.TKBThangGV);
             this.rpgDeNghi.ItemLinks.Add(this.btnInTKBTuanGV);
-            this.rpgDeNghi.ItemLinks.Add(this.btnInTKBThangGV);
             this.rpgDeNghi.Name = "rpgDeNghi";
             this.rpgDeNghi.Text = "Đề nghị và TKB";
             // 
