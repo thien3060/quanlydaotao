@@ -144,7 +144,7 @@ namespace QuanLyDaoTao.Presentation
         {
             try
             {
-                nhapPhieuGiangDay1.NgayDauTuan = DateTime.Parse(cmbTuan.SelectedItem.ToString().Substring(3, 10));
+                nhapPhieuGiangDay1.NgayDauTuan = DateTime.ParseExact(cmbTuan.SelectedItem.ToString().Substring(3, 10), "dd/MM/yyyy", null);
             }
             catch (Exception ex)
             {
