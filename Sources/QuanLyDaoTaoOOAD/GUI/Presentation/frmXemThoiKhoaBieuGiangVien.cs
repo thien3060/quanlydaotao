@@ -30,7 +30,7 @@ namespace QuanLyDaoTao.Presentation
             {
                 cmbGiangVien.Properties.DataSource = bus_gv.TaobangGiangVien("");
                 //neu dang nhap bang quyen giang vien
-                if (StaticClass.User.Quyen == QuyenNguoiDung.GiangVien.ToString())
+                if (int.Parse(StaticClass.User.Quyen) == (int)QuyenNguoiDung.GiangVien)
                 {
                     xemThoiKhoaBieuGiangVien1.MaGV = StaticClass.User.TenDangNhap.ToUpper();
                     cmbGiangVien.EditValue = StaticClass.User.TenDangNhap.ToUpper();
@@ -170,6 +170,19 @@ namespace QuanLyDaoTao.Presentation
             try
             {
                 Set_cmbTuan();
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
+
+        private void dateNamHoc_EditValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dateNamHoc.EditValue != null)
+                    Set_cmbTuan();
             }
             catch (Exception ex)
             {

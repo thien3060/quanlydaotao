@@ -24,13 +24,13 @@ namespace QuanLyDaoTao.Presentation
             InitializeComponent();
         }
 
-        private void Set_cmbGiangVien()
+        private void Set_cmbSinhVien()
         {
             try
             {
                 cmbSinhVien.Properties.DataSource = bus_sv.TaobangSinhVien("");
                 //neu dang nhap bang quyen sinh vien
-                if (StaticClass.User.Quyen == QuyenNguoiDung.SinhVien.ToString())
+                if (int.Parse(StaticClass.User.Quyen) == (int)QuyenNguoiDung.SinhVien)
                 {
                     xemThoiKhoaBieuSinhVien1.MSSV = StaticClass.User.TenDangNhap.ToUpper();
                     cmbSinhVien.EditValue = StaticClass.User.TenDangNhap.ToUpper();
@@ -122,7 +122,7 @@ namespace QuanLyDaoTao.Presentation
             try
             {
                 //cmbSinhVien
-                Set_cmbGiangVien();
+                Set_cmbSinhVien();
 
                 //num Hoc kỳ
                 Set_numHocKy();
@@ -170,6 +170,19 @@ namespace QuanLyDaoTao.Presentation
             try
             {
                 Set_cmbTuan();
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
+
+        private void dateNamHoc_EditValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dateNamHoc.EditValue != null)
+                    Set_cmbTuan();
             }
             catch (Exception ex)
             {

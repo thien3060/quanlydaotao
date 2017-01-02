@@ -116,6 +116,7 @@
             this.dateNamHoc.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.dateNamHoc.Size = new System.Drawing.Size(77, 24);
             this.dateNamHoc.TabIndex = 3;
+            this.dateNamHoc.EditValueChanged += new System.EventHandler(this.dateNamHoc_EditValueChanged);
             // 
             // labelControl3
             // 

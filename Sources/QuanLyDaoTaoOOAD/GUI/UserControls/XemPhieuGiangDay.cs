@@ -255,7 +255,7 @@ namespace QuanLyDaoTao.UserControls
         {
             try
             {
-                while (pnChinh.Controls.Count > 19)
+                while (pnChinh.Controls.Count > 15)
                 {
                     foreach (Control x in pnChinh.Controls)
                     {

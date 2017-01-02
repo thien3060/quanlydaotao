@@ -166,6 +166,19 @@ namespace QuanLyDaoTao.Presentation
             }
         }
 
+        private void dateNamHoc_EditValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dateNamHoc.EditValue != null)
+                    Set_cmbTuan();
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
+
         private void btnLuu_Click(object sender, EventArgs e)
         {
             try

@@ -189,5 +189,22 @@ namespace QuanLyDaoTao.Presentation
                 ExceptionUtil.ThrowMsgBox(ex.Message);
             }
         }
+
+        private void dateNamHoc_EditValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dateNamHoc.EditValue != null)
+                {
+                    Set_cmbTuan();
+                    deNghiGiangDay1.HocKy = (int)numHocKy.Value;
+                    deNghiGiangDay1.NamHoc = dateNamHoc.DateTime.Year;
+                }                    
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
     }
 }

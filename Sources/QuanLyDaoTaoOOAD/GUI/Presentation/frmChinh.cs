@@ -355,7 +355,7 @@ namespace QuanLyDaoTao.Presentation
             try
             {
                 frmXemPhanCongGiangDay frm = new frmXemPhanCongGiangDay();
-                TabCreating("Phân công giảng dạy", frm);
+                TabCreating("Xem phân công giảng dạy", frm);
             }
             catch (Exception)
             {

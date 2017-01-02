@@ -83,7 +83,6 @@
             // 
             // txtMaMH
             // 
-            this.txtMaMH.Enabled = false;
             this.txtMaMH.EnterMoveNextControl = true;
             this.txtMaMH.Location = new System.Drawing.Point(249, 32);
             this.txtMaMH.Name = "txtMaMH";

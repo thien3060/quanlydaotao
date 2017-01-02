@@ -113,6 +113,7 @@
             this.dateNamHoc.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.dateNamHoc.Size = new System.Drawing.Size(77, 24);
             this.dateNamHoc.TabIndex = 3;
+            this.dateNamHoc.EditValueChanged += new System.EventHandler(this.dateNamHoc_EditValueChanged);
             // 
             // labelControl3
             // 
@@ -213,7 +214,7 @@
             this.nhapPhieuGiangDay1.MaximumSize = new System.Drawing.Size(1146, 475);
             this.nhapPhieuGiangDay1.MinimumSize = new System.Drawing.Size(1146, 475);
             this.nhapPhieuGiangDay1.Name = "nhapPhieuGiangDay1";
-            //this.nhapPhieuGiangDay1.NgayDauTuan = new System.DateTime(((long)(0)));
+            this.nhapPhieuGiangDay1.NgayDauTuan = new System.DateTime(2017, 1, 2, 16, 57, 8, 355);
             this.nhapPhieuGiangDay1.Size = new System.Drawing.Size(1146, 475);
             this.nhapPhieuGiangDay1.TabIndex = 14;
             // 

@@ -102,8 +102,7 @@ namespace QuanLyDaoTao.Presentation
 
         private void ClearText()
         {
-            txtMaMH.ResetText();
-            txtMaMH.Text = bus_mh.TuTinhMa();
+            txtMaMH.ResetText();    
             txtTenMH.ResetText();
             numSTC.Value = 0;
             numLyThuyet.Value = 3;
