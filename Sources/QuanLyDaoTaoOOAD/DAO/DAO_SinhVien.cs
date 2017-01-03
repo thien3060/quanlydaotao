@@ -58,7 +58,7 @@ namespace DAO
         }
         public DataTable TaobangSinhVien(string dieukien)
         {
-            return Connection.GetDataTable("SELECT * FROM SinhVien " + dieukien);
+            return Connection.GetDataTable("SELECT MSSV, HoTen, NgaySinh, DiaChi, MaLop FROM SinhVien " + dieukien);
         }
         public string LayMaSinhVienLonNhat()
         {

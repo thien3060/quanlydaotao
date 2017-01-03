@@ -9,41 +9,29 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using BUS;
-using DTO;
-using QuanLyDaoTao.Utils;
-using QuanLyDaoTao.Enums;
 using QuanLyDaoTao.Utilities;
+using QuanLyDaoTao.Utils;
 
 namespace QuanLyDaoTao.Presentation
 {
-    public partial class frmThemDeNghi : DevExpress.XtraEditors.XtraForm
+    public partial class frmInPhieuGiangDayGiaoVu : DevExpress.XtraEditors.XtraForm
     {
-        BUS_GiangVien bus_giangvien = new BUS_GiangVien();
-        BUS_BuoiHoc bus_buoihoc = new BUS_BuoiHoc();
-        BUS_DeNghi bus_denghi = new BUS_DeNghi();
-        public frmThemDeNghi()
+        BUS_Lop bus_lop = new BUS_Lop();
+        BUS_ThoiKhoaBieu bus_tkb = new BUS_ThoiKhoaBieu();
+        Bitmap memoryImage;
+        Image image;
+
+        public frmInPhieuGiangDayGiaoVu()
         {
             InitializeComponent();
         }
-
-        private void Set_cmbGiangVien()
+        
+        private void Set_cmbLop()
         {
             try
             {
-                cmbGiangVien.Properties.DataSource = bus_giangvien.TaobangGiangVien("");
-                //neu dang nhap bang quyen giang vien
-                if (int.Parse(StaticClass.User.Quyen) == (int)QuyenNguoiDung.GiangVien)
-                {
-                    cmbGiangVien.EditValue = StaticClass.User.TenDangNhap.ToUpper();
-                    cmbGiangVien.Properties.ReadOnly = true;
-                    deNghiGiangDay1.MaGV = StaticClass.User.TenDangNhap.ToUpper();
-                }
-                else//dang nhap bang quyen admin
-                {
-                    cmbGiangVien.Properties.ReadOnly = false;
-                    cmbGiangVien.EditValue = cmbGiangVien.Properties.GetDataSourceValue("MaGV", 0);
-                    deNghiGiangDay1.MaGV = cmbGiangVien.EditValue.ToString();
-                }
+                cmbLop.Properties.DataSource = bus_lop.DanhSachTuyChinh();
+                cmbLop.EditValue = cmbLop.Properties.GetDataSourceValue("MaLop", 0);
             }
             catch (Exception ex)
             {
@@ -119,12 +107,12 @@ namespace QuanLyDaoTao.Presentation
             }
         }
 
-        private void frmThemDeNghi_Load(object sender, EventArgs e)
+        private void frmInPhieuGiangDayGiaoVu_Load(object sender, EventArgs e)
         {
             try
             {
-                //cmbGiangVien
-                Set_cmbGiangVien();
+                //cmbPhong
+                Set_cmbLop();
 
                 //num Hoc kỳ
                 Set_numHocKy();
@@ -136,13 +124,6 @@ namespace QuanLyDaoTao.Presentation
                 Set_cmbTuan();
                 DateTime ngayNay = DateTime.Now.GetWeek();
                 cmbTuan.SelectedIndex = cmbTuan.Properties.Items.IndexOf("Từ " + ngayNay.ToString("dd/MM/yyyy") + " -- Đến " + ngayNay.AddDays(6).ToString("dd/MM/yyyy"));
-
-                //de nghi viewer
-                deNghiGiangDay1.NamHoc = dateNamHoc.DateTime.Year;
-                deNghiGiangDay1.HocKy = (int)numHocKy.Value;
-                //deNghiGiangDay1.NgayDauTuan = DateTime.Parse(cmbTuan.SelectedItem.ToString().Substring(3, 10));
-
-                deNghiGiangDay1.buoiHocs = bus_buoihoc.DanhSachBuoiHocTheoTuan(deNghiGiangDay1.NgayDauTuan);
             }
             catch (Exception ex)
             {
@@ -150,11 +131,11 @@ namespace QuanLyDaoTao.Presentation
             }
         }
 
-        private void cmbGiangVien_EditValueChanged(object sender, EventArgs e)
+        private void cmbLop_EditValueChanged(object sender, EventArgs e)
         {
             try
             {
-                deNghiGiangDay1.MaGV = cmbGiangVien.EditValue.ToString();
+                nhapPhieuGiangDay1.MaLop = cmbLop.EditValue.ToString();
             }
             catch (Exception ex)
             {
@@ -166,7 +147,7 @@ namespace QuanLyDaoTao.Presentation
         {
             try
             {
-                deNghiGiangDay1.NgayDauTuan = DateTime.ParseExact(cmbTuan.SelectedItem.ToString().Substring(3, 10), "dd/MM/yyyy", null);
+                nhapPhieuGiangDay1.NgayDauTuan = DateTime.ParseExact(cmbTuan.SelectedItem.ToString().Substring(3, 10), "dd/MM/yyyy", null);
             }
             catch (Exception ex)
             {
@@ -179,8 +160,6 @@ namespace QuanLyDaoTao.Presentation
             try
             {
                 Set_cmbTuan();
-                deNghiGiangDay1.HocKy = (int)numHocKy.Value;
-                deNghiGiangDay1.NamHoc = dateNamHoc.DateTime.Year;
             }
             catch (Exception ex)
             {
@@ -193,11 +172,7 @@ namespace QuanLyDaoTao.Presentation
             try
             {
                 if (dateNamHoc.EditValue != null)
-                {
                     Set_cmbTuan();
-                    deNghiGiangDay1.HocKy = (int)numHocKy.Value;
-                    deNghiGiangDay1.NamHoc = dateNamHoc.DateTime.Year;
-                }
             }
             catch (Exception ex)
             {
@@ -209,17 +184,13 @@ namespace QuanLyDaoTao.Presentation
         {
             try
             {
-                if (deNghiGiangDay1.buoiHocs_them.Rows.Count != 0)
+                foreach (var i in nhapPhieuGiangDay1.thoikhoabieu_thaydoi)
                 {
-                    bus_buoihoc.Them(deNghiGiangDay1.buoiHocs_them);
-                    deNghiGiangDay1.buoiHocs_them.Clear();
+                    bus_tkb.LuuPhieuGiangDay(i.Value);
                 }
-                if (deNghiGiangDay1.deNghis_them.Rows.Count != 0)
-                {
-                    bus_denghi.Them(deNghiGiangDay1.deNghis_them);
-                    deNghiGiangDay1.deNghis_them.Clear();
-                    MessageBoxUtils.Success("Thành công");
-                }                
+                string tam = nhapPhieuGiangDay1.MaLop;
+                nhapPhieuGiangDay1.MaLop = tam;
+                MessageBoxUtils.Success("Thành công");
             }
             catch (Exception ex)
             {
@@ -231,7 +202,79 @@ namespace QuanLyDaoTao.Presentation
         {
             try
             {
-                deNghiGiangDay1.Cancel();
+                nhapPhieuGiangDay1.Cancel();
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            image = memoryImage;
+
+            float newWidth = image.Width * 100 / image.HorizontalResolution;
+            float newHeight = image.Height * 100 / image.VerticalResolution;
+
+            float widthFactor = newWidth / e.MarginBounds.Width;
+            float heightFactor = newHeight / e.MarginBounds.Height;
+
+            if (widthFactor > 1 | heightFactor > 1)
+            {
+                if (widthFactor > heightFactor)
+                {
+                    newWidth = newWidth / widthFactor;
+                    newHeight = newHeight / widthFactor;
+                }
+                else
+                {
+                    newWidth = newWidth / heightFactor;
+                    newHeight = newHeight / heightFactor;
+                }
+            }
+
+            // calculate width and height scalings taking page margins into account
+            var wScale = e.MarginBounds.Width / (float)memoryImage.Width;
+            var hScale = e.MarginBounds.Height / (float)memoryImage.Height;
+
+            // choose the smaller of the two scales
+            var scale = wScale < hScale ? wScale : hScale;
+
+            // apply scaling to the image
+            e.Graphics.ScaleTransform(scale, scale);
+
+            // print to default printer's page
+            //e.Graphics.DrawImage(memoryImage, 0, 0);
+            e.Graphics.DrawImage(image, 0, 100, newWidth * 3, newHeight * 3);
+        }
+
+        private void CaptureScreen()
+        {
+            // put into using construct because Graphics objects do not 
+            //  get automatically disposed when leaving method scope
+            using (var myGraphics = CreateGraphics())
+            {
+                var s = Size;
+
+                memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
+
+                using (var memoryGraphics = Graphics.FromImage(memoryImage))
+                {
+                    memoryGraphics.CopyFromScreen(this.formBounds.X, this.formBounds.Y, 0, 0, s);
+                }
+            }
+        }
+
+        private void btnIn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                btnIn.Visible = false;
+                CaptureScreen();
+                printPreviewDialog1.Document = printDocument1;
+                printPreviewDialog1.ShowDialog();
+                btnIn.Visible = true;
             }
             catch (Exception ex)
             {

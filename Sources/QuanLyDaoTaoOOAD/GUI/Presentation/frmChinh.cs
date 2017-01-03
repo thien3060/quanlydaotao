@@ -549,6 +549,19 @@ namespace QuanLyDaoTao.Presentation
             }
         }
 
+        private void btnInPhieuGiangDayGiaoVu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                frmInPhieuGiangDayGiaoVu frm = new frmInPhieuGiangDayGiaoVu();
+                TabCreating("Giáo vụ in phiếu giảng dạy", frm);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
         private void btnThemSV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             try

@@ -119,6 +119,7 @@
             this.btnSaoLuu = new DevExpress.XtraBars.BarButtonItem();
             this.btnPhucHoi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnInPhieuGiangDayGiaoVu = new DevExpress.XtraBars.BarButtonItem();
             this.rpTrangChu = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgNguoiDung = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpSinhVien = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -148,7 +149,6 @@
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.rpgGiaoDien = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnInPhieuGiangDayGiaoVu = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit2)).BeginInit();
@@ -922,6 +922,14 @@
             this.barButtonItem3.Id = 197;
             this.barButtonItem3.Name = "barButtonItem3";
             // 
+            // btnInPhieuGiangDayGiaoVu
+            // 
+            this.btnInPhieuGiangDayGiaoVu.Caption = "In phiếu giảng dạy";
+            this.btnInPhieuGiangDayGiaoVu.Glyph = ((System.Drawing.Image)(resources.GetObject("btnInPhieuGiangDayGiaoVu.Glyph")));
+            this.btnInPhieuGiangDayGiaoVu.Id = 198;
+            this.btnInPhieuGiangDayGiaoVu.Name = "btnInPhieuGiangDayGiaoVu";
+            this.btnInPhieuGiangDayGiaoVu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnInPhieuGiangDayGiaoVu_ItemClick);
+            // 
             // rpTrangChu
             // 
             this.rpTrangChu.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -1158,13 +1166,6 @@
             this.timer1.Enabled = true;
             this.timer1.Interval = 60000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // btnInPhieuGiangDayGiaoVu
-            // 
-            this.btnInPhieuGiangDayGiaoVu.Caption = "In phiếu giảng dạy";
-            this.btnInPhieuGiangDayGiaoVu.Glyph = ((System.Drawing.Image)(resources.GetObject("btnInPhieuGiangDayGiaoVu.Glyph")));
-            this.btnInPhieuGiangDayGiaoVu.Id = 198;
-            this.btnInPhieuGiangDayGiaoVu.Name = "btnInPhieuGiangDayGiaoVu";
             // 
             // frmChinh
             // 

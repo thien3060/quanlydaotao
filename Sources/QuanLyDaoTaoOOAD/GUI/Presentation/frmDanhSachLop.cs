@@ -38,7 +38,8 @@ namespace QuanLyDaoTao.Presentation
                 if (int.Parse(StaticClass.User.Quyen) == (int)QuyenNguoiDung.SinhVien)
                 {
                     masv = StaticClass.User.TenDangNhap.ToUpper();
-                    malop = bus_sv.GetSinhVienbyID(masv).MaLop;
+                    if (bus_sv.GetSinhVienbyID(masv) != null)
+                        malop = bus_sv.GetSinhVienbyID(masv).MaLop;
                     cmbLop.Properties.ReadOnly = true;
                     cmbLop.EditValue = malop;
                 }

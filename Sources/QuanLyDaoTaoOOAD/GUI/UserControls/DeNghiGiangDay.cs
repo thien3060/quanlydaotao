@@ -125,7 +125,7 @@ namespace QuanLyDaoTao.UserControls
             {
                 if (tietBD < 0 || tietBD > 9)
                     throw new Exception("Tiết bắt đầu không hợp lệ.");
-                if (soTiet < 1 || soTiet > 5)
+                if (soTiet < 1 || soTiet > 5 || (tietBD + soTiet) > 10)
                     throw new Exception("Số tiết không hợp lệ.");
                 int idBuoiHoc;
                 if (buoiHocs.Rows.Count != 0)
