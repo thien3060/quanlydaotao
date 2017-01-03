@@ -394,7 +394,6 @@
     </Compile>
     <Compile Include="Utils\ExceptionUtilities.cs" />
     <Compile Include="Utils\MessageBoxUtils.cs" />
-    <Compile Include="Utils\PrintUtils.cs" />
     <Compile Include="Utils\StaticClass.cs" />
     <Compile Include="Utils\UtilitiesClass.cs" />
     <EmbeddedResource Include="Presentation\frmCapNhatLop.resx">
