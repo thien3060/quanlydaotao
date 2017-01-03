@@ -1,6 +1,6 @@
 ﻿namespace QuanLyDaoTao.Presentation
 {
-    partial class frmXemPhieuGiangDay
+    partial class frmInThoiKhoaBieuSinhVien
     {
         /// <summary>
         /// Required designer variable.
@@ -28,23 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInThoiKhoaBieuSinhVien));
             this.numHocKy = new DevExpress.XtraEditors.SpinEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.dateNamHoc = new DevExpress.XtraEditors.DateEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.cmbGiangVien = new DevExpress.XtraEditors.LookUpEdit();
+            this.cmbSinhVien = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.cmbTuan = new DevExpress.XtraEditors.ComboBoxEdit();
             this.lblChuY = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.xemPhieuGiangDay1 = new QuanLyDaoTao.UserControls.XemPhieuGiangDay();
+            this.btnIn = new DevExpress.XtraEditors.SimpleButton();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.xemThoiKhoaBieuSinhVien1 = new QuanLyDaoTao.UserControls.XemThoiKhoaBieuSinhVien();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             ((System.ComponentModel.ISupportInitialize)(this.numHocKy.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbGiangVien.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbSinhVien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbTuan.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // numHocKy
@@ -55,7 +57,7 @@
             0,
             0});
             this.numHocKy.EnterMoveNextControl = true;
-            this.numHocKy.Location = new System.Drawing.Point(171, 11);
+            this.numHocKy.Location = new System.Drawing.Point(119, 9);
             this.numHocKy.Name = "numHocKy";
             this.numHocKy.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.numHocKy.Properties.Appearance.Options.UseFont = true;
@@ -83,7 +85,7 @@
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl1.Location = new System.Drawing.Point(108, 14);
+            this.labelControl1.Location = new System.Drawing.Point(56, 12);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(50, 18);
             this.labelControl1.TabIndex = 0;
@@ -93,7 +95,7 @@
             // 
             this.dateNamHoc.EditValue = new System.DateTime(2014, 1, 1, 0, 0, 0, 0);
             this.dateNamHoc.EnterMoveNextControl = true;
-            this.dateNamHoc.Location = new System.Drawing.Point(310, 11);
+            this.dateNamHoc.Location = new System.Drawing.Point(258, 9);
             this.dateNamHoc.Name = "dateNamHoc";
             this.dateNamHoc.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.dateNamHoc.Properties.Appearance.Options.UseFont = true;
@@ -116,35 +118,35 @@
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl3.Location = new System.Drawing.Point(260, 14);
+            this.labelControl3.Location = new System.Drawing.Point(208, 12);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(36, 18);
             this.labelControl3.TabIndex = 2;
             this.labelControl3.Text = "Năm:";
             // 
-            // cmbGiangVien
+            // cmbSinhVien
             // 
-            this.cmbGiangVien.EnterMoveNextControl = true;
-            this.cmbGiangVien.Location = new System.Drawing.Point(958, 11);
-            this.cmbGiangVien.Name = "cmbGiangVien";
-            this.cmbGiangVien.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.cmbGiangVien.Properties.Appearance.Options.UseFont = true;
-            this.cmbGiangVien.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cmbSinhVien.EnterMoveNextControl = true;
+            this.cmbSinhVien.Location = new System.Drawing.Point(896, 9);
+            this.cmbSinhVien.Name = "cmbSinhVien";
+            this.cmbSinhVien.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.cmbSinhVien.Properties.Appearance.Options.UseFont = true;
+            this.cmbSinhVien.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbGiangVien.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("MaGV", 50, "Mã GV"),
+            this.cmbSinhVien.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("MSSV", 50, "MSSV"),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("HoTen", 100, "Họ Tên"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("MaTrinhDo", 50, "Trình Độ")});
-            this.cmbGiangVien.Properties.DisplayMember = "HoTen";
-            this.cmbGiangVien.Properties.ValueMember = "MaGV";
-            this.cmbGiangVien.Size = new System.Drawing.Size(179, 24);
-            this.cmbGiangVien.TabIndex = 7;
-            this.cmbGiangVien.EditValueChanged += new System.EventHandler(this.cmbGiangVien_EditValueChanged);
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("MaLop", 50, "Mã lớp")});
+            this.cmbSinhVien.Properties.DisplayMember = "HoTen";
+            this.cmbSinhVien.Properties.ValueMember = "MSSV";
+            this.cmbSinhVien.Size = new System.Drawing.Size(187, 24);
+            this.cmbSinhVien.TabIndex = 7;
+            this.cmbSinhVien.EditValueChanged += new System.EventHandler(this.cmbGiangVien_EditValueChanged);
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl2.Location = new System.Drawing.Point(405, 14);
+            this.labelControl2.Location = new System.Drawing.Point(353, 12);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(39, 18);
             this.labelControl2.TabIndex = 4;
@@ -153,7 +155,7 @@
             // cmbTuan
             // 
             this.cmbTuan.EnterMoveNextControl = true;
-            this.cmbTuan.Location = new System.Drawing.Point(450, 11);
+            this.cmbTuan.Location = new System.Drawing.Point(398, 9);
             this.cmbTuan.Name = "cmbTuan";
             this.cmbTuan.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.cmbTuan.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
@@ -171,7 +173,7 @@
             // 
             this.lblChuY.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
             this.lblChuY.Appearance.ForeColor = System.Drawing.Color.Blue;
-            this.lblChuY.Location = new System.Drawing.Point(171, 46);
+            this.lblChuY.Location = new System.Drawing.Point(81, 39);
             this.lblChuY.Name = "lblChuY";
             this.lblChuY.Size = new System.Drawing.Size(544, 14);
             this.lblChuY.TabIndex = 13;
@@ -181,58 +183,70 @@
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.labelControl5.Location = new System.Drawing.Point(880, 14);
+            this.labelControl5.Location = new System.Drawing.Point(828, 12);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(72, 18);
+            this.labelControl5.Size = new System.Drawing.Size(62, 18);
             this.labelControl5.TabIndex = 6;
-            this.labelControl5.Text = "Giảng viên:";
+            this.labelControl5.Text = "Sinh viên:";
             // 
-            // pictureBox1
+            // btnIn
             // 
-            this.pictureBox1.BackgroundImage = global::QuanLyDaoTao.Properties.Resources.tkb64;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(77, 75);
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
+            this.btnIn.Location = new System.Drawing.Point(1111, 12);
+            this.btnIn.Name = "btnIn";
+            this.btnIn.Size = new System.Drawing.Size(75, 43);
+            this.btnIn.TabIndex = 15;
+            this.btnIn.Text = "In";
+            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
             // 
-            // xemPhieuGiangDay1
+            // printDocument1
             // 
-            this.xemPhieuGiangDay1.Location = new System.Drawing.Point(56, 67);
-            this.xemPhieuGiangDay1.MaGV = "";
-            this.xemPhieuGiangDay1.MaximumSize = new System.Drawing.Size(1146, 475);
-            this.xemPhieuGiangDay1.MinimumSize = new System.Drawing.Size(1146, 475);
-            this.xemPhieuGiangDay1.Name = "xemPhieuGiangDay1";
-            this.xemPhieuGiangDay1.NgayDauTuan = new System.DateTime(2016, 12, 19, 21, 39, 28, 888);
-            this.xemPhieuGiangDay1.Size = new System.Drawing.Size(1146, 475);
-            this.xemPhieuGiangDay1.TabIndex = 14;
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
-            // frmXemPhieuGiangDay
+            // xemThoiKhoaBieuSinhVien1
+            // 
+            this.xemThoiKhoaBieuSinhVien1.Location = new System.Drawing.Point(56, 61);
+            this.xemThoiKhoaBieuSinhVien1.MaximumSize = new System.Drawing.Size(1146, 475);
+            this.xemThoiKhoaBieuSinhVien1.MinimumSize = new System.Drawing.Size(1146, 475);
+            this.xemThoiKhoaBieuSinhVien1.MSSV = "";
+            this.xemThoiKhoaBieuSinhVien1.Name = "xemThoiKhoaBieuSinhVien1";
+            this.xemThoiKhoaBieuSinhVien1.NgayDauTuan = new System.DateTime(2016, 12, 19, 20, 50, 23, 984);
+            this.xemThoiKhoaBieuSinhVien1.Size = new System.Drawing.Size(1146, 475);
+            this.xemThoiKhoaBieuSinhVien1.TabIndex = 14;
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // frmInThoiKhoaBieuSinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1214, 546);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(1214, 543);
+            this.Controls.Add(this.btnIn);
             this.Controls.Add(this.labelControl1);
+            this.Controls.Add(this.xemThoiKhoaBieuSinhVien1);
             this.Controls.Add(this.lblChuY);
             this.Controls.Add(this.cmbTuan);
-            this.Controls.Add(this.cmbGiangVien);
+            this.Controls.Add(this.cmbSinhVien);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl5);
             this.Controls.Add(this.numHocKy);
             this.Controls.Add(this.dateNamHoc);
             this.Controls.Add(this.labelControl3);
-            this.Controls.Add(this.xemPhieuGiangDay1);
-            this.Name = "frmXemPhieuGiangDay";
-            this.Text = "Giảng viên xem phiếu giảng dạy";
-            this.Load += new System.EventHandler(this.frmThemDeNghi_Load);
+            this.Name = "frmInThoiKhoaBieuSinhVien";
+            this.Text = "In thời khóa biểu sinh viên";
+            this.Load += new System.EventHandler(this.frmInThoiKhoaBieuSinhVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numHocKy.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbGiangVien.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbSinhVien.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbTuan.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,12 +258,14 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.DateEdit dateNamHoc;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.LookUpEdit cmbGiangVien;
+        private DevExpress.XtraEditors.LookUpEdit cmbSinhVien;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.ComboBoxEdit cmbTuan;
         private DevExpress.XtraEditors.LabelControl lblChuY;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private QuanLyDaoTao.UserControls.XemPhieuGiangDay xemPhieuGiangDay1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private QuanLyDaoTao.UserControls.XemThoiKhoaBieuSinhVien xemThoiKhoaBieuSinhVien1;
+        private DevExpress.XtraEditors.SimpleButton btnIn;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
     }
 }

@@ -16,10 +16,13 @@ using QuanLyDaoTao.Enums;
 
 namespace QuanLyDaoTao.Presentation
 {
-    public partial class frmXemThoiKhoaBieuGiangVien : DevExpress.XtraEditors.XtraForm
+    public partial class frmInThoiKhoaBieuGiangVien : DevExpress.XtraEditors.XtraForm
     {
         BUS_GiangVien bus_gv = new BUS_GiangVien();
-        public frmXemThoiKhoaBieuGiangVien()
+        Bitmap memoryImage;
+        Image image;
+
+        public frmInThoiKhoaBieuGiangVien()
         {
             InitializeComponent();
         }
@@ -117,7 +120,7 @@ namespace QuanLyDaoTao.Presentation
             }
         }
 
-        private void frmXemThoiKhoaBieuGiangVien_Load(object sender, EventArgs e)
+        private void frmInThoiKhoaBieuGiangVien_Load(object sender, EventArgs e)
         {
             try
             {
@@ -183,6 +186,78 @@ namespace QuanLyDaoTao.Presentation
             {
                 if (dateNamHoc.EditValue != null)
                     Set_cmbTuan();
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            image = memoryImage;
+
+            float newWidth = image.Width * 100 / image.HorizontalResolution;
+            float newHeight = image.Height * 100 / image.VerticalResolution;
+
+            float widthFactor = newWidth / e.MarginBounds.Width;
+            float heightFactor = newHeight / e.MarginBounds.Height;
+
+            if (widthFactor > 1 | heightFactor > 1)
+            {
+                if (widthFactor > heightFactor)
+                {
+                    newWidth = newWidth / widthFactor;
+                    newHeight = newHeight / widthFactor;
+                }
+                else
+                {
+                    newWidth = newWidth / heightFactor;
+                    newHeight = newHeight / heightFactor;
+                }
+            }
+
+            // calculate width and height scalings taking page margins into account
+            var wScale = e.MarginBounds.Width / (float)memoryImage.Width;
+            var hScale = e.MarginBounds.Height / (float)memoryImage.Height;
+
+            // choose the smaller of the two scales
+            var scale = wScale < hScale ? wScale : hScale;
+
+            // apply scaling to the image
+            e.Graphics.ScaleTransform(scale, scale);
+
+            // print to default printer's page
+            //e.Graphics.DrawImage(memoryImage, 0, 0);
+            e.Graphics.DrawImage(image, 0, 100, newWidth * 3, newHeight * 3);
+        }
+
+        private void CaptureScreen()
+        {
+            // put into using construct because Graphics objects do not 
+            //  get automatically disposed when leaving method scope
+            using (var myGraphics = CreateGraphics())
+            {
+                var s = Size;
+
+                memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
+
+                using (var memoryGraphics = Graphics.FromImage(memoryImage))
+                {
+                    memoryGraphics.CopyFromScreen(this.formBounds.X, this.formBounds.Y, 0, 0, s);
+                }
+            }
+        }
+
+        private void btnIn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                btnIn.Visible = false;
+                CaptureScreen();
+                printPreviewDialog1.Document = printDocument1;
+                printPreviewDialog1.ShowDialog();
+                btnIn.Visible = true;
             }
             catch (Exception ex)
             {

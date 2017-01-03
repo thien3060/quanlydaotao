@@ -16,7 +16,7 @@ using QuanLyDaoTao.Enums;
 
 namespace QuanLyDaoTao.Presentation
 {
-    public partial class frmDanhSachLop : DevExpress.XtraEditors.XtraForm
+    public partial class frmInDanhSachLop : DevExpress.XtraEditors.XtraForm
     {
         DataTable source;
         BUS_SinhVien bus_sv = new BUS_SinhVien();
@@ -24,7 +24,7 @@ namespace QuanLyDaoTao.Presentation
         BUS_Nganh bus_nganh = new BUS_Nganh();
         string masv;
         string malop;
-        public frmDanhSachLop()
+        public frmInDanhSachLop()
         {
             InitializeComponent();
         }
@@ -55,12 +55,24 @@ namespace QuanLyDaoTao.Presentation
             }
         }
 
-        private void frmDanhSachLop_Load(object sender, EventArgs e)
+        private void frmInDanhSachLop_Load(object sender, EventArgs e)
         {
             try
             {
                 Set_cmbLop_cmbNganh();
                 CapNhatDuLieuBang();
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
+        
+        private void btnIn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                gridControl1.ShowRibbonPrintPreview();
             }
             catch (Exception ex)
             {

@@ -3,44 +3,50 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Text;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using DevExpress.XtraPrinting;
+using DevExpress.XtraReports.UI;
 using BUS;
 using DTO;
-using QuanLyDaoTao.Utils;
 using QuanLyDaoTao.Utilities;
+using QuanLyDaoTao.Utils;
 using QuanLyDaoTao.Enums;
 
 namespace QuanLyDaoTao.Presentation
 {
-    public partial class frmXemThoiKhoaBieuGiangVien : DevExpress.XtraEditors.XtraForm
+    public partial class frmInThoiKhoaBieuSinhVien : DevExpress.XtraEditors.XtraForm
     {
-        BUS_GiangVien bus_gv = new BUS_GiangVien();
-        public frmXemThoiKhoaBieuGiangVien()
+        BUS_SinhVien bus_sv = new BUS_SinhVien();
+        Bitmap memoryImage;
+        Image image;
+
+        public frmInThoiKhoaBieuSinhVien()
         {
             InitializeComponent();
         }
 
-        private void Set_cmbGiangVien()
+        private void Set_cmbSinhVien()
         {
             try
             {
-                cmbGiangVien.Properties.DataSource = bus_gv.TaobangGiangVien("");
-                //neu dang nhap bang quyen giang vien
-                if (int.Parse(StaticClass.User.Quyen) == (int)QuyenNguoiDung.GiangVien)
+                cmbSinhVien.Properties.DataSource = bus_sv.TaobangSinhVien("");
+                //neu dang nhap bang quyen sinh vien
+                if (int.Parse(StaticClass.User.Quyen) == (int)QuyenNguoiDung.SinhVien)
                 {
-                    xemThoiKhoaBieuGiangVien1.MaGV = StaticClass.User.TenDangNhap.ToUpper();
-                    cmbGiangVien.EditValue = StaticClass.User.TenDangNhap.ToUpper();
-                    cmbGiangVien.Properties.ReadOnly = true;
+                    xemThoiKhoaBieuSinhVien1.MSSV = StaticClass.User.TenDangNhap.ToUpper();
+                    cmbSinhVien.EditValue = StaticClass.User.TenDangNhap.ToUpper();
+                    cmbSinhVien.Properties.ReadOnly = true;
                 }
                 else//dang nhap bang quyen admin
                 {
-                    cmbGiangVien.Properties.ReadOnly = false;
-                    cmbGiangVien.EditValue = cmbGiangVien.Properties.GetDataSourceValue("MaGV", 0);
-                    xemThoiKhoaBieuGiangVien1.MaGV = cmbGiangVien.EditValue.ToString();
+                    cmbSinhVien.Properties.ReadOnly = false;
+                    cmbSinhVien.EditValue = cmbSinhVien.Properties.GetDataSourceValue("MSSV", 0);
+                    xemThoiKhoaBieuSinhVien1.MSSV = cmbSinhVien.EditValue.ToString();
                 }
             }
             catch (Exception ex)
@@ -117,12 +123,12 @@ namespace QuanLyDaoTao.Presentation
             }
         }
 
-        private void frmXemThoiKhoaBieuGiangVien_Load(object sender, EventArgs e)
+        private void frmInThoiKhoaBieuSinhVien_Load(object sender, EventArgs e)
         {
             try
             {
                 //cmbSinhVien
-                Set_cmbGiangVien();
+                Set_cmbSinhVien();
 
                 //num Hoc kỳ
                 Set_numHocKy();
@@ -145,7 +151,7 @@ namespace QuanLyDaoTao.Presentation
         {
             try
             {
-                xemThoiKhoaBieuGiangVien1.MaGV = cmbGiangVien.EditValue.ToString();
+                xemThoiKhoaBieuSinhVien1.MSSV = cmbSinhVien.EditValue.ToString();
             }
             catch (Exception ex)
             {
@@ -157,7 +163,7 @@ namespace QuanLyDaoTao.Presentation
         {
             try
             {
-                xemThoiKhoaBieuGiangVien1.NgayDauTuan = DateTime.ParseExact(cmbTuan.SelectedItem.ToString().Substring(3, 10), "dd/MM/yyyy", null);
+                xemThoiKhoaBieuSinhVien1.NgayDauTuan = DateTime.ParseExact(cmbTuan.SelectedItem.ToString().Substring(3, 10), "dd/MM/yyyy", null);
             }
             catch (Exception ex)
             {
@@ -183,6 +189,78 @@ namespace QuanLyDaoTao.Presentation
             {
                 if (dateNamHoc.EditValue != null)
                     Set_cmbTuan();
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            image = memoryImage;
+
+            float newWidth = image.Width * 100 / image.HorizontalResolution;
+            float newHeight = image.Height * 100 / image.VerticalResolution;
+
+            float widthFactor = newWidth / e.MarginBounds.Width;
+            float heightFactor = newHeight / e.MarginBounds.Height;
+
+            if (widthFactor > 1 | heightFactor > 1)
+            {
+                if (widthFactor > heightFactor)
+                {
+                    newWidth = newWidth / widthFactor;
+                    newHeight = newHeight / widthFactor;
+                }
+                else
+                {
+                    newWidth = newWidth / heightFactor;
+                    newHeight = newHeight / heightFactor;
+                }
+            }
+
+            // calculate width and height scalings taking page margins into account
+            var wScale = e.MarginBounds.Width / (float)memoryImage.Width;
+            var hScale = e.MarginBounds.Height / (float)memoryImage.Height;
+
+            // choose the smaller of the two scales
+            var scale = wScale < hScale ? wScale : hScale;
+
+            // apply scaling to the image
+            e.Graphics.ScaleTransform(scale, scale);
+
+            // print to default printer's page
+            //e.Graphics.DrawImage(memoryImage, 0, 0);
+            e.Graphics.DrawImage(image, 0, 100, newWidth * 3, newHeight * 3);
+        }
+
+        private void CaptureScreen()
+        {
+            // put into using construct because Graphics objects do not 
+            //  get automatically disposed when leaving method scope
+            using (var myGraphics = CreateGraphics())
+            {
+                var s = Size;
+
+                memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
+                
+                using (var memoryGraphics = Graphics.FromImage(memoryImage))
+                {
+                    memoryGraphics.CopyFromScreen(this.formBounds.X, this.formBounds.Y, 0, 0, s);
+                }
+            }
+        }
+
+        private void btnIn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                btnIn.Visible = false;
+                CaptureScreen();
+                printPreviewDialog1.Document = printDocument1;
+                printPreviewDialog1.ShowDialog();
+                btnIn.Visible = true;
             }
             catch (Exception ex)
             {

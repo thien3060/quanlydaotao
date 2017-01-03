@@ -227,7 +227,7 @@
             this.Controls.Add(this.xemThoiKhoaBieuGiangVien1);
             this.Name = "frmXemThoiKhoaBieuGiangVien";
             this.Text = "Xem thời khóa biểu giảng viên";
-            this.Load += new System.EventHandler(this.frmThemDeNghi_Load);
+            this.Load += new System.EventHandler(this.frmXemThoiKhoaBieuGiangVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numHocKy.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamHoc.Properties)).EndInit();

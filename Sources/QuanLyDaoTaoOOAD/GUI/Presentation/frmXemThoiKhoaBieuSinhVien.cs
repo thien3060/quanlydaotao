@@ -117,7 +117,7 @@ namespace QuanLyDaoTao.Presentation
             }
         }
 
-        private void frmThemDeNghi_Load(object sender, EventArgs e)
+        private void frmXemThoiKhoaBieuSinhVien_Load(object sender, EventArgs e)
         {
             try
             {

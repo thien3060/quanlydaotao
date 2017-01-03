@@ -1,6 +1,6 @@
 ﻿namespace QuanLyDaoTao.Presentation
 {
-    partial class frmDanhSachLop
+    partial class frmInDanhSachLop
     {
         /// <summary>
         /// Required designer variable.
@@ -32,6 +32,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cmbLop = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.STT = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -53,6 +54,7 @@
             this.panelControl1.Controls.Add(this.pictureBox1);
             this.panelControl1.Controls.Add(this.cmbLop);
             this.panelControl1.Controls.Add(this.labelControl1);
+            this.panelControl1.Controls.Add(this.simpleButton1);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
@@ -92,6 +94,16 @@
             this.labelControl1.Size = new System.Drawing.Size(28, 18);
             this.labelControl1.TabIndex = 16;
             this.labelControl1.Text = "Lớp:";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.simpleButton1.Location = new System.Drawing.Point(704, 73);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(137, 39);
+            this.simpleButton1.TabIndex = 9;
+            this.simpleButton1.Text = "In ";
+            this.simpleButton1.Click += new System.EventHandler(this.btnIn_Click);
             // 
             // gridControl1
             // 
@@ -172,16 +184,16 @@
             this.Lop.VisibleIndex = 5;
             this.Lop.Width = 126;
             // 
-            // frmDanhSachLop
+            // frmInDanhSachLop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(957, 504);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.panelControl1);
-            this.Name = "frmDanhSachLop";
-            this.Text = "frmDanhSachLop";
-            this.Load += new System.EventHandler(this.frmDanhSachLop_Load);
+            this.Name = "frmInDanhSachLop";
+            this.Text = "frmInDanhSachLop";
+            this.Load += new System.EventHandler(this.frmInDanhSachLop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
@@ -198,6 +210,7 @@
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraGrid.Columns.GridColumn STT;
         private DevExpress.XtraGrid.Columns.GridColumn HoTen;
         private DevExpress.XtraGrid.Columns.GridColumn NgaySinh;

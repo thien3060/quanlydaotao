@@ -35,14 +35,28 @@
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v15.2" />
     <Reference Include="DevExpress.Data.v15.2" />
+    <Reference Include="DevExpress.DataAccess.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v15.2.UI, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v15.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Snap.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Snap.v15.2.Core, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Snap.v15.2.Extensions, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v15.2" />
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v15.2" />
     <Reference Include="DevExpress.Sparkline.v15.2.Core" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.UI, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v15.2" />
     <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.2.Extensions, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -105,6 +119,12 @@
     </Compile>
     <Compile Include="Presentation\frmChinh.Designer.cs">
       <DependentUpon>frmChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmInDanhSachLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmInDanhSachLop.Designer.cs">
+      <DependentUpon>frmInDanhSachLop.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\frmDanhSachLop.cs">
       <SubType>Form</SubType>
@@ -262,17 +282,35 @@
     <Compile Include="Presentation\frmXemDeNghi.Designer.cs">
       <DependentUpon>frmXemDeNghi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\frmInPhieuGiangDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmInPhieuGiangDay.Designer.cs">
+      <DependentUpon>frmInPhieuGiangDay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\frmXemPhieuGiangDay.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentation\frmXemPhieuGiangDay.Designer.cs">
       <DependentUpon>frmXemPhieuGiangDay.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\frmInThoiKhoaBieuGiangVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmInThoiKhoaBieuGiangVien.Designer.cs">
+      <DependentUpon>frmInThoiKhoaBieuGiangVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\frmXemThoiKhoaBieuGiangVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentation\frmXemThoiKhoaBieuGiangVien.Designer.cs">
       <DependentUpon>frmXemThoiKhoaBieuGiangVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmInThoiKhoaBieuSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmInThoiKhoaBieuSinhVien.Designer.cs">
+      <DependentUpon>frmInThoiKhoaBieuSinhVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\frmXemThoiKhoaBieuSinhVien.cs">
       <SubType>Form</SubType>
@@ -356,6 +394,7 @@
     </Compile>
     <Compile Include="Utils\ExceptionUtilities.cs" />
     <Compile Include="Utils\MessageBoxUtils.cs" />
+    <Compile Include="Utils\PrintUtils.cs" />
     <Compile Include="Utils\StaticClass.cs" />
     <Compile Include="Utils\UtilitiesClass.cs" />
     <EmbeddedResource Include="Presentation\frmCapNhatLop.resx">
@@ -381,6 +420,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmChinh.resx">
       <DependentUpon>frmChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmInDanhSachLop.resx">
+      <DependentUpon>frmInDanhSachLop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmDanhSachLop.resx">
       <DependentUpon>frmDanhSachLop.cs</DependentUpon>
@@ -460,11 +502,20 @@
     <EmbeddedResource Include="Presentation\frmXemDeNghi.resx">
       <DependentUpon>frmXemDeNghi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmInPhieuGiangDay.resx">
+      <DependentUpon>frmInPhieuGiangDay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmXemPhieuGiangDay.resx">
       <DependentUpon>frmXemPhieuGiangDay.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmInThoiKhoaBieuGiangVien.resx">
+      <DependentUpon>frmInThoiKhoaBieuGiangVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmXemThoiKhoaBieuGiangVien.resx">
       <DependentUpon>frmXemThoiKhoaBieuGiangVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmInThoiKhoaBieuSinhVien.resx">
+      <DependentUpon>frmInThoiKhoaBieuSinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\frmXemThoiKhoaBieuSinhVien.resx">
       <DependentUpon>frmXemThoiKhoaBieuSinhVien.cs</DependentUpon>

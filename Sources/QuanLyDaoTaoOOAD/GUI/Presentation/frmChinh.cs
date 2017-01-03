@@ -307,12 +307,38 @@ namespace QuanLyDaoTao.Presentation
             }
         }
 
+        private void btnInTKBTuan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                frmInThoiKhoaBieuSinhVien frm = new frmInThoiKhoaBieuSinhVien();
+                TabCreating("Sinh viên in thời khóa biểu tuần", frm);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
         private void btnXemDSLop_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             try
             {
                 frmDanhSachLop frm = new frmDanhSachLop();
                 TabCreating("Xem danh sách lớp", frm);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void btnInDSLop_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                frmInDanhSachLop frm = new frmInDanhSachLop();
+                TabCreating("In danh sách lớp", frm);
             }
             catch (Exception)
             {
@@ -428,6 +454,32 @@ namespace QuanLyDaoTao.Presentation
             }
         }
 
+        private void btnInTKBTuanGV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                frmInThoiKhoaBieuGiangVien frm = new frmInThoiKhoaBieuGiangVien();
+                TabCreating("Giảng viên in thời khóa biểu tuần", frm);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void btnInPhieuGiangDay_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                frmInPhieuGiangDay frm = new frmInPhieuGiangDay();
+                TabCreating("Giảng viên in phiếu giảng dạy", frm);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
         #endregion
 
         #region Giáo Vụ
@@ -450,7 +502,20 @@ namespace QuanLyDaoTao.Presentation
             try
             {
                 frmXemThoiKhoaBieuSinhVien frm = new frmXemThoiKhoaBieuSinhVien();
-                TabCreating("Sinh viên xem thời khóa biểu tuần", frm);
+                TabCreating("Sinh viên xem thời khóa biểu", frm);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void btnInTKB_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                frmInThoiKhoaBieuSinhVien frm = new frmInThoiKhoaBieuSinhVien();
+                TabCreating("Sinh viên in thời khóa biểu", frm);
             }
             catch (Exception)
             {

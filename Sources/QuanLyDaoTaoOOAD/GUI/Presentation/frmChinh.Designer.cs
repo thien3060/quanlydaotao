@@ -558,6 +558,8 @@
             this.btnInTKBTuan.Id = 141;
             this.btnInTKBTuan.ImageIndex = 46;
             this.btnInTKBTuan.Name = "btnInTKBTuan";
+            this.btnInTKBTuan.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnInTKBTuan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnInTKBTuan_ItemClick);
             // 
             // btnXemDSLop
             // 
@@ -577,6 +579,7 @@
             this.btnInDSLop.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnInDSLop.LargeGlyph")));
             this.btnInDSLop.LargeImageIndex = 48;
             this.btnInDSLop.Name = "btnInDSLop";
+            this.btnInDSLop.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnInDSLop_ItemClick);
             // 
             // btnCapNhatGV
             // 
@@ -660,6 +663,8 @@
             this.btnInTKBTuanGV.Id = 153;
             this.btnInTKBTuanGV.ImageIndex = 46;
             this.btnInTKBTuanGV.Name = "btnInTKBTuanGV";
+            this.btnInTKBTuanGV.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnInTKBTuanGV.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnInTKBTuanGV_ItemClick);
             // 
             // btnInTKBThangGV
             // 
@@ -685,6 +690,7 @@
             this.btnInPhieuGiangDay.Id = 156;
             this.btnInPhieuGiangDay.LargeImageIndex = 48;
             this.btnInPhieuGiangDay.Name = "btnInPhieuGiangDay";
+            this.btnInPhieuGiangDay.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnInPhieuGiangDay_ItemClick);
             // 
             // btnThemSV
             // 
@@ -810,6 +816,7 @@
             this.btnInTKB.Id = 174;
             this.btnInTKB.LargeImageIndex = 48;
             this.btnInTKB.Name = "btnInTKB";
+            this.btnInTKB.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnInTKB_ItemClick);
             // 
             // btnNganhHoc
             // 
