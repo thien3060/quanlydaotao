@@ -134,5 +134,19 @@ namespace QuanLyDaoTao.Presentation
             txtKhoa.DataBindings.Clear();
             txtKhoa.DataBindings.Add("Text", nguon, "Khoa");
         }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string tim = UtilitiesClass.convertToUnSign3(txtTimKiem.Text);
+                nguon = bus_nganh.TaobangNganh(" Where MaNganh like '%" + tim + "%' or dbo.fnChuyenKhongDau(TenNganh) like '%" + tim + "%'");
+                gridControl1.DataSource = nguon;
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
     }
 }

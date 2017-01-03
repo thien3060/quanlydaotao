@@ -12,6 +12,7 @@ using DTO;
 using BUS;
 using QuanLyDaoTao.Utilities;
 using QuanLyDaoTao.Utils;
+using System.Text.RegularExpressions;
 
 namespace QuanLyDaoTao.Presentation
 {
@@ -113,6 +114,20 @@ namespace QuanLyDaoTao.Presentation
         {
             nguon = bus_sv.TaobangSinhVien("");
             gridControl1.DataSource = nguon;
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string tim = UtilitiesClass.convertToUnSign3(txtTimKiem.Text);
+                nguon = bus_sv.TaobangSinhVien(" Where MSSV like '%" + tim + "%' or dbo.fnChuyenKhongDau(HoTen) like '%" + tim + "%'");
+                gridControl1.DataSource = nguon;
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
         }
     }
 }

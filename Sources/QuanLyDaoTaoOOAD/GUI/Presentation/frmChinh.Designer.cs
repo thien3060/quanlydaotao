@@ -148,6 +148,7 @@
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.rpgGiaoDien = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnInPhieuGiangDayGiaoVu = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit2)).BeginInit();
@@ -229,9 +230,10 @@
             this.btnCapNhatMonHoc,
             this.btnSaoLuu,
             this.btnPhucHoi,
-            this.barButtonItem3});
+            this.barButtonItem3,
+            this.btnInPhieuGiangDayGiaoVu});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 198;
+            this.ribbonControl.MaxItemId = 199;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rpTrangChu,
@@ -1037,6 +1039,7 @@
             // 
             this.rpgGiangDay.ItemLinks.Add(this.btnPhanCong);
             this.rpgGiangDay.ItemLinks.Add(this.btnNhapPhieuGiangDay);
+            this.rpgGiangDay.ItemLinks.Add(this.btnInPhieuGiangDayGiaoVu);
             this.rpgGiangDay.Name = "rpgGiangDay";
             this.rpgGiangDay.Text = "Giảng dạy";
             // 
@@ -1155,6 +1158,13 @@
             this.timer1.Enabled = true;
             this.timer1.Interval = 60000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // btnInPhieuGiangDayGiaoVu
+            // 
+            this.btnInPhieuGiangDayGiaoVu.Caption = "In phiếu giảng dạy";
+            this.btnInPhieuGiangDayGiaoVu.Glyph = ((System.Drawing.Image)(resources.GetObject("btnInPhieuGiangDayGiaoVu.Glyph")));
+            this.btnInPhieuGiangDayGiaoVu.Id = 198;
+            this.btnInPhieuGiangDayGiaoVu.Name = "btnInPhieuGiangDayGiaoVu";
             // 
             // frmChinh
             // 
@@ -1283,5 +1293,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup rpgSaoLuu_PhucHoi;
         private System.Windows.Forms.Timer timer1;
+        private DevExpress.XtraBars.BarButtonItem btnInPhieuGiangDayGiaoVu;
     }
 }

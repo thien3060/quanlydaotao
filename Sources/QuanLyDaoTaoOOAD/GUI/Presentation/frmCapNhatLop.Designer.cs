@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCapNhatLop));
             this.cmbLop = new DevExpress.XtraEditors.LookUpEdit();
             this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -38,11 +39,14 @@
             this.MaLop = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MaNganh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.cmbNganh = new DevExpress.XtraEditors.LookUpEdit();
+            this.btnTimKiem = new DevExpress.XtraEditors.SimpleButton();
+            this.txtTimKiem = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbLop.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbNganh.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTimKiem.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbLop
@@ -158,11 +162,33 @@
             this.cmbNganh.Size = new System.Drawing.Size(210, 24);
             this.cmbNganh.TabIndex = 21;
             // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
+            this.btnTimKiem.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.btnTimKiem.Location = new System.Drawing.Point(903, 142);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(23, 23);
+            this.btnTimKiem.TabIndex = 32;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTimKiem.Location = new System.Drawing.Point(705, 144);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Properties.NullText = "Tìm kiếm";
+            this.txtTimKiem.Size = new System.Drawing.Size(192, 20);
+            this.txtTimKiem.TabIndex = 31;
+            // 
             // frmCapNhatLop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(938, 483);
+            this.Controls.Add(this.btnTimKiem);
+            this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cmbNganh);
@@ -178,6 +204,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbNganh.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTimKiem.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,5 +222,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn MaLop;
         private DevExpress.XtraGrid.Columns.GridColumn MaNganh;
         private DevExpress.XtraEditors.LookUpEdit cmbNganh;
+        private DevExpress.XtraEditors.SimpleButton btnTimKiem;
+        private DevExpress.XtraEditors.TextEdit txtTimKiem;
     }
 }

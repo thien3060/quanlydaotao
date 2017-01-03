@@ -150,5 +150,19 @@ namespace QuanLyDaoTao.Presentation
             txtDiaChi.DataBindings.Clear();
             txtDiaChi.DataBindings.Add("Text", nguon, "DiaChi");
         }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string tim = UtilitiesClass.convertToUnSign3(txtTimKiem.Text);
+                nguon = bus_phonghoc.TaobangPhongHoc(" Where MaPhong like '%" + tim + "%' or dbo.fnChuyenKhongDau(DiaChi) like '%" + tim + "%'");
+                gridControl1.DataSource = nguon;
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
     }
 }

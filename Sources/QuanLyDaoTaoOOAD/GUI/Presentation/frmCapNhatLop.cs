@@ -82,5 +82,19 @@ namespace QuanLyDaoTao.Presentation
             nguon = bus_lop.TaobangLop("");
             gridControl1.DataSource = nguon;
         }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string tim = UtilitiesClass.convertToUnSign3(txtTimKiem.Text);
+                nguon = bus_lop.TaobangLop(" Where MaLop like '%" + tim + "%'");
+                gridControl1.DataSource = nguon;
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCapNhatSinhVien));
             this.cmbLop = new DevExpress.XtraEditors.LookUpEdit();
             this.dateNgaySinh = new DevExpress.XtraEditors.DateEdit();
             this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
@@ -48,6 +49,8 @@
             this.NgaySinh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.DiaChi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MaLop = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.txtTimKiem = new DevExpress.XtraEditors.TextEdit();
+            this.btnTimKiem = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.cmbLop.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgaySinh.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgaySinh.Properties)).BeginInit();
@@ -57,6 +60,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTimKiem.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbLop
@@ -291,11 +295,33 @@
             this.MaLop.VisibleIndex = 2;
             this.MaLop.Width = 100;
             // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTimKiem.Location = new System.Drawing.Point(705, 186);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Properties.NullText = "Tìm kiếm";
+            this.txtTimKiem.Size = new System.Drawing.Size(192, 20);
+            this.txtTimKiem.TabIndex = 29;
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
+            this.btnTimKiem.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.btnTimKiem.Location = new System.Drawing.Point(903, 184);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(23, 23);
+            this.btnTimKiem.TabIndex = 30;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
             // frmCapNhatSinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(938, 483);
+            this.Controls.Add(this.btnTimKiem);
+            this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cmbLop);
@@ -322,6 +348,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTimKiem.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -349,5 +376,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn NgaySinh;
         private DevExpress.XtraGrid.Columns.GridColumn DiaChi;
         private DevExpress.XtraGrid.Columns.GridColumn MaLop;
+        private DevExpress.XtraEditors.TextEdit txtTimKiem;
+        private DevExpress.XtraEditors.SimpleButton btnTimKiem;
     }
 }

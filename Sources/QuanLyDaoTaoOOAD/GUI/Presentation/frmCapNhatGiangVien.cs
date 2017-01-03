@@ -109,5 +109,19 @@ namespace QuanLyDaoTao.Presentation
             cmbTrinhDo.DataBindings.Clear();
             cmbTrinhDo.DataBindings.Add("EditValue", nguon, "MaTrinhDo");
         }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string tim = UtilitiesClass.convertToUnSign3(txtTimKiem.Text);
+                nguon = bus_giangvien.TaobangGiangVien(" Where MaGV like '%" + tim + "%' or dbo.fnChuyenKhongDau(HoTen) like '%" + tim + "%'");
+                gridControl1.DataSource = nguon;
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
     }
 }

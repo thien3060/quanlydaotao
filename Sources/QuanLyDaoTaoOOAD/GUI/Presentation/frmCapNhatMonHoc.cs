@@ -101,5 +101,19 @@ namespace QuanLyDaoTao.Presentation
             numThucHanh.DataBindings.Clear();
             numThucHanh.DataBindings.Add("Text", nguon, "ThucHanh");
         }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string tim = UtilitiesClass.convertToUnSign3(txtTimKiem.Text);
+                nguon = bus_monhoc.TaobangMonHoc(" Where MaMH like '%" + tim + "%' or dbo.fnChuyenKhongDau(TenMH) like '%" + tim + "%'");
+                gridControl1.DataSource = nguon;
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
     }
 }

@@ -3,6 +3,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Linq;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace QuanLyDaoTao.Utilities
 {
@@ -53,6 +54,13 @@ namespace QuanLyDaoTao.Utilities
         public static DateTime GetWeek(this DateTime date)
         {
             return date.AddDays(DayOfWeek.Monday - date.DayOfWeek);
+        }
+
+        public static string convertToUnSign3(string s)
+        {
+            Regex regex = new Regex("\\p{IsCombiningDiacriticalMarks}+");
+            string temp = s.Normalize(NormalizationForm.FormD);
+            return regex.Replace(temp, String.Empty).Replace('\u0111', 'd').Replace('\u0110', 'D');
         }
 
         #region Đọc số thành chữ

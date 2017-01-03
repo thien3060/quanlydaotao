@@ -139,5 +139,19 @@ namespace QuanLyDaoTao.Presentation
             numLuong.DataBindings.Clear();
             numLuong.DataBindings.Add("Text", nguon, "HeSoLuong");
         }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string tim = UtilitiesClass.convertToUnSign3(txtTimKiem.Text);
+                nguon = bus_trinhdo.TaobangTDDT(" Where MaTrinhDo like '%" + tim + "%' or dbo.fnChuyenKhongDau(TenTrinhDo) like '%" + tim + "%'");
+                gridControl1.DataSource = nguon;
+            }
+            catch (Exception ex)
+            {
+                ExceptionUtil.ThrowMsgBox(ex.Message);
+            }
+        }
     }
 }
