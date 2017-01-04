@@ -12,6 +12,7 @@ using DTO;
 using BUS;
 using QuanLyDaoTao.Utilities;
 using QuanLyDaoTao.Utils;
+using System.Data.SqlClient;
 
 namespace QuanLyDaoTao.Presentation
 {
@@ -115,6 +116,10 @@ namespace QuanLyDaoTao.Presentation
             try
             {
                 ClearText();
+            }
+            catch (SqlException ex)
+            {
+                ExceptionUtil.ThrowMsgBox("Môn học đã tồn tại");
             }
             catch (Exception ex)
             {

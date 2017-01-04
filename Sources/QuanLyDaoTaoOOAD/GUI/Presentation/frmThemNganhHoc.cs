@@ -12,6 +12,7 @@ using DTO;
 using BUS;
 using QuanLyDaoTao.Utils;
 using QuanLyDaoTao.Utilities;
+using System.Data.SqlClient;
 
 namespace QuanLyDaoTao.Presentation
 {
@@ -67,6 +68,10 @@ namespace QuanLyDaoTao.Presentation
                     MessageBoxUtils.Success("Thành công");
                     ClearText();
                 }
+            }
+            catch (SqlException ex)
+            {
+                ExceptionUtil.ThrowMsgBox("Ngành đã tồn tại");
             }
             catch (Exception ex)
             {
