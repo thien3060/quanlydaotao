@@ -28,8 +28,7 @@ namespace QuanLyDaoTao.Presentation
         {
             try
             {
-                txtMaMH.Text = bus_mh.TuTinhMa();
-                txtTenMH.Focus();
+                txtMaMH.Focus();
             }
             catch (Exception ex)
             {
@@ -85,9 +84,9 @@ namespace QuanLyDaoTao.Presentation
                     return;
                 }
 
-                if (numThucHanh.Value + numLyThuyet.Value != numSTC.Value)
+                if (numThucHanh.Value + numLyThuyet.Value != numSTC.Value * 15)
                 {
-                    MessageBoxUtils.Exclamation("Tổng số tiết lý thuyết và thực hành phải bằng số tín chỉ");
+                    MessageBoxUtils.Exclamation("Tổng số tiết lý thuyết và thực hành phải bằng 15 * số tín chỉ");
                     numSTC.Focus();
                     return;
                 }
@@ -95,9 +94,9 @@ namespace QuanLyDaoTao.Presentation
                 MessageBoxUtils.Success("Thành công");
                 btnHuy_Click(null, null);
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
-                ExceptionUtil.ThrowMsgBox(ex.Message);
+                ExceptionUtil.ThrowMsgBox("Ngành đã tồn tại");
             }
         }
 
@@ -106,7 +105,7 @@ namespace QuanLyDaoTao.Presentation
             txtMaMH.ResetText();    
             txtTenMH.ResetText();
             numSTC.Value = 0;
-            numLyThuyet.Value = 3;
+            numLyThuyet.Value = 0;
             numThucHanh.Value = 0;
             txtMaMH.Focus();
         }

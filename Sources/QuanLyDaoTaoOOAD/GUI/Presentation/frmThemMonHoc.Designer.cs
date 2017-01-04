@@ -170,7 +170,7 @@
             // numLyThuyet
             // 
             this.numLyThuyet.EditValue = new decimal(new int[] {
-            1,
+            0,
             0,
             0,
             0});
@@ -214,7 +214,7 @@
             // numThucHanh
             // 
             this.numThucHanh.EditValue = new decimal(new int[] {
-            1,
+            0,
             0,
             0,
             0});
