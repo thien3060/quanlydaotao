@@ -33,6 +33,7 @@ namespace QuanLyDaoTao.Presentation
         {
             try
             {
+                txtMaPC.Text = bus_phancong.TuTinhMa();
                 cmbGiangVien.Properties.DataSource = bus_giangvien.TaobangGiangVien("");
                 cmbGiangVien.EditValue = cmbGiangVien.Properties.GetDataSourceValue("MaGV", 0);
                 cmbMonHoc.Properties.DataSource = bus_monhoc.TaobangMonHoc("");
@@ -63,6 +64,7 @@ namespace QuanLyDaoTao.Presentation
                 bus_phancong.ThemdulieuPhanCong(dto_phancong);
                 CapNhatDuLieuBang();
                 ClearText();
+                txtMaPC.Text = bus_phancong.TuTinhMa();
                 MessageBoxUtils.Success("Đã cập nhật thay đổi vào CSDL");
             }
             catch (Exception ex)
