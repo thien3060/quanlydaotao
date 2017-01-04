@@ -64,7 +64,7 @@
             // 
             // dateNamHoc
             // 
-            this.dateNamHoc.EditValue = new System.DateTime(2016, 1, 1, 0, 0, 0, 0);
+            this.dateNamHoc.EditValue = new System.DateTime(2017, 1, 1, 0, 0, 0, 0);
             this.dateNamHoc.EnterMoveNextControl = true;
             this.dateNamHoc.Location = new System.Drawing.Point(634, 26);
             this.dateNamHoc.Name = "dateNamHoc";

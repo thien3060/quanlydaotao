@@ -120,7 +120,7 @@ namespace QuanLyDaoTao.Presentation
             {
                 txtMaPC.ResetText();
                 numHocKy.Value = 1;
-                dateNamHoc.EditValue = new DateTime(2014, 1, 1, 0, 0, 0, 0);
+                dateNamHoc.EditValue = new DateTime(2017, 1, 1, 0, 0, 0, 0);
                 cmbGiangVien.ResetText();
                 cmbLop.ResetText();
                 cmbMonHoc.ResetText();
