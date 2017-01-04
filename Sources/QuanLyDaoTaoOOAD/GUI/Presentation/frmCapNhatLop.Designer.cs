@@ -156,9 +156,9 @@
             this.cmbNganh.Properties.Appearance.Options.UseFont = true;
             this.cmbNganh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbNganh.Properties.DisplayMember = "MaLop";
+            this.cmbNganh.Properties.DisplayMember = "TenNganh";
             this.cmbNganh.Properties.ReadOnly = true;
-            this.cmbNganh.Properties.ValueMember = "MaLop";
+            this.cmbNganh.Properties.ValueMember = "MaNganh";
             this.cmbNganh.Size = new System.Drawing.Size(210, 24);
             this.cmbNganh.TabIndex = 21;
             // 
