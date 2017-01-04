@@ -130,7 +130,7 @@ namespace QuanLyDaoTao.UserControls
                 int idBuoiHoc;
                 if (buoiHocs.Rows.Count != 0)
                 {
-                    idBuoiHoc = int.Parse(buoiHocs.Rows[buoiHocs.Rows.Count - 1][0].ToString()) + 1;
+                    idBuoiHoc = int.Parse(bus_buoihoc.LayMaCuoiCung().ToString()) + buoiHocs_them.Rows.Count + 1;
                 }
                 else
                 {
